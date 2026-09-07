@@ -1,0 +1,52 @@
+ï»¿# Local dependencies and caches
+analysis/python_packages/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.vscode/
+# Local GUI captures, instrument sessions and settings
+*.ini
+*.INI
+.env
+.env.*
+*.pfx
+*.p12
+*.key
+# Regenerated assembler intermediates
+analysis/*.o
+analysis/*.bin
+# Executables are added explicitly as historical build inputs.
+*.exe
+!/analysis/runtime_test/GREEN_PREVIEW_TEST_ONLY.exe
+!/analysis/runtime_test/LOGGER_PASSIVE_ONLY_TEST.exe
+!/SD200W.exe
+!/SD200W_diskguard.exe
+!/SD200W_diskguard_no_call_receive.exe
+!/SD200W_SAIV.exe
+!/SD200W_SAIV_OSU107.exe
+!/SD200W_SAIV_OSU107_Blue.exe
+!/SD200W_SAIV_OSU107_Blue_ClassicText.exe
+!/SD200W_SAIV_OSU107_Blue_Custom.exe
+!/SD200W_SAIV_OSU107_Blue_Frames.exe
+!/SD200W_SAIV_OSU107_Blue_Outlines.exe
+!/SD200W_SAIV_OSU107_Blue_ScrollLine.exe
+!/SD200W_SAIV_OSU107_Clean.exe
+!/SD200W_SAIV_OSU107_Detect.exe
+!/SD200W_SAIV_OSU107_Detect_Green.exe
+!/SD200W_SAIV_OSU107_Detect_Priority.exe
+!/SD200W_SAIV_OSU107_Detect_Rows.exe
+!/SD200W_SAIV_OSU107_final.exe
+!/SD200W_SAIV_OSU107_History.exe
+!/SD200W_SAIV_OSU107_Instrument.exe
+!/SD200W_SAIV_OSU107_Instrument_v2.exe
+!/SD200W_SAIV_OSU107_LoggerDetect.exe
+!/SD200W_SAIV_OSU107_NoHandshake.exe
+!/SD200W_SAIV_OSU107_Refresh.exe
+!/SD200W_SAIV_OSU107_RefreshReply.exe
+!/SD200W_SAIV_OSU107_RefreshReply_EN.exe
+!/SD200W_SAIV_OSU107_SelectInstrument.exe
+!/SD200W_SAIV_v1.0.1_Sept2026.exe
+
+# Isolated transfer verification workspaces
+.transfer-check/

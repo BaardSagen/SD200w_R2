@@ -1,0 +1,19 @@
+{
+  "output": "SD200W_SAIV_OSU107_RefreshReply_EN.exe",
+  "sha256": "4ff9fa8c1b464ffb38c1839d5d457bbbee87cf17eea48ff4b0934781dd8f2c45",
+  "messages": [
+    {
+      "symbol": "logging_message",
+      "message": "Stop logging and wait for the current sample to finish before refreshing the disk. Then click Download again.",
+      "offset": 2577821,
+      "size": 117
+    },
+    {
+      "symbol": "timeout_message",
+      "message": "Disk refresh was not confirmed. Check the terminal response.",
+      "offset": 2577939,
+      "size": 66
+    }
+  ],
+  "verification": "Only message bytes and PE checksum changed; offsets and code preserved."
+}

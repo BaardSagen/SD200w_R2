@@ -1,0 +1,13 @@
+[
+  {
+    "rx": ""
+  },
+  {
+    "tx": "G",
+    "rx": "\r\nIllegal value\r\n\r\nMenu:\r\nChange mode CTD/STD/OX/Turb --  <B>\r\nChange type/range optional sen. <D>\r\nMeasuring interval              <I>\r\nActivate radio communication    <J>\r\nChange baud rate                <A>\r\nDump stored data to screen      <F>\r\nErase data in memory            <E>\r\nSet real-time clock             <S>\r\nBattery change instruction      <P>\r\nList cal.coefficients           <L>\r\nSet coefficients                <M>\r\nCalibration oxygen SAIV205      <C>\r\nSelf-test                       <T>\r\nRestore factory settings        <K>\r\nStart via key-board             <R>\r\nExit (passive)                  <H>\r\n"
+  },
+  {
+    "tx": "H",
+    "rx": "\u00d2\u00e1\u00a0-\u00ccM\u008d\n\u00ff\r\n\r\n- passive -\r\nUse Mag-Key or hold <I> to activate\r\n\r\n"
+  }
+]

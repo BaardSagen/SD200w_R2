@@ -1,0 +1,78 @@
+{
+  "output": "SD200W_SAIV_OSU107_Detect_Priority.exe",
+  "sha256": "09a30d550aa3880e52e7b86ffc616f25e96f7eb9498d0adb47038d8d799e9911",
+  "sequence": [
+    {
+      "baud": 9600,
+      "parity": "None"
+    },
+    {
+      "baud": 9600,
+      "parity": "Even"
+    },
+    {
+      "baud": 4800,
+      "parity": "None"
+    },
+    {
+      "baud": 4800,
+      "parity": "Even"
+    },
+    {
+      "baud": 2400,
+      "parity": "None"
+    },
+    {
+      "baud": 2400,
+      "parity": "Even"
+    },
+    {
+      "baud": 19200,
+      "parity": "None"
+    },
+    {
+      "baud": 19200,
+      "parity": "Even"
+    },
+    {
+      "baud": 38400,
+      "parity": "None"
+    },
+    {
+      "baud": 38400,
+      "parity": "Even"
+    },
+    {
+      "baud": 1200,
+      "parity": "None"
+    },
+    {
+      "baud": 1200,
+      "parity": "Even"
+    },
+    {
+      "baud": 600,
+      "parity": "None"
+    },
+    {
+      "baud": 600,
+      "parity": "Even"
+    },
+    {
+      "baud": 300,
+      "parity": "None"
+    },
+    {
+      "baud": 300,
+      "parity": "Even"
+    }
+  ],
+  "concurrency": "Existing per-port worker construction at 0x5116d6 and Resume at 0x51172e retained; no waits between launching workers.",
+  "changes": [
+    {
+      "rva": "0x1b1374",
+      "before": "en",
+      "after": "ne"
+    }
+  ]
+}

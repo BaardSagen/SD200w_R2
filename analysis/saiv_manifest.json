@@ -1,0 +1,8 @@
+{
+  "source": "SD200W_diskguard_no_call_receive.exe",
+  "output": "SD200W_SAIV.exe",
+  "resource": "TABOUTBOXNAV",
+  "developer": "SAIV AS",
+  "sha256": "41ad45d3066238a7481e9f06ec09d6d8b8b0bc15f210729f9a5575b0ef2b2258",
+  "validation": "Only About caption resource, resource size, and PE checksum changed. Earlier patches remain byte-identical."
+}

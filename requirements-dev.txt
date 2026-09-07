@@ -1,0 +1,6 @@
+# Versions used in the existing analysis environment; Python 3.11 x64.
+pefile==2023.2.7
+unicorn==2.1.4
+capstone==5.0.9
+Pillow==11.2.1
+pyserial==3.5

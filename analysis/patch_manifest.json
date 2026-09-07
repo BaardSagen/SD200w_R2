@@ -1,0 +1,72 @@
+{
+  "source": "SD200W.exe",
+  "output": "SD200W_diskguard.exe",
+  "original_sha256": "c7c08b02f0a63ddf986fac9cd325634dd60421354daf18daa13d01d831728b4e",
+  "patched_sha256": "7279a7e1dd73227b47574ef2d2ff820f423c69021d5b08b8ea6bd2cb56cc22e4",
+  "section_rva": 2347008,
+  "section_size": 556,
+  "symbols": {
+    ".bss": 0,
+    ".data": 0,
+    ".text": 0,
+    "guard_start": 0,
+    "receive_hook": 0,
+    "receive_done": 145,
+    "click_hook": 154,
+    "click_continue": 205,
+    "click_block": 218,
+    "after_modal_hook": 226,
+    "modal_normal": 275,
+    "modal_not_cancelled": 287,
+    "close_port_hook": 292,
+    "close_done": 344,
+    "feed_byte": 356,
+    "folded": 382,
+    "match_retry": 397,
+    "char_match": 419,
+    "save_matcher": 437,
+    "no_match": 439,
+    "show_message": 442,
+    "pattern": 470,
+    "pattern_end": 484,
+    "prefix": 484,
+    "message": 499,
+    "title": 536,
+    "matcher": 552,
+    "blocked": 553,
+    "requested": 554,
+    "pending": 555,
+    "GUARD_RVA": 2347008
+  },
+  "changes": [
+    {
+      "address": "0x59b308",
+      "offset": 1681160,
+      "original": "8a5c10ff8bc3",
+      "patched": "e9f31c0a0090",
+      "label": "receive_hook"
+    },
+    {
+      "address": "0x5a14f4",
+      "offset": 1706228,
+      "original": "53568bf28bd8",
+      "patched": "e9a1bb090090",
+      "label": "click_hook"
+    },
+    {
+      "address": "0x5a156f",
+      "offset": 1706351,
+      "original": "83f8027512",
+      "patched": "e96ebb0900",
+      "label": "after_modal_hook"
+    },
+    {
+      "address": "0x47f9c4",
+      "offset": 519620,
+      "original": "558bec33c9",
+      "patched": "e95bd71b00",
+      "label": "close_port_hook"
+    }
+  ],
+  "signature": "Original signature directory cleared in modified copy; original is untouched."
+}

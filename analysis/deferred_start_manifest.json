@@ -1,0 +1,18 @@
+{
+  "output": "SD200W_SAIV_OSU107_Instrument_v2.exe",
+  "sha256": "d695978e87cdd6224f9a856b8ec42e770d8513d2226841b4a07d04a2a2475659",
+  "rva": 2351104,
+  "symbols": {
+    ".bss": 0,
+    ".data": 0,
+    ".text": 0,
+    "start": 0,
+    "done": 78,
+    "timer_callback": 90,
+    "callback_done": 160,
+    "scheduled": 167,
+    "main_form": 168,
+    "RVA": 2351104
+  },
+  "validation": "Original startup restored; one-time timer invokes original Instrument handler after FormActivate returns. All previous changes preserved."
+}

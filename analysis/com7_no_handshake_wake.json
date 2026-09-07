@@ -1,0 +1,10 @@
+{
+  "port": "COM7",
+  "baud": 9600,
+  "parity": "None",
+  "rtscts": false,
+  "dsrdtr": false,
+  "tx": "GIIIIIIIIIIIII",
+  "rx": "\r\nStored air pressure(mb):AP= 947.76709\r\n\r\nChange air pressure     <A>\r\nStatus/Start/Menu       <S>\r\nPassive                 <H>\r\nIf no command, measurement will start in 10 sec.\r\n",
+  "awake": true
+}

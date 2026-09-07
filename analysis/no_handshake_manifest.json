@@ -1,0 +1,6 @@
+{
+  "output": "SD200W_SAIV_OSU107_NoHandshake.exe",
+  "sha256": "3908bded6ca05244bee62e4eded3a3042b8cff9bf043c003012b44fd63aa8599",
+  "rva": 2699264,
+  "flags_cleared": "fOutxCtsFlow, fOutxDsrFlow, fDsrSensitivity"
+}

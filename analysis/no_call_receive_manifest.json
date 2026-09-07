@@ -1,0 +1,13 @@
+{
+  "source": "SD200W_diskguard.exe",
+  "output": "SD200W_diskguard_no_call_receive.exe",
+  "source_sha256": "7279a7e1dd73227b47574ef2d2ff820f423c69021d5b08b8ea6bd2cb56cc22e4",
+  "output_sha256": "f3c7f926d76bda29a606771d4200cbde8411431faeb21010d8ac1e4d9fcc6648",
+  "hidden_buttons": [
+    "btnPhone",
+    "btnPhoneAnswer"
+  ],
+  "verification": "Both DFMs parsed completely; only target properties differ; all executable sections unchanged.",
+  "original_resource_size": 47711,
+  "modified_resource_size": 44987
+}

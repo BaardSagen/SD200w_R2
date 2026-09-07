@@ -33,4 +33,18 @@ Detect med to instrumenter funnet:
 
 Klikk på ønsket rad og velg OK, eller dobbeltklikk raden. Bildene er fra tidligere tester av samme grensesnitt. Portnumre og signalstatus er eksempler fra testoppsettet.
 
-Dette repositoriet inneholder siste programfil, README og skjermbildene.
+## Videre arbeid på en annen PC
+
+Start med **[OPPSTART_NY_PC.md](OPPSTART_NY_PC.md)** for oppsett, kontroll av filene og kjøring av tester.
+
+- [Prosjektstatus og åpne punkter](sd200DOc/PROSJEKTSTATUS.md)
+- [Formelkartlegging](sd200DOc/FORMELKARTLEGGING.md) og [formelkontroll](sd200DOc/FORMELKONTROLL.md)
+- Alle `LES_MEG_*.md` i rotmappen beskriver tidligere endringer og leveranser.
+- `analysis/`: byggskript, assembler, rekonstruerte formler, tester, manifester og analyseresultater.
+- `analysis/runtime_test/`: historiske GUI-testresultater, skjermbilder og to forsøksprogrammer.
+- `osu107Doc/`: loggerprotokoll, integrasjonsnotater og konverteringseksempler.
+- `docs/`: historisk instrument-/firmwaredokumentasjon og referansemanualer.
+
+Original og tidligere EXE-utgaver er bevart som inngangsfiler for hashbundne bygg og tester. **Siste leveranse er fortsatt SD200W_SAIV_v1.0.1_Sept2026.exe.** Forsøksprogrammer i `analysis/runtime_test/` er ikke leveranser.
+
+Original Delphi-kildekode finnes ikke i prosjektet. Videreutviklingen bygger på analyse og patching av Windows-programmet. Formelproblemer er dokumentert, men ikke rettet i EXE.

@@ -1,0 +1,1048 @@
+{
+  "output": "SD200W_SAIV_OSU107_Blue_ScrollLine.exe",
+  "sha256": "4d78d5f0128ed733b030ad13b9236dcb7e92f8304f16e0f2869e11b3b70daacf",
+  "forms": 55,
+  "changes": [
+    {
+      "form": "TABOUTBOXNAV",
+      "components": [
+        {
+          "component": "AboutBoxNav",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TASKOBSERVERDLG",
+      "components": [
+        {
+          "component": "AskObserverDlg",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TBARPRESSDLG",
+      "components": [
+        {
+          "component": "BarPressDlg",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "lblBar",
+          "properties": [
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "lblSal",
+          "properties": [
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TCALRAWDLG",
+      "components": [
+        {
+          "component": "CalRawDlg",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "Panel1",
+          "properties": [
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "rbLowRd",
+          "properties": [
+            "Color"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TCOMMPARAMDLG",
+      "components": [
+        {
+          "component": "CommParamDlg",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TCOMPUTING",
+      "components": [
+        {
+          "component": "Computing",
+          "properties": [
+            "Font.Name",
+            "Color"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TCONFIGSECTIONSDLG",
+      "components": [
+        {
+          "component": "ConfigSectionsDlg",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDATELINEDLG",
+      "components": [
+        {
+          "component": "DateLineDlg",
+          "properties": [
+            "Font.Name",
+            "Color"
+          ]
+        },
+        {
+          "component": "Label1",
+          "properties": [
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDELETEDLG",
+      "components": [
+        {
+          "component": "DeleteDlg",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDLGALERTSETUP",
+      "components": [
+        {
+          "component": "dlgAlertSetup",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDLGASVP",
+      "components": [
+        {
+          "component": "dlgASVP",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDLGAUTOBAUD",
+      "components": [
+        {
+          "component": "dlgAutoBaud",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "lbProbes",
+          "properties": [
+            "Font.Name",
+            "HeaderFont.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDLGAUTOREADOUT",
+      "components": [
+        {
+          "component": "dlgAutoReadout",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDLGCALLLIST",
+      "components": [
+        {
+          "component": "dlgCallList",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDLGCOLOR",
+      "components": [
+        {
+          "component": "dlgColor",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDLGDEBUG",
+      "components": [
+        {
+          "component": "dlgDebug",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDLGDEPTHTYPE",
+      "components": [
+        {
+          "component": "dlgDepthType",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDLGEDITSTN",
+      "components": [
+        {
+          "component": "DlgEditStn",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDLGEXPORTDATETIME",
+      "components": [
+        {
+          "component": "dlgExportDateTime",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDLGFREEGRAPH",
+      "components": [
+        {
+          "component": "dlgFreeGraph",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDLGHEADERINFO",
+      "components": [
+        {
+          "component": "dlgHeaderInfo",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDLGHOSTINFO",
+      "components": [
+        {
+          "component": "dlgHostInfo",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDLGINDYLICENSE",
+      "components": [
+        {
+          "component": "dlgIndyLicense",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "Memo1",
+          "properties": [
+            "Color"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDLGLIVEGRAPH",
+      "components": [
+        {
+          "component": "dlgLiveGraph",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDLGMCHART",
+      "components": [
+        {
+          "component": "dlgMchart",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "Label7",
+          "properties": [
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "chkSal",
+          "properties": [
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "chkTemp",
+          "properties": [
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "chkCond",
+          "properties": [
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDLGMULTIPASSSETUP",
+      "components": [
+        {
+          "component": "dlgMultiPassSetup",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDLGOFFSET",
+      "components": [
+        {
+          "component": "dlgOffset",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDLGOXUNIT",
+      "components": [
+        {
+          "component": "dlgOxUnit",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDLGRINKOCAL",
+      "components": [
+        {
+          "component": "dlgRinkoCal",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDLGSETMINDEPTHMASK",
+      "components": [
+        {
+          "component": "dlgSetMinDepthMask",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "Label2",
+          "properties": [
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDLGSTATIONNAME",
+      "components": [
+        {
+          "component": "dlgStationName",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDLGTURBUNIT",
+      "components": [
+        {
+          "component": "dlgTurbUnit",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDOWNLOADDLG",
+      "components": [
+        {
+          "component": "DownloadDlg",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "Label8",
+          "properties": [
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "Label9",
+          "properties": [
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "Label11",
+          "properties": [
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "Label12",
+          "properties": [
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "Label14",
+          "properties": [
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "Label15",
+          "properties": [
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "Label17",
+          "properties": [
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "Label18",
+          "properties": [
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TDYPDIALOG",
+      "components": [
+        {
+          "component": "DypDialog",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TEDITREFDLG",
+      "components": [
+        {
+          "component": "EditRefDlg",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TERRLISTDLG",
+      "components": [
+        {
+          "component": "ErrListDlg",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TERRORDIALOG",
+      "components": [
+        {
+          "component": "ErrorDialog",
+          "properties": [
+            "Font.Name",
+            "Color"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TEXPORTDLG",
+      "components": [
+        {
+          "component": "ExportDlg",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TFILECOMMDLG",
+      "components": [
+        {
+          "component": "FileCommDlg",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TFORM1",
+      "components": [
+        {
+          "component": "Form1",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "SpeedPanel",
+          "properties": [
+            "Color",
+            "BevelOuter",
+            "BorderStyle"
+          ]
+        },
+        {
+          "component": "sbtnOpen",
+          "properties": [
+            "Flat"
+          ]
+        },
+        {
+          "component": "sbtnExit",
+          "properties": [
+            "Flat"
+          ]
+        },
+        {
+          "component": "sbtnSelect",
+          "properties": [
+            "Flat"
+          ]
+        },
+        {
+          "component": "sbtnList",
+          "properties": [
+            "Flat"
+          ]
+        },
+        {
+          "component": "sbtnGrDepth",
+          "properties": [
+            "Flat"
+          ]
+        },
+        {
+          "component": "sbtnTables",
+          "properties": [
+            "Flat"
+          ]
+        },
+        {
+          "component": "sbtnInstrument",
+          "properties": [
+            "Flat"
+          ]
+        },
+        {
+          "component": "sbtnPrint",
+          "properties": [
+            "Flat"
+          ]
+        },
+        {
+          "component": "sbtnGrTime",
+          "properties": [
+            "Flat"
+          ]
+        },
+        {
+          "component": "sbtnPageSetup",
+          "properties": [
+            "Flat"
+          ]
+        },
+        {
+          "component": "sbtnMgraph",
+          "properties": [
+            "Flat"
+          ]
+        },
+        {
+          "component": "sbtnSonar",
+          "properties": [
+            "Flat"
+          ]
+        },
+        {
+          "component": "sbtnDebug2",
+          "properties": [
+            "Flat"
+          ]
+        },
+        {
+          "component": "sbtnDB",
+          "properties": [
+            "Flat"
+          ]
+        },
+        {
+          "component": "sbtnTCP",
+          "properties": [
+            "Flat"
+          ]
+        },
+        {
+          "component": "sbtnWrite",
+          "properties": [
+            "Flat"
+          ]
+        },
+        {
+          "component": "ComboBoxStd",
+          "properties": [
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "Panel1",
+          "properties": [
+            "Color",
+            "BevelOuter"
+          ]
+        },
+        {
+          "component": "PaintBoxDyp",
+          "properties": [
+            "Color"
+          ]
+        },
+        {
+          "component": "Panel4",
+          "properties": [
+            "Color",
+            "BevelOuter"
+          ]
+        },
+        {
+          "component": "Panel2",
+          "properties": [
+            "Color",
+            "BevelOuter",
+            "BorderStyle"
+          ]
+        },
+        {
+          "component": "btnCommSetup",
+          "properties": [
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "btnDownload",
+          "properties": [
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "btnLogReadout",
+          "properties": [
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "Panel3",
+          "properties": [
+            "Color",
+            "BevelOuter",
+            "BorderStyle"
+          ]
+        },
+        {
+          "component": "PaintBoxTerm",
+          "properties": [
+            "Color",
+            "Font.Name",
+            "Font.Color"
+          ]
+        },
+        {
+          "component": "PanelGPS",
+          "properties": [
+            "Color",
+            "BevelOuter"
+          ]
+        },
+        {
+          "component": "memComm",
+          "properties": [
+            "Color",
+            "Font.Name",
+            "Font.Color"
+          ]
+        },
+        {
+          "component": "Edit1",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "PaintBoxLst",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "PaintBoxAvg",
+          "properties": [
+            "Color"
+          ]
+        },
+        {
+          "component": "Panel5",
+          "properties": [
+            "Color",
+            "BevelOuter"
+          ]
+        },
+        {
+          "component": "Panel6",
+          "properties": [
+            "Color",
+            "BevelOuter"
+          ]
+        },
+        {
+          "component": "Panel7",
+          "properties": [
+            "Color",
+            "BevelOuter"
+          ]
+        },
+        {
+          "component": "lbTcpRead",
+          "properties": [
+            "Font.Name",
+            "HeaderFont.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TIPSETUPDLG",
+      "components": [
+        {
+          "component": "IpSetupDlg",
+          "properties": [
+            "Font.Name",
+            "Color"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TMARGINDLG",
+      "components": [
+        {
+          "component": "MarginDlg",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TOPTPRMDLG",
+      "components": [
+        {
+          "component": "OptPrmDlg",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TPHONEDIALOG",
+      "components": [
+        {
+          "component": "PhoneDialog",
+          "properties": [
+            "Font.Name",
+            "Color"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TPOSDLG",
+      "components": [
+        {
+          "component": "PosDlg",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TRECALCDLG",
+      "components": [
+        {
+          "component": "ReCalcDlg",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "TabbedNotebook1",
+          "properties": [
+            "Font.Name",
+            "TabFont.Name"
+          ]
+        },
+        {
+          "component": "Panel1",
+          "properties": [
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TREFLINEDLG",
+      "components": [
+        {
+          "component": "RefLineDlg",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "Label1",
+          "properties": [
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TSCALEDIALOG",
+      "components": [
+        {
+          "component": "ScaleDialog",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TSELECTDLG",
+      "components": [
+        {
+          "component": "SelectDlg",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        },
+        {
+          "component": "ComboBox1",
+          "properties": [
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TSONAROUTPUTDLG",
+      "components": [
+        {
+          "component": "SonarOutputDlg",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TSPLITFILEDLG",
+      "components": [
+        {
+          "component": "SplitFileDlg",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TSTDTEMPDIALOG",
+      "components": [
+        {
+          "component": "StdTempDialog",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TSURFERDLG",
+      "components": [
+        {
+          "component": "SurferDlg",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TSURFERSELDLG",
+      "components": [
+        {
+          "component": "SurferSelDlg",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    },
+    {
+      "form": "TTIDEEXPORTDLG",
+      "components": [
+        {
+          "component": "TideExportDlg",
+          "properties": [
+            "Color",
+            "Font.Name"
+          ]
+        }
+      ]
+    }
+  ]
+}

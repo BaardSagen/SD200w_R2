@@ -1,0 +1,6 @@
+{
+  "output": "SD200W_SAIV_OSU107_Detect_Rows.exe",
+  "sha256": "82ef2786a59cd4d89f82b47102bfb71652a1d49d8b58a582753114ba180421f1",
+  "rva": 2363392,
+  "behavior": "Recognized SD200 row: light green and black text, including when selected. Other rows retain original colors."
+}

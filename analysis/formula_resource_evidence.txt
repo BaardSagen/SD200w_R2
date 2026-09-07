@@ -1,0 +1,145 @@
+0x50ad90 Do you want to recalculate sound velocity for this STDc-file
+0x50b0e5 This file is renamed
+0x50b654 Save converted file as
+0x50b685 This file already exists.
+0x50b6a9 Do you want to replace it?
+0x50b6d0 Computing conductivity
+0x50b6f0 Computing salinity
+0x50b71c Computing sound velocity
+0x50ba60 Save converted file as
+0x50ba91 This file already exists.
+0x50bab5 Do you want to replace it?
+0x50badc Correcting conductivity
+0x50bafc Correcting salinity
+0x50bb18 Computing sound velocity
+0x50bec4 Error in Depth(s,c,t,p)
+0x50ce7c Error in Depth(Array[
+0x53cb48 This instrument|{instprf}{inst}*.txt|All instruments|{instprf}*.txt|Text file|*.txt|All files|*.*
+0x53cc14 SAIV 1/x formula
+0x53cc30 Linear formula
+0x53da2c yyyymmdd_hhnnss
+0x53da64 " exists. Overwrite?
+0x53db98 SAIV 1/x formula {
+0x53dbb4 Linear formula {
+0x5fd1b6 BtnFreeGraphClick
+0x5fd251 7777777388888883p
+0x5fd271 0333333383333333p
+0x5fd295 333383333333pyyywwww
+0x5fd2b6 33383333333p333
+0x5fd2d8 383333333pwwwywyw
+0x5fd2f1 0333333383333333p3333333
+0x5fd30a 33333330333333383333333pwwwwwww
+0x5fd331 33333333333333333333333333333333
+0x5fd3ec PageControl1Change
+0x5fd45e Calibration coefficients:
+0x5fd566 Instrument number:
+0x5fd5b2 Resistor value from STD
+0x5fda8d CalcBtn3Click
+0x5fdfa5 CalcBtn4Click
+0x5fe1cb PrintBtn2Click
+0x5fe3e3 FileBtn1Click
+0x5fe9be WriteBtn1Click
+0x5fec57 FileBtnDayClick
+0x5ff205 DefaultColWidth
+0x5ff218 DefaultRowHeight
+0x5ff23f goFixedVertLine
+0x5ff24f goFixedHorzLine
+0x5ff292 goAlwaysShowEditor
+0x5ff2e7 sgTemp4RowMoved
+0x5ff305 sgTemp4SelectCell
+0x5ff3d0 4 coefficients
+0x5ff3f3 cb4coeffClick
+0x5ff476 cbKelvinCelsius
+0x5ff4af Old Kelvin constant
+0x5ff4d7 cbKelvinCelsiusClick
+0x5ff54d cbLSQFITClick
+0x5ff5c9 btnInstOpenTClick
+0x5ff664 33333333333333333333333333333333333333333333333333333333333333333333333?
+0x5ff79e 33333333333333333333333333333333333333333333333333333333333333333333333333333333333333
+0x5ff832 Conductivity3p
+0x5ff884 Instrument number:
+0x5ff8d0 Calibration coefficients:
+0x5ff9d8 Conductivity factor from STD
+0x5ffa6a Conductivity measured
+0x5ffe83 CalcBtn1Click
+0x60036d CalcBtn2Click
+0x600593 PrintBtn1Click
+0x6007a8 WriteBtn2Click
+0x6009d3 FileBtn2Click
+0x600fb0 FileBtnDayClick
+0x60153b Conductivity4+p
+0x60158f Instrument number:
+0x601632 Calibration coefficients:
+0x602370 33333333333333333333333333333333333333333333333333333333333333333333333?
+0x6024aa 33333333333333333333333333333333333333333333333333333333333333333333333333333333333333
+0x602516 sbShowRefClick
+0x6025e7 33333333333333333333333333333333333333333333333333333333333333333333333?
+0x602721 33333333333333333333333333333333333333333333333333333333333333333333333333333333333333
+0x60278d sbShowInstClick
+0x60285d CalcBtn5Click
+0x602b6d FileBtn2Click
+0x603148 WriteBtn2Click
+0x60340a PrintBtn1Click
+0x603616 CalcBtn2Click
+0x603865 csDropDownList
+0x603896 cbFormulaChange
+0x6038a6 Items.Strings
+0x6038b6 a+bx+cx^2+dx^3
+0x6038d1 1/(a+bx^2.5+c/x)
+0x603a0a DefaultColWidth
+0x603a1d DefaultRowHeight
+0x603a44 goFixedVertLine
+0x603a54 goFixedHorzLine
+0x603a97 goAlwaysShowEditor
+0x603aec sgCond4RowMoved
+0x603b0a sgCond4SelectCell
+0x603c5c FileBtnDayClick
+0x604206 Read ref inst C
+0x60422a btnReadRefClick
+0x604277 Read cal inst N
+0x60429b btnReadCalClick
+0x604319 btnInstOpen1Click
+0x6043b4 33333333333333333333333333333333333333333333333333333333333333333333333?
+0x6044ee 33333333333333333333333333333333333333333333333333333333333333333333333333333333333333
+0x604e1d DefaultColWidth
+0x604e2f DefaultRowHeight
+0x604e88 Read ref inst C
+0x604eac btnCmpRefClick
+0x604ef8 Read calibrated inst C
+0x604f23 btnCmpCalClick
+0x604f9a Instrument number:
+0x60503d Constraints.MaxHeight
+0x605055 Constraints.MaxWidth
+0x60506d DefaultColWidth
+0x60507f DefaultRowHeight
+0x605092 DefaultDrawing
+0x6050ab goFixedVertLine
+0x6050bb goFixedHorzLine
+0x6050f2 goAlwaysShowEditor
+0x60511d sgDriftDrawCell
+0x60517b sgDriftSelectCell
+0x6051a6 THeaderControl
+0x60521a taRightJustify
+0x60525b taRightJustify
+0x60529c taRightJustify
+0x6052dd taRightJustify
+0x60531d taRightJustify
+0x6053b8 Items.Strings
+0x6053e7 rgDriftTempClick
+0x605481 SaveBtnDriftClick
+0x605a79 LoadBtnDriftClick
+0x605b14 33333333333333333333333333333333333333333333333333333333333333333333333?
+0x605c4e 33333333333333333333333333333333333333333333333333333333333333333333333333333333333333
+0x605d46 CalcBtn7Click
+0x614c61 TdlgDepthType
+0x614caa Depth calculation
+0x614ceb Constraints.MinHeight
+0x614d10 OldCreateOrder
+0x614d2a poScreenCenter
+0x614d5f PixelsPerInch
+0x614eea Show depth/pressure
+0x614efe Items.Strings
+0x614f0e Pressure dbar (no calc.)
+0x614f28 Depth (Unesco 1983)
+0x614f3c -Depth = P/(Density x Gravity)  Fixed position
+0x614f6b (Depth = P/(Density x Gravity)  Profiling

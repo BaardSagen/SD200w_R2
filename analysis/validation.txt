@@ -1,0 +1,20 @@
+Final build validation, 2026-09-07
+
+Patched EXE SHA-256:
+7279a7e1dd73227b47574ef2d2ff820f423c69021d5b08b8ea6bd2cb56cc22e4
+
+python analysis/test_guard.py
+Ran 10 tests in 48.087s: OK.
+
+Covered: full disk-mode response, deferred cancellation message, repeat clicks,
+normal measurement responses, original cancellation/success branches, Log button,
+COM/Aux reset isolation, partial responses, all chunk boundaries, case/whitespace
+variants, overlapping prefixes, randomized streams, relocation to another base,
+stack/register preservation, PE checksum and unchanged original sections/resources.
+
+Windows loader check: PASS. Created modified EXE with CREATE_SUSPENDED and a hidden
+startup window, read its runtime image base from the WOW64 PEB, and verified every
+payload byte in the mapped process. Terminated that owned process without resuming
+the initial thread. No application code or COM operations were executed.
+
+Not verified: complete GUI execution or communication with a physical instrument.

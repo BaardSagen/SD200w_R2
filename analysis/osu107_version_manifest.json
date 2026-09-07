@@ -1,0 +1,6 @@
+{
+  "output": "SD200W_SAIV_OSU107.exe",
+  "version": "Version: 1.0 OSU107 Sept.2026",
+  "sha256": "f441885eaa7ed3eecb2c6a7d73972a912b20bb7927c5531496325c38dfca45e9",
+  "validation": "Only About version caption, its startup setter, resource size and checksum changed; all earlier patches preserved."
+}

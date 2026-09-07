@@ -1,0 +1,18 @@
+{
+  "output": "SD200W_SAIV_OSU107_Detect_Green.exe",
+  "sha256": "97186b304ad9c3c0548fc034435361ff276b42c1fd300a46ddd44df05c993d7a",
+  "rva": 2359296,
+  "symbols": {
+    ".bss": 0,
+    ".data": 0,
+    ".text": 0,
+    "refresh": 0,
+    "reset": 16,
+    "update_color": 34,
+    "scan": 56,
+    "next": 74,
+    "green_color": 82,
+    "apply_color": 87,
+    "RVA": 2359296
+  }
+}

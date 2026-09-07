@@ -1,0 +1,145 @@
+{
+  "result": "PASS",
+  "cases": [
+    {
+      "base": "0x400000",
+      "attempts": [
+        {
+          "baud": 9600,
+          "parity": "n"
+        },
+        {
+          "baud": 9600,
+          "parity": "e"
+        },
+        {
+          "baud": 4800,
+          "parity": "n"
+        },
+        {
+          "baud": 4800,
+          "parity": "e"
+        },
+        {
+          "baud": 2400,
+          "parity": "n"
+        },
+        {
+          "baud": 2400,
+          "parity": "e"
+        },
+        {
+          "baud": 19200,
+          "parity": "n"
+        },
+        {
+          "baud": 19200,
+          "parity": "e"
+        },
+        {
+          "baud": 38400,
+          "parity": "n"
+        },
+        {
+          "baud": 38400,
+          "parity": "e"
+        },
+        {
+          "baud": 1200,
+          "parity": "n"
+        },
+        {
+          "baud": 1200,
+          "parity": "e"
+        },
+        {
+          "baud": 600,
+          "parity": "n"
+        },
+        {
+          "baud": 600,
+          "parity": "e"
+        },
+        {
+          "baud": 300,
+          "parity": "n"
+        },
+        {
+          "baud": 300,
+          "parity": "e"
+        }
+      ],
+      "stops_after_full_pass": true
+    },
+    {
+      "base": "0x1400000",
+      "attempts": [
+        {
+          "baud": 9600,
+          "parity": "n"
+        },
+        {
+          "baud": 9600,
+          "parity": "e"
+        },
+        {
+          "baud": 4800,
+          "parity": "n"
+        },
+        {
+          "baud": 4800,
+          "parity": "e"
+        },
+        {
+          "baud": 2400,
+          "parity": "n"
+        },
+        {
+          "baud": 2400,
+          "parity": "e"
+        },
+        {
+          "baud": 19200,
+          "parity": "n"
+        },
+        {
+          "baud": 19200,
+          "parity": "e"
+        },
+        {
+          "baud": 38400,
+          "parity": "n"
+        },
+        {
+          "baud": 38400,
+          "parity": "e"
+        },
+        {
+          "baud": 1200,
+          "parity": "n"
+        },
+        {
+          "baud": 1200,
+          "parity": "e"
+        },
+        {
+          "baud": 600,
+          "parity": "n"
+        },
+        {
+          "baud": 600,
+          "parity": "e"
+        },
+        {
+          "baud": 300,
+          "parity": "n"
+        },
+        {
+          "baud": 300,
+          "parity": "e"
+        }
+      ],
+      "stops_after_full_pass": true
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "result": "PASS",
+  "cases": [
+    {
+      "base": "0x400000",
+      "mode": "normal",
+      "calls": [
+        "normal_modal"
+      ]
+    },
+    {
+      "base": "0x400000",
+      "mode": "cancel",
+      "calls": [
+        "initialize",
+        "detect"
+      ]
+    },
+    {
+      "base": "0x400000",
+      "mode": "accept",
+      "calls": [
+        "initialize",
+        "detect",
+        "commit"
+      ]
+    },
+    {
+      "base": "0x1400000",
+      "mode": "normal",
+      "calls": [
+        "normal_modal"
+      ]
+    },
+    {
+      "base": "0x1400000",
+      "mode": "cancel",
+      "calls": [
+        "initialize",
+        "detect"
+      ]
+    },
+    {
+      "base": "0x1400000",
+      "mode": "accept",
+      "calls": [
+        "initialize",
+        "detect",
+        "commit"
+      ]
+    }
+  ]
+}

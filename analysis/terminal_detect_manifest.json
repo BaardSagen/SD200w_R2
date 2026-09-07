@@ -1,0 +1,34 @@
+{
+  "output": "SD200W_SAIV_OSU107_Detect.exe",
+  "sha256": "506e1b5097bedf27c1c2a03a7f0fa111f14dd41aacb759f41a9968369734cbbe",
+  "rva": 2355200,
+  "symbols": {
+    ".bss": 0,
+    ".data": 0,
+    ".text": 0,
+    "entry": 0,
+    "modal_bridge": 26,
+    "detect": 55,
+    "cancelled": 122,
+    "finish": 127,
+    "setup_focus": 130,
+    "no_focus": 142,
+    "direct": 143,
+    "RVA": 2355200
+  },
+  "patches": [
+    {
+      "address": "0x5a54a4",
+      "target": "entry"
+    },
+    {
+      "address": "0x5a10c2",
+      "target": "modal_bridge"
+    },
+    {
+      "address": "0x5132ed",
+      "target": "setup_focus"
+    }
+  ],
+  "behavior": "Detect under Print uses existing search dialog, commits only on acceptance; Setup Detect remains unchanged."
+}

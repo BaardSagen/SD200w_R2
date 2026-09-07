@@ -1,0 +1,237 @@
+[
+  {
+    "formula": "sound_velocity",
+    "args": [
+      0,
+      15,
+      35
+    ],
+    "binary": 1506.663262608542,
+    "reconstructed": 1506.6632626085423
+  },
+  {
+    "formula": "density_anomaly",
+    "args": [
+      0,
+      15,
+      35
+    ],
+    "binary": 25.97275386538328,
+    "reconstructed": 25.972753865383083
+  },
+  {
+    "formula": "sigma_t",
+    "args": [
+      15,
+      35
+    ],
+    "binary": 25.97275386538326,
+    "reconstructed": 25.972753865383083
+  },
+  {
+    "formula": "legacy_sigma",
+    "args": [
+      0,
+      15,
+      35
+    ],
+    "binary": 25.990081984929077,
+    "reconstructed": 25.990081984929077
+  },
+  {
+    "formula": "sound_velocity",
+    "args": [
+      0,
+      0,
+      0
+    ],
+    "binary": 1402.388,
+    "reconstructed": 1402.388
+  },
+  {
+    "formula": "density_anomaly",
+    "args": [
+      0,
+      0,
+      0
+    ],
+    "binary": -0.157406,
+    "reconstructed": -0.15740600000003724
+  },
+  {
+    "formula": "sigma_t",
+    "args": [
+      0,
+      0
+    ],
+    "binary": -0.15740600000003724,
+    "reconstructed": -0.15740600000003724
+  },
+  {
+    "formula": "legacy_sigma",
+    "args": [
+      0,
+      0,
+      0
+    ],
+    "binary": -0.09345363317982162,
+    "reconstructed": -0.09345363317982197
+  },
+  {
+    "formula": "sound_velocity",
+    "args": [
+      100,
+      8,
+      32
+    ],
+    "binary": 1480.3900033749287,
+    "reconstructed": 1480.390003374929
+  },
+  {
+    "formula": "density_anomaly",
+    "args": [
+      100,
+      8,
+      32
+    ],
+    "binary": 25.376992971749043,
+    "reconstructed": 25.376992971748905
+  },
+  {
+    "formula": "sigma_t",
+    "args": [
+      8,
+      32
+    ],
+    "binary": 24.91882062970226,
+    "reconstructed": 24.918820629702168
+  },
+  {
+    "formula": "legacy_sigma",
+    "args": [
+      100,
+      8,
+      32
+    ],
+    "binary": 24.943386030150197,
+    "reconstructed": 24.9433860301502
+  },
+  {
+    "formula": "sound_velocity",
+    "args": [
+      1000,
+      20,
+      35
+    ],
+    "binary": 1538.1161454020735,
+    "reconstructed": 1538.1161454020735
+  },
+  {
+    "formula": "density_anomaly",
+    "args": [
+      1000,
+      20,
+      35
+    ],
+    "binary": 29.087115066672997,
+    "reconstructed": 29.087115066672823
+  },
+  {
+    "formula": "sigma_t",
+    "args": [
+      20,
+      35
+    ],
+    "binary": 24.76300499427553,
+    "reconstructed": 24.763004994275434
+  },
+  {
+    "formula": "legacy_sigma",
+    "args": [
+      1000,
+      20,
+      35
+    ],
+    "binary": 24.780840608730426,
+    "reconstructed": 24.780840608730422
+  },
+  {
+    "formula": "sound_velocity",
+    "args": [
+      4000,
+      2,
+      40
+    ],
+    "binary": 1531.9453539915671,
+    "reconstructed": 1531.945353991567
+  },
+  {
+    "formula": "density_anomaly",
+    "args": [
+      4000,
+      2,
+      40
+    ],
+    "binary": 49.877975901486366,
+    "reconstructed": 49.87797590148625
+  },
+  {
+    "formula": "sigma_t",
+    "args": [
+      2,
+      40
+    ],
+    "binary": 31.98223063936148,
+    "reconstructed": 31.982230639361433
+  },
+  {
+    "formula": "legacy_sigma",
+    "args": [
+      4000,
+      2,
+      40
+    ],
+    "binary": 32.000553700141275,
+    "reconstructed": 32.000553700141275
+  },
+  {
+    "formula": "salinity",
+    "args": [
+      42.914,
+      15,
+      0
+    ],
+    "binary": 34.99999992412808,
+    "reconstructed": 34.99999992412808
+  },
+  {
+    "formula": "salinity",
+    "args": [
+      0,
+      20,
+      0
+    ],
+    "binary": 0.0,
+    "reconstructed": 0.0
+  },
+  {
+    "formula": "salinity",
+    "args": [
+      30,
+      10,
+      100
+    ],
+    "binary": 26.82414973414006,
+    "reconstructed": 26.824149734140065
+  },
+  {
+    "formula": "salinity",
+    "args": [
+      50,
+      20,
+      1000
+    ],
+    "binary": 36.357615121365036,
+    "reconstructed": 36.35761512136504
+  }
+]

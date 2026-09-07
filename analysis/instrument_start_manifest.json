@@ -1,0 +1,7 @@
+{
+  "source": "SD200W_SAIV_OSU107_final.exe",
+  "output": "SD200W_SAIV_OSU107_Instrument.exe",
+  "sha256": "8e307770e7f24dcd8f1a66e842d14be8d576dec2b80f87474495a808a9cf63b0",
+  "startup_page": 2,
+  "validation": "Startup selects the same Notebook and page as the Instrument toolbar button. Only one code byte and the PE checksum changed. All earlier modifications preserved."
+}

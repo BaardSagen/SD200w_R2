@@ -1,0 +1,1060 @@
+0x481bb8 Depth Axis
+0x481cd4 Calculate %s every:
+0x48d5ed TChartDepthAxis
+0x48d602 TChartDepthAxis
+0x49bb9d DepthAxis<.H
+0x4a1a39 Depth
+0x4a1fe5 Depth
+0x4a5af0 Salinity
+0x4ac009 TMonthCalColors
+0x4ac01e TMonthCalColors
+0x4ac615 CalColors81C
+0x4c97df LightDepth
+0x4c9804 ShadowDepth
+0x4d6fe3 itColorDepth
+0x50ad90 Do you want to recalculate sound velocity for this STDc-file
+0x50b6d0 Computing conductivity
+0x50b6f0 Computing salinity
+0x50b71c Computing sound velocity
+0x50badc Correcting conductivity
+0x50bafc Correcting salinity
+0x50bb18 Computing sound velocity
+0x50bec4 Error in Depth(s,c,t,p)
+0x50ce7c Error in Depth(Array[
+0x50fae9 Oxygen (
+0x50fc51 Oxygen (
+0x512543 lblCalcBarPressUnit
+0x512579 chkCalcValues
+0x51258d edtCalcBarPress
+0x5125b7 edtCalcSal
+0x5155d8 DisplayCalc
+0x51561c CalcBarPressHg
+0x515634 CalcSal
+0x516779 cbMask0Depth
+0x516910 cbMask0DepthClick
+0x516ccc Mask measurements with depth less than 
+0x516d08 Mask0Depth
+0x517670 Mask measurements with depth less than 
+0x517c60 Mask0Depth
+0x51f3dc Polynomial degree must be between 1 and 20
+0x51f938 Depth
+0x527ad8 Recovering salinity in measurement nr. 
+0x527b08 Recovering conductivity in measurement nr. 
+0x527b70 Recovering depth in measurement nr. 
+0x527ba0 Recovering sound velocity in measurement nr. 
+0x527bd8 Recovering oxygen in measurement nr. 
+0x533bab CalcBtn38
+0x533c13 CalcBtn4X
+0x533d86 CalcBtn1
+0x533dfd CalcBtn2
+0x533f39 CalcBtn5@
+0x533fba CalcBtn6d
+0x533fd6 cbFormulal
+0x534250 CalcBtn7
+0x5344da CalcBtn3Click
+0x53452d CalcBtn1Click
+0x534541 CalcBtn4Click
+0x534555 CalcBtn2Click
+0x53462a CalcBtn5Click
+0x53467c cbFormulaChange
+0x534790 btnReadCalClick
+0x5347bb btnCmpCalClick
+0x534911 CalcBtn7Click
+0x5373f0 Conductivity
+0x53b2a4 Conductivity calibration from RAW data.
+0x53cbb4 InstCalC_
+0x53cbec 3p formula
+0x53cc00 2p formula
+0x53cc14 SAIV 1/x formula
+0x53cc30 Linear formula
+0x53da0c InstCalC_
+0x53da98 2p formula
+0x53db0c 3p formula {
+0x53db80 2p formula {
+0x53db98 SAIV 1/x formula {
+0x53dbb4 Linear formula {
+0x53f4b0 !Change coefficient: Y/N  Menu: <G>!
+0x53f4e0 !Save coefficients in back-up: Y/N!
+0x53f9b8 !Change coefficient: Y/N  Menu: <G>!
+0x53f9e8 !Save coefficients in back-up: Y/N!
+0x542a30 Calculated
+0x542aac Conductivity
+0x542ac4 Conductivity. ssq=
+0x544569 Formula
+0x553d2f edtDepth
+0x55bef4 , Salinity: 
+0x563a3d Oxygen 
+0x564fd5 cbDepth
+0x565234 Oxygen saturation
+0x56655f EditDepth
+0x5671cc Depth
+0x56b504 Salinity
+0x56dd78 SD200StdDepth
+0x56df84 CalcBtn1
+0x56e009 CalcBtn2$
+0x56e0c7 CalcBtn3\
+0x56e128 CalcBtn4x
+0x56e1d7 CalcBtn1Click
+0x56e1eb CalcBtn2Click
+0x56e232 CalcBtn3Click
+0x56e257 CalcBtn4Click
+0x56e28d TReCalcDlg
+0x56e2b6 TReCalcDlg
+0x56e2cb Recalcdl
+0x57030c Invalid data in depth field.
+0x570348 SD200StdDepthSect
+0x571499 Multigraph oxygen 
+0x571641 rgDepthType
+0x571680 TdlgDepthType
+0x57169e TdlgDepthType8
+0x5716b6 UdlgDepthType
+0x5718e7 edtMaxDepth
+0x5731b3 EdtMaxDepth\
+0x5731c5 edtMinDepth`
+0x575168 !Change coefficient: Y/N  Menu: <G>!Change: Y/N!
+0x5751a4 !Save coefficients in back-up: Y/N!
+0x575230 Reading old coefficients: 
+0x5756ac !Change coefficient: Y/N  Menu: <G>!Change: Y/N!
+0x5756e8 !Save coefficients in back-up: Y/N!
+0x575714 Writing coefficients: 
+0x576213 edtMinDepth
+0x57624e TdlgSetMinDepthMask
+0x576276 TdlgSetMinDepthMask
+0x576294 udlgSetMinDepthMask
+0x57711c Depth: 
+0x577bc0 Depth: No data
+0x577bd8 Depth: 
+0x578b74 MinDepth
+0x578b88 MaxDepth
+0x579114 MinDepth
+0x579128 MaxDepth
+0x580c54 Auto adjust salinity and sound velocity from temperature and pressure offset
+0x580cac Auto adjust sound velocity from temperature and pressure offset
+0x580cf4 Auto adjust salinity from temperature and pressure offset
+0x586854 Air pressure
+0x58686c Salinity
+0x58aa28 CALC, SD204 S/N 
+0x58aa44  SOUND VELOCITY PROFILER
+0x58ab14 DEPTH (M) VELOCITY (M/S)   TEMP (C)
+0x58ab40 CALC,3097,14-05-1993,1,meters
+0x58ab68 AML SOUND VELOCITY PROFILER S/N:3097
+0x58abb8 DEPTH OFFSET (M):-0001.6
+0x58abdc DEPTH (M) VELOCITY (M/S) TEMP (C)
+0x58ac40 ( SoundVelocity 1.01 
+0x58aeb8 Atmosphere pressure = 
+0x58af04 pressure
+0x58af34 speed of sound
+0x58af4c Depth
+0x58b0c8 No sound velocity data in file!
+0x58c198     <PROBETYPE> SD204 Sound Velocity Probe </PROBETYPE>
+0x58c1d8     <TERMINALDEPTH> 
+0x58c1f8  </TERMINALDEPTH>
+0x58c214     <NUMDEPTHS> 
+0x58c230  </NUMDEPTHS>
+0x58c248     <DATA COLUMNS="Depth Temperature Salinity SoundVelocity">
+0x58c2dc Only valid for instruments with Salinity,
+0x58c306 Temperature and Sound Velocity measurements included.
+0x58cee0 Only valid for instruments with Salinity,
+0x58cf0a Temperature and Sound Velocity measurements included.
+0x58dc84 Salinity: 
+0x591230 File with Oxygen data (
+0x5932e2 mnuExStdDepth
+0x593355 mpopSoundVel1
+0x593369 mpopOxygen1
+0x59337b mpopDepth1
+0x59339c mnuDepth
+0x5933ab mnuSalinity1
+0x5933be mnuSoundVel1
+0x5933d1 mnuOxygen1
+0x593404 sbtnGrDepth
+0x593458 mnuSalinity2
+0x59346b mpopSalinity3
+0x59347f mpopSalinity2
+0x593493 mnuSoundVel2
+0x5934a6 mpopSoundVel2
+0x5934ba mpopSoundvel3
+0x5934ce mpopOxygen2
+0x5934e0 mpopOxygen3
+0x5934f2 mnuOxygen2
+0x593581 mnuComputeSoundV8
+0x593598 mnuDensity<
+0x59371e mnuStdDepth
+0x593741 mpopStdDepth2
+0x593768 mpopDepth2
+0x5937ee mpopStdDepth1
+0x593865 mnuStdDepthSect
+0x59387b mpopStdDepthSect2
+0x593893 mpopStdDepthSect1
+0x5938ab mnuExStdDepthSect
+0x5938c3 mnuChangestandarddepthsections
+0x593922  mnuConvertconductivitytosalinity
+0x593a08 mnuGrDepth0
+0x593a19 mpopGrDepth14
+0x593abf mnuChangeStdDepthsX
+0x593ad8 mnuRecalculateCal\
+0x593ba0 mnuShowDepth
+0x593bfc mnuAvgInStdDepthSect
+0x593d82 mnuCalcdensity
+0x593faa mnuConductivity1t
+0x593fc1 mnuConductivity2x
+0x593fd8 mpopConductivity2|
+0x593ff0 mpopConductivity3
+0x594019 %CORRECTWRONGSALINITYCONDUCTIVITYDATA1
+0x594046 Selectoxygenunit1
+0x59405e Rinkooxygencalibration1
+0x5940ad Setminimumdepthmask1
+0x594176 MenuDepthClick!
+0x5941ec sbtnGrDepthClick
+0x594302 MenuDepthTimeClick
+0x594457 mnuExStdDepthClick
+0x59449d mnuComputeSoundVClick
+0x5944d1 mnuChangeStdDepthsClick
+0x5944ef mnuRecalculateCalClick
+0x5945a6 mnuDensityClick
+0x594717 mnuStdDepthSectClick
+0x594732 mnuExStdDepthSectClick
+0x594761 #mnuChangestandarddepthsectionsClick
+0x5947b3 %mnuConvertconductivitytosalinityClick
+0x59494f mnuShowDepthClick
+0x594998 mnuAvgInStdDepthSectClick
+0x594ac6 mnuCalcdensityClick
+0x594c7f *CORRECTWRONGSALINITYCONDUCTIVITYDATA1Click
+0x594cb1 Selectoxygenunit1Click#
+0x594cce Rinkooxygencalibration1Click%
+0x594d16 Setminimumdepthmask1Click
+0x597b20 Density
+0x597b30 ShowCalcdensity
+0x597bdc DepthType
+0x597bf0 DepthInMeters
+0x597c08 AvgInStdDepthSect
+0x597c64 SD200StdDepth
+0x597c88 SD200StdDepthSect
+0x597e68 MultigraphOxygen
+0x59816c DisplayCalc
+0x5981a0 CalcBarPressHg
+0x5981c4 CalcSal
+0x5987ac Density
+0x598814 DepthInMeters
+0x59882c AvgInStdDepthSect
+0x598894 DepthType
+0x59aa20 Density 
+0x59aa34 SigmaT 
+0x59aa44 Density * 
+0x59aa58 SigmaT * 
+0x59aa78 Depth 
+0x59be69 Density
+0x59be71 Density *
+0x59be84 Sound &velocity / Density
+0x59bea1 Sigma T
+0x59beb1 Sigma T *
+0x59becc Sound &velocity / Sigma T
+0x59ccb1 Depth(u)
+0x59ccbd Depth(d)
+0x59ccc9 Depth(dp)
+0x59ccd5 Depth
+0x59ce7c , Salinity: 
+0x59d468 Update barometric pressure
+0x59d48c &Update barometric pressure...
+0x59d4ac .Update barometric pressure for calculating Ox 
+0x59d500 Update barometric pressure / salinity / Chart Datum (dbar)
+0x59d544 &Update barometric pressure / salinity / Chart Datum...
+0x59d57c [ from percent saturation, salinity for instruments not measuring this value and Chart Datum
+0x59d5e0 Conv&ert conductivity to salinity
+0x59d60c Conv&ert salinity to conductivity
+0x5a060c Air pressure
+0x5a0624 Depth
+0x5a064d  and Temperature / depth graph
+0x5a06ac &Temperature / Air pressure
+0x5a06d0 Temperature and Air pressure/ depth graph
+0x5a0704 Temperature and Air pressure/ time graph
+0x5a0738 Temperature and Air pressure graph
+0x5a0764 &Pressure
+0x5a0778 Temperature / depth graph
+0x5a079c Air pressure / time graph
+0x5a07c0 Air pressure graph
+0x5a082d Sound &velocity
+0x5a083d Sound velocity
+0x5a084d  / sigma T
+0x5a0859  and sigma T
+0x5a0875 Sigma T
+0x5a087d  / depth graph
+0x5a8450 MultigraphOxygen
+0x5ab654 This function will adjust salinity values upwards to correct errors made by SD200W program when reading old file.
+0x5ab6d0 This function will adjust conductivity values downwards to correct errors made by SD200W program when reading old file..
+0x5ad698 Data missing for some depths.
+0x5ad6f8 Sound velocity is not valid for this file
+0x5afee9 Salinity
+0x5aff25 Conductivity
+0x5affd9 Oxygen (mg/l)
+0x5b0015 Oxygen (ml/l)
+0x5b01f5 Sigma T
+0x5b0231 Sound velocity
+0x5b026d Depth
+0x5b0282 Depth
+0x5b0489 Pressure
+0x5cbff4 sndPlaySoundA
+0x5faff3 udlgSetMinDepthMask
+0x5fb20a ^Recalcdl
+0x5fb242 UdlgDepthType
+0x5fbbf7 $STD/CTD Sound Vel. probe SD204/SD208
+0x5fc5f5 Update barometric pressure
+0x5fc7ae )Barometric pressure for mg Ox calculation
+0x5fc882 7Salinity for instruments that do not measure this value
+0x5fd45e Calibration coefficients:
+0x5fda20 CalcBtn3
+0x5fda8d CalcBtn3Click
+0x5fdf41 CalcBtn4
+0x5fdfa5 CalcBtn4Click
+0x5fe199 Calc+&Print
+0x5ff3d0 4 coefficients
+0x5ff832 Conductivity3p
+0x5ff8d0 Calibration coefficients:
+0x5ff9d8 Conductivity factor from STD
+0x5ffa6a Conductivity measured
+0x5ffe1d CalcBtn1
+0x5ffe83 CalcBtn1Click
+0x600310 CalcBtn2
+0x60036d CalcBtn2Click
+0x600561 Calc+&Print
+0x60153b Conductivity4+p
+0x601632 Calibration coefficients:
+0x601840 Formula:
+0x6027f7 CalcBtn5
+0x60285d CalcBtn5Click
+0x6033d8 Calc+&Print
+0x6035b9 CalcBtn6
+0x603616 CalcBtn2Click
+0x603834 cbFormula
+0x603896 cbFormulaChange
+0x60429b btnReadCalClick
+0x604f23 btnCmpCalClick
+0x605cce CalcBtn7
+0x605d46 CalcBtn7Click
+0x60988f Calc values
+0x6098e7 Calculated values setup
+0x609942 Use barometric pressure:
+0x609964 lblCalcBarPressUnit
+0x6099de (Salinity if not supported by instrument:
+0x609ad6 chkCalcValues
+0x609b0c Display calculated values
+0x609b39 edtCalcBarPress
+0x609bb4 4Use barometric pressure from instrument if received 
+0x609c19 edtCalcSal
+0x609e57 Computing sound velocity
+0x609ee1 Change standard depth sections
+0x60a1cd Depths from:
+0x60a438 Depths from:
+0x60a68c Depths from:
+0x60b6da cbDepth
+0x60bd5d Min depth (APB5)
+0x60bdc0 Max depth (APB5)
+0x60c16f EdtMaxDepth
+0x60c1b6 edtMinDepth
+0x612f88 Multigraph salinity color:
+0x61333d Multigraph oxygen color:
+0x613513  Multigraph sound velocity color:
+0x613ce5 Multigraph oxygen value color:
+0x613f15  Multigraph sigmaT/density color:
+0x614149 Multigraph conductivity color:
+0x614c61 TdlgDepthType
+0x614c6f dlgDepthType
+0x614caa Depth calculation
+0x614e8e rgDepthType
+0x614eea Show depth/pressure
+0x614f0e Pressure dbar (no calc.)
+0x614f28 Depth (Unesco 1983)
+0x614f3c -Depth = P/(Density x Gravity)  Fixed position
+0x614f6b (Depth = P/(Density x Gravity)  Profiling
+0x616525 Conductivity
+0x618f32 Depth(dp)
+0x618f84 edtDepth
+0x61944a "Select depth or time for left axis
+0x61949e Depth (m)
+0x61a823 "Setup multiple pass standard depth
+0x61a93c Maximum depth:
+0x61ab35 -Display multiple pass standard depth sections
+0x61ab77 edtMaxDepth
+0x61ade6 Salinity
+0x61ae6b Oxygen sat.%
+0x61aeb0 SoundVel
+0x61aef3 Pressure
+0x61afc4 LAuto adjust salinity and sound velocity from temperature and pressure offset
+0x61b06a Conductivity
+0x61b4f0 Oxygen unit
+0x61b773 Rinko oxygen sensor calibration
+0x61c0b9 TdlgSetMinDepthMask
+0x61c0cd dlgSetMinDepthMask
+0x61c10d Set minimum depth mask 
+0x61c253 Minimum depth: 
+0x61c4d5 edtMinDepth
+0x61c510 edtMinDepth
+0x621a19 Set standard depths
+0x624eed sbtnGrDepth
+0x624f1e Depth graph|
+0x6250ca sbtnGrDepthClick
+0x626f9a DepthAxis.Grid.Visible
+0x62c262 mnuExStdDepth
+0x62c279 Standard &depths
+0x62c293 mnuExStdDepthClick
+0x62c2b2 mnuExStdDepthSect
+0x62c2cd Standard Depth &Sectioned
+0x62c2f0 mnuExStdDepthSectClick
+0x62c7b6 View standard depth/temperature
+0x62c7e1 mnuStdDepth
+0x62c7fc Standard &Depth
+0x62c836 mnuStdDepthSect
+0x62c84f Standard Depth &Sectioned
+0x62c872 mnuStdDepthSectClick
+0x62c952 mnuSalinity1
+0x62c968 &Salinity / Temperature
+0x62c985 %Salinity and Temperature / time graph
+0x62c9cf mnuConductivity1
+0x62c9ef &Conductivity / Temperature
+0x62ca10 )Conductivity and Temperature / time graph
+0x62ca5e mnuSoundVel1
+0x62ca7a Sound &velocity / Sigma T
+0x62ca99 'Sound velocity and Sigma T / time graph
+0x62cae5 mnuOxygen1
+0x62caff &Oxygen
+0x62cb0d Oxygen / time graph
+0x62cbf0 mnuDepth
+0x62cc08 &Depth
+0x62cc15 Depth /time graph
+0x62cc4b mnuGrDepth
+0x62cc5f &Depth
+0x62cc82 mnuSalinity2
+0x62cc98 &Salinity / Temperature
+0x62ccb5 *Conductivity and Temperature / depth graph
+0x62ccea MenuDepthClick
+0x62cd05 mnuConductivity2
+0x62cd25 &Conductivity / Temperature
+0x62cd4a MenuDepthClick
+0x62cd65 mnuSoundVel2
+0x62cd81 Sound &velocity / Sigma T
+0x62cda0 (Sound velocity and Sigma T / depth graph
+0x62cdd3 MenuDepthClick
+0x62cdee mnuOxygen2
+0x62ce08 &Oxygen
+0x62ce16 Oxygen graph / depth
+0x62ce34 MenuDepthClick
+0x62ce82 Optional graph / depth
+0x62cea2 MenuDepthClick
+0x62ceff MenuDepthClick
+0x62cf46 MenuDepthClick
+0x62d268 mnuDensity
+0x62d27c &Density
+0x62d28a %Select Density(t,s,p) or Sigma T(t,s)
+0x62d2ba mnuDensityClick
+0x62d2d6 mnuCalcdensity
+0x62d2ed %Calculated density for TD instruments
+0x62d31d mnuCalcdensityClick
+0x62d33d mnuShowDepth
+0x62d353 Depth calculation...
+0x62d371 mnuShowDepthClick
+0x62d38f Selectoxygenunit1
+0x62d3aa Select oxygen unit
+0x62d3c6 Selectoxygenunit1Click
+0x62d499 mnuAvgInStdDepthSect
+0x62d4b6 "Avg columns in Std Depth Sectioned
+0x62d4e3 mnuAvgInStdDepthSectClick
+0x62d525 (Avg all passes in Std Depth Sectioned...
+0x62d7a3 mnuComputeSoundV
+0x62d7bd Compute Sound &velocity...
+0x62d7dd $Compute Sound velocity from std data
+0x62d80c mnuComputeSoundVClick
+0x62d824 TMenuItem mnuConvertconductivitytosalinity
+0x62d857 $Conv&ert conductivity to salinity...
+0x62d885 %mnuConvertconductivitytosalinityClick
+0x62d8cd 2&Update barometric pressure for Ox measurements...
+0x62d906 KUpdate barometric pressure for calculating Ox value from percent saturation
+0x62d9f7 mnuChangeStdDepths
+0x62da13 Change standard &depths...
+0x62da34 Change standard depths
+0x62da54 mnuChangeStdDepthsClick
+0x62da78 mnuChangestandarddepthsections
+0x62da9f "Change standard depth sectio&ns...
+0x62dacb #mnuChangestandarddepthsectionsClick
+0x62db7c mnuRecalculateCal
+0x62db96 (&Recalculate calibration coefficients...
+0x62dbc5 $Recalculate calibration coefficients
+0x62dbf4 mnuRecalculateCalClick
+0x62dd06 Rinkooxygencalibration1
+0x62dd27 Rinko oxygen calibration
+0x62dd49 Rinkooxygencalibration1Click
+0x62df85 TMenuItem%CORRECTWRONGSALINITYCONDUCTIVITYDATA1
+0x62dfbd (CORRECT WRONG SALINITY/CONDUCTIVITY DATA
+0x62dfef *CORRECTWRONGSALINITYCONDUCTIVITYDATA1Click
+0x62e027 Setminimumdepthmask1
+0x62e045 Set minimum depth mask
+0x62e065 Setminimumdepthmask1Click
+0x62e36d &Salinity / Temperature
+0x62e38b Salinity and Temperature graph
+0x62e3b3 MenuDepthTimeClick
+0x62e3ef &Conductivity / Temperature
+0x62e414 MenuDepthTimeClick
+0x62e433 mpopSoundVel1
+0x62e450 Sound &velocity / Sigma T
+0x62e46f  Sound velocity and Sigma T graph
+0x62e49a MenuDepthTimeClick
+0x62e4b9 mpopOxygen1
+0x62e4d4 &Oxygen
+0x62e4e2 Oxygen graph
+0x62e4f8 MenuDepthTimeClick
+0x62e563 MenuDepthTimeClick
+0x62e5c5 MenuDepthTimeClick
+0x62e5e4 mpopDepth1
+0x62e5fe &Depth
+0x62e60b Depth graph
+0x62e629 MenuDepthTimeClick
+0x62e67e MenuDepthTimeClick
+0x62e69d mpopStdDepth1
+0x62e6b4 Standard &Depth
+0x62e6ee mpopStdDepthSect1
+0x62e709 Standard Depth &Sectioned
+0x62e72c mnuStdDepthSectClick
+0x62e870 View standard depths
+0x62e890 mpopStdDepth2
+0x62e8ad Standard &Depth
+0x62e8e7 mpopStdDepthSect2
+0x62e902 Standard Depth &Sectioned
+0x62e925 mnuStdDepthSectClick
+0x62ea0b mpopSalinity2
+0x62ea22 &Salinity / Temperature
+0x62ea3f %Salinity and Temperature / time graph
+0x62ea89 mpopConductivity2
+0x62eaaa &Conductivity / Temperature
+0x62eacb )Conductivity and Temperature / time graph
+0x62eb19 mpopSoundVel2
+0x62eb36 Sound &velocity / Sigma T
+0x62eb55 'Sound velocity and Sigma T / time graph
+0x62eba1 mpopOxygen2
+0x62ebbc &Oxygen
+0x62ebca Oxygen / time graph
+0x62eccb mpopDepth2
+0x62ece5 &Depth
+0x62ecf2 Depth / time graph
+0x62ed29 mpopGrDepth1
+0x62ed3f &Depth
+0x62ed62 mpopSalinity3
+0x62ed79 &Salinity / Temperature
+0x62ed96 &Salinity and Temperature / depth graph
+0x62edc7 MenuDepthClick
+0x62ede2 mpopConductivity3
+0x62ee03 &Conductivity / Temperature
+0x62ee24 *Conductivity and Temperature / depth graph
+0x62ee59 MenuDepthClick
+0x62ee74 mpopSoundvel3
+0x62ee91 Sound &velocity / Sigma T
+0x62eeb0 (Sound velocity and Sigma T / depth graph
+0x62eee3 MenuDepthClick
+0x62eefe mpopOxygen3
+0x62ef19 &Oxygen
+0x62ef27 Oxygen / depth graph
+0x62ef45 MenuDepthClick
+0x62ef94 Optional / depth graph
+0x62efb4 MenuDepthClick
+0x62f012 MenuDepthClick
+0x62f05a MenuDepthClick
+0x633870 Oxygen sensor
+0x633c1e Oxygen sensor
+0x634405 TReCalcDlg
+0x634410 ReCalcDlg
+0x634447 $Recalculate calibration coefficients
+0x63470a Calibration coefficients:
+0x634b1a CalcBtn3
+0x634b80 CalcBtn3Click
+0x634def CalcBtn4
+0x634e4c CalcBtn4Click
+0x6350d5 &Conductivity
+0x63511a Calibration coefficients:
+0x635266 "Conductivity measured by MINI STD:
+0x63552b CalcBtn1
+0x635591 CalcBtn1Click
+0x635800 CalcBtn2
+0x63585d CalcBtn2Click
+0x63605c Salinity
+0x63609c Conductivity
+0x636124 Depth (Pressure)
+0x63616d Sound velocity
+0x6361b5 Oxygen
+0x636a69 Salinity
+0x636aee Oxygen sat.%
+0x636b33 Oxygen 
+0x636b7a Sigma T
+0x636bba SoundVel
+0x636bfd Depth
+0x636d52 Conductivity
+0x63803c cbMask0Depth
+0x638070 ,Mask measurements with depth less than 0.2 m
+0x6380b2 cbMask0DepthClick
+0x63ae24 Depth
+0x63b2da Depth
+0x63b434 Depth
+0x63be01 Depth:
+0x63c07a EditDepth
+0x63c0bd EditDepth
+0x63c44e Density:
+0x6428cb $STD/CTD Sound Vel. probe SD204/SD208
+0x64329d Update barometric pressure
+0x64344b )Barometric pressure for mg Ox calculation
+0x64351a 7Salinity for instruments that do not measure this value
+0x6440de Calibration coefficients:
+0x6446a0 CalcBtn3
+0x64470d CalcBtn3Click
+0x644bc1 CalcBtn4
+0x644c25 CalcBtn4Click
+0x644e19 Calc+&Print
+0x646050 4 coefficients
+0x6464b2 Conductivity3p
+0x646550 Calibration coefficients:
+0x646658 Conductivity factor from STD
+0x6466ea Conductivity measured
+0x646a9d CalcBtn1
+0x646b03 CalcBtn1Click
+0x646f90 CalcBtn2
+0x646fed CalcBtn2Click
+0x6471e1 Calc+&Print
+0x6481bb Conductivity4+p
+0x6482b2 Calibration coefficients:
+0x6484c0 Formula:
+0x649477 CalcBtn5
+0x6494dd CalcBtn5Click
+0x64a058 Calc+&Print
+0x64a239 CalcBtn6
+0x64a296 CalcBtn2Click
+0x64a4b4 cbFormula
+0x64a516 cbFormulaChange
+0x64af1b btnReadCalClick
+0x64bba3 btnCmpCalClick
+0x64c94e CalcBtn7
+0x64c9c6 CalcBtn7Click
+0x650500 Calc values
+0x650558 Calculated values setup
+0x6505b3 Use barometric pressure:
+0x6505d5 lblCalcBarPressUnit
+0x65064f (Salinity if not supported by instrument:
+0x650747 chkCalcValues
+0x65077d Display calculated values
+0x6507aa edtCalcBarPress
+0x650825 4Use barometric pressure from instrument if received 
+0x65088a edtCalcSal
+0x650ad1 Computing sound velocity
+0x650b59 Change standard depth sections
+0x650e3a Depths from:
+0x6510a5 Depths from:
+0x6512f9 Depths from:
+0x65233f cbDepth
+0x6529d3 Min depth (APB5)
+0x652a36 Max depth (APB5)
+0x652de5 EdtMaxDepth
+0x652e2c edtMinDepth
+0x659c26 Multigraph salinity color:
+0x659fdb Multigraph oxygen color:
+0x65a1b1  Multigraph sound velocity color:
+0x65a983 Multigraph oxygen value color:
+0x65abb3  Multigraph sigmaT/density color:
+0x65ade7 Multigraph conductivity color:
+0x65b90d TdlgDepthType
+0x65b91b dlgDepthType
+0x65b956 Depth calculation
+0x65bb48 rgDepthType
+0x65bba4 Show depth/pressure
+0x65bbc8 Pressure dbar (no calc.)
+0x65bbe2 Depth (Unesco 1983)
+0x65bbf6 -Depth = P/(Density x Gravity)  Fixed position
+0x65bc25 (Depth = P/(Density x Gravity)  Profiling
+0x65d207 Conductivity
+0x65fc51 Depth(dp)
+0x65fca3 edtDepth
+0x660164 "Select depth or time for left axis
+0x6601b8 Depth (m)
+0x66153b "Setup multiple pass standard depth
+0x661662 Maximum depth:
+0x66185b -Display multiple pass standard depth sections
+0x66189d edtMaxDepth
+0x661b1c Salinity
+0x661ba1 Oxygen sat.%
+0x661be6 SoundVel
+0x661c29 Pressure
+0x661cfa LAuto adjust salinity and sound velocity from temperature and pressure offset
+0x661da0 Conductivity
+0x662224 Oxygen unit
+0x6624b7 Rinko oxygen sensor calibration
+0x662e0d TdlgSetMinDepthMask
+0x662e21 dlgSetMinDepthMask
+0x662e61 Set minimum depth mask 
+0x662f9c Minimum depth: 
+0x663219 edtMinDepth
+0x663254 edtMinDepth
+0x66874d Set standard depths
+0x66bc3e sbtnGrDepth
+0x66bc6f Depth graph|
+0x66be1b sbtnGrDepthClick
+0x66dd46 DepthAxis.Grid.Visible
+0x673147 mnuExStdDepth
+0x67315e Standard &depths
+0x673178 mnuExStdDepthClick
+0x673197 mnuExStdDepthSect
+0x6731b2 Standard Depth &Sectioned
+0x6731d5 mnuExStdDepthSectClick
+0x67369b View standard depth/temperature
+0x6736c6 mnuStdDepth
+0x6736e1 Standard &Depth
+0x67371b mnuStdDepthSect
+0x673734 Standard Depth &Sectioned
+0x673757 mnuStdDepthSectClick
+0x673837 mnuSalinity1
+0x67384d &Salinity / Temperature
+0x67386a %Salinity and Temperature / time graph
+0x6738b4 mnuConductivity1
+0x6738d4 &Conductivity / Temperature
+0x6738f5 )Conductivity and Temperature / time graph
+0x673943 mnuSoundVel1
+0x67395f Sound &velocity / Sigma T
+0x67397e 'Sound velocity and Sigma T / time graph
+0x6739ca mnuOxygen1
+0x6739e4 &Oxygen
+0x6739f2 Oxygen / time graph
+0x673ad5 mnuDepth
+0x673aed &Depth
+0x673afa Depth /time graph
+0x673b30 mnuGrDepth
+0x673b44 &Depth
+0x673b67 mnuSalinity2
+0x673b7d &Salinity / Temperature
+0x673b9a *Conductivity and Temperature / depth graph
+0x673bcf MenuDepthClick
+0x673bea mnuConductivity2
+0x673c0a &Conductivity / Temperature
+0x673c2f MenuDepthClick
+0x673c4a mnuSoundVel2
+0x673c66 Sound &velocity / Sigma T
+0x673c85 (Sound velocity and Sigma T / depth graph
+0x673cb8 MenuDepthClick
+0x673cd3 mnuOxygen2
+0x673ced &Oxygen
+0x673cfb Oxygen graph / depth
+0x673d19 MenuDepthClick
+0x673d67 Optional graph / depth
+0x673d87 MenuDepthClick
+0x673de4 MenuDepthClick
+0x673e2b MenuDepthClick
+0x67414d mnuDensity
+0x674161 &Density
+0x67416f %Select Density(t,s,p) or Sigma T(t,s)
+0x67419f mnuDensityClick
+0x6741bb mnuCalcdensity
+0x6741d2 %Calculated density for TD instruments
+0x674202 mnuCalcdensityClick
+0x674222 mnuShowDepth
+0x674238 Depth calculation...
+0x674256 mnuShowDepthClick
+0x674274 Selectoxygenunit1
+0x67428f Select oxygen unit
+0x6742ab Selectoxygenunit1Click
+0x67437e mnuAvgInStdDepthSect
+0x67439b "Avg columns in Std Depth Sectioned
+0x6743c8 mnuAvgInStdDepthSectClick
+0x67440a (Avg all passes in Std Depth Sectioned...
+0x674688 mnuComputeSoundV
+0x6746a2 Compute Sound &velocity...
+0x6746c2 $Compute Sound velocity from std data
+0x6746f1 mnuComputeSoundVClick
+0x674709 TMenuItem mnuConvertconductivitytosalinity
+0x67473c $Conv&ert conductivity to salinity...
+0x67476a %mnuConvertconductivitytosalinityClick
+0x6747b2 2&Update barometric pressure for Ox measurements...
+0x6747eb KUpdate barometric pressure for calculating Ox value from percent saturation
+0x6748dc mnuChangeStdDepths
+0x6748f8 Change standard &depths...
+0x674919 Change standard depths
+0x674939 mnuChangeStdDepthsClick
+0x67495d mnuChangestandarddepthsections
+0x674984 "Change standard depth sectio&ns...
+0x6749b0 #mnuChangestandarddepthsectionsClick
+0x674a61 mnuRecalculateCal
+0x674a7b (&Recalculate calibration coefficients...
+0x674aaa $Recalculate calibration coefficients
+0x674ad9 mnuRecalculateCalClick
+0x674beb Rinkooxygencalibration1
+0x674c0c Rinko oxygen calibration
+0x674c2e Rinkooxygencalibration1Click
+0x674e6a TMenuItem%CORRECTWRONGSALINITYCONDUCTIVITYDATA1
+0x674ea2 (CORRECT WRONG SALINITY/CONDUCTIVITY DATA
+0x674ed4 *CORRECTWRONGSALINITYCONDUCTIVITYDATA1Click
+0x674f0c Setminimumdepthmask1
+0x674f2a Set minimum depth mask
+0x674f4a Setminimumdepthmask1Click
+0x675252 &Salinity / Temperature
+0x675270 Salinity and Temperature graph
+0x675298 MenuDepthTimeClick
+0x6752d4 &Conductivity / Temperature
+0x6752f9 MenuDepthTimeClick
+0x675318 mpopSoundVel1
+0x675335 Sound &velocity / Sigma T
+0x675354  Sound velocity and Sigma T graph
+0x67537f MenuDepthTimeClick
+0x67539e mpopOxygen1
+0x6753b9 &Oxygen
+0x6753c7 Oxygen graph
+0x6753dd MenuDepthTimeClick
+0x675448 MenuDepthTimeClick
+0x6754aa MenuDepthTimeClick
+0x6754c9 mpopDepth1
+0x6754e3 &Depth
+0x6754f0 Depth graph
+0x67550e MenuDepthTimeClick
+0x675563 MenuDepthTimeClick
+0x675582 mpopStdDepth1
+0x675599 Standard &Depth
+0x6755d3 mpopStdDepthSect1
+0x6755ee Standard Depth &Sectioned
+0x675611 mnuStdDepthSectClick
+0x675755 View standard depths
+0x675775 mpopStdDepth2
+0x675792 Standard &Depth
+0x6757cc mpopStdDepthSect2
+0x6757e7 Standard Depth &Sectioned
+0x67580a mnuStdDepthSectClick
+0x6758f0 mpopSalinity2
+0x675907 &Salinity / Temperature
+0x675924 %Salinity and Temperature / time graph
+0x67596e mpopConductivity2
+0x67598f &Conductivity / Temperature
+0x6759b0 )Conductivity and Temperature / time graph
+0x6759fe mpopSoundVel2
+0x675a1b Sound &velocity / Sigma T
+0x675a3a 'Sound velocity and Sigma T / time graph
+0x675a86 mpopOxygen2
+0x675aa1 &Oxygen
+0x675aaf Oxygen / time graph
+0x675bb0 mpopDepth2
+0x675bca &Depth
+0x675bd7 Depth / time graph
+0x675c0e mpopGrDepth1
+0x675c24 &Depth
+0x675c47 mpopSalinity3
+0x675c5e &Salinity / Temperature
+0x675c7b &Salinity and Temperature / depth graph
+0x675cac MenuDepthClick
+0x675cc7 mpopConductivity3
+0x675ce8 &Conductivity / Temperature
+0x675d09 *Conductivity and Temperature / depth graph
+0x675d3e MenuDepthClick
+0x675d59 mpopSoundvel3
+0x675d76 Sound &velocity / Sigma T
+0x675d95 (Sound velocity and Sigma T / depth graph
+0x675dc8 MenuDepthClick
+0x675de3 mpopOxygen3
+0x675dfe &Oxygen
+0x675e0c Oxygen / depth graph
+0x675e2a MenuDepthClick
+0x675e79 Optional / depth graph
+0x675e99 MenuDepthClick
+0x675ef7 MenuDepthClick
+0x675f3f MenuDepthClick
+0x679eb9 Oxygen sensor
+0x67a267 Oxygen sensor
+0x67aa45 TReCalcDlg
+0x67aa50 ReCalcDlg
+0x67aa87 $Recalculate calibration coefficients
+0x67ad3c Calibration coefficients:
+0x67b14c CalcBtn3
+0x67b1b2 CalcBtn3Click
+0x67b421 CalcBtn4
+0x67b47e CalcBtn4Click
+0x67b707 &Conductivity
+0x67b74c Calibration coefficients:
+0x67b898 "Conductivity measured by MINI STD:
+0x67bb5d CalcBtn1
+0x67bbc3 CalcBtn1Click
+0x67be32 CalcBtn2
+0x67be8f CalcBtn2Click
+0x67c67c Salinity
+0x67c6bc Conductivity
+0x67c744 Depth (Pressure)
+0x67c78d Sound velocity
+0x67c7d5 Oxygen
+0x67d07e Salinity
+0x67d103 Oxygen sat.%
+0x67d148 Oxygen 
+0x67d18f Sigma T
+0x67d1cf SoundVel
+0x67d212 Depth
+0x67d367 Conductivity
+0x67e644 cbMask0Depth
+0x67e678 ,Mask measurements with depth less than 0.2 m
+0x67e6ba cbMask0DepthClick
+0x681401 Depth
+0x6818b7 Depth
+0x681a11 Depth
+0x6823d2 Depth:
+0x68264b EditDepth
+0x68268e EditDepth
+0x682a17 Density:
+0x685e06 sbtnGrDepth
+0x685e37 Depth graph|
+0x685fe3 sbtnGrDepthClick
+0x687f0e DepthAxis.Grid.Visible
+0x68d30f mnuExStdDepth
+0x68d326 Standard &depths
+0x68d340 mnuExStdDepthClick
+0x68d35f mnuExStdDepthSect
+0x68d37a Standard Depth &Sectioned
+0x68d39d mnuExStdDepthSectClick
+0x68d863 View standard depth/temperature
+0x68d88e mnuStdDepth
+0x68d8a9 Standard &Depth
+0x68d8e3 mnuStdDepthSect
+0x68d8fc Standard Depth &Sectioned
+0x68d91f mnuStdDepthSectClick
+0x68d9ff mnuSalinity1
+0x68da15 &Salinity / Temperature
+0x68da32 %Salinity and Temperature / time graph
+0x68da7c mnuConductivity1
+0x68da9c &Conductivity / Temperature
+0x68dabd )Conductivity and Temperature / time graph
+0x68db0b mnuSoundVel1
+0x68db27 Sound &velocity / Sigma T
+0x68db46 'Sound velocity and Sigma T / time graph
+0x68db92 mnuOxygen1
+0x68dbac &Oxygen
+0x68dbba Oxygen / time graph
+0x68dc9d mnuDepth
+0x68dcb5 &Depth
+0x68dcc2 Depth /time graph
+0x68dcf8 mnuGrDepth
+0x68dd0c &Depth
+0x68dd2f mnuSalinity2
+0x68dd45 &Salinity / Temperature
+0x68dd62 *Conductivity and Temperature / depth graph
+0x68dd97 MenuDepthClick
+0x68ddb2 mnuConductivity2
+0x68ddd2 &Conductivity / Temperature
+0x68ddf7 MenuDepthClick
+0x68de12 mnuSoundVel2
+0x68de2e Sound &velocity / Sigma T
+0x68de4d (Sound velocity and Sigma T / depth graph
+0x68de80 MenuDepthClick
+0x68de9b mnuOxygen2
+0x68deb5 &Oxygen
+0x68dec3 Oxygen graph / depth
+0x68dee1 MenuDepthClick
+0x68df2f Optional graph / depth
+0x68df4f MenuDepthClick
+0x68dfac MenuDepthClick
+0x68dff3 MenuDepthClick
+0x68e315 mnuDensity
+0x68e329 &Density
+0x68e337 %Select Density(t,s,p) or Sigma T(t,s)
+0x68e367 mnuDensityClick
+0x68e383 mnuCalcdensity
+0x68e39a %Calculated density for TD instruments
+0x68e3ca mnuCalcdensityClick
+0x68e3ea mnuShowDepth
+0x68e400 Depth calculation...
+0x68e41e mnuShowDepthClick
+0x68e43c Selectoxygenunit1
+0x68e457 Select oxygen unit
+0x68e473 Selectoxygenunit1Click
+0x68e546 mnuAvgInStdDepthSect
+0x68e563 "Avg columns in Std Depth Sectioned
+0x68e590 mnuAvgInStdDepthSectClick
+0x68e5d2 (Avg all passes in Std Depth Sectioned...
+0x68e850 mnuComputeSoundV
+0x68e86a Compute Sound &velocity...
+0x68e88a $Compute Sound velocity from std data
+0x68e8b9 mnuComputeSoundVClick
+0x68e8d1 TMenuItem mnuConvertconductivitytosalinity
+0x68e904 $Conv&ert conductivity to salinity...
+0x68e932 %mnuConvertconductivitytosalinityClick
+0x68e97a 2&Update barometric pressure for Ox measurements...
+0x68e9b3 KUpdate barometric pressure for calculating Ox value from percent saturation
+0x68eaa4 mnuChangeStdDepths
+0x68eac0 Change standard &depths...
+0x68eae1 Change standard depths
+0x68eb01 mnuChangeStdDepthsClick
+0x68eb25 mnuChangestandarddepthsections
+0x68eb4c "Change standard depth sectio&ns...
+0x68eb78 #mnuChangestandarddepthsectionsClick
+0x68ec29 mnuRecalculateCal
+0x68ec43 (&Recalculate calibration coefficients...
+0x68ec72 $Recalculate calibration coefficients
+0x68eca1 mnuRecalculateCalClick
+0x68edb3 Rinkooxygencalibration1
+0x68edd4 Rinko oxygen calibration
+0x68edf6 Rinkooxygencalibration1Click
+0x68f032 TMenuItem%CORRECTWRONGSALINITYCONDUCTIVITYDATA1
+0x68f06a (CORRECT WRONG SALINITY/CONDUCTIVITY DATA
+0x68f09c *CORRECTWRONGSALINITYCONDUCTIVITYDATA1Click
+0x68f0d4 Setminimumdepthmask1
+0x68f0f2 Set minimum depth mask
+0x68f112 Setminimumdepthmask1Click
+0x68f41a &Salinity / Temperature
+0x68f438 Salinity and Temperature graph
+0x68f460 MenuDepthTimeClick
+0x68f49c &Conductivity / Temperature
+0x68f4c1 MenuDepthTimeClick
+0x68f4e0 mpopSoundVel1
+0x68f4fd Sound &velocity / Sigma T
+0x68f51c  Sound velocity and Sigma T graph
+0x68f547 MenuDepthTimeClick
+0x68f566 mpopOxygen1
+0x68f581 &Oxygen
+0x68f58f Oxygen graph
+0x68f5a5 MenuDepthTimeClick
+0x68f610 MenuDepthTimeClick
+0x68f672 MenuDepthTimeClick
+0x68f691 mpopDepth1
+0x68f6ab &Depth
+0x68f6b8 Depth graph
+0x68f6d6 MenuDepthTimeClick
+0x68f72b MenuDepthTimeClick
+0x68f74a mpopStdDepth1
+0x68f761 Standard &Depth
+0x68f79b mpopStdDepthSect1
+0x68f7b6 Standard Depth &Sectioned
+0x68f7d9 mnuStdDepthSectClick
+0x68f91d View standard depths
+0x68f93d mpopStdDepth2
+0x68f95a Standard &Depth
+0x68f994 mpopStdDepthSect2
+0x68f9af Standard Depth &Sectioned
+0x68f9d2 mnuStdDepthSectClick
+0x68fab8 mpopSalinity2
+0x68facf &Salinity / Temperature
+0x68faec %Salinity and Temperature / time graph
+0x68fb36 mpopConductivity2
+0x68fb57 &Conductivity / Temperature
+0x68fb78 )Conductivity and Temperature / time graph
+0x68fbc6 mpopSoundVel2
+0x68fbe3 Sound &velocity / Sigma T
+0x68fc02 'Sound velocity and Sigma T / time graph
+0x68fc4e mpopOxygen2
+0x68fc69 &Oxygen
+0x68fc77 Oxygen / time graph
+0x68fd78 mpopDepth2
+0x68fd92 &Depth
+0x68fd9f Depth / time graph
+0x68fdd6 mpopGrDepth1
+0x68fdec &Depth
+0x68fe0f mpopSalinity3
+0x68fe26 &Salinity / Temperature
+0x68fe43 &Salinity and Temperature / depth graph
+0x68fe74 MenuDepthClick
+0x68fe8f mpopConductivity3
+0x68feb0 &Conductivity / Temperature
+0x68fed1 *Conductivity and Temperature / depth graph
+0x68ff06 MenuDepthClick
+0x68ff21 mpopSoundvel3
+0x68ff3e Sound &velocity / Sigma T
+0x68ff5d (Sound velocity and Sigma T / depth graph
+0x68ff90 MenuDepthClick
+0x68ffab mpopOxygen3
+0x68ffc6 &Oxygen
+0x68ffd4 Oxygen / depth graph
+0x68fff2 MenuDepthClick
+0x690041 Optional / depth graph
+0x690061 MenuDepthClick
+0x6900bf MenuDepthClick
+0x690107 MenuDepthClick

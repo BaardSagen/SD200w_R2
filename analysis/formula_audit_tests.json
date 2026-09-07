@@ -1,0 +1,176 @@
+[
+  {
+    "test": "GSW published reference",
+    "C": 34.5487,
+    "T90": 28.7856,
+    "P": 10,
+    "reference": 20.00986959908695,
+    "binary_T68": 20.009869599086947,
+    "binary_unconverted": 20.012741722649743
+  },
+  {
+    "test": "GSW published reference",
+    "C": 34.7275,
+    "T90": 28.4329,
+    "P": 50,
+    "reference": 20.26551186487427,
+    "binary_T68": 20.26551186487427,
+    "binary_unconverted": 20.268398647290343
+  },
+  {
+    "test": "GSW published reference",
+    "C": 34.8605,
+    "T90": 22.8103,
+    "P": 125,
+    "reference": 22.98151306252769,
+    "binary_T68": 22.981513062527693,
+    "binary_unconverted": 22.98436108495714
+  },
+  {
+    "test": "GSW published reference",
+    "C": 34.681,
+    "T90": 10.26,
+    "P": 250,
+    "reference": 31.204503263727982,
+    "binary_T68": 31.204503263727975,
+    "binary_unconverted": 31.20661395650812
+  },
+  {
+    "test": "GSW published reference",
+    "C": 34.568,
+    "T90": 6.8863,
+    "P": 600,
+    "reference": 34.03231578743283,
+    "binary_T68": 34.032315787432815,
+    "binary_unconverted": 34.0339425866059
+  },
+  {
+    "test": "GSW published reference",
+    "C": 34.56,
+    "T90": 4.4036,
+    "P": 1000,
+    "reference": 36.40030849438817,
+    "binary_T68": 36.400308494388156,
+    "binary_unconverted": 36.40146343064513
+  },
+  {
+    "test": "conductivity boundary",
+    "C": -999,
+    "S": 0.0
+  },
+  {
+    "test": "conductivity boundary",
+    "C": -1,
+    "S": 0.0
+  },
+  {
+    "test": "conductivity boundary",
+    "C": 0,
+    "S": 0.0
+  },
+  {
+    "test": "conductivity boundary",
+    "C": 0.00999,
+    "S": 0.0
+  },
+  {
+    "test": "conductivity boundary",
+    "C": 0.01,
+    "S": 0.012827526436315587
+  },
+  {
+    "test": "conductivity boundary",
+    "C": 0.02,
+    "S": 0.01702767147330211
+  },
+  {
+    "test": "conductivity boundary",
+    "C": 0.1,
+    "S": 0.05561574338785541
+  },
+  {
+    "test": "conductivity boundary",
+    "C": 1,
+    "S": 0.550511649037503
+  },
+  {
+    "test": "density with input S",
+    "S": -999,
+    "result": -423.45855317760754
+  },
+  {
+    "test": "density with input S",
+    "S": -1,
+    "result": -2.5650734176
+  },
+  {
+    "test": "density with input S",
+    "S": 0,
+    "result": -1.7936806176
+  },
+  {
+    "test": "density with input S",
+    "S": 35,
+    "result": 24.76300499427552
+  },
+  {
+    "test": "oxygen wrapper",
+    "S": 0,
+    "sensor": true,
+    "result": 9.092426630320016
+  },
+  {
+    "test": "oxygen wrapper",
+    "S": 0,
+    "sensor": false,
+    "result": 7.417910089883253
+  },
+  {
+    "test": "oxygen wrapper",
+    "S": 5,
+    "sensor": true,
+    "result": 8.82812484318575
+  },
+  {
+    "test": "oxygen wrapper",
+    "S": 5,
+    "sensor": false,
+    "result": 7.417910089883253
+  },
+  {
+    "test": "oxygen wrapper",
+    "S": 35,
+    "sensor": true,
+    "result": 7.3960600933259375
+  },
+  {
+    "test": "oxygen wrapper",
+    "S": 35,
+    "sensor": false,
+    "result": 7.417910089883253
+  },
+  {
+    "test": "inverse roundtrip",
+    "S": 35,
+    "T": 15,
+    "P": 0,
+    "C": 42.91400008314587,
+    "recovered": 35.0
+  },
+  {
+    "test": "inverse roundtrip",
+    "S": 32,
+    "T": 8,
+    "P": 100,
+    "C": 33.44643440316836,
+    "recovered": 31.999999999999996
+  },
+  {
+    "test": "inverse roundtrip",
+    "S": 40,
+    "T": 20,
+    "P": 1000,
+    "C": 54.412212758157736,
+    "recovered": 39.99999999999999
+  }
+]

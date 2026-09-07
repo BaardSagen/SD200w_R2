@@ -1,0 +1,10 @@
+{
+  "exe": "SD200W_SAIV_OSU107_Instrument_v2.exe",
+  "actual_windows_startup": "PASS",
+  "duration_seconds": 12,
+  "instrument_page": 2,
+  "main_window_visible": true,
+  "error_dialogs": 0,
+  "previous_changes": "preserved",
+  "physical_instrument_transfer": "not tested"
+}

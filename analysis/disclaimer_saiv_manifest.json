@@ -1,0 +1,7 @@
+{
+  "source": "SD200W_SAIV_OSU107.exe",
+  "output": "SD200W_SAIV_OSU107_final.exe",
+  "disclaimer": "Disclaimer:\r\n\r\nMake backup copies of all data files.\r\nIn no event shall SAIV A/S be liable for any\r\ndamages (including but not limited to loss of services or data)\r\ncaused by using this software.",
+  "sha256": "065bb0c40f99021b55312947e9e684b92bbecc8b7d340e30aeebcc39b4f2854e",
+  "validation": "Only Disclaimer string, its length, and PE checksum changed; previous changes preserved."
+}

@@ -1,0 +1,139 @@
+{
+  "result": "PASS",
+  "boundary_cases": 20,
+  "baseline": {
+    "base": "0x400000",
+    "input_lines": 1500,
+    "retained_lines": 101,
+    "oldest_line": 1400
+  },
+  "extended": {
+    "base": "0x400000",
+    "input_lines": 1500,
+    "retained_lines": 1501,
+    "oldest_line": 0
+  },
+  "cases": [
+    {
+      "base": "0x400000",
+      "input_lines": 0,
+      "retained_lines": 1,
+      "oldest_line": 0
+    },
+    {
+      "base": "0x400000",
+      "input_lines": 99,
+      "retained_lines": 100,
+      "oldest_line": 0
+    },
+    {
+      "base": "0x400000",
+      "input_lines": 100,
+      "retained_lines": 101,
+      "oldest_line": 0
+    },
+    {
+      "base": "0x400000",
+      "input_lines": 101,
+      "retained_lines": 102,
+      "oldest_line": 0
+    },
+    {
+      "base": "0x400000",
+      "input_lines": 1000,
+      "retained_lines": 1001,
+      "oldest_line": 0
+    },
+    {
+      "base": "0x400000",
+      "input_lines": 1999,
+      "retained_lines": 2000,
+      "oldest_line": 0
+    },
+    {
+      "base": "0x400000",
+      "input_lines": 2000,
+      "retained_lines": 2001,
+      "oldest_line": 0
+    },
+    {
+      "base": "0x400000",
+      "input_lines": 2001,
+      "retained_lines": 2001,
+      "oldest_line": 1
+    },
+    {
+      "base": "0x400000",
+      "input_lines": 2500,
+      "retained_lines": 2001,
+      "oldest_line": 500
+    },
+    {
+      "base": "0x400000",
+      "input_lines": 5000,
+      "retained_lines": 2001,
+      "oldest_line": 3000
+    },
+    {
+      "base": "0x1400000",
+      "input_lines": 0,
+      "retained_lines": 1,
+      "oldest_line": 0
+    },
+    {
+      "base": "0x1400000",
+      "input_lines": 99,
+      "retained_lines": 100,
+      "oldest_line": 0
+    },
+    {
+      "base": "0x1400000",
+      "input_lines": 100,
+      "retained_lines": 101,
+      "oldest_line": 0
+    },
+    {
+      "base": "0x1400000",
+      "input_lines": 101,
+      "retained_lines": 102,
+      "oldest_line": 0
+    },
+    {
+      "base": "0x1400000",
+      "input_lines": 1000,
+      "retained_lines": 1001,
+      "oldest_line": 0
+    },
+    {
+      "base": "0x1400000",
+      "input_lines": 1999,
+      "retained_lines": 2000,
+      "oldest_line": 0
+    },
+    {
+      "base": "0x1400000",
+      "input_lines": 2000,
+      "retained_lines": 2001,
+      "oldest_line": 0
+    },
+    {
+      "base": "0x1400000",
+      "input_lines": 2001,
+      "retained_lines": 2001,
+      "oldest_line": 1
+    },
+    {
+      "base": "0x1400000",
+      "input_lines": 2500,
+      "retained_lines": 2001,
+      "oldest_line": 500
+    },
+    {
+      "base": "0x1400000",
+      "input_lines": 5000,
+      "retained_lines": 2001,
+      "oldest_line": 3000
+    }
+  ],
+  "windows_startup": "PASS: 12 seconds on Instrument page, no error dialogs"
+}
