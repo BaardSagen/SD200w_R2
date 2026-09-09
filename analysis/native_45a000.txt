@@ -1,0 +1,2 @@
+0045a000 jae 0x45a06b
+0045a002 add byte ptr [eax], al

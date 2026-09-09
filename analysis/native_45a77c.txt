@@ -1,0 +1,98 @@
+0045a77c push ebx
+0045a77d push esi
+0045a77e add esp, -0x10
+0045a781 mov ecx, eax
+0045a783 test ecx, ecx
+0045a785 jl 0x45a7fd
+0045a787 cmp ecx, dword ptr [0x5b3da4]
+0045a78d jg 0x45a7fd
+0045a78f mov eax, ecx
+0045a791 mov ebx, 0x7d0
+0045a796 cdq 
+0045a797 idiv ebx
+0045a799 imul ebx, edx, 0xd
+0045a79c mov eax, ecx
+0045a79e mov ecx, 0x7d0
+0045a7a3 cdq 
+0045a7a4 idiv ecx
+0045a7a6 mov eax, dword ptr [eax*4 + 0x5c5e7c]
+0045a7ad lea esi, [eax + ebx*4]
+0045a7b0 mov bl, byte ptr [esi]
+0045a7b2 cmp bl, 0x50
+0045a7b5 je 0x45a7f2
+0045a7b7 mov eax, ebx
+0045a7b9 call 0x45b720
+0045a7be xor ecx, ecx
+0045a7c0 mov cl, byte ptr [esi + 2]
+0045a7c3 xor edx, edx
+0045a7c5 mov dl, byte ptr [esi + 1]
+0045a7c8 call 0x40b104
+0045a7cd fstp qword ptr [esp + 8]
+0045a7d1 wait 
+0045a7d2 push 0
+0045a7d4 xor ecx, ecx
+0045a7d6 mov cl, byte ptr [esi + 5]
+0045a7d9 xor edx, edx
+0045a7db mov dl, byte ptr [esi + 4]
+0045a7de xor eax, eax
+0045a7e0 mov al, byte ptr [esi + 3]
+0045a7e3 call 0x40af2c
+0045a7e8 fadd qword ptr [esp + 8]
+0045a7ec fstp qword ptr [esp]
+0045a7ef wait 
+0045a7f0 jmp 0x45a812
+0045a7f2 xor eax, eax
+0045a7f4 mov dword ptr [esp], eax
+0045a7f7 mov dword ptr [esp + 4], eax
+0045a7fb jmp 0x45a812
+0045a7fd mov cx, 1
+0045a801 mov dx, 1
+0045a805 mov ax, 0x76b
+0045a809 call 0x40b104
+0045a80e fstp qword ptr [esp]
+0045a811 wait 
+0045a812 fld qword ptr [esp]
+0045a815 add esp, 0x10
+0045a818 pop esi
+0045a819 pop ebx
+0045a81a ret 
+0045a81b nop 
+0045a81c push ebp
+0045a81d mov ebp, esp
+0045a81f push 0
+0045a821 push 0
+0045a823 push 0
+0045a825 push 0
+0045a827 push ebx
+0045a828 push esi
+0045a829 push edi
+0045a82a mov edi, ecx
+0045a82c mov byte ptr [ebp - 1], dl
+0045a82f mov ebx, eax
+0045a831 xor eax, eax
+0045a833 push ebp
+0045a834 push 0x45a8c3
+0045a839 push dword ptr fs:[eax]
+0045a83c mov dword ptr fs:[eax], esp
+0045a83f lea eax, [ebp - 8]
+0045a842 mov dl, byte ptr [ebp - 1]
+0045a845 call 0x404140
+0045a84a mov eax, dword ptr [ebp - 8]
+0045a84d mov edx, dword ptr [ebx]
+0045a84f call 0x404504
+0045a854 mov esi, eax
+0045a856 test esi, esi
+0045a858 jle 0x45a898
+0045a85a push edi
+0045a85b mov ecx, esi
+0045a85d dec ecx
+0045a85e mov eax, dword ptr [ebx]
+0045a860 mov edx, 1
+0045a865 call 0x404420
+0045a86a lea eax, [ebp - 0x10]
+0045a86d push eax
+0045a86e mov eax, dword ptr [ebx]
+0045a870 call 0x404218
+0045a875 mov ecx, eax
+0045a877 lea edx, [esi + 1]
+0045a87a mov eax, dword ptr [ebx]

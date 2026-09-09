@@ -1,0 +1,24 @@
+{
+  "native_rows": 79,
+  "native_values_checked": 395,
+  "all_native_values_exact": true,
+  "graph_command": 28,
+  "windows": [
+    [
+      2558400,
+      "SAIV Instrument Terminal - SCTDOFc 208 - C:\\cprojects\\delphi\\analysis\\runtime_test\\native_convert\\1788948065716656600\\convert_probe",
+      "TForm1"
+    ],
+    [
+      6818162,
+      "Native_convert_probe_only",
+      "TApplication"
+    ]
+  ],
+  "physical_serial_disabled": true,
+  "native_time_axis_correct": false,
+  "nominal_interval_seconds": 2,
+  "nominal_duration_seconds": 156,
+  "actual_row_duration_seconds": 158,
+  "all_fields_integration_complete": false
+}

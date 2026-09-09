@@ -11,6 +11,10 @@ Oppdatert: 9. september 2026. Arbeidsmappe: `C:\cprojects\delphi`.
 
 Vi har ikke original Delphi-kildekode. Arbeidet består av analyse og patching av en 32-bits Delphi Windows-EXE: maskinkode, PE-ressurser og DFM-skjemaer. Dokumentasjonen om instrumentfirmware er en separat kilde og må ikke forveksles med Windows-koden.
 
+## Import all fields - PAUSED
+
+Import all fields er satt på pause etter brukerens beskjed. Omfanget er bare Convert-resultater, ikke Merge. Leveransen frem til 1.3.5 er sikret på main i commit d219703. Denne grenen bevarer den uferdige prøven separat; ingen ny importfunksjon er levert.
+
 ## Siste lokale leveranse: 1.3.5 - Fahrenheit og PAR-enhet
 
 T-siden tilbyr Fahrenheit som egen T_degF-kolonne. Haken for original T styrer om Celsius ogsaa beholdes. Standard fortsatt Celsius. Fahrenheit beregnes etter sensorberegningene; disse bruker fortsatt Celsius. PAR-forklaringen viser output-enheten micromol photons/(m2*s), med riktige tegn i GUI. Inngangsarealenhet maa fortsatt velges ved PAR-konvertering.

@@ -1,0 +1,8 @@
+{
+  "purpose": "Read-only baseline for feature/import-all-fields. Historical builder copy is reference only; its relative paths are not adjusted. Existing uncommitted work remains in the workspace.",
+  "files": {
+    "SAIV_Instrument_Terminal_v1.3.5_Sept2026.exe": "dc44c3347fda2811995fbe5d27ed9c05cb301cf8fe0956589a08cd66328bd1f0",
+    "SIT_Import135.dll": "e797e964299210fcc88f30118e1530a824b3bd2b0efd48c9e3308473dfbf27f3",
+    "analysis/single135/SAIV_IT_Runtime.exe": "edc7aa6457ae50ec8da5c3fd06b2cea99b24e592aebbe4e9b9ae5c117cecfa14"
+  }
+}
