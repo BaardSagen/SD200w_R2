@@ -1,0 +1,8 @@
+{
+  "result": "PASS",
+  "exe_sha256": "f6678c544af600e1dfca71db22a143c823b1f9e8d72936f6ea75738ea672f434",
+  "bytes_sent": "49536d0d0813115147",
+  "direct_input": true,
+  "setup_does_not_send": true,
+  "serial_ports_opened": 0
+}

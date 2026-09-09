@@ -1,0 +1,62 @@
+[
+  {
+    "S": 35,
+    "T": 10,
+    "P": 1000,
+    "latitude": 60,
+    "gps": true,
+    "native_depth": 987.27237839909,
+    "reference_depth": 987.27237839909,
+    "native_gravity": 9.82026109071525
+  },
+  {
+    "S": 0,
+    "T": 20,
+    "P": 100,
+    "latitude": 0,
+    "gps": true,
+    "native_depth": 102.38181192055116,
+    "reference_depth": 102.38181192055116,
+    "native_gravity": 9.7804272
+  },
+  {
+    "S": 35,
+    "T": 0,
+    "P": 4000,
+    "latitude": -70,
+    "gps": true,
+    "native_depth": 3888.721582387481,
+    "reference_depth": 3888.7215823874817,
+    "native_gravity": 9.830454947197847
+  },
+  {
+    "S": 10,
+    "T": 5,
+    "P": 0,
+    "latitude": 45,
+    "gps": true,
+    "native_depth": 0.0,
+    "reference_depth": 0.0,
+    "native_gravity": 9.8061898752054
+  },
+  {
+    "S": 35,
+    "T": 15,
+    "P": -0.01,
+    "latitude": 60,
+    "gps": true,
+    "native_depth": -0.009926346995967995,
+    "reference_depth": -0.009926346995967995,
+    "native_gravity": 9.81916907979525
+  },
+  {
+    "S": 35,
+    "T": 10,
+    "P": 1000,
+    "latitude": 45.508368287,
+    "gps": false,
+    "native_depth": 988.5325820693884,
+    "reference_depth": 988.5325820693882,
+    "native_gravity": 9.807742000000102
+  }
+]

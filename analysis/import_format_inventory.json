@@ -1,0 +1,324 @@
+{
+  "text_files": [
+    {
+      "file": "2026_09_03_20-28-52_C.txt",
+      "sha256": "f09d02208754a3be8fa0223ffd3c7dd8c7e487e66cea9702e18ea15377de7be9",
+      "encoding": "utf-8",
+      "format": "logger_fields",
+      "logger": "OSU107",
+      "metadata": [
+        "OSU107 Ser:107 DATE=2026-09-03 TIME=20:28:52 (LT) INST_START_COUNT=3090",
+        "Date 26-09-03 Time 18-29-02 GMT Interval: 2sec  ",
+        "CTDOF Par OxR Ser No 1240 AP1006.175"
+      ],
+      "columns": [
+        "COUNT",
+        "C",
+        "T",
+        "P",
+        "OF",
+        "Par",
+        "OxR",
+        "Tilt",
+        "DATE",
+        "TIME"
+      ],
+      "row_count": 79,
+      "first_row": {
+        "COUNT": "1",
+        "C": "00.05",
+        "T": "23.000",
+        "P": "0000.00",
+        "OF": "000.00",
+        "Par": "4.26",
+        "OxR": "0.29",
+        "Tilt": "0",
+        "DATE": "2026-09-03",
+        "TIME": "20:28:52"
+      },
+      "last_row": {
+        "COUNT": "79",
+        "C": "00.05",
+        "T": "22.993",
+        "P": "0000.01",
+        "OF": "000.00",
+        "Par": "4.26",
+        "OxR": "0.29",
+        "Tilt": "0",
+        "DATE": "2026-09-03",
+        "TIME": "20:31:30"
+      },
+      "time_step_seconds": [
+        2.0,
+        4.0
+      ],
+      "ctd_present": true
+    },
+    {
+      "file": "2026_09_07_19-34-42_C.txt",
+      "sha256": "943219ed609cf9d3a812e308884c0d64e749da21df181f6179da15ee2df1c8c6",
+      "encoding": "utf-8",
+      "format": "logger_fields",
+      "logger": "SAIV110 SurfaceLogger",
+      "metadata": [
+        "SAIV110(S-L) Ser:107 DATE=2026-09-07 TIME=19:34:42 (LT) INTERVAL_S=5 TOTAL_COUNTER=2994"
+      ],
+      "columns": [
+        "COUNT",
+        "Par",
+        "OxR",
+        "Tilt",
+        "DATE",
+        "TIME"
+      ],
+      "row_count": 3,
+      "first_row": {
+        "COUNT": "1",
+        "Par": "4.25",
+        "OxR": "0.29",
+        "Tilt": "0",
+        "DATE": "2026-09-07",
+        "TIME": "19:34:45"
+      },
+      "last_row": {
+        "COUNT": "3",
+        "Par": "4.24",
+        "OxR": "0.29",
+        "Tilt": "1",
+        "DATE": "2026-09-07",
+        "TIME": "19:34:55"
+      },
+      "time_step_seconds": [
+        5.0
+      ],
+      "ctd_present": false
+    },
+    {
+      "file": "26090606_18.11.51.txt",
+      "sha256": "98f08df95a2a8ba71e25103a699a77b3a2303144945b6845ffe17f6575ec98d8",
+      "encoding": "utf-8",
+      "format": "apb5_legacy_tagged",
+      "row_count": 43,
+      "tags": [
+        "N",
+        "OF",
+        "OT",
+        "OX",
+        "P",
+        "S",
+        "T"
+      ],
+      "metadata": [
+        "#14000000, Net: OffLine, Profile No: 19453",
+        "#Depth: 19 m, Mode: Stop every 2 m in 15 sec, Speed: Midle",
+        "#Time-Int: 180 min, Start: 18.00.39, Finish: 18.08.30, Next: 2026-09-06, 21.00.00",
+        "#Bat-Count-CTD: 123313, Bat-Temp-Winch: V27.0-T+15.1-V27.1-T+22.6, Main: V16.5-T+14.0",
+        "#M-Tilt, X:2,Y:3, GPS:N6022.9367 E00520.5300, T:13.0C, P:1.0165B, WD:104.0T, WS:5.1m/s",
+        "Date 26-09-06 Time 18-28-35 LT  Interval: 10sec ",
+        "STDOXOFOT Ser No 1237 AP0925.000",
+        "End of data"
+      ],
+      "first_row": "N00001 S00.036 T+14.126 P0000.00 OX098.92 OF000.38 OT000.03",
+      "last_row": "N00043 S00.176 T+14.300 P0000.00 OX100.97 OF001.07 OT007.22"
+    },
+    {
+      "file": "test.txt",
+      "sha256": "947ceb2346838aad2375a6c8f3b52f0627711ac50057a99c8d82ca28ead6324a",
+      "encoding": "cp1252",
+      "format": "sd200w_export_list",
+      "columns": [
+        "Ser",
+        "Meas",
+        "Sal.",
+        "Cond.",
+        "Temp",
+        "F (µg/l)",
+        "T (FTU)",
+        "Density",
+        "S. vel.",
+        "Press",
+        "Date",
+        "Time"
+      ],
+      "row_count": 7,
+      "metadata": [
+        "From file: test    ;Instrument no.:;1756",
+        "Ser;Interval (sec);Integration;Air pressure;Salinity;Chart Datum (dbar);",
+        "1;2;;1036,32;"
+      ],
+      "first_row": {
+        "Ser": "1",
+        "Meas": "1",
+        "Sal.": "0,00",
+        "Cond.": "0,00",
+        "Temp": "24,112",
+        "F (µg/l)": "0,01",
+        "T (FTU)": "0,09",
+        "Density": "-2,728",
+        "S. vel.": "1494,28",
+        "Press": "0,00",
+        "Date": "11.04.1997",
+        "Time": "15:12:41"
+      },
+      "last_row": {
+        "Ser": "1",
+        "Meas": "7",
+        "Sal.": "0,00",
+        "Cond.": "0,00",
+        "Temp": "24,119",
+        "F (µg/l)": "0,00",
+        "T (FTU)": "0,02",
+        "Density": "-2,730",
+        "S. vel.": "1494,30",
+        "Press": "0,00",
+        "Date": "11.04.1997",
+        "Time": "15:12:53"
+      },
+      "decimal_separator": ","
+    }
+  ],
+  "binary_example": {
+    "files": [
+      "test.SD2",
+      "test.RF2",
+      "test.OP2"
+    ],
+    "sizes": [
+      416,
+      72,
+      56
+    ],
+    "instrument_serial": 1756,
+    "observed_sd2_header_bytes": 52,
+    "observed_sd2_record_bytes": 52,
+    "observed_op2_record_bytes": 8,
+    "row_count": 7,
+    "records": [
+      {
+        "year_byte": 97,
+        "month": 4,
+        "day": 11,
+        "time": "15:12:41",
+        "interval": 2,
+        "number": 1,
+        "salinity": 0.0,
+        "conductivity": 0.0,
+        "temperature": 24.112,
+        "pressure": 0.0,
+        "sound_velocity": 1494.283750288738,
+        "op2_values": [
+          0.009999999776482582,
+          0.09000000357627869
+        ]
+      },
+      {
+        "year_byte": 97,
+        "month": 4,
+        "day": 11,
+        "time": "15:12:43",
+        "interval": 0,
+        "number": 2,
+        "salinity": 0.0,
+        "conductivity": 0.0,
+        "temperature": 24.116,
+        "pressure": 0.0,
+        "sound_velocity": 1494.2947150710029,
+        "op2_values": [
+          0.009999999776482582,
+          0.09000000357627869
+        ]
+      },
+      {
+        "year_byte": 97,
+        "month": 4,
+        "day": 11,
+        "time": "15:12:45",
+        "interval": 0,
+        "number": 3,
+        "salinity": 0.0,
+        "conductivity": 0.0,
+        "temperature": 24.115,
+        "pressure": 0.0,
+        "sound_velocity": 1494.2919739913077,
+        "op2_values": [
+          0.009999999776482582,
+          0.09000000357627869
+        ]
+      },
+      {
+        "year_byte": 97,
+        "month": 4,
+        "day": 11,
+        "time": "15:12:47",
+        "interval": 0,
+        "number": 4,
+        "salinity": 0.0,
+        "conductivity": 0.0,
+        "temperature": 24.117,
+        "pressure": 0.0,
+        "sound_velocity": 1494.2974560734526,
+        "op2_values": [
+          0.0,
+          0.009999999776482582
+        ]
+      },
+      {
+        "year_byte": 97,
+        "month": 4,
+        "day": 11,
+        "time": "15:12:49",
+        "interval": 0,
+        "number": 5,
+        "salinity": 0.0,
+        "conductivity": 0.0,
+        "temperature": 24.119,
+        "pressure": 0.0,
+        "sound_velocity": 1494.302937846621,
+        "op2_values": [
+          0.0,
+          0.009999999776482582
+        ]
+      },
+      {
+        "year_byte": 97,
+        "month": 4,
+        "day": 11,
+        "time": "15:12:51",
+        "interval": 0,
+        "number": 6,
+        "salinity": 0.0,
+        "conductivity": 0.0,
+        "temperature": 24.12,
+        "pressure": 0.0,
+        "sound_velocity": 1494.3056786173422,
+        "op2_values": [
+          0.0,
+          0.009999999776482582
+        ]
+      },
+      {
+        "year_byte": 97,
+        "month": 4,
+        "day": 11,
+        "time": "15:12:53",
+        "interval": 0,
+        "number": 7,
+        "salinity": 0.0,
+        "conductivity": 0.0,
+        "temperature": 24.119,
+        "pressure": 0.0,
+        "sound_velocity": 1494.302937846621,
+        "op2_values": [
+          0.0,
+          0.019999999552965164
+        ]
+      }
+    ]
+  },
+  "notes": [
+    "Inventory only: logger import is not implemented in the executable.",
+    "Par, OxR and Tilt are preserved by name; units and sensor meanings need confirmation.",
+    "OSU107 row timestamps have 4 seconds between first two rows, then 2 seconds. Do not replace them with a uniform interval.",
+    "OSU107 CTD GMT header and logger LT row timestamps must remain separately identified."
+  ]
+}

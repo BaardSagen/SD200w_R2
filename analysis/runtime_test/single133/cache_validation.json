@@ -1,0 +1,12 @@
+{
+  "results": [
+    "Ready cache reused without rewriting payloads; moved EXE and Unicode customer folder work",
+    "Missing DLL restored byte-for-byte",
+    "Corrupt DLL restored byte-for-byte",
+    "Missing runtime restored byte-for-byte",
+    "Two concurrent starts safely share verified components"
+  ],
+  "cache": "C:\\Users\\baard\\AppData\\Local\\SAIV_IT\\1.3.3_23c455263801",
+  "all_hashes_verified": true,
+  "launcher_and_runtime_not_elevated": true
+}

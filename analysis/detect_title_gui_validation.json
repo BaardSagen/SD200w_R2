@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "windows": [
+    {
+      "title": "Find communication speed - Double-click green ports to open",
+      "width": 504,
+      "caption_text_width": 330
+    }
+  ]
+}

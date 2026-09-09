@@ -1,0 +1,12 @@
+{
+  "source": "SD200W_SAIV_v1.0.2_Sept2026.exe",
+  "source_sha256": "e9f6a7fef0c34537ab32e1d0797d74716e67cd701587de66b3b5a305262424e6",
+  "output": "SD200W_SAIV_v1.0.3_Sept2026.exe",
+  "sha256": "b817a5898aa2780dbfd502f22de28fbda7b1d4b0a1f8a0f50e0f564b56fdc2c9",
+  "version": "1.0.3 Sept.2026",
+  "credits": "1. Concept and technical specifications: SAIV AS\r\n2. Original software development: Morten Hammersland Programvare\r\n3. Further development and maintenance: SAIV AS",
+  "disclaimer": "Disclaimer:\r\n\r\nAlways keep backup copies of your data files and\r\nverify measurement results before relying on\r\nthem.\r\n\r\nTo the extent permitted by applicable law,\r\nneither SAIV AS nor Morten Hammersland\r\nProgramvare shall be liable for loss of data,\r\nloss of profits or indirect damages arising from\r\nthe use of this software.\r\n\r\nThis notice does not override any applicable\r\ncontractual obligations or mandatory legal\r\nrights.",
+  "disclaimer_pointer_rva": "0x109e50",
+  "disclaimer_va": "0x696d5c",
+  "validation": "DFM parsed; exact requested text; valid PE checksum and relocation; existing instruction bytes unchanged except disclaimer string address; original preserved."
+}

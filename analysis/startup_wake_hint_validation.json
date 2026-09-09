@@ -1,0 +1,85 @@
+{
+  "result": "PASS",
+  "cases": 14,
+  "sha256": "450ebde32a2ca79331ed6ee1434a38e0f32bbf946554e209477084cb8a1c0550",
+  "details": [
+    {
+      "base": "0x400000",
+      "scenario": "silent",
+      "lines": [
+        "Hold <I> to wake the instrument, or use Detect to find connected units."
+      ]
+    },
+    {
+      "base": "0x400000",
+      "scenario": "early_rx",
+      "lines": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "late_rx",
+      "lines": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "changed_port",
+      "lines": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "closed_form",
+      "lines": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "timer_failed",
+      "lines": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "repeat_start",
+      "lines": [
+        "Hold <I> to wake the instrument, or use Detect to find connected units."
+      ]
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "silent",
+      "lines": [
+        "Hold <I> to wake the instrument, or use Detect to find connected units."
+      ]
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "early_rx",
+      "lines": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "late_rx",
+      "lines": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "changed_port",
+      "lines": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "closed_form",
+      "lines": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "timer_failed",
+      "lines": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "repeat_start",
+      "lines": [
+        "Hold <I> to wake the instrument, or use Detect to find connected units."
+      ]
+    }
+  ]
+}

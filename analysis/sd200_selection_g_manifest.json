@@ -1,0 +1,27 @@
+{
+  "source": "SD200W_SAIV_v1.0.6_NativeUART_Sept2026.exe",
+  "source_sha256": "4b7c492d8fa64b9bf2ffd939ef629d2d82cde7243d766aecb757810e27056b53",
+  "output": "SD200W_SAIV_v1.0.7_SelectG_Sept2026.exe",
+  "sha256": "3cb193bdad4975c99a784b2cf6a9cf9f54031b52ae74746c72aa2cb81380017f",
+  "rva": 2719744,
+  "symbols": {
+    ".bss": 0,
+    ".data": 0,
+    ".text": 0,
+    "after_modal": 0,
+    "modal_done": 71,
+    "capture_close": 81,
+    "next_row": 118,
+    "advance": 191,
+    "capture_done": 197,
+    "reopen": 208,
+    "open_done": 270,
+    "command_g": 284,
+    "pending": 286,
+    "CLASSIFY": 2716364,
+    "RVA": 2719744
+  },
+  "settle_ms": 1100,
+  "validation": "PASS: 24 x86 cases; physical COM7 double-click and one G on reopened terminal handle",
+  "physical_report": "analysis/com7_select_g_validation.json"
+}

@@ -1,0 +1,68 @@
+{
+  "result": "PASS",
+  "sha256": "0415e50e1f7f72c03d309ee40c7a86217b7c645151025e943c0176659518eefa",
+  "checks": [
+    {
+      "result": "PASS",
+      "mode": "off",
+      "registry_path": "Software\\MHP\\SdInstr\\Comm",
+      "initial_enabled": 1,
+      "initial_checked": 1,
+      "after_enabled": 0,
+      "ini_path": "",
+      "ini_entries": [
+        "ShowStartupText=0"
+      ]
+    },
+    {
+      "result": "PASS",
+      "mode": "view_off",
+      "registry_path": "Software\\MHP\\SdInstr\\Comm",
+      "initial_enabled": 0,
+      "initial_checked": 0,
+      "after_enabled": 0,
+      "ini_path": "",
+      "ini_entries": [
+        "ShowStartupText=0"
+      ]
+    },
+    {
+      "result": "PASS",
+      "mode": "on",
+      "registry_path": "Software\\MHP\\SdInstr\\Comm",
+      "initial_enabled": 0,
+      "initial_checked": 0,
+      "after_enabled": 1,
+      "ini_path": "",
+      "ini_entries": [
+        "ShowStartupText=1"
+      ]
+    },
+    {
+      "result": "PASS",
+      "mode": "view_on",
+      "registry_path": "Software\\MHP\\SdInstr\\Comm",
+      "initial_enabled": 1,
+      "initial_checked": 1,
+      "after_enabled": 1,
+      "ini_path": "",
+      "ini_entries": [
+        "ShowStartupText=1"
+      ]
+    },
+    {
+      "result": "PASS",
+      "sha256": "0415e50e1f7f72c03d309ee40c7a86217b7c645151025e943c0176659518eefa",
+      "mode": "off_cancel",
+      "registry_path": "Software\\MHP\\SdInstr\\Comm",
+      "initial_enabled": 1,
+      "initial_checked": 1,
+      "after_enabled": 1,
+      "ini_path": "",
+      "ini_entries": [
+        "ShowStartupText=1"
+      ]
+    }
+  ],
+  "visual_check": "Checkbox below Ref inst; startup image blank when disabled and complete help line when enabled; final saved setting enabled"
+}

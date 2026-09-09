@@ -1,0 +1,11 @@
+{
+  "results": [
+    "1.3.1 reproduced: COM7 active but stored COM11",
+    "1.3.2 saves already-applied COM7",
+    "Restart reads COM7; Cancel preserves COM7",
+    "Manual selection saves COM11",
+    "Second restart reads COM11"
+  ],
+  "isolated_registry": "Software\\MHP\\Tbddbaf",
+  "physical_serial_disabled": true
+}

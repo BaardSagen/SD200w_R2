@@ -1,0 +1,52 @@
+[
+  {
+    "base": "0x400000",
+    "mode": "logger",
+    "passed": true
+  },
+  {
+    "base": "0x400000",
+    "mode": "legacy",
+    "passed": true
+  },
+  {
+    "base": "0x400000",
+    "mode": "missing_dll",
+    "passed": true
+  },
+  {
+    "base": "0x400000",
+    "mode": "missing_export",
+    "passed": true
+  },
+  {
+    "base": "0x400000",
+    "mode": "long_path",
+    "passed": true
+  },
+  {
+    "base": "0x10000000",
+    "mode": "logger",
+    "passed": true
+  },
+  {
+    "base": "0x10000000",
+    "mode": "legacy",
+    "passed": true
+  },
+  {
+    "base": "0x10000000",
+    "mode": "missing_dll",
+    "passed": true
+  },
+  {
+    "base": "0x10000000",
+    "mode": "missing_export",
+    "passed": true
+  },
+  {
+    "base": "0x10000000",
+    "mode": "long_path",
+    "passed": true
+  }
+]

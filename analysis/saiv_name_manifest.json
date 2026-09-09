@@ -1,0 +1,9 @@
+{
+  "source": "SD200W_SAIV_v1.1.2_InstrumentIcon_Sept2026.exe",
+  "source_sha256": "e85cdb6119350e249a17b1eda037640a04ee2c12be210f2cc91a474bbd3cf6b7",
+  "output": "SAIV_Instrument_Terminal_v1.1.3_Sept2026.exe",
+  "sha256": "60f8713bfeda9baffdb690e2bc0c2ff2f4e12516ceb1087b35257ec91b110035",
+  "title": "SAIV Instrument Terminal",
+  "name_rva": 2916360,
+  "validation": "PASS: live main title, About screenshot, exact unchanged disclaimer, parsed Windows product/file metadata"
+}

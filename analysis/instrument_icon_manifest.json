@@ -1,0 +1,52 @@
+{
+  "source": "SD200W_SAIV_v1.1.1_DetectHint_Sept2026.exe",
+  "source_sha256": "53841d3d6e515d9a659a93c49b00bacff651a83092c1d4453a866a755778f4e6",
+  "output": "SD200W_SAIV_v1.1.2_InstrumentIcon_Sept2026.exe",
+  "sha256": "e85cdb6119350e249a17b1eda037640a04ee2c12be210f2cc91a474bbd3cf6b7",
+  "icon": "icon/ctd_in_Cage.ico",
+  "icon_sha256": "927d31d1c99de8d629f3a2347d66e1789a91436a59bec2bce73addcb19bf1905",
+  "icon_sizes": [
+    [
+      16,
+      16
+    ],
+    [
+      20,
+      20
+    ],
+    [
+      24,
+      24
+    ],
+    [
+      32,
+      32
+    ],
+    [
+      40,
+      40
+    ],
+    [
+      48,
+      48
+    ],
+    [
+      64,
+      64
+    ],
+    [
+      128,
+      128
+    ],
+    [
+      256,
+      256
+    ]
+  ],
+  "button": "sbtnInstrument",
+  "glyph_size": [
+    20,
+    20
+  ],
+  "validation": "PASS: all 9 icon images embedded; original code bytes preserved; GUI screenshot checked; Windows large and small icon extraction passed"
+}

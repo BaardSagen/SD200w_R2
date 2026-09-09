@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "core_checks": 35,
+  "preset_checks": 263,
+  "gui_checks": 2054,
+  "ctd_formula_rva": "0x10A000",
+  "ctd_formula_size": "0x3000",
+  "ctd_formula_bytes_identical_to_113": true,
+  "visual_checks": [
+    "temperature_fahrenheit.png",
+    "par_unit.png"
+  ]
+}

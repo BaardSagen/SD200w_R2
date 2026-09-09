@@ -1,0 +1,12 @@
+{
+  "source": "SAIV_Instrument_Terminal_v1.3.1_Sept2026.exe",
+  "source_sha256": "5b6c0de8102d6bd696ae3a396231f9a225c28bbff69cd5441dcda4d253ee4af5",
+  "output": "SAIV_Instrument_Terminal_v1.3.2_Sept2026.exe",
+  "sha256": "869a4306cc00c6bbdfa9038627384357fd77848df4f01856546162cb1f469fc0",
+  "rva": 3026944,
+  "hook_rva": 1130697,
+  "previous_rva": 2727994,
+  "dll": "SIT_Import131.dll",
+  "dll_sha256": "7b0cfe4ddc3514bc39e8d8959780252870dd82d449158696e3076ca330bf844d",
+  "ctd_formula_bytes_unchanged": true
+}

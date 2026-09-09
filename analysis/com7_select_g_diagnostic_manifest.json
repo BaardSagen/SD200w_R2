@@ -1,0 +1,6 @@
+{
+  "source": "SD200W_SAIV_v1.0.7_SelectG_Sept2026.exe",
+  "source_sha256": "3cb193bdad4975c99a784b2cf6a9cf9f54031b52ae74746c72aa2cb81380017f",
+  "diagnostic_sha256": "6d57dcebcc6bb0abc4416beb5d36debc736444c19a0f57cd1784d19d840be838",
+  "scope": "Only COM7 can open; gate verified by x86 emulator; product probe unchanged"
+}

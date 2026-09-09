@@ -1,0 +1,24 @@
+{
+  "first_fields": [
+    "Field 1 of 7: C - Conductivity (mS/cm)",
+    "Field 2 of 7: T - Temperature (\u00b0C, Celsius)",
+    "Field 3 of 7: P - Pressure (dbar)",
+    "Field 4 of 7: OF - Fluorescence (\u00b5g/L)",
+    "Field 5 of 7: Par - Photosynthetically Active Radiation",
+    "Field 6 of 7: OxR - RINKO Oxygen (% saturation)",
+    "Field 7 of 7: Tilt - Instrument tilt"
+  ],
+  "reused_after_restart": true,
+  "current_air_pressure_used": true,
+  "no_opens_normal_wizard_cancel_preserves_history": true,
+  "cancel_prompt_preserves_history": true,
+  "different_layout_does_not_reuse": true,
+  "gps_is_requested_again": true,
+  "failed_conversion_preserves_history": true,
+  "missing_conditions_requested_again": true,
+  "multiple_layouts_remembered": true,
+  "corrupt_history_falls_back_to_wizard": true,
+  "first_export": "C:\\cprojects\\delphi\\analysis\\runtime_test\\presets134\\first_1788946158779966400.txt",
+  "reused_export": "C:\\cprojects\\delphi\\analysis\\runtime_test\\presets134\\reused_1788946164923335000.txt",
+  "isolated_registry": "Software\\MHP\\SIT_PresetTest_0331f"
+}

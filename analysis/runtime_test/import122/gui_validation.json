@@ -1,0 +1,72 @@
+[
+  {
+    "file": "C:\\cprojects\\delphi\\data\\2026_09_03_20-28-52_C.txt",
+    "export": "C:\\cprojects\\delphi\\analysis\\runtime_test\\import122\\2026_09_03_20-28-52_C_export_1788879638493979800.txt",
+    "rows": 79,
+    "exclude": false,
+    "original_checkboxes_default_on": [
+      "C",
+      "T",
+      "P",
+      "OF",
+      "Par",
+      "OxR",
+      "Tilt"
+    ],
+    "conditions_shown": false,
+    "steps": [
+      "Field 1 of 7: C - Conductivity (mS/cm)",
+      "Field 2 of 7: T - Temperature (\u00b0C, Celsius)",
+      "Field 3 of 7: P - Pressure (dbar)",
+      "Field 4 of 7: OF - Fluorescence (\u00b5g/L)",
+      "Field 5 of 7: Par - Photosynthetically Active Radiation",
+      "Field 6 of 7: OxR - RINKO Oxygen (% saturation)",
+      "Field 7 of 7: Tilt - Instrument tilt"
+    ]
+  },
+  {
+    "file": "C:\\cprojects\\delphi\\data\\2026_09_07_19-34-42_C.txt",
+    "export": "C:\\cprojects\\delphi\\analysis\\runtime_test\\import122\\2026_09_07_19-34-42_C_export_1788879642161558300.txt",
+    "rows": 3,
+    "exclude": false,
+    "original_checkboxes_default_on": [
+      "Par",
+      "OxR",
+      "Tilt"
+    ],
+    "conditions_shown": true,
+    "steps": [
+      "Field 1 of 3: Par - Photosynthetically Active Radiation",
+      "Field 2 of 3: OxR - RINKO Oxygen (% saturation)",
+      "Field 3 of 3: Tilt - Instrument tilt",
+      "Provide missing conversion conditions"
+    ]
+  },
+  {
+    "file": "C:\\cprojects\\delphi\\analysis\\runtime_test\\import122\\synthetic_all_sensors.csv",
+    "export": "C:\\cprojects\\delphi\\analysis\\runtime_test\\import122\\synthetic_all_sensors_export_1788879647284655800.txt",
+    "rows": 3,
+    "exclude": true,
+    "original_checkboxes_default_on": [
+      "C",
+      "T",
+      "P",
+      "OF",
+      "OT",
+      "Par",
+      "OX",
+      "OxR"
+    ],
+    "conditions_shown": false,
+    "steps": [
+      "Field 1 of 8: C - Conductivity (mS/cm)",
+      "Field 2 of 8: T - Temperature (\u00b0C, Celsius)",
+      "Field 3 of 8: P - Pressure (dbar)",
+      "Field 4 of 8: OF - Fluorescence (\u00b5g/L)",
+      "Field 5 of 8: OT - Turbidity (FTU)",
+      "Field 6 of 8: Par - Photosynthetically Active Radiation",
+      "Field 7 of 8: OX - SAIV205 Oxygen (% saturation)",
+      "Field 8 of 8: OxR - RINKO Oxygen (% saturation)"
+    ]
+  }
+]

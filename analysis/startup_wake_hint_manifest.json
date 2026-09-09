@@ -1,0 +1,25 @@
+{
+  "source": "SD200W_SAIV_v1.0.7_SelectG_Sept2026.exe",
+  "source_sha256": "3cb193bdad4975c99a784b2cf6a9cf9f54031b52ae74746c72aa2cb81380017f",
+  "output": "SD200W_SAIV_v1.0.8_StartupHint_Sept2026.exe",
+  "sha256": "450ebde32a2ca79331ed6ee1434a38e0f32bbf946554e209477084cb8a1c0550",
+  "rva": 2723840,
+  "symbols": {
+    ".bss": 0,
+    ".data": 0,
+    ".text": 0,
+    "start": 0,
+    "start_done": 99,
+    "receive": 102,
+    "timer_callback": 130,
+    "done": 252,
+    "state": 259,
+    "received": 260,
+    "port": 261,
+    "main_form": 264,
+    "message": 276,
+    "RVA": 2723840
+  },
+  "silence_ms": 3000,
+  "validation": "PASS: 14 x86 cases; startup GUI and full-line visual check"
+}

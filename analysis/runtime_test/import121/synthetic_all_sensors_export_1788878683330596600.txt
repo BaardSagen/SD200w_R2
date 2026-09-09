@@ -1,0 +1,22 @@
+﻿# SAIV IT logger export 1.2.1
+# Source: C:\cprojects\delphi\analysis\runtime_test\import121\synthetic_all_sensors.csv
+# OSU107 Full DATE=2026-09-08 TIME=12:00:00
+# CTDOXOFOT Par OxR Ser No 1240 AP1013.25
+# Salinity calculated from C/T/P using the original SIT PSS-78 routine. Conductivity excluded by user
+# Real depth (m): P*10000 / (in-situ density * gravity); SIT fixed-position equation, EOS-80 density using S/T/P; latitude=60.3936119227684 (GPS supplied by user)
+# GPS position: 60.3936119227684, 5.29588169849683; Units=decimal degrees; North/East positive; Source=user
+# Original pressure P excluded by user; depth retained in metres
+# Oxygen input: OX percent saturation. Air pressure hPa=1013.25
+# Oxygen input: OxR percent saturation. Air pressure hPa=1013.25
+# PAR source unit: uEinstein/(cm2*s); multiplier=10000; Output=umol photons/(m2*s)
+# OF: Fluorescence (ug/L), native SIT units; no rescaling
+# OT: Turbidity (FTU), native SIT units; no rescaling
+# Original field excluded by user: C
+# Original field excluded by user: OX
+# Original field excluded by user: OxR
+# Original field excluded by user: P
+# Original field excluded by user: Par
+FIELDS: COUNT;T;OF;OT;DATE;TIME;S;Sound_velocity_SIT_m_s;Density_anomaly_SIT_kg_m3;Depth_m;OX_mg_L;OX_mL_L;OxR_mg_L;OxR_mL_L;Par_umol_m2_s
+1;10;0.38;1.20;2026-09-08;12:00:00;39.9967180875018;1495.92132368343;30.8598454765095;0;8.74046422285574;6.11624896599671;8.74046422285574;6.11624896599671;123
+2;10;0.38;1.20;2026-09-08;12:00:02;39.4961678484218;1511.84174597523;34.9162590220784;983.916253939477;8.76848670535041;6.13585804798741;8.76848670535041;6.13585804798741;123
+3;10;0.38;1.20;2026-09-08;12:00:04;38.2356359938209;1560.41289209958;46.7715564255138;3889.79373873937;8.83945415905703;6.1855184097583;8.83945415905703;6.1855184097583;123

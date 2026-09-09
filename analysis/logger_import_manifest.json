@@ -1,0 +1,18 @@
+{
+  "source": "SAIV_Instrument_Terminal_v1.1.3_Sept2026.exe",
+  "source_sha256": "60f8713bfeda9baffdb690e2bc0c2ff2f4e12516ceb1087b35257ec91b110035",
+  "output": "SAIV_Instrument_Terminal_v1.2.0_Sept2026.exe",
+  "sha256": "870829d01389f700ac0526933e18c5f21cf393d45254bfa479314127c2e70e0b",
+  "dll_sha256": "323a7a978866105597b124f71b2618d1d5cdb1074d5bdbbfc09fd6ac02d6da28",
+  "dll_dependencies": [
+    "COMCTL32.DLL",
+    "COMDLG32.DLL",
+    "GDI32.dll",
+    "KERNEL32.dll",
+    "msvcrt.dll",
+    "msvcrt.dll",
+    "USER32.dll"
+  ],
+  "hook_rva": 2969600,
+  "ctd_formula_bytes_unchanged": true
+}

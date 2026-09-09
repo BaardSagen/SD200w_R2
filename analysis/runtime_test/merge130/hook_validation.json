@@ -1,0 +1,98 @@
+[
+  {
+    "base": "0x400000",
+    "mode": "merge",
+    "iteration": 0,
+    "passed": true
+  },
+  {
+    "base": "0x400000",
+    "mode": "cached",
+    "iteration": 0,
+    "passed": true
+  },
+  {
+    "base": "0x400000",
+    "mode": "cached",
+    "iteration": 1,
+    "passed": true
+  },
+  {
+    "base": "0x400000",
+    "mode": "import",
+    "iteration": 0,
+    "passed": true
+  },
+  {
+    "base": "0x400000",
+    "mode": "null_sender",
+    "iteration": 0,
+    "passed": true
+  },
+  {
+    "base": "0x400000",
+    "mode": "missing_dll",
+    "iteration": 0,
+    "passed": true
+  },
+  {
+    "base": "0x400000",
+    "mode": "missing_export",
+    "iteration": 0,
+    "passed": true
+  },
+  {
+    "base": "0x400000",
+    "mode": "long_path",
+    "iteration": 0,
+    "passed": true
+  },
+  {
+    "base": "0x10000000",
+    "mode": "merge",
+    "iteration": 0,
+    "passed": true
+  },
+  {
+    "base": "0x10000000",
+    "mode": "cached",
+    "iteration": 0,
+    "passed": true
+  },
+  {
+    "base": "0x10000000",
+    "mode": "cached",
+    "iteration": 1,
+    "passed": true
+  },
+  {
+    "base": "0x10000000",
+    "mode": "import",
+    "iteration": 0,
+    "passed": true
+  },
+  {
+    "base": "0x10000000",
+    "mode": "null_sender",
+    "iteration": 0,
+    "passed": true
+  },
+  {
+    "base": "0x10000000",
+    "mode": "missing_dll",
+    "iteration": 0,
+    "passed": true
+  },
+  {
+    "base": "0x10000000",
+    "mode": "missing_export",
+    "iteration": 0,
+    "passed": true
+  },
+  {
+    "base": "0x10000000",
+    "mode": "long_path",
+    "iteration": 0,
+    "passed": true
+  }
+]

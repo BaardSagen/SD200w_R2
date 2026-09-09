@@ -1,0 +1,163 @@
+{
+  "result": "PASS",
+  "count": 31,
+  "document_sha256": "efd0bab746257f7d384005fba9c554a68bb774512f964dfd18f4efe419ead73b",
+  "checks": [
+    {
+      "test": "sound_velocity[0, 15, 35]",
+      "document": 1506.6632626085423,
+      "exe_reference": 1506.663262608542
+    },
+    {
+      "test": "density_anomaly[0, 15, 35]",
+      "document": 25.972753865383083,
+      "exe_reference": 25.97275386538328
+    },
+    {
+      "test": "sigma_t[15, 35]",
+      "document": 25.972753865383083,
+      "exe_reference": 25.97275386538326
+    },
+    {
+      "test": "legacy_sigma[0, 15, 35]",
+      "document": 25.990081984929077,
+      "exe_reference": 25.990081984929077
+    },
+    {
+      "test": "sound_velocity[0, 0, 0]",
+      "document": 1402.388,
+      "exe_reference": 1402.388
+    },
+    {
+      "test": "density_anomaly[0, 0, 0]",
+      "document": -0.15740600000003724,
+      "exe_reference": -0.157406
+    },
+    {
+      "test": "sigma_t[0, 0]",
+      "document": -0.15740600000003724,
+      "exe_reference": -0.15740600000003724
+    },
+    {
+      "test": "legacy_sigma[0, 0, 0]",
+      "document": -0.09345363317982197,
+      "exe_reference": -0.09345363317982162
+    },
+    {
+      "test": "sound_velocity[100, 8, 32]",
+      "document": 1480.390003374929,
+      "exe_reference": 1480.3900033749287
+    },
+    {
+      "test": "density_anomaly[100, 8, 32]",
+      "document": 25.376992971748905,
+      "exe_reference": 25.376992971749043
+    },
+    {
+      "test": "sigma_t[8, 32]",
+      "document": 24.918820629702168,
+      "exe_reference": 24.91882062970226
+    },
+    {
+      "test": "legacy_sigma[100, 8, 32]",
+      "document": 24.9433860301502,
+      "exe_reference": 24.943386030150197
+    },
+    {
+      "test": "sound_velocity[1000, 20, 35]",
+      "document": 1538.1161454020735,
+      "exe_reference": 1538.1161454020735
+    },
+    {
+      "test": "density_anomaly[1000, 20, 35]",
+      "document": 29.087115066672823,
+      "exe_reference": 29.087115066672997
+    },
+    {
+      "test": "sigma_t[20, 35]",
+      "document": 24.763004994275434,
+      "exe_reference": 24.76300499427553
+    },
+    {
+      "test": "legacy_sigma[1000, 20, 35]",
+      "document": 24.780840608730422,
+      "exe_reference": 24.780840608730426
+    },
+    {
+      "test": "sound_velocity[4000, 2, 40]",
+      "document": 1531.945353991567,
+      "exe_reference": 1531.9453539915671
+    },
+    {
+      "test": "density_anomaly[4000, 2, 40]",
+      "document": 49.87797590148625,
+      "exe_reference": 49.877975901486366
+    },
+    {
+      "test": "sigma_t[2, 40]",
+      "document": 31.982230639361433,
+      "exe_reference": 31.98223063936148
+    },
+    {
+      "test": "legacy_sigma[4000, 2, 40]",
+      "document": 32.000553700141275,
+      "exe_reference": 32.000553700141275
+    },
+    {
+      "test": "salinity[42.914, 15, 0]",
+      "document": 34.99999992412808,
+      "exe_reference": 34.99999992412808
+    },
+    {
+      "test": "salinity[0, 20, 0]",
+      "document": 0.0,
+      "exe_reference": 0.0
+    },
+    {
+      "test": "salinity[30, 10, 100]",
+      "document": 26.824149734140065,
+      "exe_reference": 26.82414973414006
+    },
+    {
+      "test": "salinity[50, 20, 1000]",
+      "document": 36.35761512136504,
+      "exe_reference": 36.357615121365036
+    },
+    {
+      "test": "SIT 1.1.3 salinity{'C': 42.914, 'T': 15, 'P': 0}",
+      "document": 34.99999992412808,
+      "exe_reference": 34.99999992412808
+    },
+    {
+      "test": "SIT 1.1.3 salinity{'C': 42.914, 'T': 10, 'P': 0}",
+      "document": 39.99671808750185,
+      "exe_reference": 39.99671808750184
+    },
+    {
+      "test": "SIT 1.1.3 salinity{'C': 30, 'T': 10, 'P': 100}",
+      "document": 26.824149734140065,
+      "exe_reference": 26.82414973414006
+    },
+    {
+      "test": "SIT 1.1.3 salinity{'C': 0.02, 'T': 20, 'P': 0}",
+      "document": 0.017027671473302114,
+      "exe_reference": 0.01702767147330211
+    },
+    {
+      "test": "SIT 1.1.3 sound_m_s{'T': 10, 'S': 35, 'P': 0, 'D': 0}",
+      "document": 1489.8223360156642,
+      "exe_reference": 1489.8223360156642
+    },
+    {
+      "test": "SIT 1.1.3 oxygen_mg_L_at_100_percent{'T': 10, 'S': 35, 'air_mmHg': 760}",
+      "document": 9.02425974628243,
+      "exe_reference": 9.02425974628226
+    },
+    {
+      "test": "SIT 1.1.3 oxygen_mg_L_at_100_percent{'T': 10, 'S': 35, 'air_mmHg': 700}",
+      "document": 8.303630609782942,
+      "exe_reference": 8.303630609782784
+    }
+  ],
+  "scope": "Embedded formulas versus 31 recorded machine-code results; not full export UI or other-program verification"
+}

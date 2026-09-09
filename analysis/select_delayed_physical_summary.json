@@ -1,0 +1,71 @@
+{
+  "result": "PASS",
+  "output": "SD200W_SAIV_v1.1.0_SelectG_Sept2026.exe",
+  "sha256": "4ee2d90fe1dc79dd9ef6f3f95ac2102769f4382712f8e8cfb57eea9db8d5f037",
+  "sequence": [
+    {
+      "port": 7,
+      "method": "double_click",
+      "terminal_port": "07",
+      "tx": [
+        [
+          104387703,
+          976,
+          71,
+          257
+        ]
+      ],
+      "delay_ms": [
+        1344
+      ],
+      "cached_baud": 9600,
+      "cached_parity_bits_stop": "650700"
+    },
+    {
+      "port": 11,
+      "method": "OK",
+      "terminal_port": "0b",
+      "tx": [],
+      "delay_ms": [],
+      "cached_baud": 9600,
+      "cached_parity_bits_stop": "6e0800"
+    },
+    {
+      "port": 7,
+      "method": "double_click",
+      "terminal_port": "07",
+      "tx": [
+        [
+          104400125,
+          908,
+          71,
+          257
+        ]
+      ],
+      "delay_ms": [
+        1360
+      ],
+      "cached_baud": 9600,
+      "cached_parity_bits_stop": "650700"
+    },
+    {
+      "port": 7,
+      "method": "OK",
+      "terminal_port": "07",
+      "tx": [
+        [
+          104407828,
+          980,
+          71,
+          257
+        ]
+      ],
+      "delay_ms": [
+        1360
+      ],
+      "cached_baud": 9600,
+      "cached_parity_bits_stop": "650700"
+    }
+  ],
+  "scope": "Instrument Detect on COM7 and COM11; diagnostic copy records successful WriteFile, no change to TX bytes."
+}

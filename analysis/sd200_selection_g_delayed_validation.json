@@ -1,0 +1,185 @@
+{
+  "result": "PASS",
+  "cases": 32,
+  "sha256": "4ee2d90fe1dc79dd9ef6f3f95ac2102769f4382712f8e8cfb57eea9db8d5f037",
+  "details": [
+    {
+      "base": "0x400000",
+      "scenario": "sd200",
+      "tx": [
+        "G"
+      ]
+    },
+    {
+      "base": "0x400000",
+      "scenario": "osu107",
+      "tx": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "surface",
+      "tx": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "unknown",
+      "tx": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "partial",
+      "tx": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "cancel",
+      "tx": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "unselected",
+      "tx": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "searching",
+      "tx": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "not_found",
+      "tx": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "open_failed",
+      "tx": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "sd_unselected_osu_selected",
+      "tx": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "repeat_open",
+      "tx": [
+        "G"
+      ]
+    },
+    {
+      "base": "0x400000",
+      "scenario": "repeat_selection",
+      "tx": [
+        "G",
+        "G"
+      ]
+    },
+    {
+      "base": "0x400000",
+      "scenario": "port_changed",
+      "tx": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "closed_before_timer",
+      "tx": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "stale_timer",
+      "tx": [
+        "G"
+      ]
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "sd200",
+      "tx": [
+        "G"
+      ]
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "osu107",
+      "tx": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "surface",
+      "tx": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "unknown",
+      "tx": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "partial",
+      "tx": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "cancel",
+      "tx": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "unselected",
+      "tx": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "searching",
+      "tx": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "not_found",
+      "tx": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "open_failed",
+      "tx": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "sd_unselected_osu_selected",
+      "tx": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "repeat_open",
+      "tx": [
+        "G"
+      ]
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "repeat_selection",
+      "tx": [
+        "G",
+        "G"
+      ]
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "port_changed",
+      "tx": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "closed_before_timer",
+      "tx": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "stale_timer",
+      "tx": [
+        "G"
+      ]
+    }
+  ]
+}

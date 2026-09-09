@@ -1,0 +1,33 @@
+{
+  "result": "PASS",
+  "rinko_temperature_points": [
+    {
+      "voltage": 0.84979,
+      "calculated": 3.4037017270244707,
+      "certificate": 3.404
+    },
+    {
+      "voltage": 1.28766,
+      "calculated": 10.412317146978742,
+      "certificate": 10.412
+    },
+    {
+      "voltage": 1.74609,
+      "calculated": 17.363003598522745,
+      "certificate": 17.363
+    },
+    {
+      "voltage": 2.19891,
+      "calculated": 24.204267503983914,
+      "certificate": 24.204
+    },
+    {
+      "voltage": 2.63324,
+      "calculated": 31.082713762318647,
+      "certificate": 31.083
+    }
+  ],
+  "par_dry_reference_umol_m2_s": 153.79310344827584,
+  "par_certificate_lamp_umol_m2_s": 153.9,
+  "notes": "Coefficient transcription check only; no calibration applied to logger samples."
+}

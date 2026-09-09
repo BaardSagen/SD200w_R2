@@ -1,0 +1,10 @@
+{
+  "exe": "SAIV_Instrument_Terminal_v1.1.3_Sept2026.exe",
+  "about_opened": true,
+  "disclaimer_exact": true,
+  "dialogs_closed": true,
+  "screenshots": [
+    "about_saiv_v113.png",
+    "disclaimer_saiv_v113.png"
+  ]
+}

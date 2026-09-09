@@ -1,0 +1,24 @@
+{
+  "source": "SD200W_SAIV_v1.0.4_MenuDetect_Sept2026.exe",
+  "source_sha256": "eb7b28cf8d82acab316bc2f74638c637f311f9cb3af2dbd9a39b59181028ee64",
+  "output": "SD200W_SAIV_v1.0.5_SoftParity_Sept2026.exe",
+  "sha256": "83c1637f51d8c1fe385e8ad00a26fe5021df2156a5168932f56799a4c0c9bdd1",
+  "rva": 2719744,
+  "symbols": {
+    ".bss": 0,
+    ".data": 0,
+    ".text": 0,
+    "configure": 0,
+    "configured": 50,
+    "receive": 70,
+    "mask_byte": 131,
+    "received": 138,
+    "send_string": 143,
+    "encode_byte": 177,
+    "even_bits": 185,
+    "encoded": 191,
+    "RVA": 2719744
+  },
+  "scope": "Logical 7E1 through physical 8N1; ordinary 8N1 bytes untouched; menu probe retained",
+  "validation": "PASS: 38 x86 scenarios including all bytes, real Delphi copy-on-write, relocation and DCB; GUI startup passed; active hardware acceptance pending"
+}

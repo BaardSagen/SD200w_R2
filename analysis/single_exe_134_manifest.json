@@ -1,0 +1,17 @@
+{
+  "cache_tag": "1.3.4_0acb0e970546",
+  "source": "SAIV_Instrument_Terminal_v1.3.2_Sept2026.exe",
+  "source_sha256": "869a4306cc00c6bbdfa9038627384357fd77848df4f01856546162cb1f469fc0",
+  "output": "SAIV_Instrument_Terminal_v1.3.4_Sept2026.exe",
+  "sha256": "7f2d59672a309836e2d7c40ac0a8f01ad3ce9cf72de1969bc620b943364e9fe5",
+  "runtime_sha256": "aba6ab1a8eea52019a166e6716b34be7c5e0557f309fcd5ea352ce109c5a371c",
+  "dll_sha256": "52ee1b9a088a9e8bf44af2edd5b72c875dc85a4798c59fda982e773b1a443dec",
+  "dependencies": [
+    "KERNEL32.dll",
+    "msvcrt.dll",
+    "msvcrt.dll",
+    "SHELL32.DLL",
+    "USER32.dll"
+  ],
+  "bytes": 7523228
+}

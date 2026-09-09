@@ -1,0 +1,57 @@
+{
+  "status": "reference profiles; not automatically applied",
+  "par": {
+    "model": "QCP2260",
+    "serial": "20678",
+    "calibration_date": "2026-04-14",
+    "source": "docs/Cal QCP 20678 4-14-26__.pdf",
+    "dark_voltage_V": 0.0511,
+    "dry_factor_V_per_uEinstein_cm2_s": 4.35,
+    "wet_factor_V_per_uEinstein_cm2_s": 4.05,
+    "dry_factor_V_per_quanta_cm2_s": 7.22e-18,
+    "wet_factor_V_per_quanta_cm2_s": 6.72e-18,
+    "immersion_coefficient": 0.931,
+    "voltage_to_PAR_umol_m2_s": "(V - 0.0511) / factor * 10000",
+    "conditions": [
+      "Only if file values are uncorrected sensor volts for this sensor.",
+      "If input is already net voltage, do not subtract dark voltage again.",
+      "Select dry/wet factor explicitly; do not also apply immersion coefficient.",
+      "Do not infer sensor serial from Par column name."
+    ],
+    "source_sha256": "ec9329e7958af37c6e0a74a2b6f0916596b3cef7c74363f940502e3d322352b2"
+  },
+  "rinko": {
+    "model": "ARO-CAV-SA-R",
+    "name": "RINKO III",
+    "serial": "0380",
+    "source": "docs/SN380.pdf",
+    "temperature_calibration_date": "2019-06-28",
+    "oxygen_calibration_date": "2019-07-01",
+    "temperature_coefficients": {
+      "A": -12.47913,
+      "B": 21.17776,
+      "C": -3.483237,
+      "D": 0.6543883
+    },
+    "temperature_equation": "T_degC = A + B*V + C*V^2 + D*V^3",
+    "oxygen_coefficients": {
+      "A": -43.92753,
+      "B": 142.3079,
+      "C": -0.2808449,
+      "D": 0.010449,
+      "E": 0.004,
+      "F": 5.62e-05,
+      "G": 0,
+      "H": 1
+    },
+    "oxygen_equation_printed": "DO_percent = G + H * P_prime",
+    "oxygen_equation_incomplete_in_certificate": true,
+    "film_number": "191625BA",
+    "conditions": [
+      "Certificate does not define full P_prime equation from voltage and temperature.",
+      "File OxR unit and prior compensation not yet confirmed.",
+      "Do not apply coefficients for serial 0380 automatically to all RINKO sensors."
+    ],
+    "source_sha256": "10e5918cb102e9123c67f9ee2b71dbad02bc390311f465bcf074870c7cd84650"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "passed": [
+    "reject GPS 91,5",
+    "reject GPS 60,181",
+    "reject unspecified PAR area unit",
+    "cancel after input errors restores main window"
+  ]
+}

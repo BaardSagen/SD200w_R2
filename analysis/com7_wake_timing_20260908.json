@@ -1,0 +1,187 @@
+{
+  "port": "COM7",
+  "physical": "9600 8N1",
+  "logical": "7E1 software",
+  "events": [
+    {
+      "t": 1.234,
+      "tx": "G",
+      "wire_hex": "47"
+    },
+    {
+      "t": 2.344,
+      "tx": "I",
+      "wire_hex": "c9"
+    },
+    {
+      "t": 2.656,
+      "tx": "I",
+      "wire_hex": "c9"
+    },
+    {
+      "t": 2.984,
+      "tx": "I",
+      "wire_hex": "c9"
+    },
+    {
+      "t": 3.297,
+      "tx": "I",
+      "wire_hex": "c9"
+    },
+    {
+      "t": 3.328,
+      "rx_hex": "8d0a",
+      "text": "\r\n"
+    },
+    {
+      "t": 3.359,
+      "rx_hex": "53746f7265e4a0e16972a0f07265f3f3f5726528ede2a93a4150bd",
+      "text": "Stored air pressure(mb):AP="
+    },
+    {
+      "t": 3.453,
+      "rx_hex": "a0",
+      "text": " "
+    },
+    {
+      "t": 3.484,
+      "rx_hex": "b130",
+      "text": "10"
+    },
+    {
+      "t": 3.516,
+      "rx_hex": "33",
+      "text": "3"
+    },
+    {
+      "t": 3.547,
+      "rx_hex": "362e",
+      "text": "6."
+    },
+    {
+      "t": 3.578,
+      "rx_hex": "33",
+      "text": "3"
+    },
+    {
+      "t": 3.609,
+      "rx_hex": "b2b4",
+      "text": "24"
+    },
+    {
+      "t": 3.641,
+      "rx_hex": "35",
+      "text": "5"
+    },
+    {
+      "t": 3.672,
+      "rx_hex": "b88d",
+      "text": "8\r"
+    },
+    {
+      "t": 3.703,
+      "rx_hex": "0a",
+      "text": "\n"
+    },
+    {
+      "t": 3.734,
+      "rx_hex": "8d0ac3e8e1eee765a0e16972a0f07265f3f3f57265a0a0a0a0a03c",
+      "text": "\r\nChange air pressure     <"
+    },
+    {
+      "t": 3.766,
+      "rx_hex": "41be8d0a5374e174f5f3af5374e17274af4d65eef5a0a0a0a0a0a0a03c53",
+      "text": "A>\r\nStatus/Start/Menu       <S"
+    },
+    {
+      "t": 3.797,
+      "rx_hex": "be8d0a50e1f3f369f665a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a03c48be8d",
+      "text": ">\r\nPassive                 <H>\r"
+    },
+    {
+      "t": 3.828,
+      "rx_hex": "0ac966a0ee6fa0636fedede1",
+      "text": "\nIf no comma"
+    },
+    {
+      "t": 3.859,
+      "rx_hex": "eee4aca0ed65e1f3f57265ed65ee74a077696c6ca0f374e17274a069eea0",
+      "text": "nd, measurement will start in "
+    },
+    {
+      "t": 3.891,
+      "rx_hex": "b130a0f365632e8d0a",
+      "text": "10 sec.\r\n"
+    },
+    {
+      "t": 4.219,
+      "state": "startup",
+      "buffer": "\r\nStored air pressure(mb):AP= 1036.32458\r\n\r\nChange air pressure     <A>\r\nStatus/Start/Menu       <S>\r\nPassive                 <H>\r\nIf no command, measurement will start in 10 sec.\r\n"
+    },
+    {
+      "t": 4.219,
+      "tx": "S",
+      "wire_hex": "53"
+    },
+    {
+      "t": 4.234,
+      "rx_hex": "8d0a5374e174f5f33a8d0a4d6fe4656c",
+      "text": "\r\nStatus:\r\nModel"
+    },
+    {
+      "t": 4.266,
+      "rx_hex": "a05344b230b4ac536572a04e6fa0b1b735368d0a42e17474",
+      "text": " SD204,Ser No 1756\r\nBatt"
+    },
+    {
+      "t": 4.313,
+      "rx_hex": "6572f9a06c696665a0636ff5ee7465723a39b4b439358d",
+      "text": "ery life counter:94495\r"
+    },
+    {
+      "t": 4.344,
+      "rx_hex": "0a44e17465a039b72d30b42db1b1",
+      "text": "\nDate 97-04-11"
+    },
+    {
+      "t": 4.359,
+      "rx_hex": "a0d469ed65a0b1332d30392d30b1",
+      "text": " Time 13-09-01"
+    },
+    {
+      "t": 4.406,
+      "rx_hex": "a0474dd48d0ac9ee746572f6e16c3aa0b2f36563a0a08d0a4d",
+      "text": " GMT\r\nInterval: 2sec  \r\nM"
+    },
+    {
+      "t": 4.438,
+      "rx_hex": "6fe4653ac3d444638d0a42e1f5e4a072e174653a39363030a08d0a4e657874",
+      "text": "ode:CTDc\r\nBaud rate:9600 \r\nNext"
+    },
+    {
+      "t": 4.469,
+      "rx_hex": "a0f374e17274a066726feda04e30353035368d0a8d0a53",
+      "text": " start from N05056\r\n\r\nS"
+    },
+    {
+      "t": 4.5,
+      "rx_hex": "74e17274a0e2f9a04de1e72d4b65f9a06f72a0f07265f3f3a03cc9be8d0a6f",
+      "text": "tart by Mag-Key or press <I>\r\no"
+    },
+    {
+      "t": 4.531,
+      "rx_hex": "728d0a507265f3f3a03c4dbea0666f72a0ed65eef5a06f72a077e16974a0b1",
+      "text": "r\r\nPress <M> for menu or wait 1"
+    },
+    {
+      "t": 4.563,
+      "rx_hex": "30f365638d0a0a",
+      "text": "0sec\r\n\n"
+    },
+    {
+      "t": 4.875,
+      "state": "unknown",
+      "buffer": "\r\nStatus:\r\nModel SD204,Ser No 1756\r\nBattery life counter:94495\r\nDate 97-04-11 Time 13-09-01 GMT\r\nInterval: 2sec  \r\nMode:CTDc\r\nBaud rate:9600 \r\nNext start from N05056\r\n\r\nStart by Mag-Key or press <I>\r\nor\r\nPress <M> for menu or wait 10sec\r\n\n"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "source": "SD200W_SAIV_v1.1.0_SelectG_Sept2026.exe",
+  "source_sha256": "4ee2d90fe1dc79dd9ef6f3f95ac2102769f4382712f8e8cfb57eea9db8d5f037",
+  "output": "SD200W_SAIV_v1.1.1_DetectHint_Sept2026.exe",
+  "sha256": "53841d3d6e515d9a659a93c49b00bacff651a83092c1d4453a866a755778f4e6",
+  "title": "Find communication speed - Double-click green ports to open",
+  "resource_rva": 2744320,
+  "validation": "Resource-only patch; all original bytes outside explicitly changed PE metadata and resources preserved"
+}

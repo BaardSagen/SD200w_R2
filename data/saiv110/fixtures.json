@@ -1,0 +1,86 @@
+[
+  {
+    "file": "01_exact_long_before.txt",
+    "start": "2026-09-03T20:23:52",
+    "rows": 130,
+    "interval_seconds": 5,
+    "offset_from_osu_start_seconds": -300
+  },
+  {
+    "file": "02_starts_late.csv",
+    "start": "2026-09-03T20:29:52",
+    "rows": 100,
+    "interval_seconds": 3,
+    "offset_from_osu_start_seconds": 60
+  },
+  {
+    "file": "03_short_exact.txt",
+    "start": "2026-09-03T20:29:22",
+    "rows": 4,
+    "interval_seconds": 2,
+    "offset_from_osu_start_seconds": 30
+  },
+  {
+    "file": "04_offset_0p5s.csv",
+    "start": "2026-09-03T20:28:52.500000",
+    "rows": 50,
+    "interval_seconds": 2,
+    "offset_from_osu_start_seconds": 0.5
+  },
+  {
+    "file": "05_offset_5s_short.txt",
+    "start": "2026-09-03T20:28:47",
+    "rows": 1,
+    "interval_seconds": 1,
+    "offset_from_osu_start_seconds": -5
+  },
+  {
+    "file": "06_offset_10s_boundary.txt",
+    "start": "2026-09-03T20:28:42",
+    "rows": 1,
+    "interval_seconds": 1,
+    "offset_from_osu_start_seconds": -10
+  },
+  {
+    "file": "07_outside_10s.txt",
+    "start": "2026-09-03T20:28:41.900000",
+    "rows": 1,
+    "interval_seconds": 1,
+    "offset_from_osu_start_seconds": -10.1
+  },
+  {
+    "file": "08_wrong_date.txt",
+    "start": "2026-09-04T20:28:52",
+    "rows": 100,
+    "interval_seconds": 5,
+    "offset_from_osu_start_seconds": 86400
+  },
+  {
+    "file": "09_ends_before.txt",
+    "start": "2026-09-03T20:18:52",
+    "rows": 80,
+    "interval_seconds": 5,
+    "offset_from_osu_start_seconds": -600
+  },
+  {
+    "file": "10_starts_after.txt",
+    "start": "2026-09-03T20:38:52",
+    "rows": 80,
+    "interval_seconds": 5,
+    "offset_from_osu_start_seconds": 600
+  },
+  {
+    "file": "11_few_late_rows.csv",
+    "start": "2026-09-03T20:31:27",
+    "rows": 5,
+    "interval_seconds": 2.5,
+    "offset_from_osu_start_seconds": 155
+  },
+  {
+    "file": "12_many_fast_rows.csv",
+    "start": "2026-09-03T20:26:52",
+    "rows": 1000,
+    "interval_seconds": 0.5,
+    "offset_from_osu_start_seconds": -120
+  }
+]

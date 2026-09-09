@@ -1,0 +1,7 @@
+From file: C:\cprojects\delphi\data\test
+Instrument no.: 1756
+Series nr: 1
+AP: 1036,32
+Started  : 11.04.1997 - 15:12:41
+Down-cast selected
+Press;Sal.;Cond.;Temp;F (µg/l);T (FTU);Density;S. vel.;

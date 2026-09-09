@@ -1,0 +1,9 @@
+{
+  "result": "PASS",
+  "exe": "C:\\cprojects\\delphi\\saiv-studio\\dist\\SAIVStudio-0.1.0\\SAIVStudio.exe",
+  "sha256": "e284a4d39284a32bb49ab424d96488be82f0f5c3f5d60a6cac11253704e7e868",
+  "startup": true,
+  "navigation_clicks": 6,
+  "clean_exit": true,
+  "serial_commands": 0
+}

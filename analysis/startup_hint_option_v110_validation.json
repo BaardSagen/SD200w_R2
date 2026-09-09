@@ -1,0 +1,105 @@
+{
+  "result": "PASS",
+  "cases": 18,
+  "sha256": "4ee2d90fe1dc79dd9ef6f3f95ac2102769f4382712f8e8cfb57eea9db8d5f037",
+  "details": [
+    {
+      "base": "0x400000",
+      "scenario": "silent",
+      "lines": [
+        "Hold <I> to wake the instrument, or use Detect to find connected units."
+      ]
+    },
+    {
+      "base": "0x400000",
+      "scenario": "early_rx",
+      "lines": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "late_rx",
+      "lines": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "changed_port",
+      "lines": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "closed_form",
+      "lines": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "timer_failed",
+      "lines": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "repeat_start",
+      "lines": [
+        "Hold <I> to wake the instrument, or use Detect to find connected units."
+      ]
+    },
+    {
+      "base": "0x400000",
+      "scenario": "disabled",
+      "lines": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "disabled_rx",
+      "lines": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "silent",
+      "lines": [
+        "Hold <I> to wake the instrument, or use Detect to find connected units."
+      ]
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "early_rx",
+      "lines": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "late_rx",
+      "lines": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "changed_port",
+      "lines": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "closed_form",
+      "lines": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "timer_failed",
+      "lines": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "repeat_start",
+      "lines": [
+        "Hold <I> to wake the instrument, or use Detect to find connected units."
+      ]
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "disabled",
+      "lines": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "disabled_rx",
+      "lines": []
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "result": "PASS",
+  "cases": 24,
+  "sha256": "3cb193bdad4975c99a784b2cf6a9cf9f54031b52ae74746c72aa2cb81380017f",
+  "details": [
+    {
+      "base": "0x400000",
+      "scenario": "sd200",
+      "tx": [
+        "G"
+      ]
+    },
+    {
+      "base": "0x400000",
+      "scenario": "osu107",
+      "tx": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "surface",
+      "tx": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "unknown",
+      "tx": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "partial",
+      "tx": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "cancel",
+      "tx": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "unselected",
+      "tx": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "searching",
+      "tx": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "not_found",
+      "tx": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "open_failed",
+      "tx": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "sd_unselected_osu_selected",
+      "tx": []
+    },
+    {
+      "base": "0x400000",
+      "scenario": "repeat_open",
+      "tx": [
+        "G"
+      ]
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "sd200",
+      "tx": [
+        "G"
+      ]
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "osu107",
+      "tx": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "surface",
+      "tx": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "unknown",
+      "tx": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "partial",
+      "tx": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "cancel",
+      "tx": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "unselected",
+      "tx": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "searching",
+      "tx": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "not_found",
+      "tx": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "open_failed",
+      "tx": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "sd_unselected_osu_selected",
+      "tx": []
+    },
+    {
+      "base": "0x1400000",
+      "scenario": "repeat_open",
+      "tx": [
+        "G"
+      ]
+    }
+  ]
+}

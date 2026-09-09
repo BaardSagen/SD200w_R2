@@ -1,0 +1,189 @@
+[
+  {
+    "id": 320,
+    "text": "Master file (keeps its rows and timestamps):",
+    "cls": "Static",
+    "rect": [
+      19,
+      40,
+      749,
+      60
+    ]
+  },
+  {
+    "id": 301,
+    "text": "",
+    "cls": "Edit",
+    "rect": [
+      19,
+      64,
+      679,
+      89
+    ]
+  },
+  {
+    "id": 302,
+    "text": "Browse...",
+    "cls": "Button",
+    "rect": [
+      691,
+      64,
+      791,
+      89
+    ]
+  },
+  {
+    "id": 321,
+    "text": "Folder containing additional CSV/TXT files:",
+    "cls": "Static",
+    "rect": [
+      19,
+      100,
+      749,
+      120
+    ]
+  },
+  {
+    "id": 303,
+    "text": "",
+    "cls": "Edit",
+    "rect": [
+      19,
+      124,
+      679,
+      149
+    ]
+  },
+  {
+    "id": 304,
+    "text": "Browse...",
+    "cls": "Button",
+    "rect": [
+      691,
+      124,
+      791,
+      149
+    ]
+  },
+  {
+    "id": 322,
+    "text": "Time tolerance (0.0 - 10.0 seconds):",
+    "cls": "Static",
+    "rect": [
+      19,
+      166,
+      264,
+      190
+    ]
+  },
+  {
+    "id": 305,
+    "text": "0.0",
+    "cls": "Edit",
+    "rect": [
+      267,
+      162,
+      341,
+      187
+    ]
+  },
+  {
+    "id": 306,
+    "text": "Scan folder",
+    "cls": "Button",
+    "rect": [
+      353,
+      160,
+      468,
+      188
+    ]
+  },
+  {
+    "id": 307,
+    "text": "Add '-' separator column between files",
+    "cls": "Button",
+    "rect": [
+      19,
+      200,
+      779,
+      224
+    ]
+  },
+  {
+    "id": 323,
+    "text": "Select up to two matching files. Nearest time wins; a source row may be reused.",
+    "cls": "Static",
+    "rect": [
+      19,
+      233,
+      791,
+      255
+    ]
+  },
+  {
+    "id": 310,
+    "text": "",
+    "cls": "SysListView32",
+    "rect": [
+      19,
+      260,
+      791,
+      480
+    ]
+  },
+  {
+    "id": 0,
+    "text": "",
+    "cls": "SysHeader32",
+    "rect": [
+      20,
+      261,
+      792,
+      278
+    ]
+  },
+  {
+    "id": 311,
+    "text": "6 matching files / 12 scanned; 6 without time matches. Master: 79 rows. Select up to 2 files.",
+    "cls": "Static",
+    "rect": [
+      19,
+      490,
+      791,
+      530
+    ]
+  },
+  {
+    "id": 312,
+    "text": "",
+    "cls": "Edit",
+    "rect": [
+      19,
+      535,
+      791,
+      605
+    ]
+  },
+  {
+    "id": 309,
+    "text": "Merge files",
+    "cls": "Button",
+    "rect": [
+      565,
+      616,
+      679,
+      646
+    ]
+  },
+  {
+    "id": 2,
+    "text": "Close",
+    "cls": "Button",
+    "rect": [
+      691,
+      616,
+      791,
+      646
+    ]
+  }
+]

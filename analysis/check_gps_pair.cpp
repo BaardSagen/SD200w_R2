@@ -1,0 +1,3 @@
+﻿#include "../sit_import/logger.h"
+#include <iostream>
+int main(){int cases=0;for(const std::string&text:{"60.3936119227684, 5.29588169849683","\"60.3936119227684, 5.29588169849683\""," 60.3936119227684 , 5.29588169849683 "}){auto p=sit::gpsPair(text);if(sit::fmt(p.first)!="60.3936119227684"||sit::fmt(p.second)!="5.29588169849683")return 1;++cases;}for(const std::string&text:{"-90, -180","90,180","0,0"}){sit::gpsPair(text);++cases;}for(const std::string&text:{"91,5","60,181","60.3;5.2","60,3,5,2","nan,5","60,"}){bool rejected=false;try{sit::gpsPair(text);}catch(const std::exception&){rejected=true;}if(!rejected)return 2;++cases;}std::cout<<"PASS "<<cases<<" Google Maps coordinate parsing cases\n";}

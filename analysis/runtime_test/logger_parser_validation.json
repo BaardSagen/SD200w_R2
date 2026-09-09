@@ -1,0 +1,27 @@
+{
+  "passed": 22,
+  "cases": [
+    "2026_09_03_20-28-52_C.txt_original_bytes",
+    "2026_09_03_20-28-52_C.txt",
+    "2026_09_03_20-28-52_C.txt_roundtrip",
+    "2026_09_07_19-34-42_C.txt_original_bytes",
+    "2026_09_07_19-34-42_C.txt",
+    "surface_oxygen",
+    "2026_09_07_19-34-42_C.txt_roundtrip",
+    "APB5_legacy",
+    "legacy_export",
+    "synthetic_full",
+    "full_header_time",
+    "reordered",
+    "bad_number",
+    "nan",
+    "infinity",
+    "bad_date",
+    "bad_time",
+    "missing_column",
+    "duplicate_field",
+    "multiple_sections",
+    "full_missing_time",
+    "full_unknown_text"
+  ]
+}

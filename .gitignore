@@ -1,4 +1,4 @@
-ï»¿# Local dependencies and caches
+# Local dependencies and caches
 analysis/python_packages/
 __pycache__/
 *.pyc
@@ -50,3 +50,48 @@ analysis/*.bin
 
 # Isolated transfer verification workspaces
 .transfer-check/
+
+!/SD200W_SAIV_v1.0.2_Sept2026.exe
+
+!/SD200W_SAIV_v1.0.3_Sept2026.exe
+
+!/SD200W_SAIV_v1.0.4_MenuDetect_Sept2026.exe
+!/SD200W_SAIV_v1.0.5_SoftParity_Sept2026.exe
+# ImGui build/cache; release ZIPs contain portable executable and full source
+/saiv-studio/build/
+/saiv-studio/dist/
+/saiv-studio/transfer-check-*/
+
+!/SD200W_SAIV_v1.0.6_NativeUART_Sept2026.exe
+
+!/SD200W_SAIV_v1.0.7_SelectG_Sept2026.exe
+
+!/SD200W_SAIV_v1.0.8_StartupHint_Sept2026.exe
+
+!/SD200W_SAIV_v1.0.9_StartupOption_Sept2026.exe
+
+!/SD200W_SAIV_v1.1.0_SelectG_Sept2026.exe
+
+!/SD200W_SAIV_v1.1.1_DetectHint_Sept2026.exe
+
+!/SD200W_SAIV_v1.1.2_InstrumentIcon_Sept2026.exe
+
+!/SAIV_Instrument_Terminal_v1.1.3_Sept2026.exe
+
+!/SAIV_Instrument_Terminal_v1.2.0_Sept2026.exe
+!/SIT_Import.dll
+!/SAIV_IT_v1.2.0_portable.zip
+
+!/SAIV_Instrument_Terminal_v1.2.1_Sept2026.exe
+!/SIT_Import121.dll
+!/SAIV_IT_v1.2.1_portable.zip
+
+# SIT 1.2.2 portable release
+!SAIV_Instrument_Terminal_v1.2.2_Sept2026.exe
+!SIT_Import122.dll
+!SAIV_IT_v1.2.2_portable.zip
+
+# SIT 1.3.0 portable release
+!SAIV_Instrument_Terminal_v1.3.0_Sept2026.exe
+!SIT_Import130.dll
+!SAIV_IT_v1.3.0_portable.zip

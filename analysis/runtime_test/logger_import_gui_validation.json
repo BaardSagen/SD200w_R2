@@ -1,0 +1,33 @@
+[
+  {
+    "file": "2026_09_03_20-28-52_C.txt",
+    "rows": 79,
+    "steps": [
+      "Field 1 of 7: C",
+      "Field 2 of 7: T",
+      "Field 3 of 7: P",
+      "Field 4 of 7: OF",
+      "Field 5 of 7: Par",
+      "Field 6 of 7: OxR",
+      "Field 7 of 7: Tilt",
+      "Oxygen conversion conditions"
+    ],
+    "export": "C:\\cprojects\\delphi\\analysis\\runtime_test\\export_1788875981641835000_2026_09_03_20-28-52_C.txt"
+  },
+  {
+    "file": "2026_09_07_19-34-42_C.txt",
+    "rows": 3,
+    "steps": [
+      "Field 1 of 3: Par",
+      "Field 2 of 3: OxR",
+      "Field 3 of 3: Tilt",
+      "Oxygen conversion conditions"
+    ],
+    "export": "C:\\cprojects\\delphi\\analysis\\runtime_test\\export_1788875987031263800_2026_09_07_19-34-42_C.txt"
+  },
+  {
+    "file": "26090606_18.11.51.txt",
+    "native_rows": 43,
+    "cancel_test": true
+  }
+]

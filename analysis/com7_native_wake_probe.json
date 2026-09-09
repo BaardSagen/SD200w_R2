@@ -1,0 +1,223 @@
+{
+  "port": "COM7",
+  "uart": "9600 7E1",
+  "final_phase": "passive",
+  "events": [
+    {
+      "t": 1.015,
+      "tx": "I"
+    },
+    {
+      "t": 1.046,
+      "rx": "Current set up:\r"
+    },
+    {
+      "t": 1.062,
+      "rx": "\n"
+    },
+    {
+      "t": 1.109,
+      "rx": "Mea"
+    },
+    {
+      "t": 1.125,
+      "rx": "suring interval"
+    },
+    {
+      "t": 1.14,
+      "rx": "    2sec \r\n"
+    },
+    {
+      "t": 1.203,
+      "rx": "Change: Y"
+    },
+    {
+      "t": 1.218,
+      "rx": "/N Menu: <G>\r\n"
+    },
+    {
+      "t": 1.531,
+      "tx": "G"
+    },
+    {
+      "t": 1.546,
+      "rx": "\r\nMenu:\r\nC"
+    },
+    {
+      "t": 1.562,
+      "rx": "hange mode CTD/S"
+    },
+    {
+      "t": 1.578,
+      "rx": "TD/OX/Turb --  "
+    },
+    {
+      "t": 1.593,
+      "rx": "<B>\r\nChange typ"
+    },
+    {
+      "t": 1.609,
+      "rx": "e/range optional"
+    },
+    {
+      "t": 1.625,
+      "rx": " sen. <D>\r\nMeas"
+    },
+    {
+      "t": 1.64,
+      "rx": "uring interval "
+    },
+    {
+      "t": 1.656,
+      "rx": "             <I>"
+    },
+    {
+      "t": 1.671,
+      "rx": "\r\nActivate radi"
+    },
+    {
+      "t": 1.687,
+      "rx": "o communication"
+    },
+    {
+      "t": 1.703,
+      "rx": "    <J>\r\nChange "
+    },
+    {
+      "t": 1.718,
+      "rx": "baud rate      "
+    },
+    {
+      "t": 1.734,
+      "rx": "          <A>\r\n"
+    },
+    {
+      "t": 1.75,
+      "rx": "Dump stored data"
+    },
+    {
+      "t": 1.765,
+      "rx": " to screen     "
+    },
+    {
+      "t": 1.781,
+      "rx": " <F>\r\n"
+    },
+    {
+      "t": 1.843,
+      "rx": "Erase data in "
+    },
+    {
+      "t": 1.859,
+      "rx": "memory         "
+    },
+    {
+      "t": 1.89,
+      "rx": "   <E>\r\nSet rea"
+    },
+    {
+      "t": 1.906,
+      "rx": "l-time clock    "
+    },
+    {
+      "t": 1.921,
+      "rx": "         <S>\r\nB"
+    },
+    {
+      "t": 1.953,
+      "rx": "attery change i"
+    },
+    {
+      "t": 1.953,
+      "rx": "nstruction      "
+    },
+    {
+      "t": 1.968,
+      "rx": "<P>\r\nList cal.c"
+    },
+    {
+      "t": 2.0,
+      "rx": "oefficients    "
+    },
+    {
+      "t": 2.015,
+      "rx": "       <L>\r\nSet "
+    },
+    {
+      "t": 2.031,
+      "rx": "coefficients   "
+    },
+    {
+      "t": 2.046,
+      "rx": "             <M"
+    },
+    {
+      "t": 2.062,
+      "rx": ">\r\nCalibration o"
+    },
+    {
+      "t": 2.078,
+      "rx": "xygen SAIV205  "
+    },
+    {
+      "t": 2.093,
+      "rx": "    <C>\r\n"
+    },
+    {
+      "t": 2.156,
+      "rx": "Self-test  "
+    },
+    {
+      "t": 2.171,
+      "rx": "               "
+    },
+    {
+      "t": 2.187,
+      "rx": "      <T>\r\nRest"
+    },
+    {
+      "t": 2.203,
+      "rx": "ore factory sett"
+    },
+    {
+      "t": 2.218,
+      "rx": "ings        <K>"
+    },
+    {
+      "t": 2.234,
+      "rx": "\r\nStart via key"
+    },
+    {
+      "t": 2.25,
+      "rx": "-board          "
+    },
+    {
+      "t": 2.265,
+      "rx": "   <R>\r\nExit (p"
+    },
+    {
+      "t": 2.281,
+      "rx": "assive)        "
+    },
+    {
+      "t": 2.296,
+      "rx": "          <H>\r\n"
+    },
+    {
+      "t": 2.906,
+      "tx": "H"
+    },
+    {
+      "t": 2.968,
+      "rx": "Ra -MM\r\n\r\n- passive"
+    },
+    {
+      "t": 3.0,
+      "rx": " -\r\nUse Mag-Key or hold <I> to"
+    },
+    {
+      "t": 3.015,
+      "rx": " activate\r\n\r\n"
+    }
+  ]
+}

@@ -1,0 +1,367 @@
+{
+  "checks": 9679,
+  "fixture_cases": [
+    {
+      "file": "01_exact_long_before.txt",
+      "tolerance": 0,
+      "matches": 16
+    },
+    {
+      "file": "01_exact_long_before.txt",
+      "tolerance": 0.1,
+      "matches": 16
+    },
+    {
+      "file": "01_exact_long_before.txt",
+      "tolerance": 0.5,
+      "matches": 16
+    },
+    {
+      "file": "01_exact_long_before.txt",
+      "tolerance": 1,
+      "matches": 48
+    },
+    {
+      "file": "01_exact_long_before.txt",
+      "tolerance": 5,
+      "matches": 79
+    },
+    {
+      "file": "01_exact_long_before.txt",
+      "tolerance": 10,
+      "matches": 79
+    },
+    {
+      "file": "03_short_exact.txt",
+      "tolerance": 0,
+      "matches": 4
+    },
+    {
+      "file": "03_short_exact.txt",
+      "tolerance": 0.1,
+      "matches": 4
+    },
+    {
+      "file": "03_short_exact.txt",
+      "tolerance": 0.5,
+      "matches": 4
+    },
+    {
+      "file": "03_short_exact.txt",
+      "tolerance": 1,
+      "matches": 4
+    },
+    {
+      "file": "03_short_exact.txt",
+      "tolerance": 5,
+      "matches": 8
+    },
+    {
+      "file": "03_short_exact.txt",
+      "tolerance": 10,
+      "matches": 14
+    },
+    {
+      "file": "05_offset_5s_short.txt",
+      "tolerance": 0,
+      "matches": 0
+    },
+    {
+      "file": "05_offset_5s_short.txt",
+      "tolerance": 0.1,
+      "matches": 0
+    },
+    {
+      "file": "05_offset_5s_short.txt",
+      "tolerance": 0.5,
+      "matches": 0
+    },
+    {
+      "file": "05_offset_5s_short.txt",
+      "tolerance": 1,
+      "matches": 0
+    },
+    {
+      "file": "05_offset_5s_short.txt",
+      "tolerance": 5,
+      "matches": 1
+    },
+    {
+      "file": "05_offset_5s_short.txt",
+      "tolerance": 10,
+      "matches": 2
+    },
+    {
+      "file": "06_offset_10s_boundary.txt",
+      "tolerance": 0,
+      "matches": 0
+    },
+    {
+      "file": "06_offset_10s_boundary.txt",
+      "tolerance": 0.1,
+      "matches": 0
+    },
+    {
+      "file": "06_offset_10s_boundary.txt",
+      "tolerance": 0.5,
+      "matches": 0
+    },
+    {
+      "file": "06_offset_10s_boundary.txt",
+      "tolerance": 1,
+      "matches": 0
+    },
+    {
+      "file": "06_offset_10s_boundary.txt",
+      "tolerance": 5,
+      "matches": 0
+    },
+    {
+      "file": "06_offset_10s_boundary.txt",
+      "tolerance": 10,
+      "matches": 1
+    },
+    {
+      "file": "07_outside_10s.txt",
+      "tolerance": 0,
+      "matches": 0
+    },
+    {
+      "file": "07_outside_10s.txt",
+      "tolerance": 0.1,
+      "matches": 0
+    },
+    {
+      "file": "07_outside_10s.txt",
+      "tolerance": 0.5,
+      "matches": 0
+    },
+    {
+      "file": "07_outside_10s.txt",
+      "tolerance": 1,
+      "matches": 0
+    },
+    {
+      "file": "07_outside_10s.txt",
+      "tolerance": 5,
+      "matches": 0
+    },
+    {
+      "file": "07_outside_10s.txt",
+      "tolerance": 10,
+      "matches": 0
+    },
+    {
+      "file": "08_wrong_date.txt",
+      "tolerance": 0,
+      "matches": 0
+    },
+    {
+      "file": "08_wrong_date.txt",
+      "tolerance": 0.1,
+      "matches": 0
+    },
+    {
+      "file": "08_wrong_date.txt",
+      "tolerance": 0.5,
+      "matches": 0
+    },
+    {
+      "file": "08_wrong_date.txt",
+      "tolerance": 1,
+      "matches": 0
+    },
+    {
+      "file": "08_wrong_date.txt",
+      "tolerance": 5,
+      "matches": 0
+    },
+    {
+      "file": "08_wrong_date.txt",
+      "tolerance": 10,
+      "matches": 0
+    },
+    {
+      "file": "09_ends_before.txt",
+      "tolerance": 0,
+      "matches": 0
+    },
+    {
+      "file": "09_ends_before.txt",
+      "tolerance": 0.1,
+      "matches": 0
+    },
+    {
+      "file": "09_ends_before.txt",
+      "tolerance": 0.5,
+      "matches": 0
+    },
+    {
+      "file": "09_ends_before.txt",
+      "tolerance": 1,
+      "matches": 0
+    },
+    {
+      "file": "09_ends_before.txt",
+      "tolerance": 5,
+      "matches": 0
+    },
+    {
+      "file": "09_ends_before.txt",
+      "tolerance": 10,
+      "matches": 0
+    },
+    {
+      "file": "10_starts_after.txt",
+      "tolerance": 0,
+      "matches": 0
+    },
+    {
+      "file": "10_starts_after.txt",
+      "tolerance": 0.1,
+      "matches": 0
+    },
+    {
+      "file": "10_starts_after.txt",
+      "tolerance": 0.5,
+      "matches": 0
+    },
+    {
+      "file": "10_starts_after.txt",
+      "tolerance": 1,
+      "matches": 0
+    },
+    {
+      "file": "10_starts_after.txt",
+      "tolerance": 5,
+      "matches": 0
+    },
+    {
+      "file": "10_starts_after.txt",
+      "tolerance": 10,
+      "matches": 0
+    },
+    {
+      "file": "02_starts_late.csv",
+      "tolerance": 0,
+      "matches": 17
+    },
+    {
+      "file": "02_starts_late.csv",
+      "tolerance": 0.1,
+      "matches": 17
+    },
+    {
+      "file": "02_starts_late.csv",
+      "tolerance": 0.5,
+      "matches": 17
+    },
+    {
+      "file": "02_starts_late.csv",
+      "tolerance": 1,
+      "matches": 50
+    },
+    {
+      "file": "02_starts_late.csv",
+      "tolerance": 5,
+      "matches": 52
+    },
+    {
+      "file": "02_starts_late.csv",
+      "tolerance": 10,
+      "matches": 55
+    },
+    {
+      "file": "04_offset_0p5s.csv",
+      "tolerance": 0,
+      "matches": 0
+    },
+    {
+      "file": "04_offset_0p5s.csv",
+      "tolerance": 0.1,
+      "matches": 0
+    },
+    {
+      "file": "04_offset_0p5s.csv",
+      "tolerance": 0.5,
+      "matches": 49
+    },
+    {
+      "file": "04_offset_0p5s.csv",
+      "tolerance": 1,
+      "matches": 49
+    },
+    {
+      "file": "04_offset_0p5s.csv",
+      "tolerance": 5,
+      "matches": 51
+    },
+    {
+      "file": "04_offset_0p5s.csv",
+      "tolerance": 10,
+      "matches": 54
+    },
+    {
+      "file": "11_few_late_rows.csv",
+      "tolerance": 0,
+      "matches": 0
+    },
+    {
+      "file": "11_few_late_rows.csv",
+      "tolerance": 0.1,
+      "matches": 0
+    },
+    {
+      "file": "11_few_late_rows.csv",
+      "tolerance": 0.5,
+      "matches": 1
+    },
+    {
+      "file": "11_few_late_rows.csv",
+      "tolerance": 1,
+      "matches": 3
+    },
+    {
+      "file": "11_few_late_rows.csv",
+      "tolerance": 5,
+      "matches": 5
+    },
+    {
+      "file": "11_few_late_rows.csv",
+      "tolerance": 10,
+      "matches": 7
+    },
+    {
+      "file": "12_many_fast_rows.csv",
+      "tolerance": 0,
+      "matches": 79
+    },
+    {
+      "file": "12_many_fast_rows.csv",
+      "tolerance": 0.1,
+      "matches": 79
+    },
+    {
+      "file": "12_many_fast_rows.csv",
+      "tolerance": 0.5,
+      "matches": 79
+    },
+    {
+      "file": "12_many_fast_rows.csv",
+      "tolerance": 1,
+      "matches": 79
+    },
+    {
+      "file": "12_many_fast_rows.csv",
+      "tolerance": 5,
+      "matches": 79
+    },
+    {
+      "file": "12_many_fast_rows.csv",
+      "tolerance": 10,
+      "matches": 79
+    }
+  ],
+  "source_files_unchanged": true,
+  "random_seed": 107110
+}

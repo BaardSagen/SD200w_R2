@@ -1,0 +1,47 @@
+{
+  "scans": [
+    {
+      "tolerance": 0,
+      "files": [
+        "01_exact_long_before.txt",
+        "02_starts_late.csv",
+        "03_short_exact.txt",
+        "12_many_fast_rows.csv"
+      ]
+    },
+    {
+      "tolerance": 0.5,
+      "files": [
+        "01_exact_long_before.txt",
+        "02_starts_late.csv",
+        "03_short_exact.txt",
+        "04_offset_0p5s.csv",
+        "11_few_late_rows.csv",
+        "12_many_fast_rows.csv"
+      ]
+    },
+    {
+      "tolerance": 10,
+      "files": [
+        "01_exact_long_before.txt",
+        "02_starts_late.csv",
+        "03_short_exact.txt",
+        "04_offset_0p5s.csv",
+        "05_offset_5s_short.txt",
+        "06_offset_10s_boundary.txt",
+        "11_few_late_rows.csv",
+        "12_many_fast_rows.csv"
+      ]
+    }
+  ],
+  "max_two_enforced": true,
+  "export_separator_False": "C:\\cprojects\\delphi\\analysis\\runtime_test\\single133\\gui_merged_0_1788945437580457100.txt",
+  "export_separator_True": "C:\\cprojects\\delphi\\analysis\\runtime_test\\single133\\gui_merged_1_1788945438374931200.txt",
+  "date_time_option_preserves_other_cells": true,
+  "clean_headers_and_top_matches": true,
+  "export_without_dates": "C:\\cprojects\\delphi\\analysis\\runtime_test\\single133\\gui_without_dates_1788945439168202100.txt",
+  "no_overwrite": true,
+  "invalid_tolerance_rejected": true,
+  "cancel_scan": true,
+  "embedded_convert_wizard": true
+}

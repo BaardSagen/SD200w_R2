@@ -1,0 +1,6 @@
+{
+  "source": "SD200W_SAIV_v1.0.6_NativeUART_Sept2026.exe",
+  "source_sha256": "4b7c492d8fa64b9bf2ffd939ef629d2d82cde7243d766aecb757810e27056b53",
+  "diagnostic_sha256": "7470a0d08e3ac784be69e607e8416f2195dd5a2e1a5a59b72ceacaa3be7a4cc9",
+  "scope": "Only COM7 can open; gate verified by x86 emulator; product probe unchanged"
+}

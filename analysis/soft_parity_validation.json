@@ -1,0 +1,284 @@
+{
+  "result": "PASS",
+  "exe": "SD200W_SAIV_v1.0.5_SoftParity_Sept2026.exe",
+  "sha256": "83c1637f51d8c1fe385e8ad00a26fe5021df2156a5168932f56799a4c0c9bdd1",
+  "cases": 38,
+  "details": [
+    {
+      "base": "0x400000",
+      "test": "DCB",
+      "bits": 7,
+      "parity": 2
+    },
+    {
+      "base": "0x400000",
+      "test": "DCB",
+      "bits": 8,
+      "parity": 0
+    },
+    {
+      "base": "0x400000",
+      "test": "DCB",
+      "bits": 8,
+      "parity": 2
+    },
+    {
+      "base": "0x400000",
+      "test": "DCB",
+      "bits": 7,
+      "parity": 1
+    },
+    {
+      "base": "0x400000",
+      "test": "send_all_256",
+      "parity": "e",
+      "bits": 7
+    },
+    {
+      "base": "0x400000",
+      "test": "receive_all_256",
+      "parity": "e",
+      "bits": 7,
+      "success": 1,
+      "count": 256
+    },
+    {
+      "base": "0x400000",
+      "test": "receive_all_256",
+      "parity": "e",
+      "bits": 7,
+      "success": 1,
+      "count": 0
+    },
+    {
+      "base": "0x400000",
+      "test": "receive_all_256",
+      "parity": "e",
+      "bits": 7,
+      "success": 0,
+      "count": 256
+    },
+    {
+      "base": "0x400000",
+      "test": "receive_all_256",
+      "parity": "e",
+      "bits": 7,
+      "success": 1,
+      "count": 257
+    },
+    {
+      "base": "0x400000",
+      "test": "send_all_256",
+      "parity": "n",
+      "bits": 8
+    },
+    {
+      "base": "0x400000",
+      "test": "receive_all_256",
+      "parity": "n",
+      "bits": 8,
+      "success": 1,
+      "count": 256
+    },
+    {
+      "base": "0x400000",
+      "test": "receive_all_256",
+      "parity": "n",
+      "bits": 8,
+      "success": 1,
+      "count": 0
+    },
+    {
+      "base": "0x400000",
+      "test": "receive_all_256",
+      "parity": "n",
+      "bits": 8,
+      "success": 0,
+      "count": 256
+    },
+    {
+      "base": "0x400000",
+      "test": "receive_all_256",
+      "parity": "n",
+      "bits": 8,
+      "success": 1,
+      "count": 257
+    },
+    {
+      "base": "0x400000",
+      "test": "send_all_256",
+      "parity": "e",
+      "bits": 8
+    },
+    {
+      "base": "0x400000",
+      "test": "receive_all_256",
+      "parity": "e",
+      "bits": 8,
+      "success": 1,
+      "count": 256
+    },
+    {
+      "base": "0x400000",
+      "test": "receive_all_256",
+      "parity": "e",
+      "bits": 8,
+      "success": 1,
+      "count": 0
+    },
+    {
+      "base": "0x400000",
+      "test": "receive_all_256",
+      "parity": "e",
+      "bits": 8,
+      "success": 0,
+      "count": 256
+    },
+    {
+      "base": "0x400000",
+      "test": "receive_all_256",
+      "parity": "e",
+      "bits": 8,
+      "success": 1,
+      "count": 257
+    },
+    {
+      "base": "0x1400000",
+      "test": "DCB",
+      "bits": 7,
+      "parity": 2
+    },
+    {
+      "base": "0x1400000",
+      "test": "DCB",
+      "bits": 8,
+      "parity": 0
+    },
+    {
+      "base": "0x1400000",
+      "test": "DCB",
+      "bits": 8,
+      "parity": 2
+    },
+    {
+      "base": "0x1400000",
+      "test": "DCB",
+      "bits": 7,
+      "parity": 1
+    },
+    {
+      "base": "0x1400000",
+      "test": "send_all_256",
+      "parity": "e",
+      "bits": 7
+    },
+    {
+      "base": "0x1400000",
+      "test": "receive_all_256",
+      "parity": "e",
+      "bits": 7,
+      "success": 1,
+      "count": 256
+    },
+    {
+      "base": "0x1400000",
+      "test": "receive_all_256",
+      "parity": "e",
+      "bits": 7,
+      "success": 1,
+      "count": 0
+    },
+    {
+      "base": "0x1400000",
+      "test": "receive_all_256",
+      "parity": "e",
+      "bits": 7,
+      "success": 0,
+      "count": 256
+    },
+    {
+      "base": "0x1400000",
+      "test": "receive_all_256",
+      "parity": "e",
+      "bits": 7,
+      "success": 1,
+      "count": 257
+    },
+    {
+      "base": "0x1400000",
+      "test": "send_all_256",
+      "parity": "n",
+      "bits": 8
+    },
+    {
+      "base": "0x1400000",
+      "test": "receive_all_256",
+      "parity": "n",
+      "bits": 8,
+      "success": 1,
+      "count": 256
+    },
+    {
+      "base": "0x1400000",
+      "test": "receive_all_256",
+      "parity": "n",
+      "bits": 8,
+      "success": 1,
+      "count": 0
+    },
+    {
+      "base": "0x1400000",
+      "test": "receive_all_256",
+      "parity": "n",
+      "bits": 8,
+      "success": 0,
+      "count": 256
+    },
+    {
+      "base": "0x1400000",
+      "test": "receive_all_256",
+      "parity": "n",
+      "bits": 8,
+      "success": 1,
+      "count": 257
+    },
+    {
+      "base": "0x1400000",
+      "test": "send_all_256",
+      "parity": "e",
+      "bits": 8
+    },
+    {
+      "base": "0x1400000",
+      "test": "receive_all_256",
+      "parity": "e",
+      "bits": 8,
+      "success": 1,
+      "count": 256
+    },
+    {
+      "base": "0x1400000",
+      "test": "receive_all_256",
+      "parity": "e",
+      "bits": 8,
+      "success": 1,
+      "count": 0
+    },
+    {
+      "base": "0x1400000",
+      "test": "receive_all_256",
+      "parity": "e",
+      "bits": 8,
+      "success": 0,
+      "count": 256
+    },
+    {
+      "base": "0x1400000",
+      "test": "receive_all_256",
+      "parity": "e",
+      "bits": 8,
+      "success": 1,
+      "count": 257
+    }
+  ]
+}

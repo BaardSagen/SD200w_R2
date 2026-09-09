@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "checks": 259,
+  "test": "analysis/test_convert_presets.cpp",
+  "coverage": [
+    "instrument family and exact ordered fields",
+    "renamed files and changed timestamps/AP",
+    "different PAR unit metadata",
+    "roundtrip all options",
+    "all truncated binary prefixes",
+    "invalid modes and trailing data",
+    "fresh file-specific conditions"
+  ]
+}
