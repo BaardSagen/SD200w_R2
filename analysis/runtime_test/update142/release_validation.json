@@ -1,0 +1,35 @@
+{
+  "manifest": {
+    "cache_tag": "1.4.2_930b695fe674",
+    "source": "analysis/single141/SAIV_IT_Runtime.exe",
+    "source_sha256": "b078741f61b82caf51107451ebb75553148b8548283191590b6399aa67bd7a19",
+    "output": "SAIV_Instrument_Terminal_v1.4.2_Sept2026.exe",
+    "sha256": "98989e032a4bc525732ee9e17db75b457859a2100df4b1cf79c0637bf9359d32",
+    "runtime_sha256": "90517b7846615b14eb3c1ab19e575222c4c972131f8f13d14fc215a44d4f487f",
+    "dll_sha256": "29e58562f2ff8f737e96305d4e19d23d1fbd78368a404cfce6d8379e6d900099",
+    "helper_sha256": "4070fe4428d2b659c937bf5cb13c40853b4dcd3c7f638aa0084e9f9db077a033",
+    "dependencies": [
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "msvcrt.dll",
+      "SHELL32.DLL",
+      "USER32.dll"
+    ],
+    "bytes": 9972504
+  },
+  "only_version_strings_resources_dll_name_and_checksums_changed": true,
+  "helper_byte_identical_to_141": true,
+  "zip_sha256": "f75ac95668f1fe61bfa0893d72d5d4ab152e3d5305503b8dbaf0655dd6ea491e",
+  "gui": {
+    "installed_version": "1.4.2",
+    "single_exe_starts": true,
+    "update_dialog_reports_142": true,
+    "no_network_check_requested": true
+  },
+  "installation_from_141": {
+    "bad_checksum_keeps_old_program_running": true,
+    "same_path_replaced": true,
+    "backup_byte_identical": true,
+    "restarted_without_elevation": true
+  }
+}

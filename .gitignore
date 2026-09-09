@@ -124,3 +124,9 @@ analysis/*.bin
 !/analysis/single141/SAIV_IT_Runtime.exe
 !/analysis/single141/SIT_Update.exe
 !/update_server/SAIV_Instrument_Terminal_v1.4.1_Sept2026.zip
+
+# SIT 1.4.2 update test release
+!/SAIV_Instrument_Terminal_v1.4.2_Sept2026.exe
+!/analysis/single142/SAIV_IT_Runtime.exe
+!/analysis/single142/SIT_Update.exe
+!/update_server/SAIV_Instrument_Terminal_v1.4.2_Sept2026.zip

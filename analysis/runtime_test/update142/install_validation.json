@@ -1,0 +1,6 @@
+{
+  "bad_checksum_keeps_old_program_running": true,
+  "same_path_replaced": true,
+  "backup_byte_identical": true,
+  "restarted_without_elevation": true
+}
