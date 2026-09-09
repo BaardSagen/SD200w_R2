@@ -1,0 +1,102 @@
+{
+  "rva": 3031040,
+  "symbols": {
+    ".bss": 0,
+    ".data": 0,
+    ".text": 0,
+    "entry": 0,
+    "import_entry": 0,
+    "import_entry_done": 41,
+    "import_file": 48,
+    "ascii_file": 78,
+    "import_title": 93,
+    "title_done": 128,
+    "import_filter": 135,
+    "filter_done": 169,
+    "capture": 175,
+    "capture_row": 220,
+    "capture_logger": 305,
+    "capture_next": 313,
+    "capture_done": 319,
+    "selected": 326,
+    "selected_done": 381,
+    "download": 384,
+    "use_logger": 465,
+    "download_done": 479,
+    "prescan": 486,
+    "prescan_native": 519,
+    "logger_line": 533,
+    "line_native": 577,
+    "ascii_mode": 584,
+    "confirmed_type": 585,
+    "confirmed_port": 586,
+    "pending_type": 587,
+    "pending_port": 588,
+    "logger_active": 589,
+    "convert_title": 600,
+    "ascii_title": 624,
+    "convert_filter": 648,
+    "convert_filter_end": 738,
+    "ascii_filter": 748,
+    "ascii_filter_end": 840,
+    "OLD_DOWNLOAD": 2695330,
+    "REQUESTED": 2695904,
+    "OLD_LINE": 2695990,
+    "CLASSIFY": 2716364,
+    "OLD_SELECTED": 2740224,
+    "OLD_CAPTURE": 2740324,
+    "OLD_IMPORT_FILE": 2969600,
+    "OLD_IMPORT_ENTRY": 2969928,
+    "RVA": 3031040
+  },
+  "constants": {
+    "RVA": 3031040,
+    "OLD_IMPORT_ENTRY": 2969928,
+    "OLD_IMPORT_FILE": 2969600,
+    "OLD_CAPTURE": 2740324,
+    "OLD_SELECTED": 2740224,
+    "OLD_DOWNLOAD": 2695330,
+    "OLD_LINE": 2695990,
+    "CLASSIFY": 2716364,
+    "LOGGER_KNOWN": 2696185,
+    "REQUESTED": 2695904
+  },
+  "patches": [
+    [
+      1726780,
+      5
+    ],
+    [
+      1727050,
+      5
+    ],
+    [
+      1726823,
+      5
+    ],
+    [
+      1726867,
+      5
+    ],
+    [
+      1120540,
+      5
+    ],
+    [
+      1139399,
+      5
+    ],
+    [
+      1709300,
+      5
+    ],
+    [
+      1382628,
+      8
+    ],
+    [
+      1349290,
+      5
+    ]
+  ]
+}

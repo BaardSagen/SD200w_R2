@@ -95,3 +95,7 @@ analysis/*.bin
 !SAIV_Instrument_Terminal_v1.3.0_Sept2026.exe
 !SIT_Import130.dll
 !SAIV_IT_v1.3.0_portable.zip
+
+# SIT 1.3.6 single-EXE release and preserved runtime
+!/SAIV_Instrument_Terminal_v1.3.6_Sept2026.exe
+!/analysis/single136/SAIV_IT_Runtime.exe

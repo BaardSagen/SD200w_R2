@@ -6,3 +6,5 @@
 *.exe binary
 *.pdf binary
 *.png binary
+
+analysis/reference/native_ascii_sample_old/* binary

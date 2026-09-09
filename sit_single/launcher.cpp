@@ -34,7 +34,7 @@ int WINAPI WinMain(HINSTANCE instance,HINSTANCE,LPSTR,int show){
   mutex=CreateMutexW(0,FALSE,mutexName.c_str());if(!mutex)fail("Cannot prepare program components.");DWORD wait=WaitForSingleObject(mutex,30000);if(wait!=WAIT_OBJECT_0&&wait!=WAIT_ABANDONED)fail("Another SAIV IT start is still preparing its files. Try again.");locked=true;
   wchar_t shortPath[32768];DWORD n=GetShortPathNameW(folder.c_str(),shortPath,32768);std::wstring runtime=(n&&n<32768)?shortPath:folder;
   BOOL substituted=FALSE;char ansi[32768];int bytes=WideCharToMultiByte(CP_ACP,WC_NO_BEST_FIT_CHARS,runtime.c_str(),-1,ansi,sizeof(ansi),0,&substituted);if(!bytes||substituted||bytes>200)fail("The AppData path is too long or cannot be used by this program.");
-  exeFile=ensure(instance,101,folder+L"\\SAIV_IT_Runtime.exe");dllFile=ensure(instance,102,folder+L"\\SIT_Import135.dll");ReleaseMutex(mutex);locked=false;CloseHandle(mutex);mutex=0;
+  exeFile=ensure(instance,101,folder+L"\\SAIV_IT_Runtime.exe");dllFile=ensure(instance,102,folder+L"\\SIT_Import136.dll");ReleaseMutex(mutex);locked=false;CloseHandle(mutex);mutex=0;
   std::wstring launch=runtime+L"\\SAIV_IT_Runtime.exe",command=L"\""+launch+L"\""+arguments();std::vector<wchar_t> writable(command.begin(),command.end());writable.push_back(0);
   STARTUPINFOW inherited={};inherited.cb=sizeof(inherited);GetStartupInfoW(&inherited);STARTUPINFOW si={};si.cb=sizeof(si);si.lpDesktop=inherited.lpDesktop;si.dwFlags=STARTF_USESHOWWINDOW;si.wShowWindow=(WORD)show;
   if(!CreateProcessW(launch.c_str(),writable.data(),0,0,FALSE,0,0,0,&si,&pi))fail("Cannot start SAIV Instrument Terminal.");CloseHandle(pi.hThread);pi.hThread=0;
