@@ -1,0 +1,1683 @@
+{
+  "pid": 22336,
+  "windows": [
+    {
+      "hwnd": 330484,
+      "title": "Multigraph - logger_review.SD2",
+      "cls": "TdlgMchart",
+      "rect": [
+        1371,
+        424,
+        2068,
+        1015
+      ],
+      "children": [
+        {
+          "hwnd": 789238,
+          "text": "",
+          "cls": "SITNativeChannels",
+          "id": 0,
+          "visible": true,
+          "rect": [
+            1379,
+            455,
+            2060,
+            549
+          ]
+        },
+        {
+          "hwnd": 133954,
+          "text": "Multigraph fields (up to 10 visible at once)",
+          "cls": "Static",
+          "id": 690,
+          "visible": true,
+          "rect": [
+            1387,
+            458,
+            1827,
+            476
+          ]
+        },
+        {
+          "hwnd": 133956,
+          "text": "",
+          "cls": "ComboBox",
+          "id": 700,
+          "visible": true,
+          "rect": [
+            1387,
+            480,
+            1513,
+            501
+          ]
+        },
+        {
+          "hwnd": 133960,
+          "text": "",
+          "cls": "ComboBox",
+          "id": 701,
+          "visible": true,
+          "rect": [
+            1520,
+            480,
+            1646,
+            501
+          ]
+        },
+        {
+          "hwnd": 133942,
+          "text": "",
+          "cls": "ComboBox",
+          "id": 702,
+          "visible": true,
+          "rect": [
+            1653,
+            480,
+            1779,
+            501
+          ]
+        },
+        {
+          "hwnd": 133946,
+          "text": "",
+          "cls": "ComboBox",
+          "id": 703,
+          "visible": true,
+          "rect": [
+            1786,
+            480,
+            1912,
+            501
+          ]
+        },
+        {
+          "hwnd": 264962,
+          "text": "",
+          "cls": "ComboBox",
+          "id": 704,
+          "visible": true,
+          "rect": [
+            1919,
+            480,
+            2045,
+            501
+          ]
+        },
+        {
+          "hwnd": 199438,
+          "text": "",
+          "cls": "ComboBox",
+          "id": 705,
+          "visible": true,
+          "rect": [
+            1387,
+            510,
+            1513,
+            531
+          ]
+        },
+        {
+          "hwnd": 133906,
+          "text": "",
+          "cls": "ComboBox",
+          "id": 706,
+          "visible": true,
+          "rect": [
+            1520,
+            510,
+            1646,
+            531
+          ]
+        },
+        {
+          "hwnd": 133910,
+          "text": "",
+          "cls": "ComboBox",
+          "id": 707,
+          "visible": true,
+          "rect": [
+            1653,
+            510,
+            1779,
+            531
+          ]
+        },
+        {
+          "hwnd": 592552,
+          "text": "",
+          "cls": "ComboBox",
+          "id": 708,
+          "visible": true,
+          "rect": [
+            1786,
+            510,
+            1912,
+            531
+          ]
+        },
+        {
+          "hwnd": 134000,
+          "text": "",
+          "cls": "ComboBox",
+          "id": 709,
+          "visible": true,
+          "rect": [
+            1919,
+            510,
+            2045,
+            531
+          ]
+        },
+        {
+          "hwnd": 133974,
+          "text": "",
+          "cls": "TMChartMH",
+          "id": 133974,
+          "visible": true,
+          "rect": [
+            1379,
+            483,
+            1900,
+            1007
+          ]
+        },
+        {
+          "hwnd": 395954,
+          "text": "",
+          "cls": "TPanel",
+          "id": 395954,
+          "visible": true,
+          "rect": [
+            1899,
+            455,
+            2060,
+            1008
+          ]
+        },
+        {
+          "hwnd": 133980,
+          "text": "Show all points",
+          "cls": "TCheckBox",
+          "id": 133980,
+          "visible": true,
+          "rect": [
+            1915,
+            903,
+            2012,
+            920
+          ]
+        },
+        {
+          "hwnd": 3082678,
+          "text": "Graph base",
+          "cls": "TRadioGroup",
+          "id": 3082678,
+          "visible": true,
+          "rect": [
+            1907,
+            823,
+            2020,
+            880
+          ]
+        },
+        {
+          "hwnd": 592348,
+          "text": "Time (minutes)",
+          "cls": "TGroupButton",
+          "id": 592348,
+          "visible": true,
+          "rect": [
+            1915,
+            856,
+            2018,
+            875
+          ]
+        },
+        {
+          "hwnd": 527074,
+          "text": "Pressure (dbar)",
+          "cls": "TGroupButton",
+          "id": 527074,
+          "visible": true,
+          "rect": [
+            1915,
+            837,
+            2018,
+            856
+          ]
+        },
+        {
+          "hwnd": 133978,
+          "text": "Hide",
+          "cls": "TButton",
+          "id": 133978,
+          "visible": true,
+          "rect": [
+            1931,
+            927,
+            2006,
+            952
+          ]
+        },
+        {
+          "hwnd": 133976,
+          "text": "Wide graphs",
+          "cls": "TCheckBox",
+          "id": 133976,
+          "visible": true,
+          "rect": [
+            1915,
+            887,
+            2012,
+            904
+          ]
+        },
+        {
+          "hwnd": 920324,
+          "text": "Select active graphs",
+          "cls": "TGroupBox",
+          "id": 920324,
+          "visible": true,
+          "rect": [
+            1907,
+            471,
+            2053,
+            816
+          ]
+        },
+        {
+          "hwnd": 133950,
+          "text": "S_from_C",
+          "cls": "TCheckBox",
+          "id": 133950,
+          "visible": true,
+          "rect": [
+            1915,
+            721,
+            1980,
+            738
+          ]
+        },
+        {
+          "hwnd": 133952,
+          "text": "",
+          "cls": "TEdit",
+          "id": 133952,
+          "visible": true,
+          "rect": [
+            1996,
+            719,
+            2045,
+            740
+          ]
+        },
+        {
+          "hwnd": 133918,
+          "text": "",
+          "cls": "TEdit",
+          "id": 133918,
+          "visible": true,
+          "rect": [
+            1996,
+            591,
+            2045,
+            612
+          ]
+        },
+        {
+          "hwnd": 133916,
+          "text": "Density_anomaly_SIT_kg_m3",
+          "cls": "TCheckBox",
+          "id": 133916,
+          "visible": true,
+          "rect": [
+            1915,
+            593,
+            1980,
+            610
+          ]
+        },
+        {
+          "hwnd": 133934,
+          "text": "",
+          "cls": "TEdit",
+          "id": 133934,
+          "visible": true,
+          "rect": [
+            1996,
+            623,
+            2045,
+            644
+          ]
+        },
+        {
+          "hwnd": 133932,
+          "text": "Sound_velocity_SIT_m_s",
+          "cls": "TCheckBox",
+          "id": 133932,
+          "visible": true,
+          "rect": [
+            1915,
+            625,
+            1980,
+            642
+          ]
+        },
+        {
+          "hwnd": 133930,
+          "text": "",
+          "cls": "TEdit",
+          "id": 133930,
+          "visible": true,
+          "rect": [
+            1996,
+            783,
+            2045,
+            804
+          ]
+        },
+        {
+          "hwnd": 133928,
+          "text": "Tilt",
+          "cls": "TCheckBox",
+          "id": 133928,
+          "visible": true,
+          "rect": [
+            1915,
+            785,
+            1980,
+            802
+          ]
+        },
+        {
+          "hwnd": 133922,
+          "text": "",
+          "cls": "TEdit",
+          "id": 133922,
+          "visible": true,
+          "rect": [
+            1996,
+            495,
+            2045,
+            516
+          ]
+        },
+        {
+          "hwnd": 133920,
+          "text": "OxR",
+          "cls": "TCheckBox",
+          "id": 133920,
+          "visible": true,
+          "rect": [
+            1915,
+            497,
+            1980,
+            514
+          ]
+        },
+        {
+          "hwnd": 133924,
+          "text": "",
+          "cls": "TEdit",
+          "id": 133924,
+          "visible": true,
+          "rect": [
+            1996,
+            527,
+            2045,
+            548
+          ]
+        },
+        {
+          "hwnd": 264952,
+          "text": "Par",
+          "cls": "TCheckBox",
+          "id": 264952,
+          "visible": true,
+          "rect": [
+            1915,
+            529,
+            1980,
+            546
+          ]
+        },
+        {
+          "hwnd": 264956,
+          "text": "",
+          "cls": "TEdit",
+          "id": 264956,
+          "visible": true,
+          "rect": [
+            1996,
+            655,
+            2045,
+            676
+          ]
+        },
+        {
+          "hwnd": 264954,
+          "text": "OF",
+          "cls": "TCheckBox",
+          "id": 264954,
+          "visible": true,
+          "rect": [
+            1915,
+            657,
+            1980,
+            674
+          ]
+        },
+        {
+          "hwnd": 985838,
+          "text": "",
+          "cls": "TEdit",
+          "id": 985838,
+          "visible": true,
+          "rect": [
+            1996,
+            559,
+            2045,
+            580
+          ]
+        },
+        {
+          "hwnd": 789208,
+          "text": "P",
+          "cls": "TCheckBox",
+          "id": 789208,
+          "visible": true,
+          "rect": [
+            1915,
+            561,
+            1980,
+            578
+          ]
+        },
+        {
+          "hwnd": 854752,
+          "text": "",
+          "cls": "TEdit",
+          "id": 854752,
+          "visible": true,
+          "rect": [
+            1996,
+            687,
+            2045,
+            708
+          ]
+        },
+        {
+          "hwnd": 592624,
+          "text": "T",
+          "cls": "TCheckBox",
+          "id": 592624,
+          "visible": true,
+          "rect": [
+            1915,
+            689,
+            1980,
+            706
+          ]
+        },
+        {
+          "hwnd": 527104,
+          "text": "",
+          "cls": "TEdit",
+          "id": 527104,
+          "visible": true,
+          "rect": [
+            1996,
+            751,
+            2045,
+            772
+          ]
+        },
+        {
+          "hwnd": 789156,
+          "text": "C",
+          "cls": "TCheckBox",
+          "id": 789156,
+          "visible": true,
+          "rect": [
+            1915,
+            753,
+            1980,
+            770
+          ]
+        },
+        {
+          "hwnd": 854750,
+          "text": "Close",
+          "cls": "TButton",
+          "id": 854750,
+          "visible": true,
+          "rect": [
+            1931,
+            959,
+            2006,
+            984
+          ]
+        },
+        {
+          "hwnd": 199556,
+          "text": "",
+          "cls": "TPanel",
+          "id": 199556,
+          "visible": true,
+          "rect": [
+            1379,
+            455,
+            1903,
+            549
+          ]
+        },
+        {
+          "hwnd": 658134,
+          "text": "",
+          "cls": "TPanel",
+          "id": 658134,
+          "visible": false,
+          "rect": [
+            1381,
+            512,
+            1905,
+            547
+          ]
+        },
+        {
+          "hwnd": 723674,
+          "text": "",
+          "cls": "TEdit",
+          "id": 723674,
+          "visible": false,
+          "rect": [
+            1805,
+            520,
+            1826,
+            541
+          ]
+        },
+        {
+          "hwnd": 723676,
+          "text": "",
+          "cls": "TEdit",
+          "id": 723676,
+          "visible": false,
+          "rect": [
+            1733,
+            520,
+            1790,
+            541
+          ]
+        },
+        {
+          "hwnd": 592590,
+          "text": "",
+          "cls": "TEdit",
+          "id": 592590,
+          "visible": false,
+          "rect": [
+            1685,
+            520,
+            1718,
+            541
+          ]
+        },
+        {
+          "hwnd": 199554,
+          "text": "",
+          "cls": "TEdit",
+          "id": 199554,
+          "visible": false,
+          "rect": [
+            1557,
+            520,
+            1578,
+            541
+          ]
+        },
+        {
+          "hwnd": 2689712,
+          "text": "",
+          "cls": "TEdit",
+          "id": 2689712,
+          "visible": false,
+          "rect": [
+            1485,
+            520,
+            1542,
+            541
+          ]
+        },
+        {
+          "hwnd": 2427532,
+          "text": "",
+          "cls": "TEdit",
+          "id": 2427532,
+          "visible": false,
+          "rect": [
+            1445,
+            520,
+            1470,
+            541
+          ]
+        }
+      ],
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\button_1788986355372504600_0.png"
+    },
+    {
+      "hwnd": 1312704,
+      "title": "SAIV Instrument Terminal - Imported - logger_review.SD2",
+      "cls": "TForm1",
+      "rect": [
+        1335,
+        445,
+        2105,
+        995
+      ],
+      "children": [
+        {
+          "hwnd": 919434,
+          "text": "",
+          "cls": "TLMDStatusBar",
+          "id": 919434,
+          "visible": true,
+          "rect": [
+            1343,
+            963,
+            2097,
+            987
+          ]
+        },
+        {
+          "hwnd": 1705928,
+          "text": "",
+          "cls": "TLMDStatusCustomPanel",
+          "id": 1705928,
+          "visible": true,
+          "rect": [
+            2036,
+            966,
+            2081,
+            984
+          ]
+        },
+        {
+          "hwnd": 329476,
+          "text": "",
+          "cls": "TNotebook",
+          "id": 329476,
+          "visible": true,
+          "rect": [
+            1343,
+            528,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 1508746,
+          "text": "List",
+          "cls": "TPage",
+          "id": 1508746,
+          "visible": true,
+          "rect": [
+            1343,
+            528,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 199168,
+          "text": "",
+          "cls": "TPanel",
+          "id": 199168,
+          "visible": true,
+          "rect": [
+            1343,
+            528,
+            2097,
+            549
+          ]
+        },
+        {
+          "hwnd": 983516,
+          "text": "",
+          "cls": "THeaderControl",
+          "id": 983516,
+          "visible": true,
+          "rect": [
+            1343,
+            549,
+            2097,
+            570
+          ]
+        },
+        {
+          "hwnd": 460762,
+          "text": "",
+          "cls": "TScrollBar",
+          "id": 460762,
+          "visible": true,
+          "rect": [
+            2080,
+            571,
+            2097,
+            962
+          ]
+        },
+        {
+          "hwnd": 788342,
+          "text": "",
+          "cls": "THeader",
+          "id": 788342,
+          "visible": false,
+          "rect": [
+            1343,
+            549,
+            2144,
+            576
+          ]
+        },
+        {
+          "hwnd": 1966542,
+          "text": "Comm",
+          "cls": "TPage",
+          "id": 1966542,
+          "visible": false,
+          "rect": [
+            1343,
+            528,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 526376,
+          "text": "",
+          "cls": "TEdit",
+          "id": 526376,
+          "visible": false,
+          "rect": [
+            1913,
+            545,
+            1918,
+            571
+          ]
+        },
+        {
+          "hwnd": 460770,
+          "text": "",
+          "cls": "TPanel",
+          "id": 460770,
+          "visible": false,
+          "rect": [
+            1343,
+            528,
+            1970,
+            963
+          ]
+        },
+        {
+          "hwnd": 591890,
+          "text": "",
+          "cls": "TScrollBar",
+          "id": 591890,
+          "visible": false,
+          "rect": [
+            1951,
+            530,
+            1968,
+            961
+          ]
+        },
+        {
+          "hwnd": 2688882,
+          "text": "",
+          "cls": "TPanel",
+          "id": 2688882,
+          "visible": false,
+          "rect": [
+            1970,
+            528,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 460780,
+          "text": "&Merge",
+          "cls": "TButton",
+          "id": 460780,
+          "visible": false,
+          "rect": [
+            1993,
+            658,
+            2084,
+            686
+          ]
+        },
+        {
+          "hwnd": 788330,
+          "text": "&Convert",
+          "cls": "TButton",
+          "id": 788330,
+          "visible": false,
+          "rect": [
+            1993,
+            624,
+            2084,
+            652
+          ]
+        },
+        {
+          "hwnd": 460836,
+          "text": "TIME/D&ATE",
+          "cls": "TButton",
+          "id": 460836,
+          "visible": false,
+          "rect": [
+            1993,
+            726,
+            2084,
+            754
+          ]
+        },
+        {
+          "hwnd": 1574234,
+          "text": "&Interval",
+          "cls": "TButton",
+          "id": 1574234,
+          "visible": false,
+          "rect": [
+            1993,
+            692,
+            2084,
+            720
+          ]
+        },
+        {
+          "hwnd": 919456,
+          "text": "&Download",
+          "cls": "TButton",
+          "id": 919456,
+          "visible": false,
+          "rect": [
+            1993,
+            590,
+            2084,
+            618
+          ]
+        },
+        {
+          "hwnd": 657450,
+          "text": "&Setup",
+          "cls": "TButton",
+          "id": 657450,
+          "visible": false,
+          "rect": [
+            1993,
+            879,
+            2084,
+            907
+          ]
+        },
+        {
+          "hwnd": 526336,
+          "text": "",
+          "cls": "TEdit",
+          "id": 526336,
+          "visible": false,
+          "rect": [
+            2006,
+            598,
+            2033,
+            608
+          ]
+        },
+        {
+          "hwnd": 19727148,
+          "text": "Graph / Table",
+          "cls": "TPage",
+          "id": 19727148,
+          "visible": false,
+          "rect": [
+            1343,
+            528,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 983504,
+          "text": "",
+          "cls": "TNotebook",
+          "id": 983504,
+          "visible": false,
+          "rect": [
+            1343,
+            597,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 133598,
+          "text": "TChart",
+          "cls": "TPage",
+          "id": 133598,
+          "visible": false,
+          "rect": [
+            1343,
+            597,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 133602,
+          "text": "",
+          "cls": "TChartMH",
+          "id": 133602,
+          "visible": false,
+          "rect": [
+            1343,
+            597,
+            2097,
+            780
+          ]
+        },
+        {
+          "hwnd": 133600,
+          "text": "",
+          "cls": "TChartMH",
+          "id": 133600,
+          "visible": false,
+          "rect": [
+            1343,
+            780,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 264680,
+          "text": "",
+          "cls": "TChartMH",
+          "id": 264680,
+          "visible": false,
+          "rect": [
+            1343,
+            648,
+            1931,
+            865
+          ]
+        },
+        {
+          "hwnd": 12846350,
+          "text": "Tabell",
+          "cls": "TPage",
+          "id": 12846350,
+          "visible": false,
+          "rect": [
+            1343,
+            597,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 133612,
+          "text": "",
+          "cls": "TPanel",
+          "id": 133612,
+          "visible": false,
+          "rect": [
+            1343,
+            599,
+            2097,
+            620
+          ]
+        },
+        {
+          "hwnd": 199100,
+          "text": "",
+          "cls": "THeaderControl",
+          "id": 199100,
+          "visible": false,
+          "rect": [
+            1343,
+            623,
+            2097,
+            644
+          ]
+        },
+        {
+          "hwnd": 133610,
+          "text": "",
+          "cls": "TScrollBar",
+          "id": 133610,
+          "visible": false,
+          "rect": [
+            2079,
+            645,
+            2096,
+            962
+          ]
+        },
+        {
+          "hwnd": 199096,
+          "text": "Graph (ikke i bruk)",
+          "cls": "TPage",
+          "id": 199096,
+          "visible": false,
+          "rect": [
+            1343,
+            597,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 199098,
+          "text": "",
+          "cls": "TPanel",
+          "id": 199098,
+          "visible": false,
+          "rect": [
+            1343,
+            528,
+            2097,
+            597
+          ]
+        },
+        {
+          "hwnd": 984984,
+          "text": "LiveGraph",
+          "cls": "TPage",
+          "id": 984984,
+          "visible": false,
+          "rect": [
+            1343,
+            528,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 722860,
+          "text": "",
+          "cls": "TPanel",
+          "id": 722860,
+          "visible": false,
+          "rect": [
+            1343,
+            528,
+            1968,
+            963
+          ]
+        },
+        {
+          "hwnd": 263924,
+          "text": "",
+          "cls": "TLMDListBox",
+          "id": 263924,
+          "visible": false,
+          "rect": [
+            1343,
+            528,
+            1968,
+            992
+          ]
+        },
+        {
+          "hwnd": 1245338,
+          "text": "",
+          "cls": "TLMDMyListBox",
+          "id": 1245338,
+          "visible": false,
+          "rect": [
+            1344,
+            547,
+            1967,
+            991
+          ]
+        },
+        {
+          "hwnd": 263904,
+          "text": "Blank",
+          "cls": "TPage",
+          "id": 263904,
+          "visible": false,
+          "rect": [
+            1343,
+            528,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 1116060,
+          "text": "",
+          "cls": "TListBox",
+          "id": 1116060,
+          "visible": false,
+          "rect": [
+            1411,
+            630,
+            1540,
+            640
+          ]
+        },
+        {
+          "hwnd": 853924,
+          "text": "",
+          "cls": "TPanel",
+          "id": 853924,
+          "visible": true,
+          "rect": [
+            1343,
+            496,
+            2097,
+            528
+          ]
+        }
+      ],
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\button_1788986355372504600_1.png"
+    },
+    {
+      "hwnd": 1443244,
+      "title": "Saiv_it_runtime",
+      "cls": "TApplication",
+      "rect": [
+        1720,
+        720,
+        1720,
+        720
+      ],
+      "children": [],
+      "capture_error": ""
+    }
+  ],
+  "menus": [
+    {
+      "text": "&File",
+      "id": 4294967295,
+      "state": 2832,
+      "children": [
+        {
+          "text": "&Open...",
+          "id": 2,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "&Export",
+          "id": 4294967295,
+          "state": 1808,
+          "children": [
+            {
+              "text": "&List",
+              "id": 5,
+              "state": 0,
+              "children": []
+            },
+            {
+              "text": "Standard &depths",
+              "id": 6,
+              "state": 0,
+              "children": []
+            },
+            {
+              "text": "Standard Depth &Sectioned",
+              "id": 7,
+              "state": 0,
+              "children": []
+            },
+            {
+              "text": "Standard &temperatures",
+              "id": 8,
+              "state": 0,
+              "children": []
+            },
+            {
+              "text": "S&onar file",
+              "id": 9,
+              "state": 0,
+              "children": []
+            },
+            {
+              "text": "L&ybin file (Bathy data.xml)",
+              "id": 10,
+              "state": 0,
+              "children": []
+            },
+            {
+              "text": "Tide data",
+              "id": 11,
+              "state": 0,
+              "children": []
+            }
+          ]
+        },
+        {
+          "text": "&Import CSV/TXT...",
+          "id": 12,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "&Convert CSV/TXT...",
+          "id": 13,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Set &range...",
+          "id": 14,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "&Set scaling...",
+          "id": 15,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "P&age setup..",
+          "id": 16,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "&Print...",
+          "id": 17,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "C&lose file",
+          "id": 18,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "",
+          "id": 19,
+          "state": 2051,
+          "children": []
+        },
+        {
+          "text": "E&xit\tAlt+X",
+          "id": 20,
+          "state": 0,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "&View",
+      "id": 4294967295,
+      "state": 1040,
+      "children": [
+        {
+          "text": "&List",
+          "id": 22,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "T&ables",
+          "id": 4294967295,
+          "state": 784,
+          "children": [
+            {
+              "text": "Standard &Depth",
+              "id": 24,
+              "state": 0,
+              "children": []
+            },
+            {
+              "text": "Standard Depth &Sectioned",
+              "id": 25,
+              "state": 0,
+              "children": []
+            },
+            {
+              "text": "Standard &Temp",
+              "id": 26,
+              "state": 0,
+              "children": []
+            }
+          ]
+        },
+        {
+          "text": "&Graph",
+          "id": 4294967295,
+          "state": 528,
+          "children": [
+            {
+              "text": "&Time",
+              "id": 4294967295,
+              "state": 1296,
+              "children": [
+                {
+                  "text": "&Salinity / Temperature",
+                  "id": 29,
+                  "state": 0,
+                  "children": []
+                },
+                {
+                  "text": "&Conductivity / Temperature",
+                  "id": 30,
+                  "state": 0,
+                  "children": []
+                },
+                {
+                  "text": "Sound &velocity / sigma T",
+                  "id": 31,
+                  "state": 0,
+                  "children": []
+                },
+                {
+                  "text": "O&ptional sensor",
+                  "id": 33,
+                  "state": 0,
+                  "children": []
+                },
+                {
+                  "text": "&Depth",
+                  "id": 35,
+                  "state": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "text": "&Depth",
+              "id": 4294967295,
+              "state": 1296,
+              "children": [
+                {
+                  "text": "&Salinity / Temperature",
+                  "id": 37,
+                  "state": 0,
+                  "children": []
+                },
+                {
+                  "text": "&Conductivity / Temperature",
+                  "id": 38,
+                  "state": 0,
+                  "children": []
+                },
+                {
+                  "text": "Sound &velocity / sigma T",
+                  "id": 39,
+                  "state": 0,
+                  "children": []
+                },
+                {
+                  "text": "O&ptional sensor",
+                  "id": 41,
+                  "state": 0,
+                  "children": []
+                },
+                {
+                  "text": "&T-S diagram",
+                  "id": 43,
+                  "state": 0,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "&Instrument",
+          "id": 44,
+          "state": 0,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "&Display",
+      "id": 4294967295,
+      "state": 3856,
+      "children": [
+        {
+          "text": "&Toolbar",
+          "id": 46,
+          "state": 8,
+          "children": []
+        },
+        {
+          "text": "&Statusbar",
+          "id": 47,
+          "state": 8,
+          "children": []
+        },
+        {
+          "text": "&Legend",
+          "id": 48,
+          "state": 8,
+          "children": []
+        },
+        {
+          "text": "&GPS position",
+          "id": 49,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "&Only selected series",
+          "id": 50,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "&Average",
+          "id": 51,
+          "state": 11,
+          "children": []
+        },
+        {
+          "text": "&Density",
+          "id": 52,
+          "state": 8,
+          "children": []
+        },
+        {
+          "text": "Calculated density for TD instruments",
+          "id": 53,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Depth calculation...",
+          "id": 54,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Select oxygen unit",
+          "id": 55,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Select turbidity unit",
+          "id": 56,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Avg columns in Std Depth Sectioned",
+          "id": 58,
+          "state": 8,
+          "children": []
+        },
+        {
+          "text": "Avg all passes in Std Depth Sectioned...",
+          "id": 59,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "&Graph color settings...",
+          "id": 60,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Select export file date/time format",
+          "id": 61,
+          "state": 0,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "&Util",
+      "id": 4294967295,
+      "state": 4624,
+      "children": [
+        {
+          "text": "R&emove spikes...",
+          "id": 63,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "&Split data file...",
+          "id": 64,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Compute Sound &velocity...",
+          "id": 65,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Conv&ert salinity to conductivity",
+          "id": 66,
+          "state": 3,
+          "children": []
+        },
+        {
+          "text": "&Update barometric pressure...",
+          "id": 67,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Update measurement &position...",
+          "id": 68,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Change standard &depths...",
+          "id": 69,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Change standard depth sectio&ns...",
+          "id": 70,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Change standard &temperatures...",
+          "id": 71,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "&Recalculate calibration coefficients...",
+          "id": 72,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "&Iso-line data for SURFER...",
+          "id": 73,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "&Calibration from RAW data...",
+          "id": 74,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Rinko oxygen calibration",
+          "id": 75,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Set heading and unit for &optional channel...",
+          "id": 77,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Edit starting time",
+          "id": 78,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Automatic readouts",
+          "id": 79,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Adjust measurement values",
+          "id": 80,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Set minimum depth mask",
+          "id": 83,
+          "state": 0,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "&Help",
+      "id": 4294967295,
+      "state": 784,
+      "children": [
+        {
+          "text": "&About...",
+          "id": 86,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "",
+          "id": 0,
+          "state": 2051,
+          "children": []
+        },
+        {
+          "text": "&Update software...",
+          "id": 32321,
+          "state": 0,
+          "children": []
+        }
+      ]
+    }
+  ]
+}

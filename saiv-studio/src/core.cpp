@@ -9,8 +9,6 @@
 #include <cstdlib>
 #include <cctype>
 namespace saiv {
-std::string encode7E1(std::string data){for(char& c:data){unsigned byte=static_cast<unsigned char>(c)&0x7f;unsigned parity=byte;parity^=parity>>4;parity^=parity>>2;parity^=parity>>1;c=static_cast<char>(byte|((parity&1)<<7));}return data;}
-std::string decode7E1(std::string data){for(char& c:data)c=static_cast<char>(static_cast<unsigned char>(c)&0x7f);return data;}
 
 std::string trim(std::string s) { auto a=s.find_first_not_of(" \t\r\n"); if(a==std::string::npos)return {};return s.substr(a,s.find_last_not_of(" \t\r\n")-a+1); }
 std::string lower(std::string s) {for(char& c:s)c=static_cast<char>(std::tolower(static_cast<unsigned char>(c)));return s;}

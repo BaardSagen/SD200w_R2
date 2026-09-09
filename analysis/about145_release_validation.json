@@ -1,0 +1,29 @@
+{
+  "output": "SAIV_Instrument_Terminal_v1.4.5_Sept2026.exe",
+  "sha256": "17a766fb13f8f8e33051d92881d0a9265b27436fa337472f2aee4373b9b1e7bf",
+  "previous_release_preserved": true,
+  "instrument_and_data_sources_unchanged": true,
+  "installer_helper_preserved": true,
+  "visual_review": "Full instrument icon, version text, credits and buttons verified in running About window",
+  "patch": {
+    "icon": "icon/ctd_in_Cage.ico",
+    "icon_sha256": "927d31d1c99de8d629f3a2347d66e1789a91436a59bec2bce73addcb19bf1905",
+    "size": [
+      64,
+      64
+    ],
+    "original_icon_pixels_preserved": true,
+    "legacy_DIB_encoding": true,
+    "other_about_properties_preserved": true,
+    "existing_runtime_bytes_preserved_except_resource_directory_and_PE_sizes": true
+  },
+  "gui": {
+    "about_opens": true,
+    "version": "1.4.5",
+    "credits_preserved": true,
+    "quick_guide_opens": true,
+    "update_dialog_version_correct": true,
+    "instrument_commands_sent": false,
+    "screenshot": "analysis/runtime_test/about145/about.png"
+  }
+}

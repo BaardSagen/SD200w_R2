@@ -1,0 +1,1425 @@
+{
+  "pid": 22336,
+  "windows": [
+    {
+      "hwnd": 722990,
+      "title": "Skriv ut",
+      "cls": "#32770",
+      "rect": [
+        1501,
+        369,
+        1939,
+        700
+      ],
+      "children": [
+        {
+          "hwnd": 2165478,
+          "text": "Skriver",
+          "cls": "Button",
+          "id": 1075,
+          "visible": true,
+          "rect": [
+            1516,
+            402,
+            1924,
+            539
+          ]
+        },
+        {
+          "hwnd": 723762,
+          "text": "&Navn:",
+          "cls": "Static",
+          "id": 1093,
+          "visible": true,
+          "rect": [
+            1528,
+            428,
+            1582,
+            441
+          ]
+        },
+        {
+          "hwnd": 1641292,
+          "text": "",
+          "cls": "ComboBox",
+          "id": 1139,
+          "visible": true,
+          "rect": [
+            1582,
+            424,
+            1810,
+            445
+          ]
+        },
+        {
+          "hwnd": 2493068,
+          "text": "&Egenskaper...",
+          "cls": "Button",
+          "id": 1025,
+          "visible": true,
+          "rect": [
+            1822,
+            423,
+            1912,
+            446
+          ]
+        },
+        {
+          "hwnd": 2755248,
+          "text": "Status:",
+          "cls": "Static",
+          "id": 1095,
+          "visible": true,
+          "rect": [
+            1528,
+            454,
+            1582,
+            470
+          ]
+        },
+        {
+          "hwnd": 265090,
+          "text": "Klar",
+          "cls": "Static",
+          "id": 1099,
+          "visible": true,
+          "rect": [
+            1588,
+            454,
+            1918,
+            470
+          ]
+        },
+        {
+          "hwnd": 658126,
+          "text": "Type:",
+          "cls": "Static",
+          "id": 1094,
+          "visible": true,
+          "rect": [
+            1528,
+            473,
+            1582,
+            489
+          ]
+        },
+        {
+          "hwnd": 789212,
+          "text": "Samsung C460 Series",
+          "cls": "Static",
+          "id": 1098,
+          "visible": true,
+          "rect": [
+            1588,
+            473,
+            1918,
+            489
+          ]
+        },
+        {
+          "hwnd": 789210,
+          "text": "Sted:",
+          "cls": "Static",
+          "id": 1097,
+          "visible": true,
+          "rect": [
+            1528,
+            493,
+            1582,
+            509
+          ]
+        },
+        {
+          "hwnd": 461490,
+          "text": "http://192.168.8.5:8018/wsd",
+          "cls": "Static",
+          "id": 1101,
+          "visible": true,
+          "rect": [
+            1588,
+            493,
+            1918,
+            509
+          ]
+        },
+        {
+          "hwnd": 920286,
+          "text": "Kommentar:",
+          "cls": "Static",
+          "id": 1096,
+          "visible": true,
+          "rect": [
+            1528,
+            512,
+            1585,
+            525
+          ]
+        },
+        {
+          "hwnd": 985860,
+          "text": "",
+          "cls": "Static",
+          "id": 1100,
+          "visible": true,
+          "rect": [
+            1588,
+            512,
+            1816,
+            528
+          ]
+        },
+        {
+          "hwnd": 854692,
+          "text": "Skr&iv til fil",
+          "cls": "Button",
+          "id": 1040,
+          "visible": true,
+          "rect": [
+            1822,
+            512,
+            1918,
+            532
+          ]
+        },
+        {
+          "hwnd": 592640,
+          "text": "Utskriftsomr\u00e5de",
+          "cls": "Button",
+          "id": 1072,
+          "visible": true,
+          "rect": [
+            1516,
+            545,
+            1732,
+            649
+          ]
+        },
+        {
+          "hwnd": 658160,
+          "text": "&Alt",
+          "cls": "Button",
+          "id": 1056,
+          "visible": true,
+          "rect": [
+            1528,
+            567,
+            1624,
+            587
+          ]
+        },
+        {
+          "hwnd": 920288,
+          "text": "&Sider",
+          "cls": "Button",
+          "id": 1058,
+          "visible": true,
+          "rect": [
+            1528,
+            593,
+            1591,
+            613
+          ]
+        },
+        {
+          "hwnd": 854744,
+          "text": "&Merket omr\u00e5de",
+          "cls": "Button",
+          "id": 1057,
+          "visible": true,
+          "rect": [
+            1528,
+            619,
+            1624,
+            639
+          ]
+        },
+        {
+          "hwnd": 1051374,
+          "text": "f&ra:",
+          "cls": "Static",
+          "id": 1089,
+          "visible": true,
+          "rect": [
+            1594,
+            597,
+            1611,
+            610
+          ]
+        },
+        {
+          "hwnd": 330490,
+          "text": "",
+          "cls": "Edit",
+          "id": 1152,
+          "visible": true,
+          "rect": [
+            1615,
+            593,
+            1654,
+            613
+          ]
+        },
+        {
+          "hwnd": 330492,
+          "text": "&til:",
+          "cls": "Static",
+          "id": 1090,
+          "visible": true,
+          "rect": [
+            1669,
+            597,
+            1681,
+            610
+          ]
+        },
+        {
+          "hwnd": 330488,
+          "text": "",
+          "cls": "Edit",
+          "id": 1153,
+          "visible": true,
+          "rect": [
+            1684,
+            593,
+            1723,
+            613
+          ]
+        },
+        {
+          "hwnd": 199460,
+          "text": "Eksemplarer",
+          "cls": "Button",
+          "id": 1073,
+          "visible": true,
+          "rect": [
+            1744,
+            545,
+            1924,
+            649
+          ]
+        },
+        {
+          "hwnd": 199456,
+          "text": "Antall e&ksemplarer:",
+          "cls": "Static",
+          "id": 1092,
+          "visible": true,
+          "rect": [
+            1756,
+            571,
+            1858,
+            584
+          ]
+        },
+        {
+          "hwnd": 199458,
+          "text": "",
+          "cls": "Edit",
+          "id": 1154,
+          "visible": true,
+          "rect": [
+            1864,
+            567,
+            1896,
+            587
+          ]
+        },
+        {
+          "hwnd": 199464,
+          "text": "",
+          "cls": "Static",
+          "id": 1086,
+          "visible": true,
+          "rect": [
+            1747,
+            597,
+            1861,
+            643
+          ]
+        },
+        {
+          "hwnd": 199466,
+          "text": "K&ollater",
+          "cls": "Button",
+          "id": 1041,
+          "visible": false,
+          "rect": [
+            1864,
+            606,
+            1918,
+            626
+          ]
+        },
+        {
+          "hwnd": 199468,
+          "text": "OK",
+          "cls": "Button",
+          "id": 1,
+          "visible": true,
+          "rect": [
+            1774,
+            662,
+            1846,
+            685
+          ]
+        },
+        {
+          "hwnd": 199470,
+          "text": "Avbryt",
+          "cls": "Button",
+          "id": 2,
+          "visible": true,
+          "rect": [
+            1852,
+            662,
+            1924,
+            685
+          ]
+        },
+        {
+          "hwnd": 199452,
+          "text": "&Hjelp",
+          "cls": "Button",
+          "id": 1038,
+          "visible": true,
+          "rect": [
+            1516,
+            662,
+            1588,
+            685
+          ]
+        },
+        {
+          "hwnd": 199454,
+          "text": "",
+          "cls": "msctls_updown32",
+          "id": 9999,
+          "visible": true,
+          "rect": [
+            1894,
+            567,
+            1912,
+            587
+          ]
+        }
+      ],
+      "screen_image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986575691482000_0_screen.png",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986575691482000_0.png"
+    },
+    {
+      "hwnd": 1312704,
+      "title": "SAIV Instrument Terminal - Imported - logger_review.SD2",
+      "cls": "TForm1",
+      "rect": [
+        1335,
+        445,
+        2105,
+        995
+      ],
+      "children": [
+        {
+          "hwnd": 919434,
+          "text": "",
+          "cls": "TLMDStatusBar",
+          "id": 919434,
+          "visible": true,
+          "rect": [
+            1343,
+            963,
+            2097,
+            987
+          ]
+        },
+        {
+          "hwnd": 1705928,
+          "text": "",
+          "cls": "TLMDStatusCustomPanel",
+          "id": 1705928,
+          "visible": true,
+          "rect": [
+            2036,
+            966,
+            2081,
+            984
+          ]
+        },
+        {
+          "hwnd": 329476,
+          "text": "",
+          "cls": "TNotebook",
+          "id": 329476,
+          "visible": true,
+          "rect": [
+            1343,
+            528,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 1966542,
+          "text": "Comm",
+          "cls": "TPage",
+          "id": 1966542,
+          "visible": true,
+          "rect": [
+            1343,
+            528,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 526376,
+          "text": "",
+          "cls": "TEdit",
+          "id": 526376,
+          "visible": true,
+          "rect": [
+            1913,
+            545,
+            1918,
+            571
+          ]
+        },
+        {
+          "hwnd": 460770,
+          "text": "",
+          "cls": "TPanel",
+          "id": 460770,
+          "visible": true,
+          "rect": [
+            1343,
+            528,
+            1970,
+            963
+          ]
+        },
+        {
+          "hwnd": 591890,
+          "text": "",
+          "cls": "TScrollBar",
+          "id": 591890,
+          "visible": true,
+          "rect": [
+            1951,
+            530,
+            1968,
+            961
+          ]
+        },
+        {
+          "hwnd": 2688882,
+          "text": "",
+          "cls": "TPanel",
+          "id": 2688882,
+          "visible": true,
+          "rect": [
+            1970,
+            528,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 460780,
+          "text": "&Merge",
+          "cls": "TButton",
+          "id": 460780,
+          "visible": true,
+          "rect": [
+            1993,
+            658,
+            2084,
+            686
+          ]
+        },
+        {
+          "hwnd": 788330,
+          "text": "&Convert",
+          "cls": "TButton",
+          "id": 788330,
+          "visible": true,
+          "rect": [
+            1993,
+            624,
+            2084,
+            652
+          ]
+        },
+        {
+          "hwnd": 460836,
+          "text": "TIME/D&ATE",
+          "cls": "TButton",
+          "id": 460836,
+          "visible": true,
+          "rect": [
+            1993,
+            726,
+            2084,
+            754
+          ]
+        },
+        {
+          "hwnd": 1574234,
+          "text": "&Interval",
+          "cls": "TButton",
+          "id": 1574234,
+          "visible": true,
+          "rect": [
+            1993,
+            692,
+            2084,
+            720
+          ]
+        },
+        {
+          "hwnd": 919456,
+          "text": "&Download",
+          "cls": "TButton",
+          "id": 919456,
+          "visible": true,
+          "rect": [
+            1993,
+            590,
+            2084,
+            618
+          ]
+        },
+        {
+          "hwnd": 657450,
+          "text": "&Setup",
+          "cls": "TButton",
+          "id": 657450,
+          "visible": true,
+          "rect": [
+            1993,
+            879,
+            2084,
+            907
+          ]
+        },
+        {
+          "hwnd": 526336,
+          "text": "",
+          "cls": "TEdit",
+          "id": 526336,
+          "visible": true,
+          "rect": [
+            2006,
+            598,
+            2033,
+            608
+          ]
+        },
+        {
+          "hwnd": 1508746,
+          "text": "List",
+          "cls": "TPage",
+          "id": 1508746,
+          "visible": false,
+          "rect": [
+            1343,
+            528,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 199168,
+          "text": "",
+          "cls": "TPanel",
+          "id": 199168,
+          "visible": false,
+          "rect": [
+            1343,
+            528,
+            2097,
+            549
+          ]
+        },
+        {
+          "hwnd": 983516,
+          "text": "",
+          "cls": "THeaderControl",
+          "id": 983516,
+          "visible": false,
+          "rect": [
+            1343,
+            549,
+            2097,
+            570
+          ]
+        },
+        {
+          "hwnd": 460762,
+          "text": "",
+          "cls": "TScrollBar",
+          "id": 460762,
+          "visible": false,
+          "rect": [
+            2080,
+            571,
+            2097,
+            962
+          ]
+        },
+        {
+          "hwnd": 788342,
+          "text": "",
+          "cls": "THeader",
+          "id": 788342,
+          "visible": false,
+          "rect": [
+            1343,
+            549,
+            2144,
+            576
+          ]
+        },
+        {
+          "hwnd": 19727148,
+          "text": "Graph / Table",
+          "cls": "TPage",
+          "id": 19727148,
+          "visible": false,
+          "rect": [
+            1343,
+            528,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 983504,
+          "text": "",
+          "cls": "TNotebook",
+          "id": 983504,
+          "visible": false,
+          "rect": [
+            1343,
+            597,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 133598,
+          "text": "TChart",
+          "cls": "TPage",
+          "id": 133598,
+          "visible": false,
+          "rect": [
+            1343,
+            597,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 133602,
+          "text": "",
+          "cls": "TChartMH",
+          "id": 133602,
+          "visible": false,
+          "rect": [
+            1343,
+            597,
+            2097,
+            780
+          ]
+        },
+        {
+          "hwnd": 133600,
+          "text": "",
+          "cls": "TChartMH",
+          "id": 133600,
+          "visible": false,
+          "rect": [
+            1343,
+            780,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 264680,
+          "text": "",
+          "cls": "TChartMH",
+          "id": 264680,
+          "visible": false,
+          "rect": [
+            1343,
+            648,
+            1931,
+            865
+          ]
+        },
+        {
+          "hwnd": 12846350,
+          "text": "Tabell",
+          "cls": "TPage",
+          "id": 12846350,
+          "visible": false,
+          "rect": [
+            1343,
+            597,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 133612,
+          "text": "",
+          "cls": "TPanel",
+          "id": 133612,
+          "visible": false,
+          "rect": [
+            1343,
+            599,
+            2097,
+            620
+          ]
+        },
+        {
+          "hwnd": 199100,
+          "text": "",
+          "cls": "THeaderControl",
+          "id": 199100,
+          "visible": false,
+          "rect": [
+            1343,
+            623,
+            2097,
+            644
+          ]
+        },
+        {
+          "hwnd": 133610,
+          "text": "",
+          "cls": "TScrollBar",
+          "id": 133610,
+          "visible": false,
+          "rect": [
+            2079,
+            645,
+            2096,
+            962
+          ]
+        },
+        {
+          "hwnd": 199096,
+          "text": "Graph (ikke i bruk)",
+          "cls": "TPage",
+          "id": 199096,
+          "visible": false,
+          "rect": [
+            1343,
+            597,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 199098,
+          "text": "",
+          "cls": "TPanel",
+          "id": 199098,
+          "visible": false,
+          "rect": [
+            1343,
+            528,
+            2097,
+            597
+          ]
+        },
+        {
+          "hwnd": 984984,
+          "text": "LiveGraph",
+          "cls": "TPage",
+          "id": 984984,
+          "visible": false,
+          "rect": [
+            1343,
+            528,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 722860,
+          "text": "",
+          "cls": "TPanel",
+          "id": 722860,
+          "visible": false,
+          "rect": [
+            1343,
+            528,
+            1968,
+            963
+          ]
+        },
+        {
+          "hwnd": 263924,
+          "text": "",
+          "cls": "TLMDListBox",
+          "id": 263924,
+          "visible": false,
+          "rect": [
+            1343,
+            528,
+            1968,
+            992
+          ]
+        },
+        {
+          "hwnd": 1245338,
+          "text": "",
+          "cls": "TLMDMyListBox",
+          "id": 1245338,
+          "visible": false,
+          "rect": [
+            1344,
+            547,
+            1967,
+            991
+          ]
+        },
+        {
+          "hwnd": 263904,
+          "text": "Blank",
+          "cls": "TPage",
+          "id": 263904,
+          "visible": false,
+          "rect": [
+            1343,
+            528,
+            2097,
+            963
+          ]
+        },
+        {
+          "hwnd": 1116060,
+          "text": "",
+          "cls": "TListBox",
+          "id": 1116060,
+          "visible": false,
+          "rect": [
+            1411,
+            630,
+            1540,
+            640
+          ]
+        },
+        {
+          "hwnd": 853924,
+          "text": "",
+          "cls": "TPanel",
+          "id": 853924,
+          "visible": true,
+          "rect": [
+            1343,
+            496,
+            2097,
+            528
+          ]
+        }
+      ],
+      "screen_image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986575691482000_1_screen.png",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986575691482000_1.png"
+    },
+    {
+      "hwnd": 1443244,
+      "title": "Saiv_it_runtime",
+      "cls": "TApplication",
+      "rect": [
+        1720,
+        720,
+        1720,
+        720
+      ],
+      "children": [],
+      "capture_error": ""
+    }
+  ],
+  "menus": [
+    {
+      "text": "&File",
+      "id": 4294967295,
+      "state": 2832,
+      "children": [
+        {
+          "text": "&Open...",
+          "id": 2,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "&Export",
+          "id": 4294967295,
+          "state": 1808,
+          "children": [
+            {
+              "text": "&List",
+              "id": 5,
+              "state": 0,
+              "children": []
+            },
+            {
+              "text": "Standard &depths",
+              "id": 6,
+              "state": 0,
+              "children": []
+            },
+            {
+              "text": "Standard Depth &Sectioned",
+              "id": 7,
+              "state": 0,
+              "children": []
+            },
+            {
+              "text": "Standard &temperatures",
+              "id": 8,
+              "state": 0,
+              "children": []
+            },
+            {
+              "text": "S&onar file",
+              "id": 9,
+              "state": 0,
+              "children": []
+            },
+            {
+              "text": "L&ybin file (Bathy data.xml)",
+              "id": 10,
+              "state": 0,
+              "children": []
+            },
+            {
+              "text": "T&ide data",
+              "id": 11,
+              "state": 0,
+              "children": []
+            }
+          ]
+        },
+        {
+          "text": "&Import CSV/TXT...",
+          "id": 12,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "&Convert CSV/TXT...",
+          "id": 13,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Set &range...",
+          "id": 14,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "&Set scaling...",
+          "id": 15,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "P&age setup..",
+          "id": 16,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "&Print...",
+          "id": 17,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "C&lose file",
+          "id": 18,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "",
+          "id": 19,
+          "state": 2051,
+          "children": []
+        },
+        {
+          "text": "E&xit\tAlt+X",
+          "id": 20,
+          "state": 0,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "&View",
+      "id": 4294967295,
+      "state": 1040,
+      "children": [
+        {
+          "text": "&List",
+          "id": 22,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "T&ables",
+          "id": 4294967295,
+          "state": 784,
+          "children": [
+            {
+              "text": "Standard &Depth",
+              "id": 24,
+              "state": 0,
+              "children": []
+            },
+            {
+              "text": "Standard Depth &Sectioned",
+              "id": 25,
+              "state": 0,
+              "children": []
+            },
+            {
+              "text": "Standard &Temp",
+              "id": 26,
+              "state": 0,
+              "children": []
+            }
+          ]
+        },
+        {
+          "text": "&Graph",
+          "id": 4294967295,
+          "state": 528,
+          "children": [
+            {
+              "text": "&Time",
+              "id": 4294967295,
+              "state": 1296,
+              "children": [
+                {
+                  "text": "&Salinity / Temperature",
+                  "id": 29,
+                  "state": 0,
+                  "children": []
+                },
+                {
+                  "text": "&Conductivity / Temperature",
+                  "id": 30,
+                  "state": 0,
+                  "children": []
+                },
+                {
+                  "text": "Sound &velocity / sigma T",
+                  "id": 31,
+                  "state": 0,
+                  "children": []
+                },
+                {
+                  "text": "O&ptional sensor",
+                  "id": 33,
+                  "state": 0,
+                  "children": []
+                },
+                {
+                  "text": "&Depth",
+                  "id": 35,
+                  "state": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "text": "&Depth",
+              "id": 4294967295,
+              "state": 1296,
+              "children": [
+                {
+                  "text": "&Salinity / Temperature",
+                  "id": 37,
+                  "state": 0,
+                  "children": []
+                },
+                {
+                  "text": "&Conductivity / Temperature",
+                  "id": 38,
+                  "state": 0,
+                  "children": []
+                },
+                {
+                  "text": "Sound &velocity / sigma T",
+                  "id": 39,
+                  "state": 0,
+                  "children": []
+                },
+                {
+                  "text": "O&ptional sensor",
+                  "id": 41,
+                  "state": 0,
+                  "children": []
+                },
+                {
+                  "text": "&T-S diagram",
+                  "id": 43,
+                  "state": 0,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "&Instrument",
+          "id": 44,
+          "state": 0,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "&Display",
+      "id": 4294967295,
+      "state": 3856,
+      "children": [
+        {
+          "text": "&Toolbar",
+          "id": 46,
+          "state": 8,
+          "children": []
+        },
+        {
+          "text": "&Statusbar",
+          "id": 47,
+          "state": 8,
+          "children": []
+        },
+        {
+          "text": "&Legend",
+          "id": 48,
+          "state": 8,
+          "children": []
+        },
+        {
+          "text": "&GPS position",
+          "id": 49,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "&Only selected series",
+          "id": 50,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "&Average",
+          "id": 51,
+          "state": 11,
+          "children": []
+        },
+        {
+          "text": "&Density",
+          "id": 52,
+          "state": 8,
+          "children": []
+        },
+        {
+          "text": "&Calculated density for TD instruments",
+          "id": 53,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "D&epth calculation...",
+          "id": 54,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Select o&xygen unit",
+          "id": 55,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Select t&urbidity unit",
+          "id": 56,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "A&vg columns in Std Depth Sectioned",
+          "id": 58,
+          "state": 8,
+          "children": []
+        },
+        {
+          "text": "Avg all &passes in Std Depth Sectioned...",
+          "id": 59,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "G&raph color settings...",
+          "id": 60,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Select export &file date/time format",
+          "id": 61,
+          "state": 0,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "&Util",
+      "id": 4294967295,
+      "state": 4624,
+      "children": [
+        {
+          "text": "R&emove spikes...",
+          "id": 63,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "&Split data file...",
+          "id": 64,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Compute Sound &velocity...",
+          "id": 65,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Convert s&alinity to conductivity",
+          "id": 66,
+          "state": 3,
+          "children": []
+        },
+        {
+          "text": "&Update barometric pressure...",
+          "id": 67,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Update measurement &position...",
+          "id": 68,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Change standard &depths...",
+          "id": 69,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Change standard depth sectio&ns...",
+          "id": 70,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Change standard &temperatures...",
+          "id": 71,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "&Recalculate calibration coefficients...",
+          "id": 72,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "&Iso-line data for SURFER...",
+          "id": 73,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "&Calibration from RAW data...",
+          "id": 74,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Rin&ko oxygen calibration",
+          "id": 75,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Set heading and unit for &optional channel...",
+          "id": 77,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Edit startin&g time",
+          "id": 78,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Auto&matic readouts",
+          "id": 79,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Ad&just measurement values",
+          "id": 80,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "Set minimum dept&h mask",
+          "id": 83,
+          "state": 0,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "&Help",
+      "id": 4294967295,
+      "state": 784,
+      "children": [
+        {
+          "text": "&About...",
+          "id": 86,
+          "state": 0,
+          "children": []
+        },
+        {
+          "text": "",
+          "id": 0,
+          "state": 2051,
+          "children": []
+        },
+        {
+          "text": "&Update software...",
+          "id": 32321,
+          "state": 0,
+          "children": []
+        }
+      ]
+    }
+  ]
+}

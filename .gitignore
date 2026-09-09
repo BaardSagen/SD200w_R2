@@ -136,3 +136,23 @@ analysis/*.bin
 !/analysis/single143/SAIV_IT_Runtime.exe
 !/analysis/single143/SIT_Update.exe
 !/update_server/SAIV_Instrument_Terminal_v1.4.3_Sept2026.zip
+
+# SIT 1.4.4/1.4.5 releases and historical build inputs
+!/SAIV_Instrument_Terminal_v1.4.4_Sept2026.exe
+!/SAIV_Instrument_Terminal_v1.4.5_Sept2026.exe
+/analysis/single144/*
+/analysis/single145/*
+!/analysis/single144/SAIV_IT_Runtime.exe
+!/analysis/single144/SIT_Update.exe
+!/analysis/single145/SAIV_IT_Runtime.exe
+!/analysis/single145/SIT_Update.exe
+
+# Studio releases; local build output remains excluded
+!/SAIV_Studio_v0.3.0_Sept2026.exe
+!/SAIV_Studio_v0.3.1_Sept2026.exe
+/saiv-studio/build-log.txt
+
+# Keep referenced application captures explicitly; omit full desktop recordings
+/analysis/runtime_test/sit_live_review/*.png
+/analysis/runtime_test/sit_live_review/session.json
+/analysis/runtime_test/about_icon_source.png

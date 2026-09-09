@@ -1,0 +1,73 @@
+{
+  "report": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986195757620700.json",
+  "windows": [
+    {
+      "hwnd": 264492,
+      "title": "Edit starting time",
+      "cls": "TEditRefDlg",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986195757620700_0.png",
+      "controls": [
+        [
+          133840,
+          "59",
+          "TSpinEdit"
+        ],
+        [
+          264864,
+          "59",
+          "TSpinEdit"
+        ],
+        [
+          199352,
+          "23",
+          "TSpinEdit"
+        ],
+        [
+          264860,
+          "31",
+          "TSpinEdit"
+        ],
+        [
+          199362,
+          "12",
+          "TSpinEdit"
+        ],
+        [
+          199360,
+          "99",
+          "TSpinEdit"
+        ],
+        [
+          330438,
+          "Cancel",
+          "TBitBtn"
+        ],
+        [
+          199356,
+          "OK",
+          "TBitBtn"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1312704,
+      "title": "SAIV Instrument Terminal - SCTDOFOTc 204 - C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\data\\test",
+      "cls": "TForm1",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986195757620700_1.png",
+      "controls": [
+        [
+          1508746,
+          "List",
+          "TPage"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1443244,
+      "title": "Saiv_it_runtime",
+      "cls": "TApplication",
+      "image": null,
+      "controls": []
+    }
+  ]
+}

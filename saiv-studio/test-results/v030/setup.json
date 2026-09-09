@@ -1,0 +1,15 @@
+[
+  {
+    "hwnd": 1443840,
+    "text": "SAIV Instrument Studio 0.3.0",
+    "cls": "SAIVInstrumentStudio",
+    "rect": [
+      1130,
+      306,
+      2310,
+      1086
+    ],
+    "image": "C:\\cproject\\delphi\\SD200w_R2\\saiv-studio\\test-results\\v030\\setup_0.png",
+    "children": []
+  }
+]

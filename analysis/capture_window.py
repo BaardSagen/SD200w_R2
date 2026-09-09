@@ -1,7 +1,7 @@
 import ctypes as c
 from ctypes import wintypes as w
 from PIL import Image
-def capture(hwnd,path):
+def capture(hwnd,path,flags=0):
  u=c.WinDLL('user32');g=c.WinDLL('gdi32')
  u.GetWindowRect.argtypes=[w.HWND,c.POINTER(w.RECT)]
  u.GetDC.argtypes=[w.HWND];u.GetDC.restype=w.HDC
@@ -18,7 +18,7 @@ def capture(hwnd,path):
  width=rect.right-rect.left;height=rect.bottom-rect.top
  dc=u.GetDC(hwnd);mem=g.CreateCompatibleDC(dc);bmp=g.CreateCompatibleBitmap(dc,width,height);old=g.SelectObject(mem,bmp)
  try:
-  assert u.PrintWindow(hwnd,mem,0)
+  assert u.PrintWindow(hwnd,mem,flags)
   g.SelectObject(mem,old)
   info=BI();info.size=c.sizeof(BI);info.width=width;info.height=-height;info.planes=1;info.bits=32
   pixels=c.create_string_buffer(width*height*4)

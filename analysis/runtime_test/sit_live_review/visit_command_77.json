@@ -1,0 +1,93 @@
+{
+  "report": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986193589702400.json",
+  "windows": [
+    {
+      "hwnd": 264452,
+      "title": "Optional channel parameters",
+      "cls": "TOptPrmDlg",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986193589702400_0.png",
+      "controls": [
+        [
+          329946,
+          "Select Opt 2 heading and unit",
+          "TGroupBox"
+        ],
+        [
+          199370,
+          "Oxygen sensor",
+          "TCheckBox"
+        ],
+        [
+          329894,
+          "",
+          "Edit"
+        ],
+        [
+          264514,
+          "",
+          "Edit"
+        ],
+        [
+          264420,
+          "",
+          "Edit"
+        ],
+        [
+          329960,
+          "Select Opt 1 heading and unit",
+          "TGroupBox"
+        ],
+        [
+          199310,
+          "Oxygen sensor",
+          "TCheckBox"
+        ],
+        [
+          395454,
+          "",
+          "Edit"
+        ],
+        [
+          264354,
+          "",
+          "Edit"
+        ],
+        [
+          264442,
+          "",
+          "Edit"
+        ],
+        [
+          199340,
+          "Cancel",
+          "TBitBtn"
+        ],
+        [
+          199368,
+          "OK",
+          "TBitBtn"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1312704,
+      "title": "SAIV Instrument Terminal - SCTDOFOTc 204 - C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\data\\test",
+      "cls": "TForm1",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986193589702400_1.png",
+      "controls": [
+        [
+          1508746,
+          "List",
+          "TPage"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1443244,
+      "title": "Saiv_it_runtime",
+      "cls": "TApplication",
+      "image": null,
+      "controls": []
+    }
+  ]
+}

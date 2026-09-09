@@ -1,8 +1,9 @@
 #include "update_protocol.h"
+#include "quick_guide.inc"
 #include <wininet.h>
 #include <cwctype>
 #ifndef SIT_UPDATE_VERSION
-#define SIT_UPDATE_VERSION "1.4.3"
+#define SIT_UPDATE_VERSION "1.4.5"
 #endif
 static const wchar_t* updateRegistry=L"Software\\MHP\\SdInstr\\SoftwareUpdate";
 static const UINT updateMenuId=0x7e41,updateComplete=WM_APP+141;
@@ -14,7 +15,7 @@ static bool updatePreference(bool off){HKEY key;DWORD value=off?1:0;if(RegCreate
 struct UpdateHttp {HINTERNET h;explicit UpdateHttp(HINTERNET v):h(v){if(!h)throw std::runtime_error("Could not connect to the update server. Try again later.");}~UpdateHttp(){InternetCloseHandle(h);}operator HINTERNET()const{return h;}};
 static std::string updateFetch(const std::string&address,size_t limit){
  if(!situpdate::url(address,".json")&&!situpdate::url(address,".txt")&&!situpdate::url(address,".zip"))throw std::runtime_error("Invalid update server address");
- UpdateHttp session(InternetOpenW(L"SAIV-Instrument-Terminal/1.4.3",INTERNET_OPEN_TYPE_PRECONFIG,0,0,0));DWORD timeout=5000;for(DWORD option:{INTERNET_OPTION_CONNECT_TIMEOUT,INTERNET_OPTION_SEND_TIMEOUT,INTERNET_OPTION_RECEIVE_TIMEOUT})InternetSetOptionW(session,option,&timeout,sizeof(timeout));
+ UpdateHttp session(InternetOpenW(L"SAIV-Instrument-Terminal/1.4.5",INTERNET_OPEN_TYPE_PRECONFIG,0,0,0));DWORD timeout=5000;for(DWORD option:{INTERNET_OPTION_CONNECT_TIMEOUT,INTERNET_OPTION_SEND_TIMEOUT,INTERNET_OPTION_RECEIVE_TIMEOUT})InternetSetOptionW(session,option,&timeout,sizeof(timeout));
  auto link=wide(address);UpdateHttp request(InternetOpenUrlW(session,link.c_str(),L"Cache-Control: no-cache\r\n",DWORD(-1),INTERNET_FLAG_SECURE|INTERNET_FLAG_RELOAD|INTERNET_FLAG_NO_CACHE_WRITE|INTERNET_FLAG_NO_AUTO_REDIRECT|INTERNET_FLAG_NO_UI|INTERNET_FLAG_NO_COOKIES,0));
  DWORD status=0,size=sizeof(status);if(!HttpQueryInfoW(request,HTTP_QUERY_STATUS_CODE|HTTP_QUERY_FLAG_NUMBER,&status,&size,0)||status!=200)throw std::runtime_error("The update server returned HTTP "+std::to_string(status)+". Try again later.");
  std::string result;DWORD start=GetTickCount();char chunk[8192];for(;;){if(GetTickCount()-start>30000)throw std::runtime_error("The update server response took too long.");DWORD count=0;if(!InternetReadFile(request,chunk,sizeof(chunk),&count))throw std::runtime_error("The update server response was interrupted.");if(!count)break;if(result.size()+count>limit)throw std::runtime_error("The update server response is too large.");result.append(chunk,count);}return result;
@@ -45,6 +46,6 @@ static void updateShow(HWND owner){if(updateWindow&&IsWindow(updateWindow)){SetF
  control(h,L"STATIC",L"Use Help > Update software to check for updates manually\r\nor turn this startup message back on.",0,32,412,620,34,307);
  control(h,L"BUTTON",L"&Check now",BS_DEFPUSHBUTTON|WS_TABSTOP,16,426,125,28,304);control(h,L"BUTTON",L"&Install update",WS_TABSTOP,370,426,150,28,305);EnableWindow(GetDlgItem(h,305),FALSE);control(h,L"BUTTON",L"&Later",WS_TABSTOP,540,426,110,28,306);updateLayout(h);ShowWindow(h,SW_SHOW);SetFocus(GetDlgItem(h,304));
 }
-static void updateMenu(HWND h){HMENU main=GetMenu(h);if(!main)return;for(int i=0;i<GetMenuItemCount(main);++i){wchar_t name[128]={};GetMenuStringW(main,i,name,128,MF_BYPOSITION);std::wstring label;for(wchar_t c:std::wstring(name))if(c!='&')label+=std::towlower(c);if(label!=L"help")continue;auto help=GetSubMenu(main,i);if(help&&GetMenuState(help,updateMenuId,MF_BYCOMMAND)==DWORD(-1)){AppendMenuW(help,MF_SEPARATOR,0,0);AppendMenuW(help,MF_STRING,updateMenuId,L"&Update software...");DrawMenuBar(h);}return;}}
-static LRESULT CALLBACK updateMainProc(HWND h,UINT m,WPARAM w,LPARAM l,UINT_PTR,DWORD_PTR){if(m==WM_COMMAND&&LOWORD(w)==updateMenuId&&!l){KillTimer(h,updateTimerId);updateShow(h);return 0;}if(m==WM_TIMER&&w==updateTimerId){if(!IsWindowVisible(h)||!IsWindowEnabled(h))return 0;KillTimer(h,updateTimerId);if(!updateDisabled())updateShow(h);return 0;}auto result=DefSubclassProc(h,m,w,l);if(m==WM_INITMENU)updateMenu(h);return result;}
+static void updateMenu(HWND h){HMENU main=GetMenu(h);if(!main)return;for(int i=0;i<GetMenuItemCount(main);++i){wchar_t name[128]={};GetMenuStringW(main,i,name,128,MF_BYPOSITION);std::wstring label;for(wchar_t c:std::wstring(name))if(c!='&')label+=std::towlower(c);if(label!=L"help")continue;auto help=GetSubMenu(main,i);if(help&&GetMenuState(help,guideMenuId,MF_BYCOMMAND)==DWORD(-1)){InsertMenuW(help,0,MF_BYPOSITION|MF_STRING,guideMenuId,L"&Quick guide...");DrawMenuBar(h);}if(help&&GetMenuState(help,updateMenuId,MF_BYCOMMAND)==DWORD(-1)){AppendMenuW(help,MF_SEPARATOR,0,0);AppendMenuW(help,MF_STRING,updateMenuId,L"&Update software...");DrawMenuBar(h);}return;}}
+static LRESULT CALLBACK updateMainProc(HWND h,UINT m,WPARAM w,LPARAM l,UINT_PTR,DWORD_PTR){if(m==WM_COMMAND&&LOWORD(w)==guideMenuId&&!l){guideShow(h);return 0;}if(m==WM_COMMAND&&LOWORD(w)==updateMenuId&&!l){KillTimer(h,updateTimerId);updateShow(h);return 0;}if(m==WM_TIMER&&w==updateTimerId){if(!IsWindowVisible(h)||!IsWindowEnabled(h))return 0;KillTimer(h,updateTimerId);if(!updateDisabled())updateShow(h);return 0;}auto result=DefSubclassProc(h,m,w,l);if(m==WM_INITMENU)updateMenu(h);return result;}
 static void updateInit(HWND h){if(!h)return;updateMenu(h);if(updateInitialized)return;updateInitialized=true;SetWindowSubclass(h,updateMainProc,141,0);if(!updateDisabled())SetTimer(h,updateTimerId,1500,0);}

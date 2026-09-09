@@ -1,0 +1,118 @@
+{
+  "report": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986089741248900.json",
+  "windows": [
+    {
+      "hwnd": 1181494,
+      "title": "Export data",
+      "cls": "TExportDlg",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986089741248900_0.png",
+      "controls": [
+        [
+          199102,
+          "Include U/D-cast",
+          "TCheckBox"
+        ],
+        [
+          133592,
+          "Include GPS position",
+          "TCheckBox"
+        ],
+        [
+          330020,
+          "File type",
+          "TRadioGroup"
+        ],
+        [
+          264486,
+          "MSDOS",
+          "TGroupButton"
+        ],
+        [
+          657650,
+          "Standard",
+          "TGroupButton"
+        ],
+        [
+          133604,
+          "|",
+          "TEdit"
+        ],
+        [
+          329954,
+          "Delimiter",
+          "TRadioGroup"
+        ],
+        [
+          330014,
+          "Other",
+          "TGroupButton"
+        ],
+        [
+          395552,
+          "Tab",
+          "TGroupButton"
+        ],
+        [
+          264426,
+          "Semicolon",
+          "TGroupButton"
+        ],
+        [
+          264548,
+          "Contents",
+          "TRadioGroup"
+        ],
+        [
+          1181740,
+          "Selected measurements",
+          "TGroupButton"
+        ],
+        [
+          657422,
+          "All series in separate files",
+          "TGroupButton"
+        ],
+        [
+          657418,
+          "All measurements in one file",
+          "TGroupButton"
+        ],
+        [
+          2951438,
+          "Cancel",
+          "TBitBtn"
+        ],
+        [
+          526822,
+          "OK",
+          "TBitBtn"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1312704,
+      "title": "SAIV Instrument Terminal - SCTDOFOTc 204 - C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\data\\test",
+      "cls": "TForm1",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986089741248900_1.png",
+      "controls": [
+        [
+          19727148,
+          "Graph / Table",
+          "TPage"
+        ],
+        [
+          133598,
+          "TChart",
+          "TPage"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1443244,
+      "title": "Saiv_it_runtime",
+      "cls": "TApplication",
+      "image": null,
+      "controls": []
+    }
+  ]
+}

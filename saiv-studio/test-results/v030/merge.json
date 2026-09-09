@@ -1,0 +1,227 @@
+[
+  {
+    "hwnd": 1181770,
+    "text": "SAIV Studio - Merge files",
+    "cls": "SITMerge",
+    "rect": [
+      1150,
+      326,
+      1972,
+      991
+    ],
+    "image": "C:\\cproject\\delphi\\SD200w_R2\\saiv-studio\\test-results\\v030\\merge_0.png",
+    "children": [
+      {
+        "hwnd": 1312790,
+        "text": "Master file (keeps its rows and timestamps):",
+        "cls": "Static",
+        "rect": [
+          1174,
+          371,
+          1904,
+          391
+        ]
+      },
+      {
+        "hwnd": 1772032,
+        "text": "",
+        "cls": "Edit",
+        "rect": [
+          1174,
+          395,
+          1834,
+          420
+        ]
+      },
+      {
+        "hwnd": 1181752,
+        "text": "Browse...",
+        "cls": "Button",
+        "rect": [
+          1846,
+          395,
+          1946,
+          420
+        ]
+      },
+      {
+        "hwnd": 1772008,
+        "text": "Folder containing additional CSV/TXT files:",
+        "cls": "Static",
+        "rect": [
+          1174,
+          431,
+          1904,
+          451
+        ]
+      },
+      {
+        "hwnd": 1311470,
+        "text": "",
+        "cls": "Edit",
+        "rect": [
+          1174,
+          455,
+          1834,
+          480
+        ]
+      },
+      {
+        "hwnd": 1312702,
+        "text": "Browse...",
+        "cls": "Button",
+        "rect": [
+          1846,
+          455,
+          1946,
+          480
+        ]
+      },
+      {
+        "hwnd": 788940,
+        "text": "Time tolerance (0.0 - 10.0 seconds):",
+        "cls": "Static",
+        "rect": [
+          1174,
+          497,
+          1419,
+          521
+        ]
+      },
+      {
+        "hwnd": 1902402,
+        "text": "0.0",
+        "cls": "Edit",
+        "rect": [
+          1422,
+          493,
+          1496,
+          518
+        ]
+      },
+      {
+        "hwnd": 984402,
+        "text": "Scan folder",
+        "cls": "Button",
+        "rect": [
+          1508,
+          491,
+          1623,
+          519
+        ]
+      },
+      {
+        "hwnd": 854074,
+        "text": "Add '-' separator column between files",
+        "cls": "Button",
+        "rect": [
+          1174,
+          531,
+          1934,
+          555
+        ]
+      },
+      {
+        "hwnd": 2230318,
+        "text": "Include date/time from merged files",
+        "cls": "Button",
+        "rect": [
+          1638,
+          493,
+          1946,
+          518
+        ]
+      },
+      {
+        "hwnd": 854916,
+        "text": "Select up to two matching files. Nearest time wins; a source row may be reused.",
+        "cls": "Static",
+        "rect": [
+          1174,
+          564,
+          1946,
+          586
+        ]
+      },
+      {
+        "hwnd": 1049034,
+        "text": "",
+        "cls": "SysListView32",
+        "rect": [
+          1174,
+          591,
+          1946,
+          811
+        ]
+      },
+      {
+        "hwnd": 2032826,
+        "text": "",
+        "cls": "SysHeader32",
+        "rect": [
+          1175,
+          592,
+          1947,
+          616
+        ]
+      },
+      {
+        "hwnd": 1312632,
+        "text": "Choose a master file and folder, then scan. Times are used as recorded (no time-zone conversion).",
+        "cls": "Static",
+        "rect": [
+          1174,
+          821,
+          1946,
+          861
+        ]
+      },
+      {
+        "hwnd": 1901208,
+        "text": "",
+        "cls": "Edit",
+        "rect": [
+          1174,
+          866,
+          1946,
+          936
+        ]
+      },
+      {
+        "hwnd": 787824,
+        "text": "Merge files",
+        "cls": "Button",
+        "rect": [
+          1720,
+          947,
+          1834,
+          977
+        ]
+      },
+      {
+        "hwnd": 1443760,
+        "text": "Close",
+        "cls": "Button",
+        "rect": [
+          1846,
+          947,
+          1946,
+          977
+        ]
+      }
+    ]
+  },
+  {
+    "hwnd": 1443840,
+    "text": "SAIV Instrument Studio 0.3.0",
+    "cls": "SAIVInstrumentStudio",
+    "rect": [
+      1130,
+      306,
+      2310,
+      1086
+    ],
+    "image": "C:\\cproject\\delphi\\SD200w_R2\\saiv-studio\\test-results\\v030\\merge_1.png",
+    "children": []
+  }
+]

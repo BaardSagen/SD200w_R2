@@ -1,0 +1,68 @@
+{
+  "report": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986107202059700.json",
+  "windows": [
+    {
+      "hwnd": 264356,
+      "title": "Split measurement file",
+      "cls": "TSplitFileDlg",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986107202059700_0.png",
+      "controls": [
+        [
+          395768,
+          "EditSer",
+          "TEdit"
+        ],
+        [
+          395772,
+          "EditFile",
+          "TEdit"
+        ],
+        [
+          264742,
+          "EditFile",
+          "TEdit"
+        ],
+        [
+          461354,
+          "EditInFile",
+          "TEdit"
+        ],
+        [
+          461252,
+          "Cancel",
+          "TBitBtn"
+        ],
+        [
+          395714,
+          "OK",
+          "TBitBtn"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1312704,
+      "title": "SAIV Instrument Terminal",
+      "cls": "TForm1",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986107202059700_1.png",
+      "controls": [
+        [
+          19727148,
+          "Graph / Table",
+          "TPage"
+        ],
+        [
+          133598,
+          "TChart",
+          "TPage"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1443244,
+      "title": "Saiv_it_runtime",
+      "cls": "TApplication",
+      "image": null,
+      "controls": []
+    }
+  ]
+}

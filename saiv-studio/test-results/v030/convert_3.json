@@ -1,0 +1,117 @@
+[
+  {
+    "hwnd": 460530,
+    "text": "SAIV Studio - Convert fields",
+    "cls": "SITImportChoices",
+    "rect": [
+      1175,
+      351,
+      1797,
+      751
+    ],
+    "image": "C:\\cproject\\delphi\\SD200w_R2\\saiv-studio\\test-results\\v030\\convert_3_0.png",
+    "children": [
+      {
+        "hwnd": 984952,
+        "text": "Choose conversions and which original columns to keep.",
+        "cls": "Static",
+        "rect": [
+          1201,
+          396,
+          1771,
+          426
+        ]
+      },
+      {
+        "hwnd": 1968934,
+        "text": "Field 3 of 7: P - Pressure (dbar)",
+        "cls": "Static",
+        "rect": [
+          1201,
+          435,
+          1775,
+          460
+        ]
+      },
+      {
+        "hwnd": 985110,
+        "text": "",
+        "cls": "ComboBox",
+        "rect": [
+          1201,
+          465,
+          1771,
+          493
+        ]
+      },
+      {
+        "hwnd": 919538,
+        "text": "Depth uses salinity, temperature and pressure. Without GPS, SIT's default latitude (45.508368287\u00b0) is used and recorded.",
+        "cls": "Static",
+        "rect": [
+          1201,
+          502,
+          1771,
+          547
+        ]
+      },
+      {
+        "hwnd": 1378792,
+        "text": "Keep original P values",
+        "cls": "Button",
+        "rect": [
+          1201,
+          554,
+          1753,
+          577
+        ]
+      },
+      {
+        "hwnd": 788536,
+        "text": "< Back",
+        "cls": "Button",
+        "rect": [
+          1459,
+          708,
+          1551,
+          736
+        ]
+      },
+      {
+        "hwnd": 918254,
+        "text": "Cancel",
+        "cls": "Button",
+        "rect": [
+          1569,
+          708,
+          1661,
+          736
+        ]
+      },
+      {
+        "hwnd": 395724,
+        "text": "Next >",
+        "cls": "Button",
+        "rect": [
+          1679,
+          708,
+          1771,
+          736
+        ]
+      }
+    ]
+  },
+  {
+    "hwnd": 1443840,
+    "text": "SAIV Instrument Studio 0.3.0",
+    "cls": "SAIVInstrumentStudio",
+    "rect": [
+      1130,
+      306,
+      2310,
+      1086
+    ],
+    "image": "C:\\cproject\\delphi\\SD200w_R2\\saiv-studio\\test-results\\v030\\convert_3_1.png",
+    "children": []
+  }
+]

@@ -1,0 +1,108 @@
+{
+  "report": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788985984056572600.json",
+  "windows": [
+    {
+      "hwnd": 68014,
+      "title": "SAIV IT - Update software",
+      "cls": "SITSoftwareUpdate",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788985984056572600_0.png",
+      "controls": [
+        [
+          68016,
+          "Installed version: 1.4.3\r\nWould you like to check saiv.no for a newer version?",
+          "Static"
+        ],
+        [
+          68018,
+          "No internet connection is made until you choose Check now.\r\n\r\nWhen the check finishes, release notes will appear here so you can decide whether to download an update.",
+          "Edit"
+        ],
+        [
+          68020,
+          "Do &not check for updates at startup",
+          "Button"
+        ],
+        [
+          68022,
+          "Use Help > Update software to check for updates manually\r\nor turn this startup message back on.",
+          "Static"
+        ],
+        [
+          68024,
+          "&Check now",
+          "Button"
+        ],
+        [
+          68026,
+          "&Install update",
+          "Button"
+        ],
+        [
+          68028,
+          "&Later",
+          "Button"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1312704,
+      "title": "SAIV Instrument Terminal",
+      "cls": "TForm1",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788985984056572600_1.png",
+      "controls": [
+        [
+          1966542,
+          "Comm",
+          "TPage"
+        ],
+        [
+          526376,
+          "",
+          "TEdit"
+        ],
+        [
+          460780,
+          "&Merge",
+          "TButton"
+        ],
+        [
+          788330,
+          "&Convert",
+          "TButton"
+        ],
+        [
+          460836,
+          "TIME/D&ATE",
+          "TButton"
+        ],
+        [
+          1574234,
+          "&Interval",
+          "TButton"
+        ],
+        [
+          919456,
+          "&Download",
+          "TButton"
+        ],
+        [
+          657450,
+          "&Setup",
+          "TButton"
+        ],
+        [
+          526336,
+          "",
+          "TEdit"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1443244,
+      "title": "Saiv_it_runtime",
+      "cls": "TApplication",
+      "image": null,
+      "controls": []
+    }
+  ]
+}

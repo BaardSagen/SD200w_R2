@@ -1,17 +1,55 @@
 # Prosjektoverlevering — SAIV Instrument Terminal (tidligere MiniSoft SD200W)
 
-Oppdatert: 9. september 2026. Arbeidsmappe: `C:\cprojects\delphi`.
+Oppdatert: 10. september 2026. Arbeidsmappe: `C:\cproject\delphi\SD200w_R2`.
 
 ## Start her neste gang
 
 1. Les dette notatet og brukerens nye oppgave.
-2. Nyeste lokale leveranse er **SAIV_Instrument_Terminal_v1.4.3_Sept2026.exe** paa `update`. Main beholder 1.3.6. Les [LES_MEG_Import_All_Fields_137.md](../LES_MEG_Import_All_Fields_137.md). Kunden trenger fortsatt bare EN EXE.
+2. Nyeste lokale SIT-leveranse er **SAIV_Instrument_Terminal_v1.4.5_Sept2026.exe** paa `main`. Les [LES_MEG_Import_All_Fields_137.md](../LES_MEG_Import_All_Fields_137.md). Kunden trenger fortsatt bare EN EXE.
 3. Les relevante dokumenter og byggskript i `analysis` før patching. Mange skript krever en bestemt eldre kildefil og SHA-256; de kan ikke ukritisk kjøres på siste utgave.
 4. Lag en ny programkopi og behold tidligere leveranser. Verifiser relevante endringer og lever den konkrete EXE-filen.
 
 Vi har ikke original Delphi-kildekode. Arbeidet består av analyse og patching av en 32-bits Delphi Windows-EXE: maskinkode, PE-ressurser og DFM-skjemaer. Dokumentasjonen om instrumentfirmware er en separat kilde og må ikke forveksles med Windows-koden.
 
-## Siste lokale leveranse: 1.4.3 - forklaring ved oppdateringshaken
+## Git-leveranse, 10. september 2026
+
+Brukeren har bedt om commit og push. Aktiv gren er `main`, med `origin/main` som upstream; grenen inneholder allerede SIT 1.4.3. Eldre notater om at main beholder 1.3.6 er historiske. Leveransen omfatter Studio 0.3.0/0.3.1, SIT 1.4.4/1.4.5, kildearkiver, bygggrunnlag og testdokumentasjon. Refererte bilder fra SIT-gjennomgangen bevares; fulle skrivebordsbilder og byggmellomfiler holdes lokalt. Git-push publiserer ikke oppdateringspakken paa saiv.no.
+
+## Nyeste SIT-leveranse: 1.4.5 - instrumentikon i About, 10. september 2026
+
+Brukeren ba om at det gamle instrumentbildet i Help > About skulle erstattes med det nye ikonet. About bruker naa samme 64-pikslers instrumentikon som icon/ctd_in_Cage.ico. Bildet er kodet som klassisk DIB for den gamle Delphi-visningen; RGBA-pikslene er beholdt. Resten av About og Quick guide er bevart. Les [LES_MEG_About_Icon_145.md](../LES_MEG_About_Icon_145.md).
+
+Leveranse: **SAIV_Instrument_Terminal_v1.4.5_Sept2026.exe**, fortsatt en EXE. Visuelt kontrollert i kjorende SIT: hele ikonet, versjonstekst, krediteringer og knapper er synlige. About lukkes normalt; Quick guide og Update software fungerer. Rapport: `analysis/about145_release_validation.json`. Ingen instrumentkommandoer eller oppdateringshenting i testen. Bygg: `analysis/build_single_exe_145.py`, ressursendring i `analysis/patch_about_icon145.py`. 1.4.4-kilden er bevart i `analysis/reference/sit_import_v144`, og historisk bygg bruker arkivet. Tidligere EXE-er er beholdt. Ingen serveropplasting eller push. Visuell gjennomgang av instrumentbruk er fortsatt utsatt til instrumenter er tilkoblet.
+
+## Tidligere SIT-leveranse: 1.4.4 – Quick guide, 10. september 2026
+
+Brukeren ba om en Quick guide også i original SIT, tilpasset SITs egne menyer og utseende. Help > Quick guide har nå ni korte engelske emner i et vanlig SIT-hjelpevindu, med emnevalg, tastaturbetjening og justerbar størrelse. Guiden fungerer offline og uten instrument. Les [LES_MEG_Quick_Guide_144.md](../LES_MEG_Quick_Guide_144.md).
+
+Leveranse: **SAIV_Instrument_Terminal_v1.4.4_Sept2026.exe** (én EXE). Faktisk GUI-kontroll av alle emner, piltaster, Esc/Close/vinduskryss, gjenåpning, minimumsstørrelse og bevart Update software-meny bestått. Bilder kontrollert visuelt. Rapport: `analysis/guide144_release_validation.json`. Ingen instrumentkommandoer eller nettverkskall i testen. Instrument- og datakilder samt installerhjelperen er bevart; runtime har bare nye versjonsressurser/DLL-navn/sjekksum. Bygg: `analysis/build_single_exe_144.py`. 1.4.3-kilden er arkivert i `analysis/reference/sit_import_v143`, og det historiske bygget bruker arkivet. Tidligere EXE-er beholdt. Ingen publisering eller push.
+
+Brukeren har ikke instrument tilgjengelig nå. En visuell gjennomgang av faktisk SIT-bruk er mulig, men skal **ikke lages før instrumentene er tilkoblet**. Kun tekstguiden er levert nå.
+
+## Rettet Studio-leveranse: 0.3.1, 10. september 2026
+
+Brukerens skjermbilde viste at vanlig oppstart uten måledata presset terminalen til høyre. Årsaken var ubetinget SameLine før valgfrie knapper. 0.3.1 retter dette. Tidligere test med demodata skjulte feilen.
+
+Leveranse: **SAIV_Studio_v0.3.1_Sept2026.exe**. Les [LES_MEG_SAIV_Studio_031.md](../LES_MEG_SAIV_Studio_031.md). Normal oppstart uten demo/testtransport kontrollert visuelt og med måling av terminalbredden i tre vindusstørrelser, pluss demo-regresjon. Alle 1164 CTest-kontroller består. Ingen fysisk instrumentport brukt. Rapport: `analysis/studio031_release_validation.json`; skjermbilder: `saiv-studio/test-results/v031`. 0.3.0-kilden er bevart i `analysis/reference/saiv_studio_v030`, og tidligere leveranser er beholdt.
+
+## Ny selvstendig Studio-leveranse: 0.3.0, 10. september 2026
+
+Brukeren ba om å lage Studio nå, med samme enkle terminalbetjening som SIT, men et moderne utseende. Brukeren presiserte at nye filer ikke trenger SD2; lesing av gamle SD2 skal beholdes. Aktivt Studio-arbeid er dermed gjenopptatt etter tidligere pause.
+
+Leveranse: **SAIV_Studio_v0.3.0_Sept2026.exe**. Les [LES_MEG_SAIV_Studio_030.md](../LES_MEG_SAIV_Studio_030.md). Rett i terminal, enkel knapperekke, ekte UART 7E1, Convert/Merge, Interval/TIME-DATE, CSV som standard, gammel SD2-lesing, tabell/grafer og dataverktøy. Nytt grensesnitt kopierer ikke Windows 98-utseendet. Det er fortsatt en Windows x64-utgave; Linux/Mac er ikke levert.
+
+Bygget med `saiv-studio/build.cmd`. 182 kjerne-, 50 kompatibilitets- og 932 innstillingsprotokollkontroller består. Samlet GUI-test og skjermbilder under `saiv-studio/test-results/v030`; SHA-bundet leveranserapport i `analysis/studio030_release_validation.json`. Fysisk instrumentakseptanse og full SIT-paritet gjenstår. Original SIT-kilde/moduler/leveranser er beholdt, og Studio 0.2.0-kilden er arkivert i `analysis/reference/saiv_studio_v020`. Ingen publisering eller push.
+
+## Kjorende SIT gjennomgaatt som GUI-fasit for Studio, 9. september 2026
+
+Brukeren ba uttrykkelig om aa aapne SIT og undersoke selve programmet og menyene foer et nytt forsoek med saiv-studio. SIT 1.4.3 er naa faktisk startet paa det interaktive Windows-skrivebordet. 67 hovedmenykommandoer med undermenytre er registrert; 49 menykommandoer er aapnet/forsokt, dessuten alle seks Setup-faner, alle sju Convert-feltsteg i OSU107-filen, Merge med mappesoek og native/importert Multigraph. Klassisk SD2-testkopi og 79-raders loggerfil er brukt. Convert -> Import to SD2 er utfort til egen testmappe. Menyene endrer seg mellom klassiske og importerte data.
+
+Les [SIT_GUI_GJENNOMGANG.md](SIT_GUI_GJENNOMGANG.md) for konkrete skjermbilder, vinduer, menytraer og avgrensninger. Raa bevis under analysis/runtime_test/sit_live_review. Verktoy: analysis/inspect_sit_live.py og analysis/build_sit_gui_review.py. Originale leveranser/data er beholdt; vanlig brukerregister var ikke isolert. Ingen instrumentkommandoer, utskriftsjobb eller oppdateringshenting ble startet av gjennomgangen. Dette er GUI-kartlegging, ikke full funksjonstest. På dette tidspunktet var ingen ny Studio-utgave bygget; se den nyere 0.3.0-leveransen over. Studios tidligere femsiders utforming skal ikke brukes som fasit for en tro SIT-gjenskaping.
+
+## Tidligere lokal leveranse: 1.4.3 - forklaring ved oppdateringshaken
 
 Brukeren bekreftet at oppdatering til 1.4.2 virket. 1.4.3 legger til engelsk tekst under Do not check for updates at startup: "Use Help > Update software to check for updates manually or turn this startup message back on." Vinduet har ekstra plass til forklaringen. Ingen endring i instrument- eller installasjonslogikk. Ny serverpakke i update_server. Bygg: analysis/build_single_exe_143.py. 1.4.1-kilden er arkivert i analysis/reference/sit_import_v141 slik at det eldre bygget bevares. Ingen serveropplasting. Brukeren ba om commit og push av update etter denne endringen.
 

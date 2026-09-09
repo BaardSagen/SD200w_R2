@@ -1,0 +1,43 @@
+{
+  "report": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986189264821400.json",
+  "windows": [
+    {
+      "hwnd": 264456,
+      "title": "Update barometric pressure",
+      "cls": "TBarPressDlg",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986189264821400_0.png",
+      "controls": [
+        [
+          264858,
+          "Cancel",
+          "TBitBtn"
+        ],
+        [
+          330414,
+          "OK",
+          "TBitBtn"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1312704,
+      "title": "SAIV Instrument Terminal - SCTDOFOTc 204 - C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\data\\test",
+      "cls": "TForm1",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986189264821400_1.png",
+      "controls": [
+        [
+          1508746,
+          "List",
+          "TPage"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1443244,
+      "title": "Saiv_it_runtime",
+      "cls": "TApplication",
+      "image": null,
+      "controls": []
+    }
+  ]
+}

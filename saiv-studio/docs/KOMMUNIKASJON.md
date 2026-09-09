@@ -1,13 +1,15 @@
-# Kommunikasjon og programvareparitet
+# Kommunikasjon – Studio 0.3.1
 
-8N1 og 7E1 bruker begge ti bit per tegn inkludert start/stopp. For valgt 7E1 åpnes Windows-porten fysisk som **8N1**. Ved mottak maskeres bit 7 med `& 0x7f`; paritetsfeil kontrolleres ikke. Ved sending kodes even-paritet i bit 7. Vanlig 8N1 går uendret. Instrumentets og PC-ens baudrate må samsvare. Innstillingen Even + 7 bits er den logiske instrumentprotokollen, ikke fysisk UART-konfigurasjon.
+7E1 settes faktisk i UART: syv databiter, even-paritet og én stoppbit. `GetCommState` leser innstillingen tilbake. Adaptere som avviser dette gir feil; ingen overgang til softwareparitet foretas. Tidligere softwareparitetskode er fjernet.
 
-Detect prøver 9600 med begge logiske formater. Satt åttende bit i første 8N1-forsøk går videre til programvareparitet; dette alene er ikke positiv identifikasjon. En kjent meny, målerad eller loggeridentitet må fortsatt finnes. Ved valg av funnet resultat overføres port og logisk paritet til forbindelsen. Andre baudrater kan velges manuelt.
+Autodetect prøver 9600/8N1 og 9600/7E1, lytter og gjenkjenner komplette instrumentmenyer eller loggeridentitet. Valgt port og innstillinger brukes ved tilkobling. Andre baudrater velges i Setup. Søk sender ikke start-, slette- eller kalibreringskommandoer.
 
-Søket lytter først. G brukes for å spørre en stille port før I-vekkeforsøk. I gjentas bare mens ingen tekst mottas. S brukes fra gjenkjent oppstartsmeny, M fra gjenkjent status/start-meny. Gjenkjent hovedmeny eller måling avslutter søket. Ingen start-, slette- eller kalibreringskommando hører til Detect. Ny kommando venter minst 250 ms etter siste mottatte tekst. Ukjent/uavsluttet tekst sperrer blind videre vekking.
+Terminal-/downloadprotokollen venter minst 250 ms etter mottatt tekst. S brukes fra oppstartsmeny, M fra status. G undersøker en stille port; avgrenset I-vekking brukes bare uten mottatt tekst, med minst 50 ms mellom I. Delvis/ukjent meny tillater ikke blind videre vekking. Avslutt et automatisk forløp med Cancel før manuell terminaltasting.
 
-Første oppstartsmeny kan automatisk starte etter ti sekunder. I betyr vekking, start eller intervall avhengig av tilstand; M betyr hovedmeny eller koeffisienter. Menugjenkjenning er derfor nødvendig også når baud og paritet er riktige. Ikke legg tilbake en fast blind kommando-sekvens.
+Download sender F. Et komplett Refresh disk Y/N besvares med ett Y. Feil, manglende bekreftelse og timeout vises. SD200-data og terminaltekst beholdes. Loggerfiler kopieres fra USB-disken under Instrument > Logger files.
 
-Fysiske mottak 8. september: COM7 ga paritetskodede CTD N-rader ved 9600 8N1 og lesbare rader ved 9600 7E1. COM11 er OSU107; COM18 har ikke instrument. Disse portnumrene er kun testmiljø. Et nytt aktivt søk ble stoppet av automatisk godkjenningskontroll. Full fysisk test av siste programvareparitetsbygg gjenstår. Ingen aktiv sending ble brukt for å omgå dette.
+Interval og TIME/DATE krever valgt Autodetect-resultat og aktiv forbindelse. Protokollkoden fra SIT bruker komplett respons, mottaksro og tilbakeavlesning. Klokkeekko håndteres tegnvis med egne ventetider. Innstillingsjobben kjører i bakgrunnen med eksklusiv bruk av serialtransporten; terminalkommandoer sperres under jobben. Loggerstatus kan kreve kontrollert gjenåpning av porten, med ny kontroll av identitet og serienummer.
 
-Registrerte mottaksfiler inneholder datapayload etter eventuell fjerning av programvareparitetsbit. Dette er ikke et rått elektrisk opptak. Bruk alltid sikkerhetskopi og kontroller instrumentresultater.
+SD200-intervallet settes fra den annonserte menyen og leses tilbake. SD200-klokken skrives én gang med tidskompensasjon. OSU107 setter SD200- og loggerklokken separat. Surface stoppes før klokke/intervall; intervallet endres i valgt USB `config/system.ini`, med sikkerhetskopi, flush, venting og bekreftet U/APPLY.
+
+GUI-testen bruker filtransport og sender ikke til fysisk instrument. Fysisk akseptanse av Studio 0.3.1 gjenstår. Tidligere fysiske SIT-resultater gjelder den utgaven og kan ikke automatisk overføres til Studio.

@@ -1,0 +1,98 @@
+{
+  "report": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986116337475400.json",
+  "windows": [
+    {
+      "hwnd": 264368,
+      "title": "Recalculate calibration coefficients",
+      "cls": "TReCalcDlg",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986116337475400_0.png",
+      "controls": [
+        [
+          264750,
+          "&Close",
+          "TBitBtn"
+        ],
+        [
+          461232,
+          "&Temperature",
+          "TTabPage"
+        ],
+        [
+          264736,
+          "",
+          "TEdit"
+        ],
+        [
+          330224,
+          "",
+          "TEdit"
+        ],
+        [
+          526842,
+          "Calc",
+          "TBitBtn"
+        ],
+        [
+          264748,
+          "",
+          "TEdit"
+        ],
+        [
+          330250,
+          "",
+          "TEdit"
+        ],
+        [
+          330252,
+          "Calc",
+          "TBitBtn"
+        ],
+        [
+          264722,
+          "",
+          "TEdit"
+        ],
+        [
+          264724,
+          "",
+          "TEdit"
+        ],
+        [
+          330262,
+          "",
+          "TEdit"
+        ],
+        [
+          592374,
+          "",
+          "TEdit"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1312704,
+      "title": "SAIV Instrument Terminal",
+      "cls": "TForm1",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986116337475400_1.png",
+      "controls": [
+        [
+          19727148,
+          "Graph / Table",
+          "TPage"
+        ],
+        [
+          133598,
+          "TChart",
+          "TPage"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1443244,
+      "title": "Saiv_it_runtime",
+      "cls": "TApplication",
+      "image": null,
+      "controls": []
+    }
+  ]
+}

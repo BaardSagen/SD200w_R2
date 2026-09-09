@@ -1,0 +1,37 @@
+{
+  "result": "PASS",
+  "version": "0.3.1",
+  "before": {
+    "window_width": 1180,
+    "left": 898,
+    "width": 73
+  },
+  "checks": [
+    {
+      "test": "normal_startup",
+      "window_width": 1180,
+      "left": 25,
+      "width": 946
+    },
+    {
+      "test": "minimum_startup",
+      "window_width": 920,
+      "left": 25,
+      "width": 686
+    },
+    {
+      "test": "large_startup",
+      "window_width": 1450,
+      "left": 25,
+      "width": 1216
+    },
+    {
+      "test": "demo_startup",
+      "window_width": 1180,
+      "left": 25,
+      "width": 946
+    }
+  ],
+  "exe_sha256": "a18bb313976696b0ea300d8c59d478e589ed7b9ca5c97c3802b983ab44197711",
+  "method": "Real normal startup without --demo or --terminal-test, rendered PrintWindow capture, three sizes; separate demo regression. No instrument port opened."
+}

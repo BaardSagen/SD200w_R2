@@ -7,8 +7,6 @@
 #include <deque>
 namespace saiv {
 constexpr double missing = std::numeric_limits<double>::quiet_NaN();
-std::string encode7E1(std::string data);
-std::string decode7E1(std::string data);
 std::string trim(std::string s);
 std::string lower(std::string s);
 double number(std::string s);

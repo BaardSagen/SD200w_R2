@@ -1,0 +1,98 @@
+{
+  "report": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986130244071200.json",
+  "windows": [
+    {
+      "hwnd": 264428,
+      "title": "Automatic readout",
+      "cls": "TdlgAutoReadout",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986130244071200_0.png",
+      "controls": [
+        [
+          1049752,
+          "Initiate readout",
+          "TTabSheet"
+        ],
+        [
+          68222,
+          "",
+          "TEdit"
+        ],
+        [
+          68220,
+          "",
+          "TEdit"
+        ],
+        [
+          68218,
+          "",
+          "TEdit"
+        ],
+        [
+          68216,
+          "&Close",
+          "TBitBtn"
+        ],
+        [
+          1247004,
+          "Select station(s)",
+          "TGroupBox"
+        ],
+        [
+          68214,
+          "None",
+          "TBitBtn"
+        ],
+        [
+          68212,
+          "&All",
+          "TBitBtn"
+        ],
+        [
+          68210,
+          "Daily",
+          "TBitBtn"
+        ],
+        [
+          68208,
+          "Timed",
+          "TBitBtn"
+        ],
+        [
+          395846,
+          "Immediate",
+          "TBitBtn"
+        ],
+        [
+          461380,
+          "Interactive",
+          "TBitBtn"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1312704,
+      "title": "SAIV Instrument Terminal",
+      "cls": "TForm1",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986130244071200_1.png",
+      "controls": [
+        [
+          19727148,
+          "Graph / Table",
+          "TPage"
+        ],
+        [
+          133598,
+          "TChart",
+          "TPage"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1443244,
+      "title": "Saiv_it_runtime",
+      "cls": "TApplication",
+      "image": null,
+      "controls": []
+    }
+  ]
+}

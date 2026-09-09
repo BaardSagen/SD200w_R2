@@ -23,11 +23,11 @@ static HANDLE openPort(const SerialSettings& s){
  DCB dcb{};dcb.DCBlength=sizeof(dcb);
  if(!GetCommState(h,&dcb)){DWORD e=GetLastError();CloseHandle(h);SetLastError(e);return INVALID_HANDLE_VALUE;}
  dcb.BaudRate=s.baud;dcb.ByteSize=static_cast<BYTE>(s.bits);dcb.Parity=s.parity==1?EVENPARITY:s.parity==2?ODDPARITY:NOPARITY;dcb.StopBits=ONESTOPBIT;
- if(s.parity==1&&s.bits==7){dcb.ByteSize=8;dcb.Parity=NOPARITY;}
  dcb.fBinary=TRUE;dcb.fParity=dcb.Parity!=NOPARITY;dcb.fOutxCtsFlow=FALSE;dcb.fOutxDsrFlow=FALSE;dcb.fDsrSensitivity=FALSE;dcb.fOutX=FALSE;dcb.fInX=FALSE;dcb.fErrorChar=FALSE;dcb.fNull=FALSE;dcb.fAbortOnError=FALSE;
  dcb.fDtrControl=s.dtr?DTR_CONTROL_ENABLE:DTR_CONTROL_DISABLE;dcb.fRtsControl=s.rts?RTS_CONTROL_ENABLE:RTS_CONTROL_DISABLE;
  COMMTIMEOUTS timeouts{MAXDWORD,0,25,0,250};
  if(!SetCommTimeouts(h,&timeouts)||!SetCommState(h,&dcb)){DWORD e=GetLastError();CloseHandle(h);SetLastError(e);return INVALID_HANDLE_VALUE;}
+ DCB actual{};actual.DCBlength=sizeof(actual);if(!GetCommState(h,&actual)||actual.ByteSize!=dcb.ByteSize||actual.Parity!=dcb.Parity||actual.StopBits!=ONESTOPBIT){CloseHandle(h);SetLastError(ERROR_INVALID_PARAMETER);return INVALID_HANDLE_VALUE;}
  return h;
 }
 void Serial::event(SerialEvent::Kind kind,const std::string& text){std::lock_guard<std::mutex> l(mutex_);if(queuedBytes_+text.size()>8*1024*1024){stop_=true;events_.push_back({SerialEvent::Error,"Receive queue full; connection stopped to prevent silent data loss."});return;}events_.push_back({kind,text});queuedBytes_+=text.size();}
@@ -40,18 +40,18 @@ void Serial::run(SerialSettings settings){
  connected=true;event(SerialEvent::Connected,settings.port);
  while(!stop_){
   std::string pending;{std::lock_guard<std::mutex> l(mutex_);if(!outgoing_.empty()){pending=std::move(outgoing_.front());outgoing_.pop_front();}}
-  if(!pending.empty()){std::string wire=settings.parity==1&&settings.bits==7?encode7E1(pending):pending;size_t total=0;while(total<pending.size()&&!stop_){DWORD done=0;if(!WriteFile(h,wire.data()+total,static_cast<DWORD>(pending.size()-total),&done,nullptr)||done==0){event(SerialEvent::Error,"Serial write failed: "+windowsError(GetLastError()));stop_=true;break;}total+=done;}if(total)event(SerialEvent::Transmitted,pending.substr(0,total));}
-  char data[4096];DWORD count=0;if(!ReadFile(h,data,sizeof(data),&count,nullptr)){event(SerialEvent::Error,"Serial read failed: "+windowsError(GetLastError()));break;}if(count){auto payload=std::string(data,count);if(settings.parity==1&&settings.bits==7)payload=decode7E1(std::move(payload));event(SerialEvent::Received,payload);}
+  if(!pending.empty()){std::string wire=pending;size_t total=0;while(total<pending.size()&&!stop_){DWORD done=0;if(!WriteFile(h,wire.data()+total,static_cast<DWORD>(pending.size()-total),&done,nullptr)||done==0){event(SerialEvent::Error,"Serial write failed: "+windowsError(GetLastError()));stop_=true;break;}total+=done;}if(total)event(SerialEvent::Transmitted,pending.substr(0,total));}
+  char data[4096];DWORD count=0;if(!ReadFile(h,data,sizeof(data),&count,nullptr)){event(SerialEvent::Error,"Serial read failed: "+windowsError(GetLastError()));break;}if(count){auto payload=std::string(data,count);event(SerialEvent::Received,payload);}
  }
  CloseHandle(h);connected=false;event(SerialEvent::Closed,settings.port);
 }
 void Detector::start(){if(busy)return;if(worker_.joinable())worker_.join();stop_=false;busy=true;{std::lock_guard<std::mutex> l(mutex_);results_.clear();}
  worker_=std::thread([this]{auto ports=enumeratePorts();std::vector<std::future<Detection>> pending;size_t index=0;
  while((index<ports.size()||!pending.empty())&&!stop_){while(index<ports.size()&&pending.size()<4){auto p=ports[index++];pending.push_back(std::async(std::launch::async,[this,p]{Detection d;d.port=p;SerialSettings settings;settings.port=p.name;for(int parity=0;parity<2&&!stop_;parity++){settings.parity=parity;settings.bits=parity?7:8;d.settings=settings;HANDLE h=openPort(settings);if(h==INVALID_HANDLE_VALUE){d.status=windowsError(GetLastError());return d;}auto start=std::chrono::steady_clock::now();Protocol protocol;protocol.connected();protocol.wake(0);bool failed=false;size_t sent=0;
- protocol.send=[&](const std::string& command){auto wire=settings.parity==1?encode7E1(command):command;DWORD count=0;if(!WriteFile(h,wire.data(),static_cast<DWORD>(command.size()),&count,nullptr)||count!=command.size())failed=true;else sent++;};
+ protocol.send=[&](const std::string& command){auto wire=command;DWORD count=0;if(!WriteFile(h,wire.data(),static_cast<DWORD>(command.size()),&count,nullptr)||count!=command.size())failed=true;else sent++;};
  while(!stop_&&!failed){double seconds=std::chrono::duration<double>(std::chrono::steady_clock::now()-start).count();if(seconds>15)break;
  char b[1024];DWORD n=0;if(!ReadFile(h,b,sizeof(b),&n,nullptr)){failed=true;break;}
- seconds=std::chrono::duration<double>(std::chrono::steady_clock::now()-start).count();if(n){if(!settings.parity&&std::any_of(b,b+n,[](unsigned char c){return c>=128;}))break;auto payload=std::string(b,n);if(settings.parity==1)payload=decode7E1(std::move(payload));protocol.ingest(payload,seconds);}
+ seconds=std::chrono::duration<double>(std::chrono::steady_clock::now()-start).count();if(n){if(!settings.parity&&std::any_of(b,b+n,[](unsigned char c){return c>=128;}))break;auto payload=std::string(b,n);protocol.ingest(payload,seconds);}
  if(protocol.device.logger){d.identity=protocol.device;break;}
  protocol.tick(seconds);
  if(protocol.mainMenu||protocol.running){d.identity=protocol.device;if(d.identity.model.empty())d.identity.model="SAIV CTD / STD";break;}

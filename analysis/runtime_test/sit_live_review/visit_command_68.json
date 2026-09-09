@@ -1,0 +1,43 @@
+{
+  "report": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986191450494400.json",
+  "windows": [
+    {
+      "hwnd": 526366,
+      "title": "Update measurement position",
+      "cls": "TPosDlg",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986191450494400_0.png",
+      "controls": [
+        [
+          199316,
+          "Cancel",
+          "TBitBtn"
+        ],
+        [
+          199348,
+          "OK",
+          "TBitBtn"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1312704,
+      "title": "SAIV Instrument Terminal - SCTDOFOTc 204 - C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\data\\test",
+      "cls": "TForm1",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986191450494400_1.png",
+      "controls": [
+        [
+          1508746,
+          "List",
+          "TPage"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1443244,
+      "title": "Saiv_it_runtime",
+      "cls": "TApplication",
+      "image": null,
+      "controls": []
+    }
+  ]
+}

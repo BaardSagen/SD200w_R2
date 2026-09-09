@@ -1,0 +1,9 @@
+{
+  "about_opens": true,
+  "version": "1.4.5",
+  "credits_preserved": true,
+  "quick_guide_opens": true,
+  "update_dialog_version_correct": true,
+  "instrument_commands_sent": false,
+  "screenshot": "analysis/runtime_test/about145/about.png"
+}

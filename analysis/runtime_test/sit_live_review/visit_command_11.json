@@ -1,0 +1,73 @@
+{
+  "report": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986102816864600.json",
+  "windows": [
+    {
+      "hwnd": 330180,
+      "title": "Export data to tide file",
+      "cls": "#32770",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986102816864600_0.png",
+      "controls": [
+        [
+          264696,
+          "L&agre i:",
+          "Static"
+        ],
+        [
+          264702,
+          "FolderView",
+          "SysListView32"
+        ],
+        [
+          199156,
+          "F&ilnavn:",
+          "Static"
+        ],
+        [
+          1247758,
+          "",
+          "Edit"
+        ],
+        [
+          199174,
+          "Fil&type:",
+          "Static"
+        ],
+        [
+          199152,
+          "La&gre",
+          "Button"
+        ],
+        [
+          133678,
+          "Avbryt",
+          "Button"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1312704,
+      "title": "SAIV Instrument Terminal - SCTDOFOTc 204 - C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\data\\test",
+      "cls": "TForm1",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986102816864600_1.png",
+      "controls": [
+        [
+          19727148,
+          "Graph / Table",
+          "TPage"
+        ],
+        [
+          133598,
+          "TChart",
+          "TPage"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1443244,
+      "title": "Saiv_it_runtime",
+      "cls": "TApplication",
+      "image": null,
+      "controls": []
+    }
+  ]
+}

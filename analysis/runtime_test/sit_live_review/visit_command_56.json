@@ -1,0 +1,93 @@
+{
+  "report": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788985966277490400.json",
+  "windows": [
+    {
+      "hwnd": 1116086,
+      "title": "Turbidity unit",
+      "cls": "TdlgTurbUnit",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788985966277490400_0.png",
+      "controls": [
+        [
+          460764,
+          "NTU",
+          "TGroupButton"
+        ],
+        [
+          591810,
+          "FTU",
+          "TGroupButton"
+        ],
+        [
+          133450,
+          "Cancel",
+          "TButton"
+        ],
+        [
+          133448,
+          "OK",
+          "TButton"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1312704,
+      "title": "SAIV Instrument Terminal",
+      "cls": "TForm1",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788985966277490400_1.png",
+      "controls": [
+        [
+          1966542,
+          "Comm",
+          "TPage"
+        ],
+        [
+          526376,
+          "",
+          "TEdit"
+        ],
+        [
+          460780,
+          "&Merge",
+          "TButton"
+        ],
+        [
+          788330,
+          "&Convert",
+          "TButton"
+        ],
+        [
+          460836,
+          "TIME/D&ATE",
+          "TButton"
+        ],
+        [
+          1574234,
+          "&Interval",
+          "TButton"
+        ],
+        [
+          919456,
+          "&Download",
+          "TButton"
+        ],
+        [
+          657450,
+          "&Setup",
+          "TButton"
+        ],
+        [
+          526336,
+          "",
+          "TEdit"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1443244,
+      "title": "Saiv_it_runtime",
+      "cls": "TApplication",
+      "image": null,
+      "controls": []
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+[
+  {
+    "hwnd": 460530,
+    "text": "SAIV Studio - Convert fields",
+    "cls": "SITImportChoices",
+    "rect": [
+      1175,
+      351,
+      1797,
+      751
+    ],
+    "image": "C:\\cproject\\delphi\\SD200w_R2\\saiv-studio\\test-results\\v030\\convert_5_0.png",
+    "children": [
+      {
+        "hwnd": 854494,
+        "text": "Choose conversions and which original columns to keep.",
+        "cls": "Static",
+        "rect": [
+          1201,
+          396,
+          1771,
+          426
+        ]
+      },
+      {
+        "hwnd": 1835800,
+        "text": "Field 5 of 7: Par - Photosynthetically Active Radiation (output: \u00b5mol photons/(m\u00b2\u00b7s))",
+        "cls": "Static",
+        "rect": [
+          1201,
+          435,
+          1775,
+          460
+        ]
+      },
+      {
+        "hwnd": 2294320,
+        "text": "",
+        "cls": "ComboBox",
+        "rect": [
+          1201,
+          465,
+          1771,
+          493
+        ]
+      },
+      {
+        "hwnd": 1049326,
+        "text": "PAR is photon flux density. 1 \u00b5Einstein = 1 \u00b5mol photons. Area and time units must also match.",
+        "cls": "Static",
+        "rect": [
+          1201,
+          502,
+          1771,
+          547
+        ]
+      },
+      {
+        "hwnd": 526796,
+        "text": "Keep original Par values",
+        "cls": "Button",
+        "rect": [
+          1201,
+          554,
+          1753,
+          577
+        ]
+      },
+      {
+        "hwnd": 1050558,
+        "text": "< Back",
+        "cls": "Button",
+        "rect": [
+          1459,
+          708,
+          1551,
+          736
+        ]
+      },
+      {
+        "hwnd": 1050646,
+        "text": "Cancel",
+        "cls": "Button",
+        "rect": [
+          1569,
+          708,
+          1661,
+          736
+        ]
+      },
+      {
+        "hwnd": 854090,
+        "text": "Next >",
+        "cls": "Button",
+        "rect": [
+          1679,
+          708,
+          1771,
+          736
+        ]
+      }
+    ]
+  },
+  {
+    "hwnd": 1443840,
+    "text": "SAIV Instrument Studio 0.3.0",
+    "cls": "SAIVInstrumentStudio",
+    "rect": [
+      1130,
+      306,
+      2310,
+      1086
+    ],
+    "image": "C:\\cproject\\delphi\\SD200w_R2\\saiv-studio\\test-results\\v030\\convert_5_1.png",
+    "children": []
+  }
+]

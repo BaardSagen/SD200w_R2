@@ -1,0 +1,12 @@
+{
+  "icon": "icon/ctd_in_Cage.ico",
+  "icon_sha256": "927d31d1c99de8d629f3a2347d66e1789a91436a59bec2bce73addcb19bf1905",
+  "size": [
+    64,
+    64
+  ],
+  "original_icon_pixels_preserved": true,
+  "legacy_DIB_encoding": true,
+  "other_about_properties_preserved": true,
+  "existing_runtime_bytes_preserved_except_resource_directory_and_PE_sizes": true
+}

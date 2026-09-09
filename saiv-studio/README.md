@@ -1,34 +1,38 @@
-# SAIV Instrument Studio 0.2.0
+# SAIV Instrument Studio 0.3.1
 
-Første selvstendige Windows-utgave i C++ / Dear ImGui / DirectX 11. Dette er et nytt program med egen kode. Det laster ikke Delphi-programmet. Ikonet er brukerens `icon/ctd_in_Cage.ico`.
+0.3.1 retter en oppstartsfeil som presset terminalen sammen når ingen målefil var åpen. Vanlig oppstart uten demo er kontrollert i tre vindusstørrelser. Regresjonstest: `analysis/test_studio_startup031.py`.
 
-## Start
+Et selvstendig Windows-program med moderne terminal, direkte tegntasting og enkle instrumentknapper. Starter rett i terminalen. Ingen installasjon, server eller konto kreves.
 
-Kjør `SAIVStudio.exe`. Programmet åpner direkte i terminalen, med **Autodetect** og **Download** øverst.
+## Bruk
 
-1. Trykk Autodetect, vent på søkeresultatene og velg instrumentet. Det kobles til direkte.
-2. Skriv i terminalen: hvert ASCII-tegn sendes uten eget tekstfelt eller Send-knapp. Enter sender CR, Backspace sender 0x08, Delete sender 0x7F. Kontrolltegn beholdes.
-3. Trykk Download for å motta data. Ved behov hentes hovedmenyen først gjennom den menybevisste flyten.
+1. Kjør `SAIVStudio.exe`, trykk **Autodetect**, velg instrumentet og koble til.
+2. Skriv direkte i terminalen. Enter sender CR; Backspace og kontrolltegn beholdes. **Setup** åpner manuelle portvalg.
+3. **Download** mottar SD200-data. For USB-loggere brukes disk-refresh; åpne deretter **Instrument > Logger files** for å kopiere filene.
+4. **Convert** åpner målefilen med SITs valg for felt, enheter, originalkolonner, Fahrenheit, salinitet, dybde, PAR og oksygen. **Merge** kobler filer etter tidsstempel.
+5. **File > Open measurements** åpner CSV, loggertekst og eksisterende SD2. Under Measurements finnes tabell, tidsgrafer, profiler og Multigraph. Musehjulet zoomer; dobbeltklikk nullstiller grafen.
+6. **Save** i målevisningen lagrer CSV med kolonnenavn, alle rader og måleopplysninger. **Save** i terminalen lagrer terminaltekst. **Export > FIELDS** tilbyr SIT-kompatibel loggertekst.
 
-Setup åpner portinnstillinger i en egen dialog. Tegn skrevet der eller på andre programsider sendes ikke til instrumentet. Automatisk kommunikasjon og køet terminalinput respekterer 250 ms ro etter mottatt tekst. Under en pågående automatisk operasjon avvises terminalkommandoer med beskjed; bruk Cancel først.
+Nye data trenger ikke SD2. Gamle SD2-filer må fortsatt ligge sammen med tilhørende RF2 og eventuelle OX2/OP2/SF2. SF2 kontrolleres mot SD2 før åpning. CSV er én tekstfil med semikolon som skilletegn og måleopplysninger på kommentarlinjer som begynner med `#`.
 
-Grafer/data, Utilities og Logger files finnes som enkle knapper øverst. Målekort-startsiden og sidepanelet er fjernet. `--demo` viser syntetiske eksempeldata uten instrument. `--terminal-test <fil>` bruker en isolert filtransport for tastaturtesting, uten COM-port.
+**Interval** og **TIME/DATE** aktiveres etter valgt Autodetect-resultat. Dialogene kontrollerer instrumentets svar. Surface-intervall bruker valgt `config/system.ini`; originalfilen sikkerhetskopieres før endring. Instrumentet etterlates stoppet.
 
-Se [funksjonsstatus](docs/FUNKSJONSSTATUS.md), [kommunikasjon](docs/KOMMUNIKASJON.md) og [kildegrunnlag](docs/KILDEGRUNNLAG.md). Full funksjonslikhet med det gamle programmet er **ikke** ferdig. Fysisk akseptansetest gjenstår.
+Data-menyen inneholder radutvalg, filtrering, spike-fjerning, justering og standarddybder. Disse lager et nytt datasett. Print skriver terminaltekst eller måletabell; grafutskrift er ikke implementert.
 
-## Bygg og viderefør på annen PC
+## Status
 
-Kildepakken inkluderer `src`, `assets`, tester, eksempelfiler og vendorkilde. Installer Visual Studio med Desktop development with C++, Windows SDK, CMake og Ninja. Kjør `build.cmd` fra kildekatalogen. Skriptet finner Visual Studio via vswhere, bygger Release x64 med statisk C++ runtime og kjører CTest. Sluttfil: `build/SAIVStudio.exe`.
+Utviklingsutgave for **Windows x64 / DirectX 11**. Mac- og Linux-utgaver følger ikke med. Grensesnittet er laget etter gjennomgang av kjørende SIT 1.4.3, med brukerens ønske om enkel betjening og nytt utseende.
 
-```powershell
-.\build.cmd
-cmake --install build --prefix dist/SAIVStudio-0.2.0
-```
+Kjerne-, fil-/formel- og innstillingsprotokolltester følger med. Fysisk instrumentakseptanse av **Studio 0.3.1** gjenstår. Tidligere fysiske SIT-tester er ikke en fysisk test av Studio. Full SIT-paritet, kalibrering, firmwareoppdatering, alle gamle spesialeksporter og trykklar grafeksport er ikke ferdige.
 
-Ingen nettverksnedlasting er nødvendig fra komplett kildepakke. `tests/terminal_input_windows.py` krever Python og Pillow og starter en egen demo-instans. Den tester direkte WM_CHAR, kontrolltegn, fokusbeskyttelse, navigasjon og skjermbilder med faktiske museklikk. Ikke kjør den mens du bruker musen til annet arbeid. Kjerne-/protokolltester bruker ingen instrumenter.
+Se [funksjonsstatus](docs/FUNKSJONSSTATUS.md), [kommunikasjon](docs/KOMMUNIKASJON.md) og [kildegrunnlag](docs/KILDEGRUNNLAG.md).
 
-Windows x64 og DirectX 11 kreves. Windows-fontene Segoe UI/Consolas brukes når de finnes, med fallback. Innstillinger lagres under `%LOCALAPPDATA%/SAIV/InstrumentStudio/settings.txt`. Ingen server, konto eller installasjonstjeneste brukes.
+## Bygg
 
-Always keep backup copies of your data files and verify measurement results before relying on them.
+Installer Visual Studio med Desktop development with C++, Windows SDK, CMake og Ninja. Kjør `build.cmd`. Skriptet bygger x64 Release med statisk C++ runtime og kjører CTest. Programmet blir `build/SAIVStudio.exe`. Vendorkilde er inkludert; ingen nedlasting trengs.
 
-Se [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) og medfølgende lisenser. Denne lokale utgaven er ikke publisert til GitHub.
+`--demo` viser syntetiske data. `--open <fil>` åpner en målefil. `--terminal-test <fil>` erstatter terminalens instrumenttransport med en testfil. GUI-testen i det komplette prosjektet er `analysis/test_studio_gui030.py`; den krever Python/Pillow og bruker et eget programvindu.
+
+Portvalg lagres i `%LOCALAPPDATA%/SAIV/InstrumentStudio/settings.txt`. Konverteringsvalg lagres separat fra SIT under `HKCU/Software/SAIV/InstrumentStudio/ConvertPresetsV1`.
+
+Tidligere 0.2.0-kilder er bevart i `analysis/reference/saiv_studio_v020`. Original SIT og tidligere leveranser er beholdt. Se [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

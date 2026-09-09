@@ -1,22 +1,23 @@
-# Funksjonsstatus – 8. september 2026
+# Funksjonsstatus – Studio 0.3.1, 10. september 2026
 
-| Område | Implementert og kontrollgrunnlag | Gjenstår / avgrensning |
+| Område | Implementert | Avgrensning |
 |---|---|---|
-| Windows-program | Versjon 0.2.0: direkte terminaloppstart, lys kompakt verktøylinje, fem sider, direkte ASCII-/kontrolltegn; oppstart/fokus/navigasjon/lukking GUI-testet | Full DPI-/skjerm-/PC-matrise |
-| Kommunikasjon | COM-liste, manuell port/baud/paritet, asynkron RX/TX, terminal, opptak, eksplisitt reconnect | Fysisk gjennomgang av alle instrumenttilstander |
-| Detect | 9600, 8N1 og programvareemulert 7E1; gjenkjenner loggerbanner, menyer og måling | Andre baudrater velges manuelt; ikke alle firmwarevarianter bekreftet |
-| Menu | 250 ms ro, S fra oppstart, M fra status, ingen ny vekking i hovedmeny, begrenset tidsavbrudd | Fysisk akseptanse; ukjent meny krever inspeksjon |
-| Download | F, fragmentert Refresh disk Y/N, ett Y, bekreftelse/feil/timeout, bevart delvis mottak | Reelle lange nedlastinger og alle loggervarianter |
-| Import/eksport | CTD N-rader, FIELDS-filer, navngitte tabeller, CSV; tre virkelige eksempelfiler testet | Ingen proprietære binærformater eller multiline-CSV-felt |
-| Grafer | Kanalvalg, profil med dybde nedover, kanaloversikt, kryss/tooltip, statistikk | Ikke full gammel grafverktøykasse; ingen zoom/panorering eller trykklar grafeksport |
-| Utilities | Radsplitt, verdiutvalg, medianbasert spike-kolonne, gain/offset, lineær standardnivå-interpolasjon | Blandede opp/ned-profiler må splittes; ingen ekstrapolasjon |
-| Beregninger | Offisiell GSW: SP, SA, CT, tetthet, sigma0, lydhastighet, dybde, O2-løselighet; testet kjente referanser og ugyldige verdier | Krever korrekte enheter/sted/temperaturskala; O2 antar standard atmosfære; ikke identisk med gamle formler |
-| Loggerfiler | Mappesøk, utvalg, kopiering, størrelseskontroll og nytt navn ved eksisterende målfil | Ingen disk-refresh uten eksplisitt Download; ikke innholds-hash ved kopiering |
-| Instrumentkalibrering / firmware | Ikke implementert | Protokoll- og akseptansearbeid nødvendig |
-| GPS, SMTP, spesialiserte sonarformater | Ikke implementert | Egne arbeidsområder |
+| Grensesnitt | Direkte terminaloppstart, moderne lys ramme/mørk terminal, vanlige instrumentknapper, menyer og dialoger | Windows x64; ingen Mac/Linux-leveranse |
+| Terminal | Direkte ASCII/kontrolltegn, fokusbeskyttelse, tekstlagring, RX-opptak, portvalg og reconnect | Ingen full ANSI-terminalemulering |
+| Autodetect | 9600 med faktisk 8N1/7E1, meny-/bannerkontroll, akseptert resultat videreføres | Alle adaptere/firmwarevarianter er ikke fysisk testet |
+| Download | Menybevisst SD200-nedlasting og logger-refresh med ett Y og kontroll av svaret | Lange fysiske nedlastinger gjenstår; USB-filer kopieres fra Logger files |
+| Interval/TIME-DATE | Elleve intervaller; SD200/OSU107/SAIV110; PC-LT/UTC; tilbakeavlesning; én SD200-klokkeskriving; Surface config-backup/flush/U | Protokolltestet; Studio-transporten er ikke fysisk verifisert |
+| Åpning | SD2/RF2/OX2/OP2, SF2 med fingerprint, FIELDS/full loggertekst, gamle N-rader og CSV | SD2-leseren støtter undersøkt 52-byte format. Følgefiler må følge med |
+| Lagring | CSV som standard med alle kolonner/rader/måleopplysninger; FIELDS-eksport og terminaltekst | SD2 tilbys ikke som nytt arbeidsformat. Intern kompatibilitetsskriver er beholdt som testgrunnlag |
+| Convert | SITs felt-/enhetsvalg, C→S, Fahrenheit, fixed-position real depth, PAR-arealenhet, OX/OxR, originalkolonner og egne presets | Manglende nødvendige inngangsverdier må avklares |
+| Formler | Dokumenterte SIT PSS-78/lydhastighet/EOS-80/gravity/oksygenrutiner, testet mot registrerte EXE-referanser | Ingen påstand om bitidentitet med x87 ved alle inngangsverdier |
+| Merge | Mappeskanning, én/to tilleggsfiler, 0–10 s toleranse, nærmeste tidspunkt, dato/tid og alle felt | Samme krav til eksplisitte radtider som SIT |
+| Grafer | Parvise tidsgrafer/profiler, faktisk tid når dato/tid finnes, T-S, opptil ti kanaler, zoom og kryssavlesning | Multigraph viser separate paneler. Panorering, alle gamle grafvalg og grafutskrift mangler |
+| Dataverktøy | Radutvalg, verdifilter, medianbasert spike-fjerning, gain/offset og lineær standardnivå-interpolasjon til nytt datasett | Standardnivåer krever én monoton profil; ingen ekstrapolasjon |
+| Loggerfiler | Mappeskanning, utvalg og kopiering med størrelseskontroll og nytt navn ved kollisjon | Kopier kontrolleres med størrelse, ikke innholdshash |
+| Print | Terminaltekst eller måletabell med sideinndeling | Fysisk skriver ikke testet; grafer skrives ikke ut |
+| Andre SIT-funksjoner | Ikke fullført | Kalibrering, firmware-/programoppdatering, GPS-instrumentintegrasjon, SMTP og spesialeksporter |
 
-Importer begrenses til 64 MiB, én million rader, 128 kolonner og 12 åpne datasett. Mottaksbuffer er begrenset; overflyt stopper forbindelsen med feilmelding. Ugyldige verdier beholdes som manglende, aldri som forrige gyldige verdi. C (ledningsevne) og c (lydhastighet) holdes atskilt. Beregning/filtrering lager avledede datasett og overskriver ikke kilden automatisk.
+CSV beholder kolonnerekkefølge, siterte felt og brøkdelssekunder. C og c holdes atskilt. CSV begrenses til 64 MiB, 200 000 rader og 128 kolonner; SIT/FIELDS-parseren til 20 MiB, 200 000 rader og 100 kolonner. Tolv datasett kan være åpne samtidig.
 
-Testresultatene ligger i `test-results`, kjernetestene i `tests/core_tests.cpp`. Historisk Delphi-kode er ikke inkludert i eller nødvendig for programmet. Originalprosjektets dokumentasjon og EXE-er beholdes separat.
-
-0.2.0 erstatter 0.1.0-grensesnittet etter brukerens tilbakemelding. Tastaturtesten bruker filtransport, ikke et instrument. Siste rapport: `test-results/terminal_input_validation.json`. Fysisk instrumentakseptanse gjenstår.
+Tester: `tests/core_tests.cpp`, `tests/compat_tests.cpp`, `tests/settings_tests.cpp`. Filtestene bruker ekte 79-/3-/43-raders tekstfiler og en gammel 7-raders SD2-fil, og kontrollerer CSV-rundtur, SF2, manglende verdier, formler og konvertering. GUI-kontroller og skjermbilder ligger i `test-results/v030`.

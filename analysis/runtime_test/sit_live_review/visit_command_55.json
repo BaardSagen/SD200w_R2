@@ -1,0 +1,103 @@
+{
+  "report": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788985964156053200.json",
+  "windows": [
+    {
+      "hwnd": 1181296,
+      "title": "Oxygen unit",
+      "cls": "TdlgOxUnit",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788985964156053200_0.png",
+      "controls": [
+        [
+          460654,
+          "\u00b5mol/kg",
+          "TGroupButton"
+        ],
+        [
+          460652,
+          "\u00b5mol/l",
+          "TGroupButton"
+        ],
+        [
+          590376,
+          "ml/l",
+          "TGroupButton"
+        ],
+        [
+          853590,
+          "mg/l",
+          "TGroupButton"
+        ],
+        [
+          133446,
+          "Cancel",
+          "TButton"
+        ],
+        [
+          133444,
+          "OK",
+          "TButton"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1312704,
+      "title": "SAIV Instrument Terminal",
+      "cls": "TForm1",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788985964156053200_1.png",
+      "controls": [
+        [
+          1966542,
+          "Comm",
+          "TPage"
+        ],
+        [
+          526376,
+          "",
+          "TEdit"
+        ],
+        [
+          460780,
+          "&Merge",
+          "TButton"
+        ],
+        [
+          788330,
+          "&Convert",
+          "TButton"
+        ],
+        [
+          460836,
+          "TIME/D&ATE",
+          "TButton"
+        ],
+        [
+          1574234,
+          "&Interval",
+          "TButton"
+        ],
+        [
+          919456,
+          "&Download",
+          "TButton"
+        ],
+        [
+          657450,
+          "&Setup",
+          "TButton"
+        ],
+        [
+          526336,
+          "",
+          "TEdit"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1443244,
+      "title": "Saiv_it_runtime",
+      "cls": "TApplication",
+      "image": null,
+      "controls": []
+    }
+  ]
+}

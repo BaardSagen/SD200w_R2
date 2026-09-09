@@ -1,0 +1,53 @@
+{
+  "report": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986134555004200.json",
+  "windows": [
+    {
+      "hwnd": 1443762,
+      "title": "Set minimum depth mask ",
+      "cls": "TdlgSetMinDepthMask",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986134555004200_0.png",
+      "controls": [
+        [
+          68234,
+          "edtMinDepth",
+          "TEdit"
+        ],
+        [
+          133768,
+          "Cancel",
+          "TButton"
+        ],
+        [
+          199302,
+          "OK",
+          "TButton"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1312704,
+      "title": "SAIV Instrument Terminal",
+      "cls": "TForm1",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986134555004200_1.png",
+      "controls": [
+        [
+          19727148,
+          "Graph / Table",
+          "TPage"
+        ],
+        [
+          133598,
+          "TChart",
+          "TPage"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1443244,
+      "title": "Saiv_it_runtime",
+      "cls": "TApplication",
+      "image": null,
+      "controls": []
+    }
+  ]
+}

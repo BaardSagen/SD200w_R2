@@ -1,0 +1,88 @@
+{
+  "report": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986118986294300.json",
+  "windows": [
+    {
+      "hwnd": 264340,
+      "title": "Iso line data for SURFER",
+      "cls": "TSurferDlg",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986118986294300_0.png",
+      "controls": [
+        [
+          264732,
+          "&Edit",
+          "TBitBtn"
+        ],
+        [
+          264744,
+          "Right border",
+          "TGroupBox"
+        ],
+        [
+          395782,
+          "0",
+          "TEdit"
+        ],
+        [
+          264730,
+          "0",
+          "TEdit"
+        ],
+        [
+          264738,
+          "Left border",
+          "TGroupBox"
+        ],
+        [
+          264740,
+          "0",
+          "TEdit"
+        ],
+        [
+          395762,
+          "0",
+          "TEdit"
+        ],
+        [
+          526852,
+          "&Add",
+          "TBitBtn"
+        ],
+        [
+          461320,
+          "Cancel",
+          "TBitBtn"
+        ],
+        [
+          395800,
+          "OK",
+          "TBitBtn"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1312704,
+      "title": "SAIV Instrument Terminal",
+      "cls": "TForm1",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986118986294300_1.png",
+      "controls": [
+        [
+          19727148,
+          "Graph / Table",
+          "TPage"
+        ],
+        [
+          133598,
+          "TChart",
+          "TPage"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1443244,
+      "title": "Saiv_it_runtime",
+      "cls": "TApplication",
+      "image": null,
+      "controls": []
+    }
+  ]
+}

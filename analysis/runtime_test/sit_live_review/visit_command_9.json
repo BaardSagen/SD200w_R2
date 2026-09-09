@@ -1,0 +1,68 @@
+{
+  "report": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986098309752200.json",
+  "windows": [
+    {
+      "hwnd": 329972,
+      "title": "Output to",
+      "cls": "TFileCommDlg",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986098309752200_0.png",
+      "controls": [
+        [
+          264414,
+          "Content",
+          "TRadioGroup"
+        ],
+        [
+          264402,
+          "All selected measurements",
+          "TGroupButton"
+        ],
+        [
+          395414,
+          "Down-cast",
+          "TGroupButton"
+        ],
+        [
+          264412,
+          "Output format",
+          "TGroupBox"
+        ],
+        [
+          199104,
+          "File",
+          "TBitBtn"
+        ],
+        [
+          133594,
+          "Comm port",
+          "TBitBtn"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1312704,
+      "title": "SAIV Instrument Terminal - SCTDOFOTc 204 - C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\data\\test",
+      "cls": "TForm1",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986098309752200_1.png",
+      "controls": [
+        [
+          19727148,
+          "Graph / Table",
+          "TPage"
+        ],
+        [
+          133598,
+          "TChart",
+          "TPage"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1443244,
+      "title": "Saiv_it_runtime",
+      "cls": "TApplication",
+      "image": null,
+      "controls": []
+    }
+  ]
+}

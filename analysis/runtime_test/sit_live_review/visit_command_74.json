@@ -1,0 +1,163 @@
+{
+  "report": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986121232055300.json",
+  "windows": [
+    {
+      "hwnd": 264370,
+      "title": "Calibrate from raw data",
+      "cls": "TCalRawDlg",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986121232055300_0.png",
+      "controls": [
+        [
+          395792,
+          "Temperature",
+          "TTabSheet"
+        ],
+        [
+          133728,
+          "Inst file",
+          "TBitBtn"
+        ],
+        [
+          133740,
+          "LSQFIT",
+          "TCheckBox"
+        ],
+        [
+          133742,
+          "Old Kelvin constant",
+          "TCheckBox"
+        ],
+        [
+          133686,
+          "4 coefficients",
+          "TCheckBox"
+        ],
+        [
+          133688,
+          "Day file",
+          "TBitBtn"
+        ],
+        [
+          133720,
+          "",
+          "TEdit"
+        ],
+        [
+          133690,
+          "Write",
+          "TBitBtn"
+        ],
+        [
+          133692,
+          "Inst file",
+          "TBitBtn"
+        ],
+        [
+          133694,
+          "Calc+&Print",
+          "TBitBtn"
+        ],
+        [
+          133706,
+          "Calc",
+          "TBitBtn"
+        ],
+        [
+          133710,
+          "",
+          "TEdit"
+        ],
+        [
+          133708,
+          "",
+          "TEdit"
+        ],
+        [
+          133712,
+          "",
+          "TEdit"
+        ],
+        [
+          133714,
+          "",
+          "TEdit"
+        ],
+        [
+          133716,
+          "",
+          "TEdit"
+        ],
+        [
+          133718,
+          "",
+          "TEdit"
+        ],
+        [
+          199240,
+          "",
+          "TEdit"
+        ],
+        [
+          133680,
+          "Calc",
+          "TBitBtn"
+        ],
+        [
+          199150,
+          "",
+          "TEdit"
+        ],
+        [
+          199126,
+          "",
+          "TEdit"
+        ],
+        [
+          395720,
+          "",
+          "TEdit"
+        ],
+        [
+          264626,
+          "",
+          "TEdit"
+        ],
+        [
+          395764,
+          "Graph",
+          "TBitBtn"
+        ],
+        [
+          1444366,
+          "Close",
+          "TBitBtn"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1312704,
+      "title": "SAIV Instrument Terminal",
+      "cls": "TForm1",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986121232055300_1.png",
+      "controls": [
+        [
+          19727148,
+          "Graph / Table",
+          "TPage"
+        ],
+        [
+          133598,
+          "TChart",
+          "TPage"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1443244,
+      "title": "Saiv_it_runtime",
+      "cls": "TApplication",
+      "image": null,
+      "controls": []
+    }
+  ]
+}

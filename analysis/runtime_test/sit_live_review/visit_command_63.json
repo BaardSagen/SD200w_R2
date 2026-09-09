@@ -1,0 +1,73 @@
+{
+  "report": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986105023752500.json",
+  "windows": [
+    {
+      "hwnd": 395716,
+      "title": "Select file",
+      "cls": "#32770",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986105023752500_0.png",
+      "controls": [
+        [
+          264728,
+          "&S\u00f8k i:",
+          "Static"
+        ],
+        [
+          330226,
+          "FolderView",
+          "SysListView32"
+        ],
+        [
+          264714,
+          "F&ilnavn:",
+          "Static"
+        ],
+        [
+          264716,
+          "",
+          "Edit"
+        ],
+        [
+          199186,
+          "Fil&type:",
+          "Static"
+        ],
+        [
+          330232,
+          "\u00c5&pne",
+          "Button"
+        ],
+        [
+          330236,
+          "Avbryt",
+          "Button"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1312704,
+      "title": "SAIV Instrument Terminal - SCTDOFOTc 204 - C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\data\\test",
+      "cls": "TForm1",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986105023752500_1.png",
+      "controls": [
+        [
+          19727148,
+          "Graph / Table",
+          "TPage"
+        ],
+        [
+          133598,
+          "TChart",
+          "TPage"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1443244,
+      "title": "Saiv_it_runtime",
+      "cls": "TApplication",
+      "image": null,
+      "controls": []
+    }
+  ]
+}

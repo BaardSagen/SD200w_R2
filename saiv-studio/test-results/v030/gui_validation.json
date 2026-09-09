@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "checks": [
+    "direct startup typing and exact control bytes",
+    "Setup does not transmit characters",
+    "terminal regains focus after Setup",
+    "measurement view does not transmit",
+    "CSV Save writes demo",
+    "CSV Save keeps demo rows and values",
+    "conversion page 1",
+    "conversion page 2",
+    "conversion page 3",
+    "conversion page 4",
+    "conversion page 5",
+    "conversion page 6",
+    "conversion page 7",
+    "conversion completes all seven fields",
+    "CSV Save writes converted",
+    "GUI conversion keeps 79 measurement rows",
+    "GUI conversion includes salinity, Fahrenheit and original RINKO",
+    "GUI Fahrenheit calculation keeps original Celsius",
+    "Merge opens from terminal button"
+  ],
+  "exe_sha256": "f2bf0a1f6dfb5f7b9338bfd13d430659b7818f556220fab04d8dc8d7be1bf69a",
+  "instrument_ports_opened": 0,
+  "method": "Owned test window; pointer events use the ImGui input queue after backend refresh, enabled only by --terminal-test. WM_CHAR follows the normal foreground/popup guards. File-backed transport; no instrument port, disk update or printer output."
+}

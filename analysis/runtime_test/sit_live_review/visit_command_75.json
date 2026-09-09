@@ -1,0 +1,93 @@
+{
+  "report": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986123662909900.json",
+  "windows": [
+    {
+      "hwnd": 656840,
+      "title": "Rinko oxygen sensor calibration",
+      "cls": "TdlgRinkoCal",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986123662909900_0.png",
+      "controls": [
+        [
+          526362,
+          "Rinko sensor on channel",
+          "TRadioGroup"
+        ],
+        [
+          460678,
+          "Opt2",
+          "TGroupButton"
+        ],
+        [
+          853308,
+          "Opt1",
+          "TGroupButton"
+        ],
+        [
+          133726,
+          "Set to factory calibration",
+          "TGroupBox"
+        ],
+        [
+          133724,
+          "Factory reset",
+          "TBitBtn"
+        ],
+        [
+          133732,
+          "Adjust calibration",
+          "TGroupBox"
+        ],
+        [
+          199232,
+          "Indoor",
+          "TRadioButton"
+        ],
+        [
+          133722,
+          "Outdoors",
+          "TRadioButton"
+        ],
+        [
+          133734,
+          "Recalibrate",
+          "TBitBtn"
+        ],
+        [
+          133736,
+          "",
+          "TEdit"
+        ],
+        [
+          199266,
+          "Close",
+          "TButton"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1312704,
+      "title": "SAIV Instrument Terminal",
+      "cls": "TForm1",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986123662909900_1.png",
+      "controls": [
+        [
+          19727148,
+          "Graph / Table",
+          "TPage"
+        ],
+        [
+          133598,
+          "TChart",
+          "TPage"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1443244,
+      "title": "Saiv_it_runtime",
+      "cls": "TApplication",
+      "image": null,
+      "controls": []
+    }
+  ]
+}

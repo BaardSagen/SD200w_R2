@@ -1,0 +1,116 @@
+{
+  "report": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986100572884100.json",
+  "windows": [
+    {
+      "hwnd": 68144,
+      "title": "Export data to bathy file",
+      "cls": "#32770",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986100572884100_0.png",
+      "controls": [
+        [
+          68146,
+          "L&agre i:",
+          "Static"
+        ],
+        [
+          68196,
+          "FolderView",
+          "SysListView32"
+        ],
+        [
+          68156,
+          "F&ilnavn:",
+          "Static"
+        ],
+        [
+          68158,
+          "",
+          "Edit"
+        ],
+        [
+          68170,
+          "Fil&type:",
+          "Static"
+        ],
+        [
+          68178,
+          "La&gre",
+          "Button"
+        ],
+        [
+          68180,
+          "Avbryt",
+          "Button"
+        ]
+      ]
+    },
+    {
+      "hwnd": 264644,
+      "title": "Export EM1002/EM3000 data to file",
+      "cls": "#32770",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986100572884100_1.png",
+      "controls": [
+        [
+          133616,
+          "L&agre i:",
+          "Static"
+        ],
+        [
+          68132,
+          "FolderView",
+          "SysListView32"
+        ],
+        [
+          133634,
+          "F&ilnavn:",
+          "Static"
+        ],
+        [
+          133636,
+          "",
+          "Edit"
+        ],
+        [
+          133618,
+          "Fil&type:",
+          "Static"
+        ],
+        [
+          68114,
+          "La&gre",
+          "Button"
+        ],
+        [
+          68116,
+          "Avbryt",
+          "Button"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1312704,
+      "title": "SAIV Instrument Terminal - SCTDOFOTc 204 - C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\data\\test",
+      "cls": "TForm1",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788986100572884100_2.png",
+      "controls": [
+        [
+          19727148,
+          "Graph / Table",
+          "TPage"
+        ],
+        [
+          133598,
+          "TChart",
+          "TPage"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1443244,
+      "title": "Saiv_it_runtime",
+      "cls": "TApplication",
+      "image": null,
+      "controls": []
+    }
+  ]
+}

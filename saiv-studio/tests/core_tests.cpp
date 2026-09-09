@@ -11,8 +11,6 @@ int checks=0;
 void require(bool x,const char* message){++checks;if(!x)throw std::runtime_error(message);}
 std::string read(const std::filesystem::path& p){std::ifstream f(p,std::ios::binary);if(!f)throw std::runtime_error("fixture missing");return {std::istreambuf_iterator<char>(f),{}};}
 int main(int argc,char** argv){try{
- for(unsigned i=0;i<256;i++){std::string original(1,static_cast<char>(i));auto wire=encode7E1(original);unsigned encoded=static_cast<unsigned char>(wire[0]),ones=0;for(unsigned bit=0;bit<8;bit++)ones+=(encoded>>bit)&1;require((ones%2)==0,"even software parity for every byte");require((encoded&127)==(i&127)&&static_cast<unsigned char>(decode7E1(wire)[0])==(i&127),"seven data bits preserved");require(static_cast<unsigned char>(original[0])==i,"encoding does not mutate original");}
- require(encode7E1("I")==std::string(1,static_cast<char>(0xc9)),"wake I encoded as C9");
  require(std::isnan(number("nan"))&&std::isnan(number("-999"))&&std::isnan(number("1e99")),"missing values");
  require(number("12,345")==12.345&&std::isnan(number("12junk")),"decimal comma and strict parse");
  Decoder d;d.feed("FIELDS: COUNT;T;C;DATE;TIME\r");d.feed("\n1;nan;34.5;2026-09-08;12:00:00\r\n2;13.2;35.1;2026-09-08;12:00:10\n");d.finish();

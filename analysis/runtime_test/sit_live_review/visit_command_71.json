@@ -1,0 +1,83 @@
+{
+  "report": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788985979802614800.json",
+  "windows": [
+    {
+      "hwnd": 264464,
+      "title": "Set standard temperatures",
+      "cls": "TStdTempDialog",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788985979802614800_0.png",
+      "controls": [
+        [
+          68000,
+          "Cancel",
+          "TBitBtn"
+        ],
+        [
+          67998,
+          "OK",
+          "TBitBtn"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1312704,
+      "title": "SAIV Instrument Terminal",
+      "cls": "TForm1",
+      "image": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\sit_live_review\\command_1788985979802614800_1.png",
+      "controls": [
+        [
+          1966542,
+          "Comm",
+          "TPage"
+        ],
+        [
+          526376,
+          "",
+          "TEdit"
+        ],
+        [
+          460780,
+          "&Merge",
+          "TButton"
+        ],
+        [
+          788330,
+          "&Convert",
+          "TButton"
+        ],
+        [
+          460836,
+          "TIME/D&ATE",
+          "TButton"
+        ],
+        [
+          1574234,
+          "&Interval",
+          "TButton"
+        ],
+        [
+          919456,
+          "&Download",
+          "TButton"
+        ],
+        [
+          657450,
+          "&Setup",
+          "TButton"
+        ],
+        [
+          526336,
+          "",
+          "TEdit"
+        ]
+      ]
+    },
+    {
+      "hwnd": 1443244,
+      "title": "Saiv_it_runtime",
+      "cls": "TApplication",
+      "image": null,
+      "controls": []
+    }
+  ]
+}
