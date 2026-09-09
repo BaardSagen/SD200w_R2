@@ -1,0 +1,7 @@
+{
+  "version": "1.4.3",
+  "hint": "Use Help > Update software to check for updates manually\r\nor turn this startup message back on.",
+  "visible_under_checkbox": true,
+  "no_overlap_at_default_or_minimum_size": true,
+  "no_network_check_requested": true
+}

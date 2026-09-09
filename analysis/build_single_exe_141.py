@@ -12,7 +12,7 @@ subprocess.run(['windres','-i',str(W/'helper.rc'),'-o',str(W/'helper_resource.o'
 objects.append(str(W/'helper_resource.o'))
 subprocess.run(['g++','-std=c++11','-O2','-mwindows','-static',str(R/'sit_update/install.cpp')]+objects+['-ladvapi32','-lshell32','-lversion','-o',str(helper)],check=True)
 original=source.read_bytes();assert hashlib.sha256(original).hexdigest()==expected
-subprocess.run(['g++','-std=c++11','-O2','-shared','-static-libgcc','-static-libstdc++','-Wl,--kill-at','-o',str(dll),str(R/'sit_import/sit_import.cpp'),str(R/'sit_import/native_call.s'),'-lcomctl32','-lcomdlg32','-lgdi32','-luser32','-lshell32','-lole32','-ladvapi32','-lwininet'],check=True)
+subprocess.run(['g++','-std=c++11','-O2','-shared','-static-libgcc','-static-libstdc++','-Wl,--kill-at','-o',str(dll),str(R/'analysis/reference/sit_import_v141/sit_import.cpp'),str(R/'analysis/reference/sit_import_v141/native_call.s'),'-lcomctl32','-lcomdlg32','-lgdi32','-luser32','-lshell32','-lole32','-ladvapi32','-lwininet'],check=True)
 p=pefile.PE(data=original);b=bytearray(original)
 for k in p.DIRECTORY_ENTRY_RESOURCE.entries:
  for n in k.directory.entries:

@@ -5,13 +5,17 @@ Oppdatert: 9. september 2026. Arbeidsmappe: `C:\cprojects\delphi`.
 ## Start her neste gang
 
 1. Les dette notatet og brukerens nye oppgave.
-2. Nyeste lokale leveranse er **SAIV_Instrument_Terminal_v1.4.2_Sept2026.exe** paa `update`. Main beholder 1.3.6. Les [LES_MEG_Import_All_Fields_137.md](../LES_MEG_Import_All_Fields_137.md). Kunden trenger fortsatt bare EN EXE.
+2. Nyeste lokale leveranse er **SAIV_Instrument_Terminal_v1.4.3_Sept2026.exe** paa `update`. Main beholder 1.3.6. Les [LES_MEG_Import_All_Fields_137.md](../LES_MEG_Import_All_Fields_137.md). Kunden trenger fortsatt bare EN EXE.
 3. Les relevante dokumenter og byggskript i `analysis` før patching. Mange skript krever en bestemt eldre kildefil og SHA-256; de kan ikke ukritisk kjøres på siste utgave.
 4. Lag en ny programkopi og behold tidligere leveranser. Verifiser relevante endringer og lever den konkrete EXE-filen.
 
 Vi har ikke original Delphi-kildekode. Arbeidet består av analyse og patching av en 32-bits Delphi Windows-EXE: maskinkode, PE-ressurser og DFM-skjemaer. Dokumentasjonen om instrumentfirmware er en separat kilde og må ikke forveksles med Windows-koden.
 
-## Siste lokale leveranse: 1.4.2 - testoppdatering
+## Siste lokale leveranse: 1.4.3 - forklaring ved oppdateringshaken
+
+Brukeren bekreftet at oppdatering til 1.4.2 virket. 1.4.3 legger til engelsk tekst under Do not check for updates at startup: "Use Help > Update software to check for updates manually or turn this startup message back on." Vinduet har ekstra plass til forklaringen. Ingen endring i instrument- eller installasjonslogikk. Ny serverpakke i update_server. Bygg: analysis/build_single_exe_143.py. 1.4.1-kilden er arkivert i analysis/reference/sit_import_v141 slik at det eldre bygget bevares. Ingen serveropplasting. Brukeren ba om commit og push av update etter denne endringen.
+
+## Tidligere lokale leveranse: 1.4.2 - testoppdatering
 
 Brukeren ba om en nyere versjon for aa teste oppdatering fra 1.4.1. 1.4.2 har kun ny versjonsmerking, samme funksjoner og byteidentisk oppdateringshjelper. Nye brukere kan ogsaa bruke denne direkte, uten tidligere installasjon. Serverfiler i update_server er klargjort for 1.4.2; brukeren laster opp ZIP/README og latest.json sist. Start 1.4.1 for aa teste oppdatering, og kontroller etterpaa versjon 1.4.2 i programmet; gammelt filnavn beholdes. Les [LES_MEG_Update_Test_142.md](../LES_MEG_Update_Test_142.md). Tester under analysis/runtime_test/update142. Ingen serverendring eller push.
 
