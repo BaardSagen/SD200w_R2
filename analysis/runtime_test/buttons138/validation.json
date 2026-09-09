@@ -1,0 +1,10 @@
+{
+  "download_caption": "&Download",
+  "detect_caption": "D&etect",
+  "detect_caption_offsets": [
+    84
+  ],
+  "log_hidden": true,
+  "unelevated_single_exe": true,
+  "no_instrument_commands": true
+}

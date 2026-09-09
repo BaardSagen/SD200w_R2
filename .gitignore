@@ -103,3 +103,7 @@ analysis/*.bin
 # SIT 1.3.7 native field import release
 !/SAIV_Instrument_Terminal_v1.3.7_Sept2026.exe
 !/analysis/single137/SAIV_IT_Runtime.exe
+
+# SIT 1.3.8 button adjustments
+!/SAIV_Instrument_Terminal_v1.3.8_Sept2026.exe
+!/analysis/single138/SAIV_IT_Runtime.exe
