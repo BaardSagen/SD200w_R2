@@ -4,7 +4,7 @@ import ast,hashlib,struct,subprocess,json,pefile
 R=Path(__file__).resolve().parent.parent;W=R/'analysis/single139';W.mkdir(exist_ok=True)
 source=R/'analysis/single138/SAIV_IT_Runtime.exe';dll=R/'SIT_Import139.dll';expected='59f8e3eefde89587a8d7bca14ee7120caa292953a5da7e7f24014a16cb4822dd'
 original=source.read_bytes();assert hashlib.sha256(original).hexdigest()==expected
-subprocess.run(['g++','-std=c++11','-O2','-shared','-static-libgcc','-static-libstdc++','-Wl,--kill-at','-o',str(dll),str(R/'sit_import/sit_import.cpp'),str(R/'sit_import/native_call.s'),'-lcomctl32','-lcomdlg32','-lgdi32','-luser32','-lshell32','-lole32','-ladvapi32'],check=True)
+subprocess.run(['g++','-std=c++11','-O2','-shared','-static-libgcc','-static-libstdc++','-Wl,--kill-at','-o',str(dll),str(R/'analysis/reference/sit_import_v139/sit_import.cpp'),str(R/'analysis/reference/sit_import_v139/native_call.s'),'-lcomctl32','-lcomdlg32','-lgdi32','-luser32','-lshell32','-lole32','-ladvapi32'],check=True)
 p=pefile.PE(data=original);b=bytearray(original)
 for k in p.DIRECTORY_ENTRY_RESOURCE.entries:
  for n in k.directory.entries:

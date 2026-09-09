@@ -71,11 +71,20 @@ inline void verifyClock(Link&l,const std::string&s,bool gmt,bool logger,double*o
  if(std::abs(delta)>5)throw std::runtime_error("Clock readback differs from PC time (tolerance 5 seconds). Device: "+date+" "+time+" "+zone+"; PC: "+pc.date+" "+pc.time+"; difference: "+std::to_string(delta)+" seconds.");
 }
 inline void sdClock(Link&l,bool gmt,const std::string&context){
- normalize(l,context);int lead=0;for(int attempt=0;attempt<2;++attempt){request(l,"S",[](const std::string&s){return has(s,"change:")&&yn(s);},300);
- request(l,"Y",format,250);auto value=l.now(gmt,lead);if(value.date.substr(0,4)>"2079")throw std::runtime_error("SD200 requires a year through 2079");
- for(char ch:value.wire){auto echo=request(l,std::string(1,ch),[ch](const std::string&s){return s.find(ch)!=std::string::npos;},0,8000);l.pause(60);}
+ normalize(l,context);request(l,"S",[](const std::string&s){return has(s,"change:")&&yn(s);},300);
+ request(l,"Y",format,250);auto start=l.now(gmt);if(start.date.substr(0,4)>"2079")throw std::runtime_error("SD200 requires a year through 2079");
+ auto character=[&l](char ch){request(l,std::string(1,ch),[ch](const std::string&s){return s.find(ch)!=std::string::npos;},0,8000);l.pause(60);};
+ // Send date/hour first. Calculate minutes/seconds just before sending them,
+ // using the observed prefix transfer time to allow for the remaining 5 chars.
+ for(size_t i=0;i<12;++i)character(start.wire[i]);
+ double elapsed=l.now(gmt).epoch-start.epoch;
+ if(elapsed<0||elapsed>30)throw std::runtime_error("PC clock changed or clock transfer was too slow. Time has not been committed. Run Detect before trying again.");
+ auto finish=l.now(gmt,int(std::ceil(elapsed*5.0/12.0)));
+ if(finish.wire.substr(0,12)!=start.wire.substr(0,12))throw std::runtime_error("The hour changed during clock entry. Time has not been committed. Run Detect and try again.");
+ for(size_t i=12;i<finish.wire.size();++i)character(finish.wire[i]);
  auto prompt=request(l,"\r",[](const std::string&s){return yn(s)&&(has(s,"gmt")||has(s,"lt"));},300,8000);request(l,std::string(1,zoneAnswer(prompt,gmt)),mainMenu,500);
- auto status=request(l,"S",[](const std::string&s){return has(s,"change:")&&yn(s)&&has(s,"date");},300);double offset=NAN;std::exception_ptr failure;try{verifyClock(l,status,gmt,false,&offset);}catch(...){failure=std::current_exception();}request(l,"N",mainMenu,500);if(failure){if(attempt==0&&offset>5&&offset<=30){lead=int(std::ceil(offset));continue;}std::rethrow_exception(failure);}return;}
+ auto status=request(l,"S",[](const std::string&s){return has(s,"change:")&&yn(s)&&has(s,"date");},300);std::exception_ptr failure;try{verifyClock(l,status,gmt,false);}catch(...){failure=std::current_exception();}request(l,"N",mainMenu,500);if(failure)std::rethrow_exception(failure);
+
 }
 inline std::string stopSurface(Link&l){auto s=l.freshStatus();if(!has(s,"saiv110"))throw std::runtime_error("The connected unit no longer identifies as SAIV110");if(running(s))s=request(l,"I",stopped,500);if(!stopped(s))throw std::runtime_error("Surface stopped state could not be confirmed. No settings were sent.");return s;}
 inline void loggerClock(Link&l,Kind kind,bool gmt){

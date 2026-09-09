@@ -111,3 +111,7 @@ analysis/*.bin
 # SIT 1.3.9 device interval and clock settings
 !/SAIV_Instrument_Terminal_v1.3.9_Sept2026.exe
 !/analysis/single139/SAIV_IT_Runtime.exe
+
+# SIT 1.4.0 single-write clock correction
+!/SAIV_Instrument_Terminal_v1.4.0_Sept2026.exe
+!/analysis/single140/SAIV_IT_Runtime.exe

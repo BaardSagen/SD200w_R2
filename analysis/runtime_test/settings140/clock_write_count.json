@@ -1,0 +1,24 @@
+{
+  "port": 11,
+  "sd200_write_dialogs": 1,
+  "logger_write_dialogs": 1,
+  "zone": "GMT",
+  "verified": true,
+  "release": {
+    "cache_tag": "1.4.0_4b37652965f3",
+    "source": "analysis/single138/SAIV_IT_Runtime.exe",
+    "source_sha256": "59f8e3eefde89587a8d7bca14ee7120caa292953a5da7e7f24014a16cb4822dd",
+    "output": "SAIV_Instrument_Terminal_v1.4.0_Sept2026.exe",
+    "sha256": "7989099bbd90e7f9dce26cac57bd00027edca543c124dffe4bad96ab34344587",
+    "runtime_sha256": "91a47210f8cf82b7fa80578ce044397db34ac1008eeceebb9e9f24748a255557",
+    "dll_sha256": "342c516d933088a6695f44fe9bf44a03ce823450af6629392f3937e864e1c3b8",
+    "dependencies": [
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "msvcrt.dll",
+      "SHELL32.DLL",
+      "USER32.dll"
+    ],
+    "bytes": 7885724
+  }
+}

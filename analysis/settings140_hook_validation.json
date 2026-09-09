@@ -1,0 +1,6 @@
+{
+  "passed": 20,
+  "normal_and_relocated": true,
+  "preserved_registers_stack_and_fallthrough": true,
+  "formula_uart_refresh_code_unchanged": true
+}

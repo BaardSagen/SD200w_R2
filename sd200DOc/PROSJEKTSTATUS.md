@@ -5,13 +5,17 @@ Oppdatert: 9. september 2026. Arbeidsmappe: `C:\cprojects\delphi`.
 ## Start her neste gang
 
 1. Les dette notatet og brukerens nye oppgave.
-2. Nyeste lokale leveranse er **SAIV_Instrument_Terminal_v1.3.9_Sept2026.exe** paa `feature/import-all-fields`. Main beholder 1.3.6. Les [LES_MEG_Import_All_Fields_137.md](../LES_MEG_Import_All_Fields_137.md). Kunden trenger fortsatt bare EN EXE.
+2. Nyeste lokale leveranse er **SAIV_Instrument_Terminal_v1.4.0_Sept2026.exe** paa `feature/import-all-fields`. Main beholder 1.3.6. Les [LES_MEG_Import_All_Fields_137.md](../LES_MEG_Import_All_Fields_137.md). Kunden trenger fortsatt bare EN EXE.
 3. Les relevante dokumenter og byggskript i `analysis` før patching. Mange skript krever en bestemt eldre kildefil og SHA-256; de kan ikke ukritisk kjøres på siste utgave.
 4. Lag en ny programkopi og behold tidligere leveranser. Verifiser relevante endringer og lever den konkrete EXE-filen.
 
 Vi har ikke original Delphi-kildekode. Arbeidet består av analyse og patching av en 32-bits Delphi Windows-EXE: maskinkode, PE-ressurser og DFM-skjemaer. Dokumentasjonen om instrumentfirmware er en separat kilde og må ikke forveksles med Windows-koden.
 
-## Siste lokale leveranse: 1.3.9 - Interval og TIME/DATE
+## Siste lokale leveranse: 1.4.0 - klokken settes en gang
+
+Les [LES_MEG_Clock_140.md](../LES_MEG_Clock_140.md). Brukeren observerte dobbel klokkesetting paa COM11. Fysisk test bekreftet at 1.3.9 skrev SD200 to ganger ved kompensasjonsforsok, deretter OSU107 en gang. 1.4.0 beregner minutt/sekund etter overfort dato/time-prefiks og kompenserer gjenstaaende tegn med maalt overforingstid. Automatisk andre skriving er fjernet; uavhengig kontrollavlesning beholdes. COM11 fysisk test paa levert EXE bekrefter EN SD200-skriving og EN logger-skriving, begge verifisert GMT. Intervall ikke endret. 932 protokollkontroller, 20 native/ASLR-kontroller og GUI-kontroll. Kilde139 arkivert, gamle leveranser beholdt. Ingen push.
+
+## Tidligere lokale leveranse: 1.3.9 - Interval og TIME/DATE
 
 Les [LES_MEG_Interval_Time_139.md](../LES_MEG_Interval_Time_139.md). Nye knapper Interval (Alt+I) og TIME/DATE (Alt+A), Print flyttet til tidligere Setup-plass og Setup under Save text. Download/Interval/TIME krever akseptert Detect paa aktiv port. SAIV110 har samme elleve intervallvalg som SD200, ingen fritekst (brukerens uttrykkelige presisering).
 
