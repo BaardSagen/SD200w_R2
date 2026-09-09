@@ -11,6 +11,10 @@ Oppdatert: 9. september 2026. Arbeidsmappe: `C:\cprojects\delphi`.
 
 Vi har ikke original Delphi-kildekode. Arbeidet består av analyse og patching av en 32-bits Delphi Windows-EXE: maskinkode, PE-ressurser og DFM-skjemaer. Dokumentasjonen om instrumentfirmware er en separat kilde og må ikke forveksles med Windows-koden.
 
+## Aktivt arbeid: oppdateringssjekk paa branch update
+
+Brukeren ba om commit av eksisterende arbeid og ny branch update. Program 1.4.0 er sikret i 6d668c5 og foerste manifestutkast i 30ed32e. Branch update er opprettet derfra. Serverpakke med faktisk 1.4.0-ZIP, versjonsspesifikk README og latest.json ligger i update_server. Les [LES_MEG_Update_Server.md](../LES_MEG_Update_Server.md) for opplasting og format. Bare serverfiler er klargjort; klientens oppstartssporsmaal, av/paa-hake, Help > Update software og README-popup gjenstaar. Ingen serveropplasting eller push utfoert.
+
 ## Siste lokale leveranse: 1.4.0 - klokken settes en gang
 
 Les [LES_MEG_Clock_140.md](../LES_MEG_Clock_140.md). Brukeren observerte dobbel klokkesetting paa COM11. Fysisk test bekreftet at 1.3.9 skrev SD200 to ganger ved kompensasjonsforsok, deretter OSU107 en gang. 1.4.0 beregner minutt/sekund etter overfort dato/time-prefiks og kompenserer gjenstaaende tegn med maalt overforingstid. Automatisk andre skriving er fjernet; uavhengig kontrollavlesning beholdes. COM11 fysisk test paa levert EXE bekrefter EN SD200-skriving og EN logger-skriving, begge verifisert GMT. Intervall ikke endret. 932 protokollkontroller, 20 native/ASLR-kontroller og GUI-kontroll. Kilde139 arkivert, gamle leveranser beholdt. Ingen push.

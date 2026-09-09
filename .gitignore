@@ -115,3 +115,6 @@ analysis/*.bin
 # SIT 1.4.0 single-write clock correction
 !/SAIV_Instrument_Terminal_v1.4.0_Sept2026.exe
 !/analysis/single140/SAIV_IT_Runtime.exe
+
+# Public software update package
+!/update_server/SAIV_Instrument_Terminal_v1.4.0_Sept2026.zip

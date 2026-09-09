@@ -1,4 +1,6 @@
 {
-  "version": "1.3.6",
-  "url": "https://saiv.no/software/SAIV_Instrument_Terminal_v1.3.6_Sept2026.zip"
+  "version": "1.4.0",
+  "url": "https://saiv.no/software/SAIV_Instrument_Terminal_v1.4.0_Sept2026.zip",
+  "readme_url": "https://saiv.no/software/README_v1.4.0.txt",
+  "sha256": "1a95fab6b727fe64ac6457f3fce83b176792df4350da1f73d0d1261a73e28304"
 }
