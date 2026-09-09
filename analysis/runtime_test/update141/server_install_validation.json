@@ -1,0 +1,11 @@
+{
+  "test_client_version": "1.3.9",
+  "live_server_version": "1.4.0",
+  "newer_offer_shown": true,
+  "confirmation_no_preserves_program": true,
+  "confirmation_yes_downloads_verifies_installs": true,
+  "same_custom_filename": "Field station.exe",
+  "backup_matches_original": true,
+  "restarted": true,
+  "downloaded_exe_sha256": "7989099bbd90e7f9dce26cac57bd00027edca543c124dffe4bad96ab34344587"
+}

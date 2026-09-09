@@ -1,0 +1,18 @@
+{
+  "cache_tag": "1.4.1_cb94268f4625",
+  "source": "analysis/single138/SAIV_IT_Runtime.exe",
+  "source_sha256": "59f8e3eefde89587a8d7bca14ee7120caa292953a5da7e7f24014a16cb4822dd",
+  "output": "SAIV_Instrument_Terminal_v1.4.1_Sept2026.exe",
+  "sha256": "d7f649117d1e19c93d3583adc88fbf4258f998f8f5d8edb52c788e9c2be4d370",
+  "runtime_sha256": "b078741f61b82caf51107451ebb75553148b8548283191590b6399aa67bd7a19",
+  "dll_sha256": "c157b6f5993384ce12ed874a97d470d89064ab6dbdb620bd29113ed701ab5f64",
+  "helper_sha256": "4070fe4428d2b659c937bf5cb13c40853b4dcd3c7f638aa0084e9f9db077a033",
+  "dependencies": [
+    "KERNEL32.dll",
+    "msvcrt.dll",
+    "msvcrt.dll",
+    "SHELL32.DLL",
+    "USER32.dll"
+  ],
+  "bytes": 9972504
+}

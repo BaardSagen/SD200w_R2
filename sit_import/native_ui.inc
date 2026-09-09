@@ -106,9 +106,10 @@ static void loadNative(){
 }
 static int nativeList(HWND owner){registerClasses();std::unique_ptr<View>v(new View);v->data=nativeData;v->path=nativePath;v->allowNative=false;View*raw=v.release();HWND h=CreateWindowExW(0,L"SITImportData",L"SAIV IT - Imported fields",WS_OVERLAPPEDWINDOW,CW_USEDEFAULT,CW_USEDEFAULT,1050,650,owner,0,instance,raw);if(!h){delete raw;throw std::runtime_error("Cannot show imported data");}ShowWindow(h,SW_SHOW);return 1;}
  #include "settings_ui.inc"
+ #include "update_ui.inc"
 extern "C" __declspec(dllexport) int __stdcall SitNative(unsigned op,uintptr_t a,uintptr_t b,uintptr_t c){try{
  if(op>=30)return settingsNative(op,a,b,c);
- if(op==20)settingsNative(op,a,b,c);
+ if(op==20){settingsNative(op,a,b,c);updateInit(HWND(nd(a+0x14c)));}
  if(op==1)return importNative(a,reinterpret_cast<const char*>(b));
  if(op==2){loadNative();return 0;}
  if(op==11){closeNativeGraph();nativeActive=false;return 0;}

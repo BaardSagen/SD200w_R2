@@ -71,6 +71,6 @@ inline bool parse(const string&input,Data&d) {
  validate(d);return true;
 }
 #include "conversions.inc"
-inline string output(const Data&d){std::ostringstream o;o<<"\xef\xbb\xbf# SAIV IT logger export 1.4.0\r\n# Source: "<<d.source<<"\r\n";for(auto&m:d.metadata)o<<(m.compare(0,1,"#")==0?"":"# ")<<m<<"\r\n";o<<"FIELDS: ";for(size_t i=0;i<d.fields.size();++i)o<<(i?";":"")<<d.fields[i];o<<"\r\n";for(auto&r:d.rows){for(size_t i=0;i<r.size();++i)o<<(i?";":"")<<r[i];o<<"\r\n";}return o.str();}
+inline string output(const Data&d){std::ostringstream o;o<<"\xef\xbb\xbf# SAIV IT logger export 1.4.1\r\n# Source: "<<d.source<<"\r\n";for(auto&m:d.metadata)o<<(m.compare(0,1,"#")==0?"":"# ")<<m<<"\r\n";o<<"FIELDS: ";for(size_t i=0;i<d.fields.size();++i)o<<(i?";":"")<<d.fields[i];o<<"\r\n";for(auto&r:d.rows){for(size_t i=0;i<r.size();++i)o<<(i?";":"")<<r[i];o<<"\r\n";}return o.str();}
 }
 #endif

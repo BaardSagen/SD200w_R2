@@ -1,0 +1,4 @@
+miniz 3.0.2, https://github.com/richgel999/miniz/tree/3.0.2
+Downloaded from the upstream tagged release. See LICENSE.
+miniz_export.h supplies an empty export macro for static linking.
+Four upstream trailing-whitespace occurrences in miniz.h/miniz_zip.c were removed; no code logic was changed.

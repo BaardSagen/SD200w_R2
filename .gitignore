@@ -118,3 +118,9 @@ analysis/*.bin
 
 # Public software update package
 !/update_server/SAIV_Instrument_Terminal_v1.4.0_Sept2026.zip
+
+# SIT 1.4.1 updater release
+!/SAIV_Instrument_Terminal_v1.4.1_Sept2026.exe
+!/analysis/single141/SAIV_IT_Runtime.exe
+!/analysis/single141/SIT_Update.exe
+!/update_server/SAIV_Instrument_Terminal_v1.4.1_Sept2026.zip

@@ -1,0 +1,10 @@
+{
+  "startup_prompt_before_network": true,
+  "help_menu": true,
+  "live_server": "Installed version: 1.4.1\r\nNo newer version available. Server version: 1.4.0",
+  "readme_shown": true,
+  "older_server_not_offered": true,
+  "manual_check_while_disabled": true,
+  "disabled_persists_after_restart": true,
+  "can_reenable": true
+}

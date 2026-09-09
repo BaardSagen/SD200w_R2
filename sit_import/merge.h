@@ -56,7 +56,7 @@ inline bool fixtureNote(const string&s){string t=upper(sit::trim(s));if(t.compar
 inline Data merge(const Data&master,const std::vector<Data>&others,long long tol,bool separator,bool includeDateTime=true){
  if(others.empty()||others.size()>2)throw std::runtime_error("Select one or two additional files");
  Data out=master;Times mt=times(master);out.metadata.clear();
- out.metadata.push_back("# SAIV IT merged data 1.4.0 - tolerance "+sit::fmt(tol/1000000.)+" seconds ("+(includeDateTime?string("merged file date/time retained"):string("removed merged file date/time"))+")");
+ out.metadata.push_back("# SAIV IT merged data 1.4.1 - tolerance "+sit::fmt(tol/1000000.)+" seconds ("+(includeDateTime?string("merged file date/time retained"):string("removed merged file date/time"))+")");
  for(auto&meta:master.metadata)if(!fixtureNote(meta))out.metadata.push_back(meta);
  out.metadata.push_back("# Master source: "+master.source);
  for(size_t f=0;f<others.size();++f){const Data&d=others[f];Times ot=times(d);Match m=match(mt,ot,tol);if(!m.count)throw std::runtime_error("Selected file has no matches: "+d.source);string prefix="M"+std::to_string(f+1)+"_";
