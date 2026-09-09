@@ -1,0 +1,16 @@
+{
+  "celsius_preserved_and_sensor_calculations_unchanged": true,
+  "fahrenheit_remembered_after_restart": true,
+  "celsius_can_be_excluded": true,
+  "fahrenheit_graph_label": true,
+  "fahrenheit_can_be_disabled": true,
+  "checks": 2054,
+  "par_unit_visible_without_defaulting_source_unit": true,
+  "exports": [
+    "C:\\cprojects\\delphi\\analysis\\runtime_test\\fahrenheit136\\celsius_1788951611373012900.txt",
+    "C:\\cprojects\\delphi\\analysis\\runtime_test\\fahrenheit136\\both_1788951614529056600.txt",
+    "C:\\cprojects\\delphi\\analysis\\runtime_test\\fahrenheit136\\reused_1788951621299311200.txt",
+    "C:\\cprojects\\delphi\\analysis\\runtime_test\\fahrenheit136\\fahrenheit_only_1788951624362921700.txt",
+    "C:\\cprojects\\delphi\\analysis\\runtime_test\\fahrenheit136\\back_to_celsius_1788951627604180800.txt"
+  ]
+}

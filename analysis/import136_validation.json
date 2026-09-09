@@ -1,0 +1,18 @@
+{
+  "sample": "data/26090606_18.11.51.txt",
+  "rows": 43,
+  "files_byte_identical": [
+    "SD2",
+    "RF2",
+    "OX2",
+    "OP2"
+  ],
+  "separate_import_convert": true,
+  "alias_checks": 53,
+  "fahrenheit_checks": 35,
+  "preset_checks": 263,
+  "gui_value_checks": 2054,
+  "native_checks": 46,
+  "protocol_tests": 15,
+  "physical_test": false
+}

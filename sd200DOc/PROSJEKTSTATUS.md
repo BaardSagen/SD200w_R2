@@ -5,13 +5,21 @@ Oppdatert: 9. september 2026. Arbeidsmappe: `C:\cprojects\delphi`.
 ## Start her neste gang
 
 1. Les dette notatet og brukerens nye oppgave.
-2. Nyeste lokale leveranse er **SAIV_Instrument_Terminal_v1.3.5_Sept2026.exe** som EN fil til kunden. Les [LES_MEG_Fahrenheit_PAR_135.md](../LES_MEG_Fahrenheit_PAR_135.md). Innebygd runtime bygger pa bevart 1.3.2, og SIT_Import135.dll er innebygd.
+2. Nyeste lokale leveranse er **SAIV_Instrument_Terminal_v1.3.6_Sept2026.exe** som EN fil til kunden. Les [LES_MEG_Import_Download_136.md](../LES_MEG_Import_Download_136.md). Separate Import CSV/TXT og Convert CSV/TXT, bekreftet loggeridentitet ved Download, PAR/OXR-aliaser.
 3. Les relevante dokumenter og byggskript i `analysis` før patching. Mange skript krever en bestemt eldre kildefil og SHA-256; de kan ikke ukritisk kjøres på siste utgave.
 4. Lag en ny programkopi og behold tidligere leveranser. Verifiser relevante endringer og lever den konkrete EXE-filen.
 
 Vi har ikke original Delphi-kildekode. Arbeidet består av analyse og patching av en 32-bits Delphi Windows-EXE: maskinkode, PE-ressurser og DFM-skjemaer. Dokumentasjonen om instrumentfirmware er en separat kilde og må ikke forveksles med Windows-koden.
 
-## Siste lokale leveranse: 1.3.5 - Fahrenheit og PAR-enhet
+## Siste lokale leveranse: 1.3.6 - separat Import og logger-Download
+
+Gjenopprettet original Import ASCII som File > Import CSV/TXT; Convert CSV/TXT forblir separat. Native sample 26090606_18.11.51.txt gir 43 maalinger og SD2/RF2/OX2/OP2 byteidentiske med originalimport. Convert av eldre tekst gir henvisning til Import. `_C`/`_merged` til native SD2 er fortsatt senere arbeid, ikke inkludert.
+
+Bekreftet Autodetect OSU107/SAIV110 brukes for samme COM-port ved Download. Gammel CTD/Burst-tekst skannes ikke i loggergrenen og loggerlinjer gaar ikke gjennom CTD-parseren. Eksisterende refresh-handshake og SD200/Log viderefores. PAR/OXR normaliseres i FIELDS og Full foer valg/beregninger/preset-signatur; OX fortsatt separat. CTD-formelbytes uendret fra 1.3.2.
+
+Tester: 43 samplemaalinger + bytekontroll av fire native filer, reell enkelt-EXE og separate menyer, 53 alias-, 35 Fahrenheit-, 263 preset-, 2054 GUI-verdi-, 46 native/ASLR- og 15 protokolltester bestod. Ingen fysisk instrumenttest. Se LES_MEG_Import_Download_136.md og analysis/native136_validation.json. Bygg build_single_exe_136.py. 1.3.5-kilden arkivert, tidligere leveranser beholdt. Arbeid paa main; feature/import-all-fields fortsatt pauset. Ingen push.
+
+## Tidligere lokale leveranse: 1.3.5 - Fahrenheit og PAR-enhet
 
 T-siden tilbyr Fahrenheit som egen T_degF-kolonne. Haken for original T styrer om Celsius ogsaa beholdes. Standard fortsatt Celsius. Fahrenheit beregnes etter sensorberegningene; disse bruker fortsatt Celsius. PAR-forklaringen viser output-enheten micromol photons/(m2*s), med riktige tegn i GUI. Inngangsarealenhet maa fortsatt velges ved PAR-konvertering.
 
