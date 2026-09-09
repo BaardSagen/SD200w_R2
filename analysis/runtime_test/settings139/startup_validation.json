@@ -1,0 +1,19 @@
+{
+  "detected_dialogs": [
+    "SD200",
+    "OSU107 + SD200",
+    "SAIV110 Surface"
+  ],
+  "eleven_intervals_only": true,
+  "disabled_on_port_change": true,
+  "download_caption": "&Download",
+  "detect_caption": "D&etect",
+  "log_hidden": true,
+  "interval_alt": "I",
+  "clock_alt": "A",
+  "disabled_without_detection": true,
+  "print_top": 216,
+  "setup_top": 328,
+  "unelevated_single_exe": true,
+  "no_instrument_commands": true
+}

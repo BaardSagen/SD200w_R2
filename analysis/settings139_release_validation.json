@@ -1,0 +1,68 @@
+{
+  "exe_sha256": "6d7e9ad749a002967c7a35a9ea9c0ad0e66e433298a0474bc1260b4ed41c29c4",
+  "dll_sha256": "fc65bfa6b203850794295b3a1291ffdc2643b6490d8e8d619623b2510188ea4c",
+  "results": [
+    {
+      "command": [
+        "analysis/test_settings139.exe"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS 898 interval/clock protocol and config preservation checks\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "analysis/test_settings139_hooks.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"passed\": 20,\n  \"normal_and_relocated\": true,\n  \"preserved_registers_stack_and_fallthrough\": true,\n  \"formula_uart_refresh_code_unchanged\": true\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "analysis/check_settings139_physical.py"
+      ],
+      "exit_code": 0,
+      "stdout": "7 &Interval \nSD200 measuring interval verified.\n7 TIME/D&ATE \nSD200 clock verified. PC time: GMT/UTC.\n11 &Interval \nSD200 measuring interval verified.\n11 TIME/D&ATE \nSD200 clock verified. Logger clock verified. PC time: LT.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "analysis/check_settings139_windows.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"detected_dialogs\": [\n    \"SD200\",\n    \"OSU107 + SD200\",\n    \"SAIV110 Surface\"\n  ],\n  \"eleven_intervals_only\": true,\n  \"disabled_on_port_change\": true,\n  \"download_caption\": \"&Download\",\n  \"detect_caption\": \"D&etect\",\n  \"log_hidden\": true,\n  \"interval_alt\": \"I\",\n  \"clock_alt\": \"A\",\n  \"disabled_without_detection\": true,\n  \"print_top\": 216,\n  \"setup_top\": 328,\n  \"unelevated_single_exe\": true,\n  \"no_instrument_commands\": true\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "analysis/test_import139_gui.py"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS 2026_09_03_20-28-52_C.txt 79 rows, native graph/multigraph/field switching/list and reopening\nPASS 2026_09_07_19-34-42_C.txt 3 rows, native graph/multigraph/field switching/list and reopening\nPASS 2026_09_03_20-28-52_C_merged-3.txt 79 rows, native graph/multigraph/field switching/list and reopening\nPASS 11138 native plotted coordinates and list values\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "analysis/test_convert_to_native139_gui.py"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS 2054 GUI temperature/unchanged sensor values, Fahrenheit reuse after restart, source removal, PAR unit label\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "analysis/check_legacy_import139_windows.py"
+      ],
+      "exit_code": 0,
+      "stdout": "[('&File', 4294967295), ('&Open...', 2), ('&Export', 4294967295), ('&List', 5), ('Standard &depths', 6), ('Standard Depth &Sectioned', 7), ('Standard &temperatures', 8), ('S&onar file', 9), ('L&ybin file (Bathy data.xml)', 10), ('Tide data', 11), ('&Import CSV/TXT...', 12), ('&Convert CSV/TXT...', 13), ('Set &range...', 14), ('Set s&caling...', 15), ('P&age setup..', 16), ('&Print...', 17), ('&Close file', 18), ('', 19), ('E&xit\\tAlt+X', 20), ('&View', 4294967295), ('&List', 22), ('T&ables', 4294967295), ('Standard &Depth', 24), ('Standard Depth &Sectioned', 25), ('Standard &Temp', 26), ('&Graph', 4294967295), ('&Time', 4294967295), ('&Salinity / Temperature', 29), ('&Conductivity / Temperature', 30), ('Sound &velocity / Density', 31), ('&Oxygen', 32), ('O&ptional sensor', 33), ('&Depth', 35), ('&Depth', 4294967295), ('&Salinity / Temperature', 37), ('&Conductivity / Temperature', 38), ('Sound &velocity / Density', 39), ('&Oxygen', 40), ('O&ptional sensor', 41), ('&Instrument', 44), ('&Display', 4294967295), ('&Toolbar', 46), ('&Statusbar', 47), ('&Legend', 48), ('&GPS position', 49), ('&Only selected series', 50), ('&Average', 51), ('&Density', 52), ('Calculated density for TD instruments', 53), ('Depth calculation...', 54), ('Select oxygen unit', 55), ('Select turbidity unit', 56), ('Avg columns in Std Depth Sectioned', 58), ('Avg all passes in Std Depth Sectioned...', 59), ('&Graph color settings...', 60), ('Select export file date/time format', 61), ('&Util', 4294967295), ('R&emove spikes...', 63), ('&Split data file...', 64), ('Compute Sound &velocity...', 65), ('Conv&ert salinity to conductivity', 66), ('&Update barometric pressure...', 67), ('Update measurement &position...', 68), ('Change standard &depths...', 69), ('Change standard depth sectio&ns...', 70), ('Change standard &temperatures...', 71), ('&Recalculate calibration coefficients...', 72), ('&Iso-line data for SURFER...', 73), ('&Calibration from RAW data...', 74), ('Rinko oxygen calibration', 75), ('Set heading and unit for &optional channel...', 77), ('Edit starting time', 78), ('Automatic readouts', 79), ('Adjust measurement values', 80), ('Set minimum depth mask', 83), ('&Help', 4294967295), ('&About...', 86)]\n[(5311644, 'L&agre i:', 'Static', 1091), (12061842, '', 'ComboBox', 1137), (8719334, '', 'Static', 1088), (13765328, '', 'ToolbarWindow32', 1088), (6163598, '', 'ListBox', 1120), (6098026, '', 'SHELLDLL_DefView', 1121), (12717048, 'FolderView', 'SysListView32', 1), (8064060, '', 'SysHeader32', 0), (5442680, 'F&ilnavn:', 'Static', 1090), (7274746, '', 'Edit', 1152), (15926962, 'Fil&type:', 'Static', 1089), (5770368, '', 'ComboBox', 1136), (6949904, '\u00c5p&ne som skrivebeskyttet', 'Button', 1040), (14290262, 'La&gre', 'Button', 1), (13503884, 'Avbryt', 'Button', 2), (6687726, '&Hjelp', 'Button', 1038), (11341270, '', '#32770', 0)]\nwindows [(7931784, 'Select first and last measurement', 'TSelectDlg'), (6554618, 'SAIV Instrument Terminal - SCTDOXOFOTc 208 - C:\\\\cprojects\\\\delphi\\\\analysis\\\\runtime_test\\\\import139\\\\native_optical_1788960623791107700', 'TForm1'), (8061338, 'Saiv_it_runtime', 'TApplication')]\n[('native_optical_1788960623791107700.OP2', 344), ('native_optical_1788960623791107700.OX2', 172), ('native_optical_1788960623791107700.RF2', 72), ('native_optical_1788960623791107700.SD2', 2288)]\nPASS 43 rows, salinity/temperature/pressure/OF/OT and all four native files byte-identical to original importer\nPASS legacy Convert directs to separate Import without native fallback\n",
+      "stderr": ""
+    }
+  ]
+}

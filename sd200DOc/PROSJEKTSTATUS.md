@@ -5,13 +5,21 @@ Oppdatert: 9. september 2026. Arbeidsmappe: `C:\cprojects\delphi`.
 ## Start her neste gang
 
 1. Les dette notatet og brukerens nye oppgave.
-2. Nyeste lokale leveranse er **SAIV_Instrument_Terminal_v1.3.8_Sept2026.exe** paa `feature/import-all-fields`. Main beholder 1.3.6. Les [LES_MEG_Import_All_Fields_137.md](../LES_MEG_Import_All_Fields_137.md). Kunden trenger fortsatt bare EN EXE.
+2. Nyeste lokale leveranse er **SAIV_Instrument_Terminal_v1.3.9_Sept2026.exe** paa `feature/import-all-fields`. Main beholder 1.3.6. Les [LES_MEG_Import_All_Fields_137.md](../LES_MEG_Import_All_Fields_137.md). Kunden trenger fortsatt bare EN EXE.
 3. Les relevante dokumenter og byggskript i `analysis` før patching. Mange skript krever en bestemt eldre kildefil og SHA-256; de kan ikke ukritisk kjøres på siste utgave.
 4. Lag en ny programkopi og behold tidligere leveranser. Verifiser relevante endringer og lever den konkrete EXE-filen.
 
 Vi har ikke original Delphi-kildekode. Arbeidet består av analyse og patching av en 32-bits Delphi Windows-EXE: maskinkode, PE-ressurser og DFM-skjemaer. Dokumentasjonen om instrumentfirmware er en separat kilde og må ikke forveksles med Windows-koden.
 
-## Siste lokale leveranse: 1.3.8 - hurtigtaster og Log-knapp
+## Siste lokale leveranse: 1.3.9 - Interval og TIME/DATE
+
+Les [LES_MEG_Interval_Time_139.md](../LES_MEG_Interval_Time_139.md). Nye knapper Interval (Alt+I) og TIME/DATE (Alt+A), Print flyttet til tidligere Setup-plass og Setup under Save text. Download/Interval/TIME krever akseptert Detect paa aktiv port. SAIV110 har samme elleve intervallvalg som SD200, ingen fritekst (brukerens uttrykkelige presisering).
+
+SD200 bruker original I/Y/valg/CR-dialog og S-klokke. OSU107 bruker SD200-intervallet; begge klokker settes og kontrolleres separat, SD200 foerst og logger X deretter. SAIV110 setter loggerklokke med X og intervall via valgt USB config/system.ini, bevart originalfil, flush, 10 sekunder og U med endelig OK SAIV110_UPDATE_CONFIG. Logger etterlates stoppet. PC-klokke LT eller GMT/UTC, ingen hardkodet tidssoneforskyvning. Bevarer ekte UART og eksisterende serialport/terminalmottak.
+
+Protokoll-, native gateway- og GUI-tester samt import/graf-regresjoner dokumenteres i settings139_release_validation.json. Brukeren autoriserte og vi utfoerte fysisk test: SD204 SN1756 COM7 (2sec beholdt, klokke PC-GMT) og OSU107 SN107 med SD208 SN1456 COM11 (1sec beholdt, begge klokker PC-LT). Tilbakeavlesning verifisert. SD200-klokkeavlesning kontrolleres foer menynavigasjon; maalt overfoeringsetterslep kan korrigeres med ett nytt forsoek. SD200 vekkes med avgrenset I-sekvens, TX stopper ved RX. Faktisk Change GMT/LT: Y/N stoettes. Surface er kun protokoll-/GUI-testet; OSU-modus er ikke endret. Se physical_gui_validation.json og physical_preflight.json under analysis/runtime_test/settings139. Originale formler og UART/refresh-kode beholdt. Import v1.3.7 arkivert og historisk bygg oppdatert til arkivet. Egen leveranse paa feature/import-all-fields, main 1.3.6 beholdt, ingen push.
+
+## Tidligere lokale leveranse: 1.3.8 - hurtigtaster og Log-knapp
 
 Download beholder &Download (Alt+D), Detect er D&etect (Alt+E). Log-knappen har Visible=False og TabStop=False; komponent, callback og all loggkode beholdes. Dette er kun endringer i TFORM1-ressursen og versjonsinformasjonen, bygget fra bevart 1.3.7-runtime. SIT_Import137.dll er byteidentisk og fortsatt innebygd i en enkelt EXE; importfunksjonene er uendret.
 

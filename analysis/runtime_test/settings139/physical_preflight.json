@@ -1,0 +1,1246 @@
+[
+  {
+    "port": "COM7",
+    "interval_seconds": 2,
+    "sd200_zone": "GMT",
+    "clock_text": "Date 97-04-12\r\nTime 15-20-57 GMT\r\nChange: Y/N \r\n",
+    "events": [
+      {
+        "t": 1.016,
+        "tx": "I"
+      },
+      {
+        "t": 1.094,
+        "tx": "I"
+      },
+      {
+        "t": 1.172,
+        "tx": "I"
+      },
+      {
+        "t": 1.25,
+        "tx": "I"
+      },
+      {
+        "t": 1.328,
+        "rx": "\r\nStored air pressure(mb):AP="
+      },
+      {
+        "t": 1.406,
+        "rx": " "
+      },
+      {
+        "t": 1.453,
+        "rx": "1"
+      },
+      {
+        "t": 1.469,
+        "rx": "0"
+      },
+      {
+        "t": 1.469,
+        "rx": "3"
+      },
+      {
+        "t": 1.5,
+        "rx": "6"
+      },
+      {
+        "t": 1.516,
+        "rx": "."
+      },
+      {
+        "t": 1.531,
+        "rx": "3"
+      },
+      {
+        "t": 1.563,
+        "rx": "2"
+      },
+      {
+        "t": 1.578,
+        "rx": "4"
+      },
+      {
+        "t": 1.609,
+        "rx": "5"
+      },
+      {
+        "t": 1.625,
+        "rx": "8"
+      },
+      {
+        "t": 1.656,
+        "rx": "\r"
+      },
+      {
+        "t": 1.672,
+        "rx": "\n"
+      },
+      {
+        "t": 1.688,
+        "rx": "\r\n"
+      },
+      {
+        "t": 1.703,
+        "rx": "Change air pres"
+      },
+      {
+        "t": 1.719,
+        "rx": "sure     <A>\r\nSt"
+      },
+      {
+        "t": 1.734,
+        "rx": "atus/Start/Menu"
+      },
+      {
+        "t": 1.75,
+        "rx": "       <S>\r\nPas"
+      },
+      {
+        "t": 1.766,
+        "rx": "sive            "
+      },
+      {
+        "t": 1.781,
+        "rx": "     <H>\r\n"
+      },
+      {
+        "t": 1.797,
+        "rx": "I"
+      },
+      {
+        "t": 1.813,
+        "rx": "f no command, me"
+      },
+      {
+        "t": 1.828,
+        "rx": "asurement will "
+      },
+      {
+        "t": 1.844,
+        "rx": "start in 10 sec"
+      },
+      {
+        "t": 1.859,
+        "rx": ".\r\n"
+      },
+      {
+        "t": 2.25,
+        "tx": "S"
+      },
+      {
+        "t": 2.281,
+        "rx": "\r\nStatus:\r\nM"
+      },
+      {
+        "t": 2.297,
+        "rx": "odel SD204,Ser "
+      },
+      {
+        "t": 2.313,
+        "rx": "No 1756\r\n"
+      },
+      {
+        "t": 2.328,
+        "rx": "Battery life co"
+      },
+      {
+        "t": 2.344,
+        "rx": "unter:94"
+      },
+      {
+        "t": 2.359,
+        "rx": "758\r\nDate 97-04"
+      },
+      {
+        "t": 2.375,
+        "rx": "-12"
+      },
+      {
+        "t": 2.391,
+        "rx": " Time 15"
+      },
+      {
+        "t": 2.406,
+        "rx": "-20-53"
+      },
+      {
+        "t": 2.422,
+        "rx": " GMT\r"
+      },
+      {
+        "t": 2.438,
+        "rx": "\nInterval: 2sec "
+      },
+      {
+        "t": 2.453,
+        "rx": " \r\nMode:CTDOFOT"
+      },
+      {
+        "t": 2.469,
+        "rx": "\r\nBaud rate:960"
+      },
+      {
+        "t": 2.484,
+        "rx": "0 \r\nNext start "
+      },
+      {
+        "t": 2.5,
+        "rx": "from N0000"
+      },
+      {
+        "t": 2.516,
+        "rx": "8\r\n\r\nStart by M"
+      },
+      {
+        "t": 2.531,
+        "rx": "ag-Key or press "
+      },
+      {
+        "t": 2.547,
+        "rx": "<I>\r\nor\r\nPress "
+      },
+      {
+        "t": 2.563,
+        "rx": "<M> for menu or"
+      },
+      {
+        "t": 2.578,
+        "rx": " wait 10sec\r\n\n"
+      },
+      {
+        "t": 2.938,
+        "tx": "M"
+      },
+      {
+        "t": 2.969,
+        "rx": "\r"
+      },
+      {
+        "t": 3.0,
+        "rx": "\nMenu:\r\nChange "
+      },
+      {
+        "t": 3.016,
+        "rx": "mode CTD/STD/OX"
+      },
+      {
+        "t": 3.031,
+        "rx": "/Turb --  <B>\r\nC"
+      },
+      {
+        "t": 3.047,
+        "rx": "hange type/rang"
+      },
+      {
+        "t": 3.063,
+        "rx": "e optional sen."
+      },
+      {
+        "t": 3.078,
+        "rx": " <D>\r\nMeasuring "
+      },
+      {
+        "t": 3.094,
+        "rx": "interval       "
+      },
+      {
+        "t": 3.109,
+        "rx": "       <I>\r\nAct"
+      },
+      {
+        "t": 3.125,
+        "rx": "ivate radio comm"
+      },
+      {
+        "t": 3.141,
+        "rx": "unication    <J"
+      },
+      {
+        "t": 3.156,
+        "rx": ">\r\nChange baud "
+      },
+      {
+        "t": 3.172,
+        "rx": "rate            "
+      },
+      {
+        "t": 3.188,
+        "rx": "    <A>\r\nDump s"
+      },
+      {
+        "t": 3.203,
+        "rx": "tored data to s"
+      },
+      {
+        "t": 3.219,
+        "rx": "creen      <F>\r\n"
+      },
+      {
+        "t": 3.281,
+        "rx": "Eras"
+      },
+      {
+        "t": 3.297,
+        "rx": "e data in memor"
+      },
+      {
+        "t": 3.313,
+        "rx": "y            <E>"
+      },
+      {
+        "t": 3.328,
+        "rx": "\r\nSet real-time"
+      },
+      {
+        "t": 3.344,
+        "rx": " clock         "
+      },
+      {
+        "t": 3.359,
+        "rx": "    <S>\r\nBattery"
+      },
+      {
+        "t": 3.375,
+        "rx": " change instruc"
+      },
+      {
+        "t": 3.391,
+        "rx": "tion      <P>\r\n"
+      },
+      {
+        "t": 3.406,
+        "rx": "List cal.coeffic"
+      },
+      {
+        "t": 3.422,
+        "rx": "ients          "
+      },
+      {
+        "t": 3.438,
+        "rx": " <L>\r\nSet coeff"
+      },
+      {
+        "t": 3.484,
+        "rx": "icients                <M>\r\nCalibration oxygen"
+      },
+      {
+        "t": 3.5,
+        "rx": " SAIV205      <C"
+      },
+      {
+        "t": 3.516,
+        "rx": ">\r\n"
+      },
+      {
+        "t": 3.563,
+        "rx": "S"
+      },
+      {
+        "t": 3.578,
+        "rx": "elf-test       "
+      },
+      {
+        "t": 3.594,
+        "rx": "                "
+      },
+      {
+        "t": 3.609,
+        "rx": "<T>\r\nRestore fa"
+      },
+      {
+        "t": 3.625,
+        "rx": "ctory settings "
+      },
+      {
+        "t": 3.641,
+        "rx": "       <K>\r\nStar"
+      },
+      {
+        "t": 3.656,
+        "rx": "t via key-board"
+      },
+      {
+        "t": 3.672,
+        "rx": "             <R"
+      },
+      {
+        "t": 3.688,
+        "rx": ">\r\nExit (passive"
+      },
+      {
+        "t": 3.703,
+        "rx": ")              "
+      },
+      {
+        "t": 3.719,
+        "rx": "    <H>\r\n"
+      },
+      {
+        "t": 5.078,
+        "tx": "I"
+      },
+      {
+        "t": 5.109,
+        "rx": "Curren"
+      },
+      {
+        "t": 5.109,
+        "rx": "t set up:\r\n"
+      },
+      {
+        "t": 5.172,
+        "rx": "Measuring"
+      },
+      {
+        "t": 5.188,
+        "rx": " interval    2s"
+      },
+      {
+        "t": 5.203,
+        "rx": "ec \r\n"
+      },
+      {
+        "t": 5.266,
+        "rx": "Change: Y/N Men"
+      },
+      {
+        "t": 5.281,
+        "rx": "u: <G>\r\n"
+      },
+      {
+        "t": 5.641,
+        "tx": "G"
+      },
+      {
+        "t": 5.672,
+        "rx": "\r\nMenu:\r\nChang"
+      },
+      {
+        "t": 5.688,
+        "rx": "e mode CTD/STD/"
+      },
+      {
+        "t": 5.703,
+        "rx": "OX/Turb --  <B>\r"
+      },
+      {
+        "t": 5.719,
+        "rx": "\nChange type/ra"
+      },
+      {
+        "t": 5.734,
+        "rx": "nge optional se"
+      },
+      {
+        "t": 5.75,
+        "rx": "n. <D>\r\nMeasurin"
+      },
+      {
+        "t": 5.766,
+        "rx": "g interval     "
+      },
+      {
+        "t": 5.781,
+        "rx": "         <I>\r\nA"
+      },
+      {
+        "t": 5.797,
+        "rx": "ctivate radio co"
+      },
+      {
+        "t": 5.813,
+        "rx": "mmunication    "
+      },
+      {
+        "t": 5.828,
+        "rx": "<J>\r\nChange bau"
+      },
+      {
+        "t": 5.844,
+        "rx": "d rate          "
+      },
+      {
+        "t": 5.859,
+        "rx": "      <A>\r\nDump"
+      },
+      {
+        "t": 5.875,
+        "rx": " stored data to"
+      },
+      {
+        "t": 5.891,
+        "rx": " screen      <F>"
+      },
+      {
+        "t": 5.906,
+        "rx": "\r\n"
+      },
+      {
+        "t": 5.984,
+        "rx": "Erase data in memory            <E>\r"
+      },
+      {
+        "t": 6.0,
+        "rx": "\nSet real-ti"
+      },
+      {
+        "t": 6.016,
+        "rx": "me clock       "
+      },
+      {
+        "t": 6.031,
+        "rx": "      <S>\r\nBatte"
+      },
+      {
+        "t": 6.047,
+        "rx": "ry change instr"
+      },
+      {
+        "t": 6.063,
+        "rx": "uction      <P>"
+      },
+      {
+        "t": 6.078,
+        "rx": "\r\nList cal.coeff"
+      },
+      {
+        "t": 6.094,
+        "rx": "icients        "
+      },
+      {
+        "t": 6.109,
+        "rx": "   <L>\r\nSet coe"
+      },
+      {
+        "t": 6.125,
+        "rx": "fficients       "
+      },
+      {
+        "t": 6.141,
+        "rx": "         <M>\r\nC"
+      },
+      {
+        "t": 6.156,
+        "rx": "alibration oxyg"
+      },
+      {
+        "t": 6.172,
+        "rx": "en SAIV205      "
+      },
+      {
+        "t": 6.188,
+        "rx": "<C>\r\n"
+      },
+      {
+        "t": 6.266,
+        "rx": "Self-test     "
+      },
+      {
+        "t": 6.281,
+        "rx": "                "
+      },
+      {
+        "t": 6.297,
+        "rx": "  <T>\r\nRestore "
+      },
+      {
+        "t": 6.313,
+        "rx": "factory setting"
+      },
+      {
+        "t": 6.328,
+        "rx": "s        <K>\r\nSt"
+      },
+      {
+        "t": 6.344,
+        "rx": "art via key-boa"
+      },
+      {
+        "t": 6.359,
+        "rx": "rd             "
+      },
+      {
+        "t": 6.375,
+        "rx": "<R>\r\nExit (passi"
+      },
+      {
+        "t": 6.391,
+        "rx": "ve)            "
+      },
+      {
+        "t": 6.406,
+        "rx": "      <H>\r\n"
+      },
+      {
+        "t": 6.766,
+        "tx": "S"
+      },
+      {
+        "t": 6.781,
+        "rx": "Date 97-0"
+      },
+      {
+        "t": 6.797,
+        "rx": "4-12"
+      },
+      {
+        "t": 6.813,
+        "rx": "\r\n"
+      },
+      {
+        "t": 6.922,
+        "rx": "Ti"
+      },
+      {
+        "t": 6.938,
+        "rx": "me 15-20-57"
+      },
+      {
+        "t": 6.969,
+        "rx": " GMT\r\n"
+      },
+      {
+        "t": 7.031,
+        "rx": "Change: Y/N \r\n"
+      },
+      {
+        "t": 7.391,
+        "tx": "N"
+      },
+      {
+        "t": 7.406,
+        "rx": "\r\nMenu:\r\nCha"
+      },
+      {
+        "t": 7.422,
+        "rx": "nge mode CTD/ST"
+      },
+      {
+        "t": 7.453,
+        "rx": "D/OX/Turb --  <"
+      },
+      {
+        "t": 7.469,
+        "rx": "B>\r\nChange type/"
+      },
+      {
+        "t": 7.484,
+        "rx": "range optional "
+      },
+      {
+        "t": 7.5,
+        "rx": "sen. <D>\r\nMeasu"
+      },
+      {
+        "t": 7.516,
+        "rx": "ring interval   "
+      },
+      {
+        "t": 7.531,
+        "rx": "           <I>\r"
+      },
+      {
+        "t": 7.547,
+        "rx": "\nActivate radio"
+      },
+      {
+        "t": 7.563,
+        "rx": " communication  "
+      },
+      {
+        "t": 7.578,
+        "rx": "  <J>\r\nChange b"
+      },
+      {
+        "t": 7.594,
+        "rx": "aud rate       "
+      },
+      {
+        "t": 7.609,
+        "rx": "         <A>\r\nDu"
+      },
+      {
+        "t": 7.625,
+        "rx": "mp stored data "
+      },
+      {
+        "t": 7.641,
+        "rx": "to screen      "
+      },
+      {
+        "t": 7.656,
+        "rx": "<F>\r\n"
+      },
+      {
+        "t": 7.719,
+        "rx": "Erase data in m"
+      },
+      {
+        "t": 7.734,
+        "rx": "emory          "
+      },
+      {
+        "t": 7.75,
+        "rx": "  <E>\r\nSet real-"
+      },
+      {
+        "t": 7.766,
+        "rx": "time clock     "
+      },
+      {
+        "t": 7.781,
+        "rx": "        <S>\r\nBa"
+      },
+      {
+        "t": 7.797,
+        "rx": "ttery change ins"
+      },
+      {
+        "t": 7.813,
+        "rx": "truction      <"
+      },
+      {
+        "t": 7.828,
+        "rx": "P>\r\nList cal.co"
+      },
+      {
+        "t": 7.844,
+        "rx": "efficients      "
+      },
+      {
+        "t": 7.859,
+        "rx": "     <L>\r\nSet c"
+      },
+      {
+        "t": 7.875,
+        "rx": "oefficients    "
+      },
+      {
+        "t": 7.891,
+        "rx": "            <M>\r"
+      },
+      {
+        "t": 7.906,
+        "rx": "\nCalibration ox"
+      },
+      {
+        "t": 7.922,
+        "rx": "ygen SAIV205   "
+      },
+      {
+        "t": 7.938,
+        "rx": "   <C>\r\n"
+      },
+      {
+        "t": 8.0,
+        "rx": "Self-test   "
+      },
+      {
+        "t": 8.016,
+        "rx": "               "
+      },
+      {
+        "t": 8.031,
+        "rx": "     <T>\r\nRestor"
+      },
+      {
+        "t": 8.047,
+        "rx": "e factory setti"
+      },
+      {
+        "t": 8.063,
+        "rx": "ngs        <K>\r"
+      },
+      {
+        "t": 8.078,
+        "rx": "\nStart via key-b"
+      },
+      {
+        "t": 8.094,
+        "rx": "oard           "
+      },
+      {
+        "t": 8.109,
+        "rx": "  <R>\r\nExit (pa"
+      },
+      {
+        "t": 8.125,
+        "rx": "ssive)          "
+      },
+      {
+        "t": 8.141,
+        "rx": "        <H>\r\n"
+      }
+    ]
+  },
+  {
+    "port": "COM11",
+    "interval_seconds": 1,
+    "sd200_zone": "LT",
+    "clock_text": "Date 26-09-09\r\nTime 15-05-29 LT \r\nChange: Y/N \r\n",
+    "events": [
+      {
+        "t": 0.204,
+        "rx": "\r\nOSU107 Instrument logger SN107, Ver: 0.9.9Q\r\nDate/time: 2026-09-09 15:05:26 (LT)\r\nBattery: 10.76 V (63%)  Yellow led.\r\nFree disk space: 5.957 MB of 7.965 MB\r\n\r\nHold <I> to wake instrument\r\n"
+      },
+      {
+        "t": 0.563,
+        "tx": "I"
+      },
+      {
+        "t": 0.641,
+        "tx": "I"
+      },
+      {
+        "t": 0.719,
+        "tx": "I"
+      },
+      {
+        "t": 0.797,
+        "tx": "I"
+      },
+      {
+        "t": 0.875,
+        "tx": "I"
+      },
+      {
+        "t": 0.954,
+        "rx": "\r\n"
+      },
+      {
+        "t": 1.266,
+        "rx": "Stored air pressure(mb):AP= 947.76709\r"
+      },
+      {
+        "t": 1.297,
+        "rx": "\n"
+      },
+      {
+        "t": 1.313,
+        "rx": "\r\n"
+      },
+      {
+        "t": 1.344,
+        "rx": "Change air pressure     <A>\r\n"
+      },
+      {
+        "t": 1.375,
+        "rx": "Status/Start/Menu       <S>\r\n"
+      },
+      {
+        "t": 1.407,
+        "rx": "Passive                 <H>\r\n"
+      },
+      {
+        "t": 1.5,
+        "rx": "If no command, measurement will start in 10 sec.\r\n"
+      },
+      {
+        "t": 1.86,
+        "tx": "S"
+      },
+      {
+        "t": 1.891,
+        "rx": "\r\nStatus:\r"
+      },
+      {
+        "t": 1.907,
+        "rx": "\n"
+      },
+      {
+        "t": 1.954,
+        "rx": "Model SD208,Ser No 1456\r\n"
+      },
+      {
+        "t": 2.032,
+        "rx": "Battery life counter:2339\r\n"
+      },
+      {
+        "t": 2.188,
+        "rx": "Date 26-09-09 Time 15-05-25 LT \r\n"
+      },
+      {
+        "t": 2.219,
+        "rx": "Interval: 1sec  \r\n"
+      },
+      {
+        "t": 2.313,
+        "rx": "Mode:CTDOXOTOS\r\n"
+      },
+      {
+        "t": 2.344,
+        "rx": "Baud rate:9600\r"
+      },
+      {
+        "t": 2.36,
+        "rx": "\n"
+      },
+      {
+        "t": 2.485,
+        "rx": "Next start from N11688\r\r\nInstrument communication via OSU107, SN:107\n\rVer: 0.9.9Q, Build: Sep 07 2026 17:06:46\n\rOSU107 - Date: 2026-09-09, Time: 15-05-28 (LT)\n\rFree disk space: 5.957 MB of 7.965 MB\n\rSto"
+      },
+      {
+        "t": 2.5,
+        "rx": "rage: Compact+DT, separator = ;\n\rSensors: Par(ch0), OxR(ch1)\n\rBattery: 10.55 V (48%)  Yellow led.\n\r\r\n\n\r"
+      },
+      {
+        "t": 2.516,
+        "rx": "\nStart by Mag-Key or press <I>\r"
+      },
+      {
+        "t": 2.532,
+        "rx": "\nor\r\n"
+      },
+      {
+        "t": 2.547,
+        "rx": "Press <M> for menu or wait 10sec\r\n"
+      },
+      {
+        "t": 2.563,
+        "rx": "\n"
+      },
+      {
+        "t": 2.922,
+        "tx": "M"
+      },
+      {
+        "t": 2.954,
+        "rx": "\r"
+      },
+      {
+        "t": 2.969,
+        "rx": "\nMenu:\rOSU107 option:\r\nCopy data/ Refresh disk   <F>\r\nRinko Ox Adjust           <O>\r\nZero tilt level           <Z>\r\nVerify calibration        <V>\r\nUpdate config changes     <U>\r\nSet OSU date & time       <X>\r\nTime & Date sync. to CTD. <Q>\r\n\r\n"
+      },
+      {
+        "t": 2.985,
+        "rx": "\n"
+      },
+      {
+        "t": 3.0,
+        "rx": "Change mode CTD/STD/OX/Turb --  <B>\r"
+      },
+      {
+        "t": 3.016,
+        "rx": "\n"
+      },
+      {
+        "t": 3.047,
+        "rx": "Change type/range optional sen. <D>\r\n"
+      },
+      {
+        "t": 3.079,
+        "rx": "Measuring interval              <I>\r\n"
+      },
+      {
+        "t": 3.125,
+        "rx": "Activate radio communication    <J>\r\n"
+      },
+      {
+        "t": 3.157,
+        "rx": "Change baud rate                <A>\r\n"
+      },
+      {
+        "t": 3.204,
+        "rx": "\n"
+      },
+      {
+        "t": 3.297,
+        "rx": "Erase data in memory            <E>\r\n"
+      },
+      {
+        "t": 3.329,
+        "rx": "Set real-time clock             <S>\r"
+      },
+      {
+        "t": 3.344,
+        "rx": "\n"
+      },
+      {
+        "t": 3.375,
+        "rx": "Battery change instruction      <P>\r\n"
+      },
+      {
+        "t": 3.407,
+        "rx": "List cal.coefficients           <L>\r"
+      },
+      {
+        "t": 3.422,
+        "rx": "\n"
+      },
+      {
+        "t": 3.454,
+        "rx": "Set coefficients                <M>\r\n"
+      },
+      {
+        "t": 3.485,
+        "rx": "Calibration oxygen SAIV205      <C>\r\n"
+      },
+      {
+        "t": 3.579,
+        "rx": "Self-test                       <T>\r"
+      },
+      {
+        "t": 3.594,
+        "rx": "\n"
+      },
+      {
+        "t": 3.625,
+        "rx": "Restore factory settings        <K>\r\n"
+      },
+      {
+        "t": 3.657,
+        "rx": "Start via key-board             <R>\r"
+      },
+      {
+        "t": 3.672,
+        "rx": "\n"
+      },
+      {
+        "t": 3.704,
+        "rx": "Exit (passive)                  <H>\r\n"
+      },
+      {
+        "t": 5.063,
+        "tx": "I"
+      },
+      {
+        "t": 5.11,
+        "rx": "Current set up:\r\n"
+      },
+      {
+        "t": 5.204,
+        "rx": "Measuring interval    1sec \r\n"
+      },
+      {
+        "t": 5.282,
+        "rx": "Change: Y/N Menu: <G>\r\n"
+      },
+      {
+        "t": 5.641,
+        "tx": "G"
+      },
+      {
+        "t": 5.672,
+        "rx": "\r\n"
+      },
+      {
+        "t": 5.688,
+        "rx": "Menu:\rOSU107 option:\r\nCopy data/ Refresh disk   <F>\r\nRinko Ox Adjust           <O>\r\nZero tilt level           <Z>\r\nVerify calibration        <V>\r\nUpdate config changes     <U>\r\nSet OSU date & time       <X>\r\nTime & Date sync. to CTD. <Q>\r\n\r\n\n"
+      },
+      {
+        "t": 5.719,
+        "rx": "Change mode CTD/STD/OX/Turb --  <B>\r\n"
+      },
+      {
+        "t": 5.75,
+        "rx": "Change type/range optional sen. <D>\r"
+      },
+      {
+        "t": 5.766,
+        "rx": "\n"
+      },
+      {
+        "t": 5.797,
+        "rx": "Measuring interval              <I>\r\n"
+      },
+      {
+        "t": 5.829,
+        "rx": "Activate radio communication    <J>\r"
+      },
+      {
+        "t": 5.844,
+        "rx": "\n"
+      },
+      {
+        "t": 5.875,
+        "rx": "Change baud rate                <A>\r\n"
+      },
+      {
+        "t": 5.922,
+        "rx": "\n"
+      },
+      {
+        "t": 6.0,
+        "rx": "Erase data in memory            <E>\r"
+      },
+      {
+        "t": 6.016,
+        "rx": "\n"
+      },
+      {
+        "t": 6.047,
+        "rx": "Set real-time clock             <S>\r\n"
+      },
+      {
+        "t": 6.079,
+        "rx": "Battery change instruction      <P>\r"
+      },
+      {
+        "t": 6.094,
+        "rx": "\n"
+      },
+      {
+        "t": 6.125,
+        "rx": "List cal.coefficients           <L>\r\n"
+      },
+      {
+        "t": 6.157,
+        "rx": "Set coefficients                <M>\r"
+      },
+      {
+        "t": 6.172,
+        "rx": "\n"
+      },
+      {
+        "t": 6.204,
+        "rx": "Calibration oxygen SAIV205      <C>\r\n"
+      },
+      {
+        "t": 6.297,
+        "rx": "Self-test                       <T>\r"
+      },
+      {
+        "t": 6.313,
+        "rx": "\n"
+      },
+      {
+        "t": 6.344,
+        "rx": "Restore factory settings        <K>\r\n"
+      },
+      {
+        "t": 6.375,
+        "rx": "Start via key-board             <R>\r\n"
+      },
+      {
+        "t": 6.422,
+        "rx": "Exit (passive)                  <H>\r\n"
+      },
+      {
+        "t": 6.782,
+        "tx": "S"
+      },
+      {
+        "t": 6.86,
+        "rx": "Date 26-09-09\r"
+      },
+      {
+        "t": 6.875,
+        "rx": "\n"
+      },
+      {
+        "t": 7.063,
+        "rx": "Time 15-05-29 LT \r\n"
+      },
+      {
+        "t": 7.157,
+        "rx": "Change: Y/N \r\n"
+      },
+      {
+        "t": 7.516,
+        "tx": "N"
+      },
+      {
+        "t": 7.547,
+        "rx": "\r\nMenu:\rOSU107 option:\r\nCopy data/ Refresh disk   <F>\r\nRinko Ox Adjust           <O>\r\nZero tilt level           <Z>\r\nVerify calibration        <V>\r\nUpdate config changes     <U>\r\nSet OSU date & time       <X>\r\nTime & Date sync. to CTD. <Q>"
+      },
+      {
+        "t": 7.563,
+        "rx": "\r\n\r\n\n"
+      },
+      {
+        "t": 7.594,
+        "rx": "Change mode CTD/STD/OX/Turb --  <B>\r\n"
+      },
+      {
+        "t": 7.625,
+        "rx": "Change type/range optional sen. <D>\r"
+      },
+      {
+        "t": 7.641,
+        "rx": "\n"
+      },
+      {
+        "t": 7.672,
+        "rx": "Measuring interval              <I>\r\n"
+      },
+      {
+        "t": 7.704,
+        "rx": "Activate radio communication    <J>\r"
+      },
+      {
+        "t": 7.719,
+        "rx": "\n"
+      },
+      {
+        "t": 7.75,
+        "rx": "Change baud rate                <A>\r\n"
+      },
+      {
+        "t": 7.782,
+        "rx": "\n"
+      },
+      {
+        "t": 7.875,
+        "rx": "Erase data in memory            <E>\r"
+      },
+      {
+        "t": 7.891,
+        "rx": "\n"
+      },
+      {
+        "t": 7.922,
+        "rx": "Set real-time clock             <S>\r\n"
+      },
+      {
+        "t": 7.954,
+        "rx": "Battery change instruction      <P>\r"
+      },
+      {
+        "t": 7.969,
+        "rx": "\n"
+      },
+      {
+        "t": 8.0,
+        "rx": "List cal.coefficients           <L>\r\n"
+      },
+      {
+        "t": 8.032,
+        "rx": "Set coefficients                <M>\r"
+      },
+      {
+        "t": 8.047,
+        "rx": "\n"
+      },
+      {
+        "t": 8.079,
+        "rx": "Calibration oxygen SAIV205      <C>\r\n"
+      },
+      {
+        "t": 8.172,
+        "rx": "Self-test                       <T>\r\n"
+      },
+      {
+        "t": 8.204,
+        "rx": "Restore factory settings        <K>\r"
+      },
+      {
+        "t": 8.219,
+        "rx": "\n"
+      },
+      {
+        "t": 8.25,
+        "rx": "Start via key-board             <R>\r\n"
+      },
+      {
+        "t": 8.282,
+        "rx": "Exit (passive)                  <H>\r"
+      },
+      {
+        "t": 8.297,
+        "rx": "\n"
+      }
+    ]
+  }
+]
