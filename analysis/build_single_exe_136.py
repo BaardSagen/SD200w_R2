@@ -2,7 +2,7 @@ from pathlib import Path
 import pefile,hashlib,struct,subprocess,json
 R=Path(__file__).resolve().parent.parent;W=R/'analysis/single136';W.mkdir(exist_ok=True)
 source=R/'SAIV_Instrument_Terminal_v1.3.2_Sept2026.exe';dll=R/'SIT_Import136.dll';expected='869a4306cc00c6bbdfa9038627384357fd77848df4f01856546162cb1f469fc0';assert hashlib.sha256(source.read_bytes()).hexdigest()==expected
-subprocess.run(['g++','-std=c++11','-O2','-shared','-static-libgcc','-static-libstdc++','-Wl,--kill-at','-o',str(dll),str(R/'sit_import/sit_import.cpp'),'-lcomctl32','-lcomdlg32','-lgdi32','-luser32','-lshell32','-lole32','-ladvapi32'],check=True)
+subprocess.run(['g++','-std=c++11','-O2','-shared','-static-libgcc','-static-libstdc++','-Wl,--kill-at','-o',str(dll),str(R/'analysis/reference/sit_import_v136/sit_import.cpp'),'-lcomctl32','-lcomdlg32','-lgdi32','-luser32','-lshell32','-lole32','-ladvapi32'],check=True)
 p=pefile.PE(str(source));b=bytearray(source.read_bytes());allowed=set()
 def put(off,data):b[off:off+len(data)]=data;allowed.update(range(off,off+len(data)))
 for k in p.DIRECTORY_ENTRY_RESOURCE.entries:
@@ -56,13 +56,13 @@ END
 '''.replace('RUNTIME',runtime.as_posix()).replace('DLL',dll.as_posix())
 # Substitute only the quoted icon path, not the ICON resource keyword.
 rc=rc.replace('"ICON"','"'+(R/'icon/ctd_in_Cage.ico').as_posix()+'"')
-rc+='\n1 24 \"'+(R/'sit_single/launcher.manifest').as_posix()+'\"\n'
+rc+='\n1 24 \"'+(R/'analysis/reference/sit_single_v136/launcher.manifest').as_posix()+'\"\n'
 (W/'bundle.rc').write_text(rc)
 subprocess.run(['windres','-i',str(W/'bundle.rc'),'-o',str(W/'bundle.o')],check=True)
 out=R/'SAIV_Instrument_Terminal_v1.3.6_Sept2026.exe'
 tag='1.3.6_'+hashlib.sha256(b+dll.read_bytes()).hexdigest()[:12]
-(R/'sit_single/bundle_config.h').write_text('#define SIT_CACHE_TAG L\"'+tag+'\"\n')
-subprocess.run(['g++','-std=c++11','-O2','-mwindows','-static','-static-libgcc','-static-libstdc++',str(R/'sit_single/launcher.cpp'),str(W/'bundle.o'),'-lole32','-lshell32','-o',str(out)],check=True)
+(R/'analysis/reference/sit_single_v136/bundle_config.h').write_text('#define SIT_CACHE_TAG L\"'+tag+'\"\n')
+subprocess.run(['g++','-std=c++11','-O2','-mwindows','-static','-static-libgcc','-static-libstdc++',str(R/'analysis/reference/sit_single_v136/launcher.cpp'),str(W/'bundle.o'),'-lole32','-lshell32','-o',str(out)],check=True)
 q=pefile.PE(str(out));deps=[i.dll.decode() for i in q.DIRECTORY_ENTRY_IMPORT];assert not any('libgcc' in x or 'libstdc' in x for x in deps)
 for key,data in [(101,bytes(b)),(102,dll.read_bytes())]:
  e=next(l.data.struct for k in q.DIRECTORY_ENTRY_RESOURCE.entries if k.id==10 for n in k.directory.entries if n.id==key for l in n.directory.entries);assert q.get_data(e.OffsetToData,e.Size)==data

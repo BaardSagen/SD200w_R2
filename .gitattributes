@@ -8,3 +8,6 @@
 *.png binary
 
 analysis/reference/native_ascii_sample_old/* binary
+
+*.dll binary
+analysis/reference/import137_inputs/* binary

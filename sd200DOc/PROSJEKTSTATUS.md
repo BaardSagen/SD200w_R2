@@ -5,17 +5,23 @@ Oppdatert: 9. september 2026. Arbeidsmappe: `C:\cprojects\delphi`.
 ## Start her neste gang
 
 1. Les dette notatet og brukerens nye oppgave.
-2. Nyeste lokale leveranse er **SAIV_Instrument_Terminal_v1.3.6_Sept2026.exe** som EN fil til kunden. Les [LES_MEG_Import_Download_136.md](../LES_MEG_Import_Download_136.md). Separate Import CSV/TXT og Convert CSV/TXT, bekreftet loggeridentitet ved Download, PAR/OXR-aliaser.
+2. Nyeste lokale importleveranse er **SAIV_Instrument_Terminal_v1.3.7_Sept2026.exe** paa `feature/import-all-fields`. Main beholder 1.3.6. Les [LES_MEG_Import_All_Fields_137.md](../LES_MEG_Import_All_Fields_137.md). Kunden trenger fortsatt bare EN EXE.
 3. Les relevante dokumenter og byggskript i `analysis` før patching. Mange skript krever en bestemt eldre kildefil og SHA-256; de kan ikke ukritisk kjøres på siste utgave.
 4. Lag en ny programkopi og behold tidligere leveranser. Verifiser relevante endringer og lever den konkrete EXE-filen.
 
 Vi har ikke original Delphi-kildekode. Arbeidet består av analyse og patching av en 32-bits Delphi Windows-EXE: maskinkode, PE-ressurser og DFM-skjemaer. Dokumentasjonen om instrumentfirmware er en separat kilde og må ikke forveksles med Windows-koden.
 
-## Aktivt arbeid: Import CSV/TXT til native grafer og multigraph
+## Siste lokale importleveranse: 1.3.7
 
-Brukeren har bekreftet at Download-rettingen virker. 1.3.6 er committet paa main som 48ae885. Arbeid gjenopptatt paa feature/import-all-fields med 1.3.6 inkludert. Nytt omfang omfatter begge oppgitte _C-filer OG _merged-3-filen, via Import CSV/TXT. Vanlig graf, multigraph og native lagring skal stoettes. Se IMPORT_ALL_FIELDS.md for eldre prototype og nye resultater.
+Arbeidet paa feature/import-all-fields er gjenopptatt etter brukerens beskjed og inkluderer main 1.3.6. Brukeren bekreftet at Download-rettingen virker. Nytt omfang inkluderer begge oppgitte _C-filer OG _merged-3, samt direkte Import to SD2 ved siden av Export all fields i Convert. Main 1.3.6 er sikret i 48ae885; integrasjonsmerge paa importgrenen d011d51.
 
-## Siste lokale leveranse: 1.3.6 - separat Import og logger-Download
+Import CSV/TXT gjenkjenner FIELDS/Convert/Merge og bruker gammel ASCII-import ellers. Native SD2/RF2 og relevante OX2/OP2 lages sammen med SF2 som bevarer hele kildeformatet. Open SD2 laster SF2 igjen; kontrollverdi mot SD2 oppdager feil kombinasjon. Filgruppen maa beholdes samlet. Vanlige grafknapper/menyer og Multigraph bruker den originale native Multigraph-komponenten for importerte felt, med opptil ti valgbare kanaler. Master/M1/M2-navn bevares. Tidsgraf bruker faktiske radtider; trykk og dybde skilles. Alle felt vises/eksporteres fra datalisten.
+
+Tre brukerfiler (79/3/79 rader) er kontrollert mot native punktarrayer, feltbytte, lister og gjenapning. Legacy 43-raders input gir fire native filer byteidentiske med originalimport. Direkte Convert-import bevarer Fahrenheit-valg og valgte verdier. Salinitet/lydhastighet/tetthet bruker originale rutiner naar native felt mangler; konverterte verdier beholdes. UART/Download/formelbytes uendret; native hook-register/stack/ASLR kontrollert. Se release- og GUI-rapporter nevnt i LES_MEG_Import_All_Fields_137.md.
+
+Visuelle skjermopptak var svarte/utilgjengelige i Windows-oekten; kontroller og faktiske native punktdata er verifisert, men brukerens visuelle test gjenstaar. SF2 er et importgrunnlag, ikke synkronisert med senere redigering i de gamle native redigeringsverktoeyene. Native datogren er begrenset til 1981-2079. Tidligere leveranser og 1.3.6-kilder er bevart. Ingen push.
+
+## Tidligere lokale leveranse: 1.3.6 - separat Import og logger-Download
 
 Gjenopprettet original Import ASCII som File > Import CSV/TXT; Convert CSV/TXT forblir separat. Native sample 26090606_18.11.51.txt gir 43 maalinger og SD2/RF2/OX2/OP2 byteidentiske med originalimport. Convert av eldre tekst gir henvisning til Import. `_C`/`_merged` til native SD2 er fortsatt senere arbeid, ikke inkludert.
 

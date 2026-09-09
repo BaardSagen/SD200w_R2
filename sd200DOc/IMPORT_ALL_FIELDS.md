@@ -1,3 +1,11 @@
+# Import all fields - 1.3.7
+
+Arbeidet er gjenopptatt og utvidet etter brukerens nye beskjed: begge _C-filer og _merged-3 skal inn via Import CSV/TXT og vises i vanlige grafer/multigraph. Samme backend brukes naa direkte fra Convert via Import to SD2. De tidligere avgrensningene under er historikk.
+
+Se [LES_MEG_Import_All_Fields_137.md](../LES_MEG_Import_All_Fields_137.md) og [PROSJEKTSTATUS.md](PROSJEKTSTATUS.md) for implementasjon, tester og begrensninger. Presis radtid, ekstra felt, gjenapning og native grafintegrasjon er implementert. Main 1.3.6 er committet; utviklingen ligger paa feature/import-all-fields.
+
+## Historisk checkpoint fra foer gjenopptakelsen
+
 # Import all fields – utvikling
 
 9. september 2026. Gren: feature/import-all-fields. Siste leveranse fortsatt 1.3.5.

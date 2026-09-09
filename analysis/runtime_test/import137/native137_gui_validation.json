@@ -1,0 +1,26 @@
+{
+  "checks": 11138,
+  "files": [
+    {
+      "source": "2026_09_03_20-28-52_C.txt",
+      "rows": 79,
+      "duration": 158.0,
+      "target": "C:\\cprojects\\delphi\\analysis\\runtime_test\\import137\\2026_09_03_20-28-52_C_1788955312662554600.SD2",
+      "reopened": true
+    },
+    {
+      "source": "2026_09_07_19-34-42_C.txt",
+      "rows": 3,
+      "duration": 10.0,
+      "target": "C:\\cprojects\\delphi\\analysis\\runtime_test\\import137\\2026_09_07_19-34-42_C_1788955319864113400.SD2",
+      "reopened": true
+    },
+    {
+      "source": "2026_09_03_20-28-52_C_merged-3.txt",
+      "rows": 79,
+      "duration": 158.0,
+      "target": "C:\\cprojects\\delphi\\analysis\\runtime_test\\import137\\2026_09_03_20-28-52_C_merged-3_1788955325769815700.SD2",
+      "reopened": true
+    }
+  ]
+}

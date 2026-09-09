@@ -1,0 +1,165 @@
+{
+  "rva": 3084288,
+  "symbols": {
+    ".bss": 0,
+    ".data": 0,
+    ".text": 0,
+    "entry": 0,
+    "import_file": 0,
+    "import_old": 47,
+    "open_dialog": 54,
+    "dialog_old": 81,
+    "dialog_done": 86,
+    "dispatch": 93,
+    "scan": 155,
+    "copy_name": 172,
+    "dispatch_failed": 225,
+    "dispatch_ready": 233,
+    "dispatch_unavailable": 245,
+    "entry_ptr": 252,
+    "dll_name": 256,
+    "export_name": 274,
+    "load": 284,
+    "load_old": 305,
+    "graph": 320,
+    "graph_old": 341,
+    "depth_graph": 358,
+    "depth_graph_old": 379,
+    "multi": 396,
+    "multi_old": 417,
+    "list": 429,
+    "list_old": 450,
+    "fill": 465,
+    "fill_old": 486,
+    "readout": 499,
+    "readout_old": 520,
+    "graph_destroy": 535,
+    "graph_destroy_old": 556,
+    "graph_base": 568,
+    "graph_base_old": 589,
+    "all_points": 605,
+    "all_points_old": 626,
+    "update": 639,
+    "update_old": 660,
+    "menu_time": 675,
+    "menu_time_old": 696,
+    "menu_depth": 709,
+    "menu_depth_old": 730,
+    "menu_depth_time": 743,
+    "menu_depth_time_old": 764,
+    "close_file": 780,
+    "close_file_old": 801,
+    "OLD_IMPORT_FILE": 3031088,
+    "ASCII_MODE": 3031624,
+    "RVA": 3084288
+  },
+  "constants": {
+    "RVA": 3084288,
+    "ASCII_MODE": 3031624,
+    "OLD_IMPORT_FILE": 3031088
+  },
+  "patches": [
+    [
+      1727050,
+      "import_file",
+      null,
+      5
+    ],
+    [
+      1706564,
+      "open_dialog",
+      null,
+      5
+    ],
+    [
+      1640208,
+      "load",
+      2,
+      8
+    ],
+    [
+      1708044,
+      "graph",
+      3,
+      10
+    ],
+    [
+      1707928,
+      "depth_graph",
+      17,
+      10
+    ],
+    [
+      1718492,
+      "multi",
+      4,
+      5
+    ],
+    [
+      1707840,
+      "list",
+      5,
+      8
+    ],
+    [
+      1403544,
+      "fill",
+      6,
+      6
+    ],
+    [
+      1408772,
+      "readout",
+      8,
+      8
+    ],
+    [
+      1413768,
+      "graph_destroy",
+      10,
+      5
+    ],
+    [
+      1410820,
+      "graph_base",
+      18,
+      9
+    ],
+    [
+      1412460,
+      "all_points",
+      19,
+      6
+    ],
+    [
+      1687272,
+      "update",
+      20,
+      8
+    ],
+    [
+      1707220,
+      "menu_time",
+      21,
+      6
+    ],
+    [
+      1706412,
+      "menu_depth",
+      22,
+      6
+    ],
+    [
+      1707284,
+      "menu_depth_time",
+      23,
+      9
+    ],
+    [
+      1736156,
+      "close_file",
+      11,
+      5
+    ]
+  ]
+}

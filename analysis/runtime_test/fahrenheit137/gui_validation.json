@@ -1,0 +1,18 @@
+{
+  "celsius_preserved_and_sensor_calculations_unchanged": true,
+  "fahrenheit_remembered_after_restart": true,
+  "celsius_can_be_excluded": true,
+  "fahrenheit_graph_label": true,
+  "fahrenheit_can_be_disabled": true,
+  "direct_import_from_convert": true,
+  "native_dataset": "C:\\cprojects\\delphi\\analysis\\runtime_test\\fahrenheit137\\converted_native_1788955359957431300.SD2",
+  "checks": 2054,
+  "par_unit_visible_without_defaulting_source_unit": true,
+  "exports": [
+    "C:\\cprojects\\delphi\\analysis\\runtime_test\\fahrenheit137\\celsius_1788955338471874600.txt",
+    "C:\\cprojects\\delphi\\analysis\\runtime_test\\fahrenheit137\\both_1788955341772413000.txt",
+    "C:\\cprojects\\delphi\\analysis\\runtime_test\\fahrenheit137\\reused_1788955348533858800.txt",
+    "C:\\cprojects\\delphi\\analysis\\runtime_test\\fahrenheit137\\fahrenheit_only_1788955351748399000.txt",
+    "C:\\cprojects\\delphi\\analysis\\runtime_test\\fahrenheit137\\back_to_celsius_1788955354980710000.txt"
+  ]
+}

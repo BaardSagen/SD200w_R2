@@ -1,0 +1,59 @@
+[
+  {
+    "command": [
+      "g++",
+      "-std=c++11",
+      "-O2",
+      "analysis/test_native_data137.cpp",
+      "-o",
+      "analysis/test_native_data137.exe"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "analysis/test_native_data137.exe"
+    ],
+    "exit_code": 0,
+    "stdout": "PASS 191 native records, raw preservation, merged aliases, fractions, missing values and no double conversion\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "analysis/test_native137_hooks.py"
+    ],
+    "exit_code": 0,
+    "stdout": "PASS 35 bridge register/stack/ASLR and unchanged calculation/UART/Download checks\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "analysis/test_import137_gui.py"
+    ],
+    "exit_code": 0,
+    "stdout": "PASS 2026_09_03_20-28-52_C.txt 79 rows, native graph/multigraph/field switching/list and reopening\nPASS 2026_09_07_19-34-42_C.txt 3 rows, native graph/multigraph/field switching/list and reopening\nPASS 2026_09_03_20-28-52_C_merged-3.txt 79 rows, native graph/multigraph/field switching/list and reopening\nPASS 11138 native plotted coordinates and list values\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "analysis/test_convert_to_native137_gui.py"
+    ],
+    "exit_code": 0,
+    "stdout": "PASS 2054 GUI temperature/unchanged sensor values, Fahrenheit reuse after restart, source removal, PAR unit label\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "analysis/check_legacy_import137_windows.py"
+    ],
+    "exit_code": 0,
+    "stdout": "[('&File', 4294967295), ('&Open...', 2), ('&Export', 4294967295), ('&List', 5), ('Standard &depths', 6), ('Standard Depth &Sectioned', 7), ('Standard &temperatures', 8), ('S&onar file', 9), ('L&ybin file (Bathy data.xml)', 10), ('Tide data', 11), ('&Import CSV/TXT...', 12), ('&Convert CSV/TXT...', 13), ('Set &range...', 14), ('Set s&caling...', 15), ('P&age setup..', 16), ('&Print...', 17), ('&Close file', 18), ('', 19), ('E&xit\\tAlt+X', 20), ('&View', 4294967295), ('&List', 22), ('T&ables', 4294967295), ('Standard &Depth', 24), ('Standard Depth &Sectioned', 25), ('Standard &Temp', 26), ('&Graph', 4294967295), ('&Time', 4294967295), ('&Salinity / Temperature', 29), ('&Conductivity / Temperature', 30), ('Sound &velocity / Density', 31), ('&Oxygen', 32), ('O&ptional sensor', 33), ('&Depth', 35), ('&Depth', 4294967295), ('&Salinity / Temperature', 37), ('&Conductivity / Temperature', 38), ('Sound &velocity / Density', 39), ('&Oxygen', 40), ('O&ptional sensor', 41), ('&Instrument', 44), ('&Display', 4294967295), ('&Toolbar', 46), ('&Statusbar', 47), ('&Legend', 48), ('&GPS position', 49), ('&Only selected series', 50), ('&Average', 51), ('&Density', 52), ('Calculated density for TD instruments', 53), ('Depth calculation...', 54), ('Select oxygen unit', 55), ('Select turbidity unit', 56), ('Avg columns in Std Depth Sectioned', 58), ('Avg all passes in Std Depth Sectioned...', 59), ('&Graph color settings...', 60), ('Select export file date/time format', 61), ('&Util', 4294967295), ('R&emove spikes...', 63), ('&Split data file...', 64), ('Compute Sound &velocity...', 65), ('Conv&ert salinity to conductivity', 66), ('&Update barometric pressure...', 67), ('Update measurement &position...', 68), ('Change standard &depths...', 69), ('Change standard depth sectio&ns...', 70), ('Change standard &temperatures...', 71), ('&Recalculate calibration coefficients...', 72), ('&Iso-line data for SURFER...', 73), ('&Calibration from RAW data...', 74), ('Rinko oxygen calibration', 75), ('Set heading and unit for &optional channel...', 77), ('Edit starting time', 78), ('Automatic readouts', 79), ('Adjust measurement values', 80), ('Set minimum depth mask', 83), ('&Help', 4294967295), ('&About...', 86)]\n[(6687810, 'L&agre i:', 'Static', 1091), (3868576, '', 'ComboBox', 1137), (14879132, '', 'Static', 1088), (8064246, '', 'ToolbarWindow32', 1088), (6098254, '', 'ListBox', 1120), (5244870, '', 'SHELLDLL_DefView', 1121), (10945924, 'FolderView', 'SysListView32', 1), (4525102, '', 'SysHeader32', 0), (17172950, 'F&ilnavn:', 'Static', 1090), (8523094, '', 'Edit', 1152), (7539802, 'Fil&type:', 'Static', 1089), (10880710, '', 'ComboBox', 1136), (10226710, '\u00c5p&ne som skrivebeskyttet', 'Button', 1040), (5508064, 'La&gre', 'Button', 1), (6360388, 'Avbryt', 'Button', 2), (9964024, '&Hjelp', 'Button', 1038), (6097882, '', '#32770', 0)]\nwindows [(6293924, 'Select first and last measurement', 'TSelectDlg'), (7013368, 'SAIV Instrument Terminal - SCTDOXOFOTc 208 - C:\\\\cprojects\\\\delphi\\\\analysis\\\\runtime_test\\\\import137\\\\native_optical_1788955367551965400', 'TForm1'), (327920, 'Saiv_it_runtime', 'TApplication')]\n[('native_optical_1788955367551965400.OP2', 344), ('native_optical_1788955367551965400.OX2', 172), ('native_optical_1788955367551965400.RF2', 72), ('native_optical_1788955367551965400.SD2', 2288)]\nPASS 43 rows, salinity/temperature/pressure/OF/OT and all four native files byte-identical to original importer\nPASS legacy Convert directs to separate Import without native fallback\n",
+    "stderr": ""
+  }
+]
