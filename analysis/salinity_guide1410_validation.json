@@ -1,0 +1,9 @@
+{
+  "calculation_sources_unchanged": true,
+  "changed_files": [
+    "formula_guide.inc",
+    "update_ui.inc"
+  ],
+  "previous_exe_preserved": true,
+  "salinity_text_checked": true
+}

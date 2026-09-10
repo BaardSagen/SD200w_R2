@@ -11,6 +11,7 @@
 #endif
 #include <memory>
 #include "logger.h"
+#include "legacy_convert.h"
 #include "native_data.h"
 static HINSTANCE instance;
 static std::wstring wide(const std::string&s,UINT cp=CP_UTF8){int n=MultiByteToWideChar(cp,0,s.data(),int(s.size()),0,0);std::wstring w(n,L' ');if(n)MultiByteToWideChar(cp,0,s.data(),int(s.size()),&w[0],n);return w;}
@@ -34,7 +35,8 @@ static std::wstring fieldLabel(const std::string&f){
 static void error(HWND h,const std::string&s){MessageBoxW(h,wide(s).c_str(),L"SAIV IT - Import",MB_OK|MB_ICONERROR);}
 static double formula(int f,double a,double b,double c){typedef double (__stdcall *Fn)(double,double,double);BYTE* base=(BYTE*)GetModuleHandleW(0);if(f==3){typedef double (__stdcall *Fn2)(double,double);return ((Fn2)(base+0x10cb5c))(a,b);}static const size_t offsets[]={0x10a5b8,0x10a8f0,0x10c330};return ((Fn)(base+offsets[f]))(a,b,c);}
 static std::string readFile(const std::wstring&path,bool probe=false){HANDLE h=CreateFileW(path.c_str(),GENERIC_READ,FILE_SHARE_READ,0,OPEN_EXISTING,0,0);if(h==INVALID_HANDLE_VALUE)throw std::runtime_error("Cannot read selected file");LARGE_INTEGER size;if(!GetFileSizeEx(h,&size)||(!probe&&size.QuadPart>20*1024*1024)||size.QuadPart<0){CloseHandle(h);throw std::runtime_error("Import supports files up to 20 MB");}std::string s(size_t(probe?std::min<LONGLONG>(65536,size.QuadPart):size.QuadPart),' ');DWORD got=0;BOOL ok=ReadFile(h,s.empty()?0:&s[0],DWORD(s.size()),&got,0);CloseHandle(h);if(!ok||got!=s.size())throw std::runtime_error("Could not read the complete file");return s;}
-#include "wizard.inc"
+static void guideShow(HWND owner,const wchar_t* topic=0);
+#include "wizard_models.inc"
 #include "presets_ui.inc"
 #include "merge_ui.inc"
 struct View {sit::Data data;std::wstring path;HWND list=0,combo=0,plot=0;int channel=0;bool allowNative=true;std::wstring cell;};
@@ -62,9 +64,9 @@ static LRESULT CALLBACK viewProc(HWND h,UINT msg,WPARAM wp,LPARAM lp){View*v=(Vi
 static void registerClasses(){static bool registered=false;if(registered)return;INITCOMMONCONTROLSEX ic={sizeof(ic),ICC_LISTVIEW_CLASSES};InitCommonControlsEx(&ic);WNDCLASSW wc={};wc.hInstance=instance;wc.hIcon=LoadIconW(GetModuleHandleW(0),L"MAINICON");wc.hCursor=LoadCursor(0,IDC_ARROW);wc.hbrBackground=(HBRUSH)(COLOR_BTNFACE+1);wc.lpfnWndProc=wizardProc;wc.lpszClassName=L"SITImportChoices";RegisterClassW(&wc);wc.lpfnWndProc=viewProc;wc.lpszClassName=L"SITImportData";RegisterClassW(&wc);wc.lpfnWndProc=plotProc;wc.lpszClassName=L"SITImportPlot";RegisterClassW(&wc);registered=true;}
 #include "native_ui.inc"
 extern "C" __declspec(dllexport) int __stdcall SitImport(HWND owner,const char*filename){
- try{std::wstring path=wide(filename,CP_ACP);std::unique_ptr<View>v(new View);v->path=path;v->data.source=utf8(path);if(!sit::parse(readFile(path),v->data)){error(owner,"Use File > Import CSV/TXT for legacy instrument files.");return 1;}registerClasses();std::string signature=sitpreset::signature(v->data);sitpreset::Record previous;sit::Choices choice;bool reused=false;
+ try{std::wstring path=wide(filename,CP_ACP);std::unique_ptr<View>v(new View);v->path=path;v->data.source=utf8(path);if(!sit::parseConversion(readFile(path),v->data)){error(owner,"Unsupported Convert input. Use a FIELDS/Full logger file or a CTD/STD file with Date/Time and Interval header.");return 1;}registerClasses();std::string signature=sitpreset::signature(v->data);sitpreset::Record previous;sit::Choices choice;bool reused=false;
  if(loadPreset(v->data,previous)){int answer=offerPreset(owner,v->data,previous);if(answer==IDCANCEL)return 1;if(answer==IDYES){choice=sitpreset::reuse(previous,v->data);reused=true;}}
  sit::Choices saved=choice;if(!choose(owner,v->data,choice,reused?&saved:0))return 1;sit::calculate(v->data,choice,formula);
- if(!savePreset(signature,v->data.source,choice))MessageBoxW(owner,L"Conversion succeeded, but these choices could not be saved for next time.",L"SAIV IT - Convert",MB_OK|MB_ICONINFORMATION);if(sit::canSal(v->data)&&sit::complete(v->data,"T")&&sit::complete(v->data,"P"))v->data.metadata.push_back("# CTD calculations use the original SIT executable routines; raw CTD fields are retained");std::wstring title=L"SAIV IT - Logger data - "+path.substr(path.find_last_of(L"\\/")+1);RECT r;GetWindowRect(owner,&r);View*raw=v.release();HWND h=CreateWindowExW(0,L"SITImportData",title.c_str(),WS_OVERLAPPEDWINDOW,r.left+24,r.top+24,1000,650,owner,0,instance,raw);if(!h)throw std::runtime_error("Cannot create logger data window");EnableWindow(owner,FALSE);ShowWindow(h,SW_SHOW);UpdateWindow(h);MSG message;while(IsWindow(h)&&GetMessageW(&message,0,0,0)>0){if(!IsDialogMessageW(h,&message)){TranslateMessage(&message);DispatchMessageW(&message);}}EnableWindow(owner,TRUE);SetActiveWindow(owner);return 1;
+ if(!savePreset(signature,v->data.source,choice))MessageBoxW(owner,L"Conversion succeeded, but these choices could not be saved for next time.",L"SAIV IT - Convert",MB_OK|MB_ICONINFORMATION);std::wstring title=L"SAIV IT - Logger data - "+path.substr(path.find_last_of(L"\\/")+1);RECT r;GetWindowRect(owner,&r);View*raw=v.release();HWND h=CreateWindowExW(0,L"SITImportData",title.c_str(),WS_OVERLAPPEDWINDOW,r.left+24,r.top+24,1000,650,owner,0,instance,raw);if(!h)throw std::runtime_error("Cannot create logger data window");EnableWindow(owner,FALSE);ShowWindow(h,SW_SHOW);UpdateWindow(h);MSG message;while(IsWindow(h)&&GetMessageW(&message,0,0,0)>0){if(!IsDialogMessageW(h,&message)){TranslateMessage(&message);DispatchMessageW(&message);}}EnableWindow(owner,TRUE);SetActiveWindow(owner);return 1;
  }catch(const std::exception&e){error(owner,e.what());return 1;}catch(...){error(owner,"Import failed. Original file was not changed.");return 1;}}
 BOOL WINAPI DllMain(HINSTANCE h,DWORD reason,LPVOID){if(reason==DLL_PROCESS_ATTACH){instance=h;DisableThreadLibraryCalls(h);}return TRUE;}

@@ -1,0 +1,13 @@
+{
+  "source": "Unmodified files from saiv-studio/vendor/gsw, already present in workspace",
+  "library": "GSW-C V3.06",
+  "sha256": {
+    "gswteos-10.h": "c07987faf3dc92fcfd5ab8c3cb69b97277c9bd6d2f6b796cd0e99329d923887a",
+    "gsw_internal_const.h": "39769e39e61f6fca7ebde6baeddd8cf9999a29a8648244615a552aba019bd613",
+    "gsw_oceanographic_toolbox.c": "01d8f65a0baaffffc1a2e7b0755ba5ec1531c0455f1e30746aa06fe8d4840eb7",
+    "gsw_saar.c": "3180d50e887c98920f9d2776aa53f3f3e52e1ba91ded6be8b9bcf6ae838c13e1",
+    "gsw_saar_data.h": "fc958029b11e445ccb471fb8bb9d57a9934a8db5cd3a6b26dd6a72cc9ab6c68e",
+    "LICENSE": "454c2ee44d15b97f2cbf49e2e4b6dd21b3ee233588227686be4d64126fcfa80d",
+    "README": "c955b2a046fb4e5975fcc8749cd1e25d8cd0500d0aea9e1228ee00e7edffb885"
+  }
+}

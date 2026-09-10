@@ -1,0 +1,45 @@
+{
+  "examples": [
+    {
+      "C": 42.914,
+      "T": 15,
+      "P": 0,
+      "firmware_SP": 34.9999985947346,
+      "native_SP": 34.99999992412808,
+      "difference": -1.3293934841840382e-06
+    },
+    {
+      "C": 40,
+      "T": 10,
+      "P": 1000,
+      "firmware_SP": 36.4998896192244,
+      "native_SP": 36.49989100664118,
+      "difference": -1.387416780573858e-06
+    },
+    {
+      "C": 30,
+      "T": 10,
+      "P": 100,
+      "firmware_SP": 26.824148729056635,
+      "native_SP": 26.824149734140065,
+      "difference": -1.0050834298169775e-06
+    },
+    {
+      "C": 0,
+      "T": 15,
+      "P": 0,
+      "firmware_SP": 0.0,
+      "native_SP": 0.0,
+      "difference": 0.0
+    }
+  ],
+  "sound_comparisons": 60,
+  "changed_import_files": [
+    "formula_guide.inc",
+    "quick_guide.inc",
+    "update_ui.inc"
+  ],
+  "summary_words": 487,
+  "privacy_check": true,
+  "calculation_sources_unchanged": true
+}

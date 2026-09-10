@@ -3,7 +3,7 @@
 #include <wininet.h>
 #include <cwctype>
 #ifndef SIT_UPDATE_VERSION
-#define SIT_UPDATE_VERSION "1.4.5"
+#define SIT_UPDATE_VERSION "1.4.10"
 #endif
 static const wchar_t* updateRegistry=L"Software\\MHP\\SdInstr\\SoftwareUpdate";
 static const UINT updateMenuId=0x7e41,updateComplete=WM_APP+141;

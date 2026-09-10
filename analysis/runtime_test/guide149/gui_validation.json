@@ -1,0 +1,140 @@
+{
+  "help_menu": [
+    [
+      "&Help",
+      4294967295
+    ],
+    [
+      "&Quick guide...",
+      32324
+    ],
+    [
+      "&About...",
+      86
+    ],
+    [
+      "",
+      0
+    ],
+    [
+      "&Update software...",
+      32321
+    ]
+  ],
+  "topics": [
+    {
+      "topic": "Start here",
+      "characters": 831
+    },
+    {
+      "topic": "Detect and terminal",
+      "characters": 729
+    },
+    {
+      "topic": "Download and save text",
+      "characters": 726
+    },
+    {
+      "topic": "Open and import files",
+      "characters": 727
+    },
+    {
+      "topic": "Convert and export",
+      "characters": 936
+    },
+    {
+      "topic": "Merge files",
+      "characters": 777
+    },
+    {
+      "topic": "Lists, graphs and print",
+      "characters": 702
+    },
+    {
+      "topic": "Interval and TIME/DATE",
+      "characters": 732
+    },
+    {
+      "topic": "Setup and Help",
+      "characters": 720
+    },
+    {
+      "topic": "System evaluation",
+      "characters": 1339
+    },
+    {
+      "topic": "Conversions and formulas",
+      "characters": 747
+    },
+    {
+      "topic": "Conductivity and salinity",
+      "characters": 1547
+    },
+    {
+      "topic": "Temperature",
+      "characters": 1074
+    },
+    {
+      "topic": "Pressure and air pressure",
+      "characters": 611
+    },
+    {
+      "topic": "Depth: modes and fjords",
+      "characters": 1325
+    },
+    {
+      "topic": "Density and Sigma T",
+      "characters": 780
+    },
+    {
+      "topic": "Sound velocity",
+      "characters": 879
+    },
+    {
+      "topic": "Oxygen: saturation and units",
+      "characters": 992
+    },
+    {
+      "topic": "Oxygen: deep water and alternatives",
+      "characters": 952
+    },
+    {
+      "topic": "Turbidity: FTU, NTU and FNU",
+      "characters": 677
+    },
+    {
+      "topic": "Fluorescence",
+      "characters": 419
+    },
+    {
+      "topic": "PAR and light units",
+      "characters": 641
+    },
+    {
+      "topic": "OSU107 measurement chain",
+      "characters": 1010
+    },
+    {
+      "topic": "TEOS-10 and other choices",
+      "characters": 1019
+    },
+    {
+      "topic": "Further reading",
+      "characters": 477
+    },
+    {
+      "topic": "GSW licence",
+      "characters": 1772
+    }
+  ],
+  "full_formula_text_matches_source": true,
+  "arrow_navigation": true,
+  "escape_restores_main": true,
+  "minimum_size_text_accessible": true,
+  "close_button_and_reopen": true,
+  "window_close": true,
+  "update_dialog_preserved_without_network": true,
+  "shipped_exe_sha256": "7b9c2d88e178b7d2ab690f2e9bfc2cbfedbc2cb940c5720b1ce95bbf70b398b8",
+  "single_exe_non_admin": true,
+  "instrument_commands_sent": false
+}

@@ -1,0 +1,251 @@
+{
+  "release": {
+    "cache_tag": "1.4.7_f946d962f6eb",
+    "source": "analysis/single146/SAIV_IT_Runtime.exe",
+    "source_sha256": "3ca033ad72ef28635e1eeeeff224e4c3340947302f8c07b135e6ed06043c8f69",
+    "output": "SAIV_Instrument_Terminal_v1.4.7_Sept2026.exe",
+    "sha256": "1f97b68f7fb7ba5b18cc0ce369fbc202abd7d5b14217245ab0e41bf7ecdc865e",
+    "runtime_sha256": "e17d49fa4c87846ccec386ffacdacf8757909d2b5af082a22658aabe0b9d246c",
+    "dll_sha256": "3d4513396b4c409f068f865729b4deb967c512260f6721040802da3de5ca94a6",
+    "helper_sha256": "4070fe4428d2b659c937bf5cb13c40853b4dcd3c7f638aa0084e9f9db077a033",
+    "dependencies": [
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "msvcrt.dll",
+      "SHELL32.DLL",
+      "USER32.dll"
+    ],
+    "bytes": 12241400
+  },
+  "numeric": {
+    "result": "PASS 409 numerical, dispatch, legacy regression, domain, atomicity, profile, parser and preset checks\n",
+    "test_source_sha256": "580a6c258c680598690862fbc623cea1caab7c6937f948201976a4b7a62a61d1"
+  },
+  "native_equation_checks": 45,
+  "guide_topics": 31,
+  "gui": {
+    "pages": [
+      "Step 1 of 10: S - Practical Salinity (PSS-78)",
+      "Step 2 of 10: C - Conductivity (mS/cm)",
+      "Step 3 of 10: T - Temperature (Celsius)",
+      "Step 4 of 10: P - Sea pressure (dbar)",
+      "Step 5 of 10: OX - SAIV205 (%)",
+      "Step 6 of 10: OxR - RINKO (%)",
+      "Step 7 of 10: Par - PAR",
+      "Step 8 of 10: OF - Fluorescence (\u00b5g/L)",
+      "Step 9 of 10: OT - Turbidity (FTU)",
+      "Step 10 of 10: Derived seawater properties",
+      "Review supporting values and calculation conventions"
+    ],
+    "export": "C:\\cproject\\delphi\\SD200w_R2\\analysis\\runtime_test\\models147gui\\all_models_1789018680928507800.txt",
+    "values": {
+      "COUNT": "1",
+      "S": "32.539",
+      "C": "33.71963249253746",
+      "T": "7.773",
+      "P": "16.72",
+      "OX": "3.47",
+      "OxR": "100",
+      "Par": "2.5",
+      "OF": "5.67",
+      "OT": "1.08",
+      "DATE": "2026-09-01",
+      "TIME": "12:00:00",
+      "CT_TEOS10_degC": "7.80028616910921",
+      "Density_TEOS10_kg_m3": "1025.45094347855",
+      "Depth_m": "16.582851008404",
+      "OX_mL_L": "0.233920514224838",
+      "OX_mg_L": "0.334285588592129",
+      "OX_umol_L": "10.4470775858532",
+      "OX_umol_kg": "10.1877887502004",
+      "OxR_mL_L": "6.74122519379937",
+      "OxR_mg_L": "9.6335904493409",
+      "OxR_umol_L": "301.068518324298",
+      "OxR_umol_kg": "293.596217585026",
+      "SA_TEOS10_g_kg": "32.6906859124256",
+      "S_from_C": "32.5372587926786",
+      "Sigma0_TEOS10_kg_m3": "25.3744688214336",
+      "Sound_velocity_TEOS10_m_s": "1478.76827627317"
+    },
+    "preset_models_retained": true,
+    "legacy_43_rows": true,
+    "surface_support_back_and_atlas": true,
+    "native_import_and_reopen_preserve_model_columns": true,
+    "shipped_exe_sha256": "1f97b68f7fb7ba5b18cc0ce369fbc202abd7d5b14217245ab0e41bf7ecdc865e",
+    "single_exe_non_admin": true,
+    "instrument_commands_sent": false
+  },
+  "guide": {
+    "help_menu": [
+      [
+        "&Help",
+        4294967295
+      ],
+      [
+        "&Quick guide...",
+        32324
+      ],
+      [
+        "&About...",
+        86
+      ],
+      [
+        "",
+        0
+      ],
+      [
+        "&Update software...",
+        32321
+      ]
+    ],
+    "topics": [
+      {
+        "topic": "Start here",
+        "characters": 683
+      },
+      {
+        "topic": "Detect and terminal",
+        "characters": 729
+      },
+      {
+        "topic": "Download and save text",
+        "characters": 726
+      },
+      {
+        "topic": "Open and import files",
+        "characters": 727
+      },
+      {
+        "topic": "Convert and export",
+        "characters": 936
+      },
+      {
+        "topic": "Merge files",
+        "characters": 777
+      },
+      {
+        "topic": "Lists, graphs and print",
+        "characters": 702
+      },
+      {
+        "topic": "Interval and TIME/DATE",
+        "characters": 732
+      },
+      {
+        "topic": "Setup and Help",
+        "characters": 720
+      },
+      {
+        "topic": "Conversions and formulas",
+        "characters": 3657
+      },
+      {
+        "topic": "Conductivity and salinity",
+        "characters": 4729
+      },
+      {
+        "topic": "Temperature",
+        "characters": 3743
+      },
+      {
+        "topic": "Pressure and air pressure",
+        "characters": 2090
+      },
+      {
+        "topic": "Depth: modes and fjords",
+        "characters": 6120
+      },
+      {
+        "topic": "Density and Sigma T",
+        "characters": 2839
+      },
+      {
+        "topic": "Sound velocity",
+        "characters": 3245
+      },
+      {
+        "topic": "Oxygen: saturation and units",
+        "characters": 3879
+      },
+      {
+        "topic": "Oxygen: deep water and alternatives",
+        "characters": 3646
+      },
+      {
+        "topic": "Turbidity: FTU, NTU and FNU",
+        "characters": 2006
+      },
+      {
+        "topic": "Fluorescence",
+        "characters": 1539
+      },
+      {
+        "topic": "PAR and light units",
+        "characters": 1536
+      },
+      {
+        "topic": "Other calculations and limits",
+        "characters": 2526
+      },
+      {
+        "topic": "TEOS-10 and other choices",
+        "characters": 6167
+      },
+      {
+        "topic": "Verification and sources",
+        "characters": 3708
+      },
+      {
+        "topic": "Reference: salinity",
+        "characters": 431
+      },
+      {
+        "topic": "Reference: sound speed",
+        "characters": 723
+      },
+      {
+        "topic": "Reference: density",
+        "characters": 1068
+      },
+      {
+        "topic": "Reference: depth / oxygen",
+        "characters": 707
+      },
+      {
+        "topic": "Reference: worked examples",
+        "characters": 1375
+      },
+      {
+        "topic": "Reference: acoustic alternatives",
+        "characters": 1719
+      },
+      {
+        "topic": "GSW licence",
+        "characters": 1772
+      }
+    ],
+    "full_formula_text_matches_source": true,
+    "arrow_navigation": true,
+    "escape_restores_main": true,
+    "minimum_size_text_accessible": true,
+    "close_button_and_reopen": true,
+    "window_close": true,
+    "update_dialog_preserved_without_network": true,
+    "shipped_exe_sha256": "1f97b68f7fb7ba5b18cc0ce369fbc202abd7d5b14217245ab0e41bf7ecdc865e",
+    "single_exe_non_admin": true,
+    "instrument_commands_sent": false
+  },
+  "guide_example_provenance_omitted": true,
+  "SAIV_recommendation_last_in_conductivity": true,
+  "instrument_commands_sent": false,
+  "physical_calibration_validation": false,
+  "published_or_pushed": false,
+  "screenshots_visually_reviewed": [
+    "guide147/topic_10_end.png",
+    "guide147/topic_13.png",
+    "guide147/topic_25.png",
+    "models147gui/water.png",
+    "models147gui/oxygen.png",
+    "models147gui/surface_conditions.png"
+  ]
+}

@@ -4,6 +4,9 @@ struct Choices {
  bool keepC=true,keepP=true,keepPar=true,useGPS=false;
  double latitude=45.508368287,longitude=0,temperature=0,salinity=0,air=0;
  bool suppliedT=false,suppliedS=false;
+ // 0 retains the historical convention; modern models require a stated scale.
+ int temperatureScale=0,densityModel=0,soundModel=0,oxygenModel=0,oxygenOXModel=0,profileDirection=0;
+ bool absoluteSalinity=false,atlas=false,useCalculatedS=false;
  std::map<string,bool> keepOriginal;
 };
 // Callbacks 0 salinity, 1 sound velocity, 2 in-situ density anomaly, 3 gravity.
@@ -40,7 +43,7 @@ inline double realDepth(double pressure,double densityAnomaly,double gravity){
  double rho=1000+densityAnomaly;if(rho<=0||gravity<=0)throw std::runtime_error("Invalid density/gravity for depth calculation");
  return pressure*10000/(rho*gravity);
 }
-inline void calculate(Data&d,const Choices&o,Formula formula) {
+inline void calculateLegacy(Data&d,const Choices&o,Formula formula) {
  const bool ctd=canSal(d)&&complete(d,"T")&&complete(d,"P"),convertOxygen=wantsOxygen(d,o);
  if(o.conductivity&&(!complete(d,"C")||!complete(d,"T")||!complete(d,"P")))throw std::runtime_error("Converting C to S requires conductivity, temperature and pressure in every measurement");
  if(o.depth&&!complete(d,"P"))throw std::runtime_error("Real depth requires pressure in every measurement");
@@ -87,3 +90,4 @@ inline void calculate(Data&d,const Choices&o,Formula formula) {
  for(auto&choice:o.keepOriginal)if(!choice.second){removeField(d,choice.first);d.metadata.push_back("# Original field excluded by user: "+choice.first);}
  if(d.estimatedTime)d.metadata.push_back("# Full timestamps reconstructed from explicit logger header and interval; not measured per row");
 }
+#include "model_conversions.inc"

@@ -5,7 +5,7 @@ Oppdatert: 10. september 2026. Arbeidsmappe: `C:\cproject\delphi\SD200w_R2`.
 ## Start her neste gang
 
 1. Les dette notatet og brukerens nye oppgave.
-2. Nyeste lokale SIT-leveranse er **SAIV_Instrument_Terminal_v1.4.5_Sept2026.exe** paa `main`. Les [LES_MEG_Import_All_Fields_137.md](../LES_MEG_Import_All_Fields_137.md). Kunden trenger fortsatt bare EN EXE.
+2. Nyeste lokale SIT-leveranse er **SAIV_Instrument_Terminal_v1.4.10_Sept2026.exe**. Les [LES_MEG_Salinity_Guide_1410.md](../LES_MEG_Salinity_Guide_1410.md). Kunden trenger fortsatt bare EN EXE.
 3. Les relevante dokumenter og byggskript i `analysis` før patching. Mange skript krever en bestemt eldre kildefil og SHA-256; de kan ikke ukritisk kjøres på siste utgave.
 4. Lag en ny programkopi og behold tidligere leveranser. Verifiser relevante endringer og lever den konkrete EXE-filen.
 
@@ -15,7 +15,45 @@ Vi har ikke original Delphi-kildekode. Arbeidet består av analyse og patching a
 
 Brukeren har bedt om commit og push. Aktiv gren er `main`, med `origin/main` som upstream; grenen inneholder allerede SIT 1.4.3. Eldre notater om at main beholder 1.3.6 er historiske. Leveransen omfatter Studio 0.3.0/0.3.1, SIT 1.4.4/1.4.5, kildearkiver, bygggrunnlag og testdokumentasjon. Refererte bilder fra SIT-gjennomgangen bevares; fulle skrivebordsbilder og byggmellomfiler holdes lokalt. Git-push publiserer ikke oppdateringspakken paa saiv.no.
 
-## Nyeste SIT-leveranse: 1.4.5 - instrumentikon i About, 10. september 2026
+## Serverpakke 1.4.10 klargjort, 10. september 2026
+
+Brukeren ba om ny release i update_server for egen opplasting. Pakken inneholder den testede SIT 1.4.10-EXE-en, versjonsnotat med endringene siden 1.4.3 og miniz/GSW-lisenser. Last opp SAIV_Instrument_Terminal_v1.4.10_Sept2026.zip, README_v1.4.10.txt og latest.json sist til saiv.no/software. Se update_server/LAST_OPP_1.4.10.md. Eldre pakker er beholdt; gammel peker arkivert som latest_v1.4.3.json.
+
+ZIP-CRC, EXE-hash, versjonsressurs 1.4.10.0 og pakkeinnhold er kontrollert. Eksisterende 1.4.1-oppdateringshjelper har installert den faktiske serverpakken p? en isolert testkopi: feil SHA avvist, samme filsti bevart, byteidentisk backup og omstart uten administrator. Rapporter: analysis/update_server1410_validation.json og analysis/runtime_test/update1410/install_validation.json. Ingen serveropplasting, instrumentkommandoer, commit eller push.
+
+## Nyeste SIT-leveranse: 1.4.10 - S og instrumentets salinitetsmetode, 10. september 2026
+
+Brukeren ba om å rette salinitetsforklaringen i selve programmet. Quick guide sier nå uttrykkelig at SD208 beregner S fra C/T/P med PSS-78. S brukes i symbolforklaringer og eksempler; SP forklares én gang som fagbetegnelse for samme praktiske salinitet. Instrumentets lagrede S skilles fra ny beregning i Convert, og guiden forklarer at Convert ikke endrer instrumentets metode. Les [LES_MEG_Salinity_Guide_1410.md](../LES_MEG_Salinity_Guide_1410.md).
+
+En-EXE bygget og alle 26 guideemner kontrollert i faktisk program, inkludert full tekst, tastatur, rulling og lukking. Kun guide og programversjon endret. Tidligere 1.4.9-EXE og kilde bevart i analysis/reference/sit_import_v149. Bygg: analysis/build_single_exe_1410.py. Rapport: analysis/salinity_guide1410_release_validation.json. Ingen instrumentkommandoer, commit, push eller serverpublisering.
+
+## SIT-leveranse: 1.4.9 - enklere brukerguide, 10. september 2026
+
+Brukeren ba etter omstart om å fortsette med en enklere guide som handler om brukerens målinger og SIT-valg, uten omtale av hva som fantes i koden. Quick guide har nå 26 emner med betjening, praktiske metodevalg, enheter og korte eksempler. Temperatur og OSU107 er forenklet. Detaljert formeldokumentasjon er bevart utenfor guiden. Les [LES_MEG_Simple_Guide_149.md](../LES_MEG_Simple_Guide_149.md).
+
+En-EXE bygget og alle 26 emner kontrollert i faktisk program: full tekst, tastatur, rulling, minimumsstørrelse og lukking. Konteksthjelpens emnemål er kontrollert. Beregningskilder og tidligere 1.4.8-EXE er uendret; runtime-kontroll inngår i bygget. Rapport: analysis/simple_guide149_release_validation.json. Ingen instrumentkommandoer, commit, push eller serverpublisering. Bygg: analysis/build_single_exe_149.py. Historisk kilde bevart i analysis/reference/sit_import_v148.
+
+## SIT-leveranse: 1.4.8 - systemvurdering, 10. september 2026
+
+Quick guide har nå 33 emner. «System evaluation» gir en kort, enkel anbefaling; «System: measurement quality» forklarer kvalitet, fordeler og informasjonstap gjennom CTD/STD, SIT og OSU107. Start here viser til vurderingen. PSS-78/EOS-80/TEOS-10 og Steinhart-Hart, Kelvin-konstant og temperaturskala holdes tydelig fra hverandre. Les [LES_MEG_System_Evaluation_148.md](../LES_MEG_System_Evaluation_148.md).
+
+Kildegrunnlaget omfatter den nye asmCTDdoc-rapporten og OSU107-handover-notatene. Ingen udokumentert tallfesting av OSU107-kanalnøyaktighet eller årstall for temperaturendring. Ingen målefil, sted eller installasjon oppgis i guiden. Formler og metodeidentifikator 1.4.7 er bevart; denne utgaven endrer hjelpetekst og programversjon.
+
+Kontrollert: fire firmware/SIT-salinitetseksempler, 60 lydhastighetssammenligninger, uendrede beregningskilder og native runtime, samt alle 33 emner i faktisk en-EXE med full tekst, rulling, tastatur, lukking og kjøring uten administrator. Ingen instrumentkommandoer. Rapport: analysis/system_evaluation148_release_validation.json. Historisk 1.4.7-kilde er bevart i analysis/reference/sit_import_v147.
+
+## SIT-leveranse: 1.4.7 - formelguide og metodevalg, 10. september 2026
+
+Brukeren ba om dokumentasjon av faktiske SD200W/SIT-formler, regneeksempler uten m?lefil/sted, offentlige referanser og valgbare metoder i Convert. 1.4.6 utvidet guiden til 29 emner og er bevart som mellomleveranse; 1.4.7 har 31 emner inkludert akustikkreferanse og GSW-lisens, pluss egne metodevalg i Next-veiviseren og direkte konteksthjelp. Les [LES_MEG_Formulas_146.md](../LES_MEG_Formulas_146.md) og [LES_MEG_Conversion_Models_147.md](../LES_MEG_Conversion_Models_147.md).
+
+Convert tilbyr original PSS-78, GSW PSS-78/Hill, SA/CT, eksplisitt temperaturskala, seks trykk-/dybdevalg, fire tetthetsvalg, fem lydhastighetsmodeller og SIT/GSW-oksygen med fire konsentrasjonsenheter. Valg av beregnet S fra C kan overstyre eksisterende S som kilde til avledede beregninger. T/S/AP/GPS og referansesammensetning/atlas gjennomg?s; metode og antakelser f?lger eksporten. PAR, OF og OT har sine dokumenterte enhetsregler, uten en oppdiktet FTU/NTU/FNU-faktor. Eldre CTD/STD-tekst med Date/Time/Interval kan n? brukes direkte i Convert; rekonstruerte tider merkes.
+
+Den opprinnelige Delphi-kjernen er bevart. De nye modellvalgene gjelder Convert, ikke alle gamle Compute-/kalibreringsmenyer. SIT-lignende profilintegrasjon f?lger kontrollert normalregel; alle native maskerings-/offsetgrener er ikke rekonstruert. Nytt er ogs? kontroll av Kelvin-handlerens 273,16/273,15 og profilnormalregel; tidsskille per firmware/serienummer er fortsatt uavklart. Se oppdaterte FORMELKARTLEGGING/FORMELKONTROLL.
+
+Bygg: analysis/build_single_exe_147.py fra bevart 1.4.6-runtime. GSW-C er statisk lenket, med uendrede kildefiler/lisens og 3.06.16-atlasdata. Kunden trenger fortsatt bare ?n EXE. 1.4.5-/1.4.6-kilden er arkivert i analysis/reference/sit_import_v145 og sit_import_v146; historiske bygg bruker arkivene. Originaler og tidligere leveranser beholdes.
+
+409 numeriske/integrasjonstester inkluderer native regresjoner, offentlige GSW-eksempler, atlasreferanser, dyp til 4000 dbar, profiler, enheter, input-/feilgrenser, parser og innstillingsmigrering. Sluttrapport for faktisk EXE, alle 31 guideemner, Next/hjelp/eksport/SD2-gjen?pning og filhasher: analysis/models147_release_validation.json. SD2 beholder moderne feltnavn og verdier uten ? legge til automatisk feilmerket SIT-lydhastighet eller ekstra EOS-80-kolonne. Ingen instrumentkommandoer, fysisk kalibreringsvalidering, serverpublisering, commit eller push i dette arbeidet.
+
+## Tidligere SIT-leveranse: 1.4.5 - instrumentikon i About, 10. september 2026
 
 Brukeren ba om at det gamle instrumentbildet i Help > About skulle erstattes med det nye ikonet. About bruker naa samme 64-pikslers instrumentikon som icon/ctd_in_Cage.ico. Bildet er kodet som klassisk DIB for den gamle Delphi-visningen; RGBA-pikslene er beholdt. Resten av About og Quick guide er bevart. Les [LES_MEG_About_Icon_145.md](../LES_MEG_About_Icon_145.md).
 

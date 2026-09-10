@@ -1,0 +1,259 @@
+{
+  "runtime_sha256": "d32f6387c1a18d362e9bae698d98e6ef49f634598594dcae56a35277059797db",
+  "kelvin": {
+    "checked": 273.16,
+    "unchecked": 273.15
+  },
+  "checks": [
+    {
+      "test": "sound",
+      "native": 1506.663262608542,
+      "reference": 1506.6632626085423
+    },
+    {
+      "test": "rho anomaly",
+      "native": 25.97275386538328,
+      "reference": 25.972753865383083
+    },
+    {
+      "test": "sigma T",
+      "native": 25.97275386538326,
+      "reference": 25.972753865383083
+    },
+    {
+      "test": "legacy density",
+      "native": 25.990081984929077,
+      "reference": 25.990081984929077
+    },
+    {
+      "test": "sound",
+      "native": 1402.388,
+      "reference": 1402.388
+    },
+    {
+      "test": "rho anomaly",
+      "native": -0.157406,
+      "reference": -0.15740600000003724
+    },
+    {
+      "test": "sigma T",
+      "native": -0.15740600000003724,
+      "reference": -0.15740600000003724
+    },
+    {
+      "test": "legacy density",
+      "native": -0.09345363317982162,
+      "reference": -0.09345363317982197
+    },
+    {
+      "test": "sound",
+      "native": 1480.3900033749287,
+      "reference": 1480.390003374929
+    },
+    {
+      "test": "rho anomaly",
+      "native": 25.376992971749043,
+      "reference": 25.376992971748905
+    },
+    {
+      "test": "sigma T",
+      "native": 24.91882062970226,
+      "reference": 24.918820629702168
+    },
+    {
+      "test": "legacy density",
+      "native": 24.943386030150197,
+      "reference": 24.9433860301502
+    },
+    {
+      "test": "sound",
+      "native": 1538.1161454020735,
+      "reference": 1538.1161454020735
+    },
+    {
+      "test": "rho anomaly",
+      "native": 29.087115066672997,
+      "reference": 29.087115066672823
+    },
+    {
+      "test": "sigma T",
+      "native": 24.76300499427553,
+      "reference": 24.763004994275434
+    },
+    {
+      "test": "legacy density",
+      "native": 24.780840608730426,
+      "reference": 24.780840608730422
+    },
+    {
+      "test": "sound",
+      "native": 1531.9453539915671,
+      "reference": 1531.945353991567
+    },
+    {
+      "test": "rho anomaly",
+      "native": 49.877975901486366,
+      "reference": 49.87797590148625
+    },
+    {
+      "test": "sigma T",
+      "native": 31.98223063936148,
+      "reference": 31.982230639361433
+    },
+    {
+      "test": "legacy density",
+      "native": 32.000553700141275,
+      "reference": 32.000553700141275
+    },
+    {
+      "test": "sound",
+      "native": 1478.8273740930208,
+      "reference": 1478.8273740930208
+    },
+    {
+      "test": "rho anomaly",
+      "native": 25.45100788093691,
+      "reference": 25.451007880936913
+    },
+    {
+      "test": "sigma T",
+      "native": 25.37431735545396,
+      "reference": 25.374317355453968
+    },
+    {
+      "test": "legacy density",
+      "native": 25.397967777405608,
+      "reference": 25.39796777740561
+    },
+    {
+      "test": "salinity",
+      "native": 26.82414973414006,
+      "reference": 26.824149734140065
+    },
+    {
+      "test": "salinity",
+      "native": 0.03026681338759368,
+      "reference": 0.030266813387593683
+    },
+    {
+      "test": "salinity",
+      "native": 0.0,
+      "reference": 0.0
+    },
+    {
+      "test": "salinity",
+      "native": 0.012827526436315587,
+      "reference": 0.012827526436315587
+    },
+    {
+      "test": "salinity",
+      "native": 39.99671808750184,
+      "reference": 39.99671808750185
+    },
+    {
+      "test": "oxygen normal",
+      "native": 9.092426630320016,
+      "reference": 9.092426630319705
+    },
+    {
+      "test": "oxygen normal",
+      "native": 8.303630609782784,
+      "reference": 8.303630609782942
+    },
+    {
+      "test": "oxygen normal",
+      "native": 8.78599291332389,
+      "reference": 8.785992913323499
+    },
+    {
+      "test": "temperature four coefficients",
+      "native": 23.3131246714741,
+      "reference": 23.3131246714741
+    },
+    {
+      "test": "temperature three coefficients",
+      "native": 23.3131246714741,
+      "reference": 23.3131246714741
+    },
+    {
+      "test": "temperature four coefficients",
+      "native": 22.569367536240314,
+      "reference": 22.569367536240293
+    },
+    {
+      "test": "temperature four coefficients",
+      "native": 23.323124671474147,
+      "reference": 23.323124671474147
+    },
+    {
+      "test": "temperature three coefficients",
+      "native": 23.323124671474147,
+      "reference": 23.323124671474147
+    },
+    {
+      "test": "temperature four coefficients",
+      "native": 22.579367536240362,
+      "reference": 22.57936753624034
+    },
+    {
+      "test": "native profile layer with controlled rho/g",
+      "native": 1.0142965092985632,
+      "reference": 1.0142965092985632
+    },
+    {
+      "test": "native profile layer with controlled rho/g",
+      "native": 9.999560676065066,
+      "reference": 9.999560676065066
+    },
+    {
+      "test": "native profile layer with controlled rho/g",
+      "native": 24.843344693070105,
+      "reference": 24.843344693070105
+    },
+    {
+      "test": "native profile interpolation",
+      "native": 0.5071482546492816,
+      "reference": 0.5071482546492816
+    },
+    {
+      "test": "native profile interpolation",
+      "native": 5.007747250083676,
+      "reference": 5.007747250083675
+    },
+    {
+      "test": "native profile interpolation",
+      "native": 19.89541668740176,
+      "reference": 19.895416687401756
+    },
+    {
+      "test": "inverse salinity round trip",
+      "native": 32.53900000000001,
+      "reference": 32.539
+    }
+  ],
+  "example": {
+    "S": 32.539,
+    "T": 7.773,
+    "P": 16.72,
+    "AP_hPa": 925.0,
+    "percent": 3.47,
+    "inverse_C": 33.71963249253746,
+    "C_rounded6_to_S": 32.538999472679016,
+    "rho": 1025.451007880937,
+    "sigmaT": 25.374317355453968,
+    "gravity": 9.806668258240103,
+    "depth": 16.626463094374223,
+    "unesco": 16.582827945644706,
+    "sound": 1478.8273740930208,
+    "fahrenheit": 45.9914,
+    "oxygen100": 8.785992913323499,
+    "mg_L": 0.3048739540923254,
+    "mL_L": 0.21333935577477522,
+    "umol_L": 9.52790655954514,
+    "umol_kg": 9.29143029390967,
+    "AP_mmHg": 693.807056501357,
+    "two_layer_depth": 16.628819227954484
+  },
+  "profile_scope": "Native recurrence and interpolation with controlled density/gravity; not whole-file profiling acceptance",
+  "instrument_commands": false
+}

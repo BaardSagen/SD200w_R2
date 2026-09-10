@@ -76,7 +76,7 @@ static void openNativeGraph(uintptr_t main,bool single,int tag=-1,bool depth=fal
  nativeGraph=nc(0x4ed74,nd(nativeBase()+0x153b18),1,main);nd(slot)=nativeGraph;singleNative=single;channelPanel=0;
  nativeSlots.fill(-1);nativeColumns.clear();for(size_t i=0;i<nativeData.fields.size();++i){auto f=nativeData.fields[i];if(!sitnative::separator(f)&&!sitnative::dateField(f)&&!sitnative::timeField(f))nativeColumns.push_back(int(i));}
  int n=0;for(int col:nativeColumns){auto f=nativeData.fields[col];if(f=="COUNT"||sitnative::suffix(f,"_COUNT")||sitnative::suffix(f,"_Delta_seconds"))continue;nativeSlots[n++]=col;if(n==(single?1:10))break;}if(n==0&&!nativeColumns.empty())nativeSlots[0]=nativeColumns[0];
- if(single){std::vector<std::string> wanted;if(tag==0)wanted={"S","S_from_C","Salinity_SIT","T","T_degF"};else if(tag==6)wanted={"C","T","T_degF"};else if(tag==1)wanted={"Sound_velocity_SIT_m_s","Density_anomaly_SIT_kg_m3"};else if(tag==2)wanted={"OX","OxR","OxR_mg_L","OxR_mL_L"};else if(tag==3)wanted={"Depth_m","P"};else if(tag==4)wanted={"OF","Par"};else if(tag==5)wanted={"OT","Tilt"};else wanted={"T","T_degF","Par"};int selected=0;for(auto&name:wanted){int col=sit::index(nativeData,name);if(col>=0){if(selected==0)nativeSlots.fill(-1);nativeSlots[selected++]=col;if(selected==2)break;}}}
+ if(single){std::vector<std::string> wanted;if(tag==0)wanted={"S","S_from_C","Salinity_SIT","T","T_degF"};else if(tag==6)wanted={"C","T","T_degF"};else if(tag==1)wanted={"Sound_velocity_TEOS10_m_s","Sound_velocity_Mackenzie_m_s","Sound_velocity_DelGrosso_m_s","Sound_velocity_NPL_m_s","Sound_velocity_SIT_m_s","Density_TEOS10_kg_m3","SigmaT_EOS80_kg_m3","Density_anomaly_legacy_kg_m3","Density_anomaly_SIT_kg_m3"};else if(tag==2)wanted={"OX","OxR","OxR_mg_L","OxR_mL_L"};else if(tag==3)wanted={"Depth_m","P"};else if(tag==4)wanted={"OF","Par"};else if(tag==5)wanted={"OT","Tilt"};else wanted={"T","T_degF","Par"};int selected=0;for(auto&name:wanted){int col=sit::index(nativeData,name);if(col>=0){if(selected==0)nativeSlots.fill(-1);nativeSlots[selected++]=col;if(selected==2)break;}}}
  nd(nd(nativeGraph+0x350)+0x200)=depth&&(sit::index(nativeData,"Depth_m")>=0||sit::index(nativeData,"P")>=0)?0:1;
  nativeText(nativeGraph,0x3795c,std::string(single?"Graph - ":"Multigraph - ")+utf8(nativePath.substr(nativePath.find_last_of(L"\\/")+1)));
  nc(0x52d0c,nativeGraph);nativeSelectors(nativeGraph,single);fillNativeGraph(nativeGraph);
@@ -98,9 +98,14 @@ static void loadNative(){
  auto raw=readFile(sf);auto end=raw.find('\n');auto header=sit::trim(raw.substr(0,end));if(end==std::string::npos||header!="# SIT native fields 1 "+sitnative::hexhash(readFile(nativePath)))throw std::runtime_error("The SD2 and SF2 files do not match. Import the source again to restore the complete dataset.");
  nativeData.source=utf8(nativePath);if(!sitnative::parse(raw.substr(end+1),nativeData))throw std::runtime_error("Invalid native extra-field file");int da=sit::index(nativeData,"DATE"),ti=sit::index(nativeData,"TIME");for(auto&r:nativeData.rows)nativeTimes.push_back(sitnative::timestamp(r[da],r[ti]));auto sd=readFile(nativePath);if(sd.size()!=52+52*nativeData.rows.size())throw std::runtime_error("Native row count mismatch");
  auto addDerived=[&](const char*name,int offset){std::vector<std::string> values;bool any=false;for(size_t i=0;i<nativeData.rows.size();++i){double v;std::memcpy(&v,sd.data()+52+i*52+offset,8);values.push_back(v==-999.?"":sit::fmt(v));any=any||v!=-999.;}if(any)sit::append(nativeData,name,values);};
+ // Model exports are complete: do not relabel their projected sound speed as
+ // legacy SIT, or silently append density with an unspecified temperature scale.
+ bool explicitModels=false;for(auto&m:nativeData.metadata)if(m.find("SIT conversion methods 1.4.7")!=std::string::npos)explicitModels=true;
+ if(!explicitModels){
  if(sit::index(nativeData,"S")<0&&sit::index(nativeData,"S_from_C")<0&&sit::index(nativeData,"Salinity_SIT")<0)addDerived("S_from_C",12);
  if(sit::index(nativeData,"Sound_velocity_SIT_m_s")<0)addDerived("Sound_velocity_SIT_m_s",44);
  if(sit::index(nativeData,"Density_anomaly_SIT_kg_m3")<0){std::vector<std::string> values;bool any=false;for(size_t i=0;i<nativeData.rows.size();++i){double sal,t,p;std::memcpy(&sal,sd.data()+52+i*52+12,8);std::memcpy(&t,sd.data()+52+i*52+28,8);std::memcpy(&p,sd.data()+52+i*52+36,8);bool valid=sal!=-999&&t!=-999&&p!=-999;values.push_back(valid?sit::fmt(formula(2,p,t,sal)):"");any=any||valid;}if(any)sit::append(nativeData,"Density_anomaly_SIT_kg_m3",values);}
+ }
 
  nativeActive=true;uintptr_t main=nd(nativeBase()+0x1c8964);HWND h=HWND(nd(main+0x14c));SetWindowSubclass(h,nativeMainSubclass,137,0);PostMessageW(h,WM_APP+137,0,0);
 }

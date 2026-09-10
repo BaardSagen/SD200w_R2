@@ -1,0 +1,22 @@
+{
+  "changed_source_files": [
+    "formula_guide.inc",
+    "quick_guide.inc",
+    "update_ui.inc"
+  ],
+  "calculation_sources_unchanged": true,
+  "context_help_targets_present": [
+    "Conductivity and salinity",
+    "Conversions and formulas",
+    "Depth: modes and fjords",
+    "Fluorescence",
+    "Oxygen: saturation and units",
+    "PAR and light units",
+    "Sound velocity",
+    "TEOS-10 and other choices",
+    "Temperature",
+    "Turbidity: FTU, NTU and FNU"
+  ],
+  "total_guide_topics": 26,
+  "customer_text_review": true
+}

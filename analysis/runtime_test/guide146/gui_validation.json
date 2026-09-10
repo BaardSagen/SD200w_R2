@@ -1,0 +1,151 @@
+{
+  "help_menu": [
+    [
+      "&Help",
+      4294967295
+    ],
+    [
+      "&Quick guide...",
+      32324
+    ],
+    [
+      "&About...",
+      86
+    ],
+    [
+      "",
+      0
+    ],
+    [
+      "&Update software...",
+      32321
+    ]
+  ],
+  "topics": [
+    {
+      "topic": "Start here",
+      "characters": 683
+    },
+    {
+      "topic": "Detect and terminal",
+      "characters": 729
+    },
+    {
+      "topic": "Download and save text",
+      "characters": 726
+    },
+    {
+      "topic": "Open and import files",
+      "characters": 727
+    },
+    {
+      "topic": "Convert and export",
+      "characters": 936
+    },
+    {
+      "topic": "Merge files",
+      "characters": 777
+    },
+    {
+      "topic": "Lists, graphs and print",
+      "characters": 702
+    },
+    {
+      "topic": "Interval and TIME/DATE",
+      "characters": 732
+    },
+    {
+      "topic": "Setup and Help",
+      "characters": 720
+    },
+    {
+      "topic": "Conversions and formulas",
+      "characters": 3554
+    },
+    {
+      "topic": "Conductivity and salinity",
+      "characters": 4177
+    },
+    {
+      "topic": "Temperature",
+      "characters": 3572
+    },
+    {
+      "topic": "Pressure and air pressure",
+      "characters": 2090
+    },
+    {
+      "topic": "Depth: modes and fjords",
+      "characters": 4819
+    },
+    {
+      "topic": "Density and Sigma T",
+      "characters": 2609
+    },
+    {
+      "topic": "Sound velocity",
+      "characters": 2367
+    },
+    {
+      "topic": "Oxygen: saturation and units",
+      "characters": 3634
+    },
+    {
+      "topic": "Oxygen: deep water and alternatives",
+      "characters": 3344
+    },
+    {
+      "topic": "Turbidity: FTU, NTU and FNU",
+      "characters": 2006
+    },
+    {
+      "topic": "Fluorescence",
+      "characters": 1539
+    },
+    {
+      "topic": "PAR and light units",
+      "characters": 1536
+    },
+    {
+      "topic": "Other calculations and limits",
+      "characters": 2526
+    },
+    {
+      "topic": "TEOS-10 and other choices",
+      "characters": 2958
+    },
+    {
+      "topic": "Verification and sources",
+      "characters": 3651
+    },
+    {
+      "topic": "Reference: salinity",
+      "characters": 431
+    },
+    {
+      "topic": "Reference: sound speed",
+      "characters": 723
+    },
+    {
+      "topic": "Reference: density",
+      "characters": 1068
+    },
+    {
+      "topic": "Reference: depth / oxygen",
+      "characters": 707
+    },
+    {
+      "topic": "Reference: worked examples",
+      "characters": 1375
+    }
+  ],
+  "full_formula_text_matches_source": true,
+  "arrow_navigation": true,
+  "escape_restores_main": true,
+  "minimum_size_text_accessible": true,
+  "close_button_and_reopen": true,
+  "window_close": true,
+  "update_dialog_preserved_without_network": true,
+  "single_exe_non_admin": true,
+  "instrument_commands_sent": false
+}

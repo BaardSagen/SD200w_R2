@@ -36,17 +36,19 @@ struct Files {std::string sd,rf,ox,op,sf;};
 inline Files project(const sit::Data&d,const std::string&original,sit::Formula formula){
  Files f;bool hasS=sit::index(d,"S")>=0||sit::index(d,"S_from_C")>=0||sit::index(d,"Salinity_SIT")>=0;
  bool ctd=sit::index(d,"C")>=0&&(sit::index(d,"T")>=0||sit::index(d,"T_degF")>=0)&&sit::index(d,"P")>=0;
- uint32_t flags=(hasS||ctd?1:0)|(sit::index(d,"C")>=0?2:0)|(sit::index(d,"T")>=0||sit::index(d,"T_degF")>=0?4:0)|(sit::index(d,"P")>=0?8:0)|(ctd||(hasS&&(sit::index(d,"T")>=0||sit::index(d,"T_degF")>=0)&&sit::index(d,"P")>=0)||sit::index(d,"Sound_velocity_SIT_m_s")>=0?16:0)|(sit::index(d,"OX")>=0?64:0)|(sit::index(d,"OF")>=0?256:0)|(sit::index(d,"OT")>=0?512:0);
+ uint32_t flags=(hasS||ctd?1:0)|(sit::index(d,"C")>=0?2:0)|(sit::index(d,"T")>=0||sit::index(d,"T_degF")>=0?4:0)|(sit::index(d,"P")>=0?8:0)|(ctd||(hasS&&(sit::index(d,"T")>=0||sit::index(d,"T_degF")>=0)&&sit::index(d,"P")>=0)||sit::index(d,"Sound_velocity_SIT_m_s")>=0||sit::index(d,"Sound_velocity_TEOS10_m_s")>=0||sit::index(d,"Sound_velocity_Mackenzie_m_s")>=0||sit::index(d,"Sound_velocity_DelGrosso_m_s")>=0||sit::index(d,"Sound_velocity_NPL_m_s")>=0?16:0)|(sit::index(d,"OX")>=0?64:0)|(sit::index(d,"OF")>=0?256:0)|(sit::index(d,"OT")>=0?512:0);
  int32_t serial=0;std::smatch m;for(auto&l:d.metadata)if(l.find("M1_header:")==std::string::npos&&l.find("M2_header:")==std::string::npos&&std::regex_search(l,m,std::regex("Ser No ([0-9]+)"))){serial=std::stoi(m[1]);break;}
  if(!serial)for(auto&l:d.metadata)if(l.find("M1_header:")==std::string::npos&&l.find("M2_header:")==std::string::npos&&std::regex_search(l,m,std::regex("Ser:([0-9]+)"))){serial=std::stoi(m[1]);break;}
  append<int16_t>(f.sd,12);append<int32_t>(f.sd,serial);append<uint32_t>(f.sd,flags);append<uint8_t>(f.sd,5);append<uint8_t>(f.sd,1);append<int16_t>(f.sd,12);f.sd.resize(52,0);
  const int da=sit::index(d,"DATE"),ti=sit::index(d,"TIME");
  for(size_t i=0;i<d.rows.size();++i){auto&r=d.rows[i];auto date=r[da],time=r[ti];int year=std::stoi(date.substr(0,4));if(year<1981||year>2079)throw std::runtime_error("Native SD2 requires years 1981 through 2079");
   append<uint8_t>(f.sd,year%100);append<uint8_t>(f.sd,std::stoi(date.substr(5,2)));append<uint8_t>(f.sd,std::stoi(date.substr(8,2)));append<uint8_t>(f.sd,std::stoi(time.substr(0,2)));append<uint8_t>(f.sd,std::stoi(time.substr(3,2)));append<uint8_t>(f.sd,std::stoi(time.substr(6,2)));append<uint16_t>(f.sd,0);append<uint32_t>(f.sd,uint32_t(i+1));
-  double c=value(d,i,{"C"}),t=value(d,i,{"T"}),p=value(d,i,{"P"}),s=value(d,i,{"S","S_from_C","Salinity_SIT"}),v=value(d,i,{"Sound_velocity_SIT_m_s"});
+  double c=value(d,i,{"C"}),t=value(d,i,{"T"}),p=value(d,i,{"P"}),s=value(d,i,{"S","S_from_C","Salinity_SIT"}),v=value(d,i,{"Sound_velocity_TEOS10_m_s","Sound_velocity_Mackenzie_m_s","Sound_velocity_DelGrosso_m_s","Sound_velocity_NPL_m_s","Sound_velocity_SIT_m_s"});
+  for(auto& meta:d.metadata)if(meta.find("Salinity input=selected C-derived")!=std::string::npos){double selected=value(d,i,{"S_from_C"});if(selected!=-999)s=selected;}
   if(t==-999){double fahrenheit=value(d,i,{"T_degF"});if(fahrenheit!=-999)t=(fahrenheit-32)/1.8;}
-  if(s==-999&&c!=-999&&t!=-999&&p!=-999)s=formula(0,c,t,p);
-  if(v==-999&&s!=-999&&t!=-999&&p!=-999)v=formula(1,p,t,s);
+  double equationT=t;for(auto&meta:d.metadata)if(meta.find("SIT conversion methods 1.4.7; temperature input=ITS-90")!=std::string::npos)equationT=t*1.00024;
+  if(s==-999&&c!=-999&&t!=-999&&p!=-999)s=formula(0,p,c,equationT);
+  if(v==-999&&s!=-999&&t!=-999&&p!=-999)v=formula(1,p,equationT,s);
   for(double n:{s,c,t,p,v})append<double>(f.sd,n);
   if(flags&64)append<float>(f.ox,float(value(d,i,{"OX"})));
   if(flags&768){append<float>(f.op,float(value(d,i,{"OF"})));append<float>(f.op,float(value(d,i,{"OT"})));}

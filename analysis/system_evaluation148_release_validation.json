@@ -1,0 +1,235 @@
+{
+  "release": {
+    "cache_tag": "1.4.8_a188c3d1fa14",
+    "source": "analysis/single146/SAIV_IT_Runtime.exe",
+    "source_sha256": "3ca033ad72ef28635e1eeeeff224e4c3340947302f8c07b135e6ed06043c8f69",
+    "output": "SAIV_Instrument_Terminal_v1.4.8_Sept2026.exe",
+    "sha256": "853c770818ac96ea3222f7ca56b7c764198fefebbfde75833f6a74fb98b6c120",
+    "runtime_sha256": "ced1e0cccd084ad8c13017d5dd03e3602a0674ca507c6804923c729394808297",
+    "dll_sha256": "f1731b27dcb70c17e798543ab962405164b8990aeda31fb5cfbcee9f1a1e9d4c",
+    "helper_sha256": "4070fe4428d2b659c937bf5cb13c40853b4dcd3c7f638aa0084e9f9db077a033",
+    "dependencies": [
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "msvcrt.dll",
+      "SHELL32.DLL",
+      "USER32.dll"
+    ],
+    "bytes": 12272632
+  },
+  "gui": {
+    "help_menu": [
+      [
+        "&Help",
+        4294967295
+      ],
+      [
+        "&Quick guide...",
+        32324
+      ],
+      [
+        "&About...",
+        86
+      ],
+      [
+        "",
+        0
+      ],
+      [
+        "&Update software...",
+        32321
+      ]
+    ],
+    "topics": [
+      {
+        "topic": "Start here",
+        "characters": 871
+      },
+      {
+        "topic": "Detect and terminal",
+        "characters": 729
+      },
+      {
+        "topic": "Download and save text",
+        "characters": 726
+      },
+      {
+        "topic": "Open and import files",
+        "characters": 727
+      },
+      {
+        "topic": "Convert and export",
+        "characters": 936
+      },
+      {
+        "topic": "Merge files",
+        "characters": 777
+      },
+      {
+        "topic": "Lists, graphs and print",
+        "characters": 702
+      },
+      {
+        "topic": "Interval and TIME/DATE",
+        "characters": 732
+      },
+      {
+        "topic": "Setup and Help",
+        "characters": 720
+      },
+      {
+        "topic": "System evaluation",
+        "characters": 3536
+      },
+      {
+        "topic": "System: measurement quality",
+        "characters": 11805
+      },
+      {
+        "topic": "Conversions and formulas",
+        "characters": 3657
+      },
+      {
+        "topic": "Conductivity and salinity",
+        "characters": 4729
+      },
+      {
+        "topic": "Temperature",
+        "characters": 3743
+      },
+      {
+        "topic": "Pressure and air pressure",
+        "characters": 2090
+      },
+      {
+        "topic": "Depth: modes and fjords",
+        "characters": 6120
+      },
+      {
+        "topic": "Density and Sigma T",
+        "characters": 2839
+      },
+      {
+        "topic": "Sound velocity",
+        "characters": 3245
+      },
+      {
+        "topic": "Oxygen: saturation and units",
+        "characters": 3879
+      },
+      {
+        "topic": "Oxygen: deep water and alternatives",
+        "characters": 3646
+      },
+      {
+        "topic": "Turbidity: FTU, NTU and FNU",
+        "characters": 2006
+      },
+      {
+        "topic": "Fluorescence",
+        "characters": 1539
+      },
+      {
+        "topic": "PAR and light units",
+        "characters": 1536
+      },
+      {
+        "topic": "Other calculations and limits",
+        "characters": 2526
+      },
+      {
+        "topic": "TEOS-10 and other choices",
+        "characters": 6167
+      },
+      {
+        "topic": "Verification and sources",
+        "characters": 3708
+      },
+      {
+        "topic": "Reference: salinity",
+        "characters": 431
+      },
+      {
+        "topic": "Reference: sound speed",
+        "characters": 723
+      },
+      {
+        "topic": "Reference: density",
+        "characters": 1068
+      },
+      {
+        "topic": "Reference: depth / oxygen",
+        "characters": 707
+      },
+      {
+        "topic": "Reference: worked examples",
+        "characters": 1375
+      },
+      {
+        "topic": "Reference: acoustic alternatives",
+        "characters": 1719
+      },
+      {
+        "topic": "GSW licence",
+        "characters": 1772
+      }
+    ],
+    "full_formula_text_matches_source": true,
+    "arrow_navigation": true,
+    "escape_restores_main": true,
+    "minimum_size_text_accessible": true,
+    "close_button_and_reopen": true,
+    "window_close": true,
+    "update_dialog_preserved_without_network": true,
+    "shipped_exe_sha256": "853c770818ac96ea3222f7ca56b7c764198fefebbfde75833f6a74fb98b6c120",
+    "single_exe_non_admin": true,
+    "instrument_commands_sent": false
+  },
+  "assessment": {
+    "examples": [
+      {
+        "C": 42.914,
+        "T": 15,
+        "P": 0,
+        "firmware_SP": 34.9999985947346,
+        "native_SP": 34.99999992412808,
+        "difference": -1.3293934841840382e-06
+      },
+      {
+        "C": 40,
+        "T": 10,
+        "P": 1000,
+        "firmware_SP": 36.4998896192244,
+        "native_SP": 36.49989100664118,
+        "difference": -1.387416780573858e-06
+      },
+      {
+        "C": 30,
+        "T": 10,
+        "P": 100,
+        "firmware_SP": 26.824148729056635,
+        "native_SP": 26.824149734140065,
+        "difference": -1.0050834298169775e-06
+      },
+      {
+        "C": 0,
+        "T": 15,
+        "P": 0,
+        "firmware_SP": 0.0,
+        "native_SP": 0.0,
+        "difference": 0.0
+      }
+    ],
+    "sound_comparisons": 60,
+    "changed_import_files": [
+      "formula_guide.inc",
+      "quick_guide.inc",
+      "update_ui.inc"
+    ],
+    "summary_words": 487,
+    "privacy_check": true,
+    "calculation_sources_unchanged": true
+  },
+  "previous_release_preserved": true,
+  "conductivity_final_recommendation_preserved": true
+}

@@ -354,3 +354,14 @@ def oxygen_saturation_mg_l(S,T,air_mmHg):
 ## Etterf?lgende kontroll av mulige feil
 
 Se [FORMELKONTROLL.md](FORMELKONTROLL.md) for referansetester og funn om oksygenets faste saltholdighet, ugyldige inndata, lavsalinitet og temperaturskala. Den inverse saltholdighetsrutinen er n? kontrollert i tre numeriske rundturer. Oksygenets normalgren er ogs? sammenlignet med rekonstruksjonen i tre pr?ver.
+
+
+## Tillegg 10. september 2026: guide og metodevalg 1.4.6/1.4.7
+
+Temperaturhandleren cbKelvinCelsiusClick er identifisert ved 0x00545FF4. Avkrysset Old Kelvin constant skriver 273,16 (0x00546009); uten hake skrives 273,15 (0x0054601D). Handleren starter ogs? ny tilpasning av koeffisientene. Firekoeffisient-rutinen 0x0052A320 bruker 1/(a+b*ln(R)+c*ln(R)^2+d*ln(R)^3)-K0; trekoeffisient-rutinen 0x0052A2EC utelater c-leddet. Samme motstand og koeffisienter gir 0,01 C lavere T med gammel konstant. ?rsgrense/serienummergrense etter 2000 er ikke bevist av Windows-koden.
+
+Profilgrenen 0x0050D5A4/mode 3 bygger dybdetabell via 0x0050D374. Ved nye trykkmaksima bruker 0x0050D1E0 endepunktsregelen z_i=z_prev+10000*(P_i-P_prev)/(rho_i*g_i); f?rste positive punkt skaleres fra null. 0x0050D024 interpolerer mellom trykk-/dybdeknuter ved trykk innenfor tabellen. Retningen kan reverseres. Normalregel og interpolasjon er kontrollert med native kode og kontrollerte tetthets-/gravitasjonskall; alle maske-/offset-/profilavgrensningsgrener er ikke validert.
+
+45 kontroller inklusive tidligere kjerneformler: analysis/formula_guide146_validation.json og analysis/verify_formula_guide146.py. Guidens Python-referanse i docs/SIT_FORMULA_REFERENCE.md inneholder alle rekonstruerte kjernekoeffisienter.
+
+1.4.7 tilbyr eksplisitte alternativer i Convert: GSW PSS-78/Hill, SA/CT, TEOS-10 eksakt tetthet/lydhastighet, flere dybdemetoder, Garcia-Gordon oksygen og akustiske alternativer. Implementasjonen og begrensningene beskrives i ../LES_MEG_Conversion_Models_147.md og ../docs/SIT_CONVERSIONS_AND_FORMULAS.md. Den gamle Delphi-kjernen bruker fortsatt sine opprinnelige formler. Ny SIT-lignende profilmodus er en dokumentert implementasjon av normalregelen, ikke et l?fte om identitet med alle native profiler.

@@ -2,23 +2,19 @@
 
 Windows-program for kommunikasjon med SAIV-instrumenter og loggere.
 
-## Ny lokal leveranse
+## Siste leveranse: 1.4.10
 
-[SAIV Instrument Terminal 1.3.5](SAIV_Instrument_Terminal_v1.3.5_Sept2026.exe) leveres som **en EXE-fil**. Convert har Fahrenheit-valg med valgfri original Celsius-kolonne, og PAR-forklaringen viser ut-enheten. Valgene huskes, og eksisterende SD200W-beregninger er beholdt. Les [LES_MEG_Fahrenheit_PAR_135.md](LES_MEG_Fahrenheit_PAR_135.md).
+**[Last ned SAIV Instrument Terminal 1.4.10](https://github.com/BaardSagen/SD200w_R2/raw/refs/heads/main/SAIV_Instrument_Terminal_v1.4.10_Sept2026.exe)**
 
-## Nyeste tidligere verifiserte leveranse
+Programmet leveres som ?n EXE med innebygde komponenter. Convert tilbyr valg av beregningsmetoder og enheter. Help > Quick guide har 26 emner med betjening, forklaringer og eksempler; salinitetsemnet forklarer SD208s PSS-78-beregning og betegnelsen S.
 
-[SD200W 1.0.3 Sept.2026](SD200W_SAIV_v1.0.3_Sept2026.exe) har mindre About/Disclaimer og OSU017 / SurfaceLogger i instrumentlisten. Se [LES_MEG_Compact_About.md](LES_MEG_Compact_About.md). Denne utgaven er foreløpig ikke publisert til GitHub.
+Les [salinitetsguiden for 1.4.10](LES_MEG_Salinity_Guide_1410.md) og [metodevalgene i Convert](LES_MEG_Conversion_Models_147.md).
 
-## Publisert nedlasting (1.0.1)
+Serverpakken ligger i [update_server](update_server). F?lg [opplastingsrekkef?lgen](update_server/LAST_OPP_1.4.10.md), med latest.json sist. GitHub-push laster ikke opp pakken til saiv.no.
 
-**[Last ned SD200W 1.0.1 Sept.2026](https://github.com/BaardSagen/SD200w_R2/raw/refs/heads/main/SD200W_SAIV_v1.0.1_Sept2026.exe)**
+SHA-256 for EXE: `d7e765a163ee20da144a2b61ebf7376218a125e318a30f4982b646ff8d4bd731`.
 
-Versjon i About og Windows-filinformasjon: **1.0.1 Sept.2026**.
-
-SHA-256: `ebd75cdb4b93ff2e703b518550dfd2bce51490d8f12b6f0cb6f311f0a5f92068`.
-
-Programfilen er usignert. Windows kan vise en advarsel ved første oppstart.
+Tidligere leveranser er bevart som historikk og bygggrunnlag. Se [prosjektstatus](sd200DOc/PROSJEKTSTATUS.md) for tester og begrensninger.
 
 ## Funksjoner
 

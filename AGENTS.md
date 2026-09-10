@@ -2,13 +2,13 @@
 
 Ved arbeid med SAIV Instrument Terminal (tidligere MiniSoft SD200W), les først [sd200DOc/PROSJEKTSTATUS.md](sd200DOc/PROSJEKTSTATUS.md). Det beskriver siste leveranse, tidligere endringer, tester og åpne punkter.
 
-Siste lokale leveranse per 9. september 2026 er `SAIV_Instrument_Terminal_v1.3.5_Sept2026.exe`. Ikke velg en eldre EXE bare fordi navnet inneholder `final` eller den vises i et gammelt skjermbilde. Kontroller statusnotatet og brukerens nyere instruksjoner.
+Siste lokale leveranse per 10. september 2026 er `SAIV_Instrument_Terminal_v1.4.10_Sept2026.exe`. Les `LES_MEG_Salinity_Guide_1410.md` for salinitetsforklaring i brukerguiden og `LES_MEG_Conversion_Models_147.md` for beregningsvalg. Ikke velg en eldre EXE bare fordi navnet inneholder `final` eller den vises i et gammelt skjermbilde. Kontroller statusnotatet og brukerens nyere instruksjoner.
 
-Formelarbeidet er dokumentert i `sd200DOc/FORMELKARTLEGGING.md` og `sd200DOc/FORMELKONTROLL.md`. Svakhetene er undersøkt og dokumentert, men ikke rettet i programmet.
+Formelarbeidet er dokumentert i `sd200DOc/FORMELKARTLEGGING.md` og `sd200DOc/FORMELKONTROLL.md`. Native beregningsrutiner er bevart; Convert har eksplisitte metodevalg fra 1.4.7. Systemvurderingen i 1.4.8 forklarer kvalitet og gjenværende begrensninger.
 
 Behold originalen og tidligere leveranser. Mange byggskript i `analysis` er hashbundne historiske patchtrinn; les inngangsfil og forventet hash før gjenbruk.
 
-Aktivt arbeid gjelder original Delphi. Nyeste lokale leveranse er `SAIV_Instrument_Terminal_v1.3.5_Sept2026.exe`; les `LES_MEG_SAIV_Instrument_Terminal.md`, `LES_MEG_Instrument_Icon.md`, `LES_MEG_Detect_Hint.md`, `LES_MEG_SD200_Valg_G_110.md`, `LES_MEG_Startup_Option.md`, `LES_MEG_Startup_Hint.md`, `LES_MEG_SD200_Valg_G.md`, `LES_MEG_Native_UART_Detect.md` og prosjektstatus for fysisk teststatus. Brukeren har forkastet softwareparitet: sett faktisk UART til 7E1. I-vekking har 50 ms minimum; menykommandoer krever komplett meny og 250 ms mottaksro. COM7-test er uttrykkelig autorisert. ImGui-arbeidet er satt på pause.
+Aktivt arbeid gjelder original Delphi. Nyeste lokale leveranse er `SAIV_Instrument_Terminal_v1.4.10_Sept2026.exe`; les `LES_MEG_SAIV_Instrument_Terminal.md`, `LES_MEG_Instrument_Icon.md`, `LES_MEG_Detect_Hint.md`, `LES_MEG_SD200_Valg_G_110.md`, `LES_MEG_Startup_Option.md`, `LES_MEG_Startup_Hint.md`, `LES_MEG_SD200_Valg_G.md`, `LES_MEG_Native_UART_Detect.md` og prosjektstatus for fysisk teststatus. Brukeren har forkastet softwareparitet: sett faktisk UART til 7E1. I-vekking har 50 ms minimum; menykommandoer krever komplett meny og 250 ms mottaksro. COM7-test er uttrykkelig autorisert. ImGui-arbeidet er satt på pause.
 
 ImGui 0.2.0 skal starte direkte i terminal med enkel Autodetect/Download og direkte tegntasting. Brukeren avviste 0.1.0-dashboard/sidepanel. Se siste prosjektstatus og saiv-studio/README.md.
 

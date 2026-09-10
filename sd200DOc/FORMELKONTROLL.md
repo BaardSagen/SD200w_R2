@@ -105,3 +105,12 @@ En feil argumentrekkefølge i den første inverse testkjøringen ble oppdaget og
 - [Opprinnelig formeloversikt](FORMELKARTLEGGING.md)
 
 Testene ble kjørt i emulator uten kommunikasjon med instrumentene. Kalibreringskoeffisienter, Rinko, profilinterpolasjon og alle eksporter er ikke ferdig kontrollert for feil.
+
+
+## Tillegg 10. september 2026: valgbare metoder og kontroller
+
+1.4.7 endrer ikke de gamle maskinkoderutinene. Standardkonverteringen beholder historiske resultater. Convert gir n? eksplisitt temperaturskala, GSWs lavsalinitetsbehandling, TEOS-10-alternativer, navngitte oksygenreferanser og tetthets-/lyd-/dybdemetoder. Metoder og n?dvendige antakelser lagres i eksporten. Dette retter ikke automatisk gamle filer eller firmwarekalibrering.
+
+analysis/verify_conversion_models147.py kontrollerer b?de publiserte GSW-eksempler, de tilh?rende 3.06.16-atlasvektorene, gamle konverteringsresultater, kildeprioritet for S/C, retning/interpolasjon i profiler, enheter, feilgrenser/atomisk feilretur, eldre CTD/STD-parser og migrering av lagrede valg. Data ved 4000 dbar inng?r. analysis/check_conversion_models147_gui.py kontrollerer faktisk EXE/Next/hjelp/eksport/lagrede valg og SD2; analysis/check_formula_guide147_gui.py kontrollerer de 31 guideemnene. Endelig resultat med filhasher: analysis/models147_release_validation.json.
+
+Gammelt Kelvin-valg og profilnormalregel har f?tt ytterligere native-kontroll, se FORMELKARTLEGGING.md. Eksakt instrument-/firmwaretidsskille for Kelvin-konvensjonen, full r? Rinko-/trykksensorkalibrering, maske-/offsetgrener og alle gamle standarddybde-/middelverdieksporter gjenst?r. Tester uten instrument erstatter ikke fysiske referanse-/kalibreringsm?linger.

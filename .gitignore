@@ -156,3 +156,44 @@ analysis/*.bin
 /analysis/runtime_test/sit_live_review/*.png
 /analysis/runtime_test/sit_live_review/session.json
 /analysis/runtime_test/about_icon_source.png
+
+# SIT 1.4.6/1.4.7 single-EXE releases and historical build inputs
+!/SAIV_Instrument_Terminal_v1.4.6_Sept2026.exe
+!/SAIV_Instrument_Terminal_v1.4.7_Sept2026.exe
+/SIT_Import146.dll
+/SIT_Import147.dll
+/analysis/single146/*
+/analysis/single147/*
+!/analysis/single146/SAIV_IT_Runtime.exe
+!/analysis/single147/SAIV_IT_Runtime.exe
+/analysis/models147/reference.h
+/analysis/models147/modern_example.txt
+/analysis/runtime_test/models147gui/*
+!/analysis/runtime_test/models147gui/gui_validation.json
+!/analysis/runtime_test/models147gui/conductivity.png
+!/analysis/runtime_test/models147gui/depth.png
+!/analysis/runtime_test/models147gui/oxygen.png
+!/analysis/runtime_test/models147gui/water.png
+!/analysis/runtime_test/models147gui/conditions.png
+!/analysis/runtime_test/models147gui/surface_conditions.png
+/analysis/runtime_test/guide147/customer folder*/
+/analysis/runtime_test/guide146/customer folder*/
+
+# Older guide captures remain local; final guide screenshots use targeted PrintWindow
+/analysis/runtime_test/guide146/*.png
+
+# SIT 1.4.8 through 1.4.10 releases and preserved runtimes
+!/SAIV_Instrument_Terminal_v1.4.8_Sept2026.exe
+!/SAIV_Instrument_Terminal_v1.4.9_Sept2026.exe
+!/SAIV_Instrument_Terminal_v1.4.10_Sept2026.exe
+/SIT_Import148.dll
+/SIT_Import149.dll
+/SIT_Import150.dll
+/analysis/single148/*
+/analysis/single149/*
+/analysis/single1410/*
+!/analysis/single148/SAIV_IT_Runtime.exe
+!/analysis/single149/SAIV_IT_Runtime.exe
+!/analysis/single1410/SAIV_IT_Runtime.exe
+/analysis/models147/*.o
+/analysis/runtime_test/import141/customer folder*/

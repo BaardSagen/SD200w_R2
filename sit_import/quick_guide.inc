@@ -8,6 +8,7 @@ static const GuideTopic guideTopics[]={
   L"WITH AN INSTRUMENT\r\nConnect the instrument, choose Detect and accept the correct result. Then use Download, Interval or TIME/DATE as needed.\r\n\r\n"
   L"WITH SAVED DATA\r\nUse File > Open for an existing SD2 dataset. For CSV/TXT files, use File > Import CSV/TXT or Convert. No instrument is needed to work with saved files.\r\n\r\n"
   L"BACK TO THE TERMINAL\r\nChoose View > Instrument.\r\n\r\n"
+  L"CHOOSING CALCULATION METHODS\r\nStart with System evaluation for a short recommendation. Select a measurement topic for its method and an example.\r\n\r\n"
   L"Select a topic on the left for a short explanation. Close this guide to return to SIT. The guide is included in the program and works offline."},
  {L"Detect and terminal",
   L"1. Connect the instrument and its communication cable.\r\n\r\n"
@@ -61,7 +62,8 @@ static const GuideTopic guideTopics[]={
   L"HELP\r\nHelp > Quick guide opens this guide. Help > About shows the installed version.\r\n\r\n"
   L"Help > Update software opens the update dialog. No internet connection is made until you choose Check now. You can read the release notes before deciding whether to install an available update.\r\n\r\n"
   L"Later closes the update dialog. The Do not check for updates at startup checkbox hides the startup reminder; Help > Update software remains available.\r\n\r\n"
-  L"Save your work and finish instrument operations before installing an update."}
+  L"Save your work and finish instrument operations before installing an update."},
+#include "formula_guide.inc"
 };
 static void guideSelect(HWND h){
  int selected=int(SendDlgItemMessageW(h,401,LB_GETCURSEL,0,0));
@@ -73,17 +75,17 @@ static void guideSelect(HWND h){
 }
 static void guideLayout(HWND h){
  RECT r;GetClientRect(h,&r);int width=r.right,height=r.bottom;
- MoveWindow(GetDlgItem(h,400),14,12,190,20,TRUE);
- MoveWindow(GetDlgItem(h,401),14,36,184,height-96,TRUE);
- MoveWindow(GetDlgItem(h,402),214,12,width-228,20,TRUE);
- MoveWindow(GetDlgItem(h,403),214,36,width-228,height-96,TRUE);
+ MoveWindow(GetDlgItem(h,400),14,12,244,20,TRUE);
+ MoveWindow(GetDlgItem(h,401),14,36,244,height-96,TRUE);
+ MoveWindow(GetDlgItem(h,402),274,12,width-288,20,TRUE);
+ MoveWindow(GetDlgItem(h,403),274,36,width-288,height-96,TRUE);
  MoveWindow(GetDlgItem(h,404),14,height-43,width-138,26,TRUE);
  MoveWindow(GetDlgItem(h,IDOK),width-112,height-46,98,28,TRUE);
 }
 static LRESULT CALLBACK guideProc(HWND h,UINT m,WPARAM w,LPARAM l){
  switch(m){
  case WM_SIZE:guideLayout(h);return 0;
- case WM_GETMINMAXINFO:reinterpret_cast<MINMAXINFO*>(l)->ptMinTrackSize={680,480};return 0;
+ case WM_GETMINMAXINFO:reinterpret_cast<MINMAXINFO*>(l)->ptMinTrackSize={800,480};return 0;
  case WM_COMMAND:
   if(LOWORD(w)==401&&HIWORD(w)==LBN_SELCHANGE){guideSelect(h);return 0;}
   if(LOWORD(w)==IDOK||LOWORD(w)==IDCANCEL){DestroyWindow(h);return 0;}break;
@@ -91,23 +93,24 @@ static LRESULT CALLBACK guideProc(HWND h,UINT m,WPARAM w,LPARAM l){
  }
  return DefWindowProcW(h,m,w,l);
 }
-static void guideShow(HWND owner){
+static void guideShow(HWND owner,const wchar_t* topic){
  WNDCLASSW wc={};wc.hInstance=instance;wc.lpfnWndProc=guideProc;
  wc.hCursor=LoadCursor(0,IDC_ARROW);wc.hbrBackground=HBRUSH(COLOR_BTNFACE+1);
  wc.lpszClassName=L"SITQuickGuide";RegisterClassW(&wc);
  RECT r;GetWindowRect(owner,&r);
  HWND h=CreateWindowExW(WS_EX_CONTROLPARENT,wc.lpszClassName,L"SAIV IT - Quick guide",
-  WS_OVERLAPPED|WS_CAPTION|WS_SYSMENU|WS_THICKFRAME,r.left+24,r.top+24,800,600,owner,0,instance,0);
+  WS_OVERLAPPED|WS_CAPTION|WS_SYSMENU|WS_THICKFRAME,r.left+24,r.top+24,1000,720,owner,0,instance,0);
  if(!h){error(owner,"Could not open the quick guide.");return;}
  SendMessageW(h,WM_SETICON,ICON_SMALL,SendMessageW(owner,WM_GETICON,ICON_SMALL,0));
  control(h,L"STATIC",L"&Topics",0,0,0,0,0,400);
  HWND list=control(h,L"LISTBOX",L"",LBS_NOTIFY|LBS_NOINTEGRALHEIGHT|WS_VSCROLL|WS_BORDER|WS_TABSTOP,0,0,0,0,401);
  control(h,L"STATIC",L"",0,0,0,0,0,402);
  control(h,L"EDIT",L"",ES_MULTILINE|ES_READONLY|ES_AUTOVSCROLL|WS_VSCROLL|WS_BORDER|WS_TABSTOP,0,0,0,0,403);
- control(h,L"STATIC",L"Select a topic. Press Esc or Close to return to SIT.",0,0,0,0,0,404);
+ control(h,L"STATIC",L"Scroll to read more. Select text and Ctrl+C to copy formulas or source links. Esc closes.",0,0,0,0,0,404);
  control(h,L"BUTTON",L"&Close",BS_DEFPUSHBUTTON|WS_TABSTOP,0,0,0,0,IDOK);
  for(const auto&topic:guideTopics)SendMessageW(list,LB_ADDSTRING,0,LPARAM(topic.title));
- SendMessageW(list,LB_SETCURSEL,0,0);guideSelect(h);guideLayout(h);
+ int initial=0;if(topic)for(size_t i=0;i<sizeof(guideTopics)/sizeof(guideTopics[0]);++i)if(!lstrcmpW(topic,guideTopics[i].title)){initial=int(i);break;}
+ SendMessageW(list,LB_SETCURSEL,initial,0);guideSelect(h);guideLayout(h);
  EnableWindow(owner,FALSE);ShowWindow(h,SW_SHOW);SetFocus(list);
  MSG msg;int result=1;
  while(IsWindow(h)&&(result=GetMessageW(&msg,0,0,0))>0)

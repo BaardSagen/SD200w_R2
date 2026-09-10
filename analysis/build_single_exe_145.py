@@ -7,7 +7,7 @@ source=R/'analysis/single144/SAIV_IT_Runtime.exe';dll=R/'SIT_Import145.dll';expe
 previous=json.loads((R/'analysis/single_exe_141_manifest.json').read_text())
 original=source.read_bytes();assert hashlib.sha256(original).hexdigest()==expected
 helper=W/'SIT_Update.exe';helper.write_bytes((R/'analysis/single141/SIT_Update.exe').read_bytes());assert hashlib.sha256(helper.read_bytes()).hexdigest()==previous['helper_sha256']
-subprocess.run(['g++','-std=c++11','-O2','-shared','-static-libgcc','-static-libstdc++','-Wl,--kill-at','-o',str(dll),str(R/'sit_import/sit_import.cpp'),str(R/'sit_import/native_call.s'),'-lcomctl32','-lcomdlg32','-lgdi32','-luser32','-lshell32','-lole32','-ladvapi32','-lwininet'],check=True)
+subprocess.run(['g++','-std=c++11','-O2','-shared','-static-libgcc','-static-libstdc++','-Wl,--kill-at','-o',str(dll),str(R/'analysis/reference/sit_import_v145/sit_import.cpp'),str(R/'analysis/reference/sit_import_v145/native_call.s'),'-lcomctl32','-lcomdlg32','-lgdi32','-luser32','-lshell32','-lole32','-ladvapi32','-lwininet'],check=True)
 p=pefile.PE(data=original);b=bytearray(original);resource_ranges=[]
 for k in p.DIRECTORY_ENTRY_RESOURCE.entries:
  for n in k.directory.entries:
