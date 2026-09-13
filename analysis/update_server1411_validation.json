@@ -1,0 +1,16 @@
+{
+  "manifest": {
+    "version": "1.4.11",
+    "url": "https://saiv.no/software/saiv_instrument_terminal_v1.4.11_sept2026.zip",
+    "readme_url": "https://saiv.no/software/readme_v1.4.11.txt",
+    "sha256": "727d19d6fae30bf2ff1f0364613651ddd21a6e0f0118c20d827c85d4ee6465e8"
+  },
+  "exe_sha256": "fc3c03396041d9068e7cdfdd156da6c771d623f84768b56f561a26f4d1efb46b",
+  "zip_bytes": 4929821,
+  "crc_and_contents_checked": true,
+  "embedded_version_checked": true,
+  "included_licences": [
+    "miniz",
+    "GSW-C"
+  ]
+}

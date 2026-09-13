@@ -1,0 +1,14 @@
+{
+  "before": "0.9.9P",
+  "after": "0.9.9R",
+  "same_config_file_set": true,
+  "other_config_byte_identical": true,
+  "all_other_ini_values_preserved": true,
+  "update_folder_empty": true,
+  "sha256": {
+    "system.ini": "5d83eb13156867567df565b52d3c002b37b1722f9998f52a2e155c4f5735523e",
+    "adc_core.ini": "a7226d4855fb59285c0f04c388e32709c68bcbec0ac26e278853000e66089561",
+    "adc_channels.ini": "bc268a07b45884674fdabfa85f270f206010d9a101e4be578f4b9d5e87b79f9b",
+    "lsm303.ini": "52fe440774743b0b716d6fd034aea20d2b5af0d29b0fe1aa071b260093472fd9"
+  }
+}

@@ -1,5 +1,25 @@
 # Prosjektnotater
 
+## Intern servicemeny skal ikke røpes til kunden
+
+Ctrl+T-menyen på OSU107/SAIV110 er en intern servicemeny. Ikke vis eller beskriv tastekombinasjonen, menyinnholdet eller tilhørende interne kommandosekvenser i kundevendt grensesnitt, terminalutskrift fra automatiske operasjoner, feilmeldinger, brukerguide, versjonsnotater, skjermbilder eller filer som følger kundepakken.
+
+SIT kan bruke servicemenyen internt til identifikasjon, kontroll og firmwareoppdatering. Kommandoekko og svar skal behandles internt uten å havne i kundens terminalhistorikk, heller ikke etter at operasjonen eller dialogen er avsluttet. Feil skal forklares med forståelige meldinger uten rå servicedialog.
+
+Vis fremdrift, ventetid og resultat i et eget vindu med animert indikator. Vanlige statusmeldinger kan også vises i terminalen, men de skal ikke avsløre servicemenyen. Ikke fjern nødvendig protokollkommunikasjon eller verifikasjon for å skjule den.
+
+Tekniske detaljer kan beholdes i intern kildekode, testlogger og agentoverleveringer som ikke distribueres til kunden, og diskuteres med prosjekteieren ved feilsøking. Kontroller kundevendt tekst, feilforløp og pakkens innhold mot denne regelen før leveranse. Endring av denne policyen krever uttrykkelig instruks fra prosjekteieren.
+
+## Godkjenning for filtilgang utenfor arbeidsmappen
+
+Arbeidsmappen for dette prosjektet er `C:\cprojects\delphi\sd200w_r2`, med undermapper.
+
+Før agenten leser filer eller søker/lister filinnhold utenfor denne arbeidsmappen, skal brukeren få beskjed om hvilke filer eller mapper som skal åpnes, hvorfor det er nødvendig, og godkjenne tilgangen uttrykkelig. Det samme gjelder før agenten oppretter, skriver, endrer, flytter eller sletter filer eller mapper utenfor arbeidsmappen.
+
+Unntak: Filtilgang til USB-disker som tilhører OSU107 eller SAIV110, samt SIT- og firmware-servermappene på `https://saiv.no/software/` (inkludert `firmware/osu107_saiv110/`), krever ikke særskilt godkjenning etter denne regelen når tilgangen er relevant for brukerens oppgave. Unntaket gjelder filtilgang; det utvider ikke oppgavens omfang til en ubedt firmwareoppdatering eller serverpublisering.
+
+For øvrige mapper gjelder regelen også indirekte filtilgang gjennom verktøy, skript, programmer og lenker/junctions som peker utenfor arbeidsmappen. Eksempler er eksterne kildekodemapper og skriving til AppData. En generell oppgavebestilling eller automatisk godkjenning fra verktøysystemet erstatter ikke brukerens uttrykkelige godkjenning av slik tilgang. En allerede gitt godkjenning kan brukes innenfor det konkrete omfanget brukeren har godkjent; utvidet tilgang krever ny godkjenning. Hvis VS Code åpnes med en annen arbeidsmappe, må omfanget avklares før tilgang utenfor den mappen.
+
 Ved arbeid med SAIV Instrument Terminal (tidligere MiniSoft SD200W), les først [sd200DOc/PROSJEKTSTATUS.md](sd200DOc/PROSJEKTSTATUS.md). Det beskriver siste leveranse, tidligere endringer, tester og åpne punkter.
 
 Siste lokale leveranse per 10. september 2026 er `SAIV_Instrument_Terminal_v1.4.10_Sept2026.exe`. Les `LES_MEG_Salinity_Guide_1410.md` for salinitetsforklaring i brukerguiden og `LES_MEG_Conversion_Models_147.md` for beregningsvalg. Ikke velg en eldre EXE bare fordi navnet inneholder `final` eller den vises i et gammelt skjermbilde. Kontroller statusnotatet og brukerens nyere instruksjoner.

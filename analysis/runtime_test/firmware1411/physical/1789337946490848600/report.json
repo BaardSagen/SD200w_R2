@@ -1,0 +1,70 @@
+{
+  "build": {
+    "cache_tag": "1.4.11_340d123ca203",
+    "source": "analysis/single146/SAIV_IT_Runtime.exe",
+    "source_sha256": "3ca033ad72ef28635e1eeeeff224e4c3340947302f8c07b135e6ed06043c8f69",
+    "output": "SAIV_Instrument_Terminal_v1.4.11_Sept2026.exe",
+    "sha256": "fc3c03396041d9068e7cdfdd156da6c771d623f84768b56f561a26f4d1efb46b",
+    "runtime_sha256": "cd379866e627015607288414a95b68c300183526d850511ffb063b214c72b617",
+    "dll_sha256": "985739fa843cc5b9b9c114380ca484353884a0a7ed1d98737b46ca32626cb25e",
+    "helper_sha256": "4070fe4428d2b659c937bf5cb13c40853b4dcd3c7f638aa0084e9f9db077a033",
+    "dependencies": [
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "msvcrt.dll",
+      "SHELL32.DLL",
+      "USER32.dll"
+    ],
+    "bytes": 13395736
+  },
+  "run": "C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\firmware1411\\physical\\1789337946490848600",
+  "mode": "check-only",
+  "before_hashes": {
+    "system.ini": "5d83eb13156867567df565b52d3c002b37b1722f9998f52a2e155c4f5735523e",
+    "adc_core.ini": "a7226d4855fb59285c0f04c388e32709c68bcbec0ac26e278853000e66089561",
+    "adc_channels.ini": "bc268a07b45884674fdabfa85f270f206010d9a101e4be578f4b9d5e87b79f9b",
+    "lsm303.ini": "52fe440774743b0b716d6fd034aea20d2b5af0d29b0fe1aa071b260093472fd9"
+  },
+  "events": [
+    {
+      "at": 1789337951.4214048,
+      "active_port": 11,
+      "open_flag": "01"
+    },
+    {
+      "at": 1789337951.423412,
+      "terminal_text_before": [
+        "",
+        "OSU107 Instrument logger SN107, Ver: 0.9.9R",
+        "Date/time: 2026-09-13 22:19:10 (GMT)",
+        "Battery: 10.76 V (63%)  Yellow led.",
+        "Free disk space: 6.563 MB of 7.965 MB",
+        "",
+        "Hold <I> to wake instrument",
+        ""
+      ]
+    },
+    {
+      "at": 1789337952.3324106,
+      "progress_indicator_visible": true,
+      "elapsed_text": "Checking firmware. Please wait...\r\nElapsed: 0 min 0 sec",
+      "close_disabled_while_busy": true
+    },
+    {
+      "at": 1789337956.3452106,
+      "check_status": "OSU107 SN107 | HW 3.1.2 | COM11 | E:\\\r\nInstalled firmware: 0.9.9R\r\nNo newer firmware available. Server version: 0.9.9r\r\nVerified: device version, system.ini and firmware cleanup.",
+      "notes": "SAIV110 / OSU107 firmware 0.9.9R\r\nHardware: OSU-M 3.1.2\r\nRelease date: 2026-09-13\r\n\r\nChanges from 0.9.9Q to 0.9.9R\r\n---------------------------\r\n\r\n- Fixed firmware-update cleanup with the USB cable continuously connected.\r\n  When an update lock is stored, USB enumeration waits until boot confirmation\r\n  and the cleanup attempt finish. Windows receives disk access afterwards.\r\n\r\n- Keeps the existing exclusive disk-access protection. Firmware does not delete\r\n  files while Windows owns the disk. If cleanup fails, the lock remains and\r\n  USB diagnostics become available; a later reboot can retry.\r\n\r\n- Preserves serial number, operating mode, settings and calibration. This\r\n  release does not change ADC sampling or the N-line/S-line calibration path.\r\n\r\nEarlier changes: 0.9.9Q (2026-09-07)\r\n----------------------------------\r\n\r\n- Local logger clock entry with X and LT/GMT label selection.\r\n\r\n- Numeric input echo for instrument oxygen calibration and coefficient menus,\r\n  and streaming progress during instrument self-test.\r\n\r\n- Configuration update with U while the external instrument is asleep/absent.\r\n\r\n- Rejects configuration with Instrument and Surface enabled simultaneously.\r\n\r\nEarlier changes: 0.9.9P (2026-09-03)\r\n----------------------------------\r\n\r\n- Improved automatic air-pressure setting after external Mag-Key starts,\r\n  range-change handling, UART framing and shared disk access.\r\n\r\n"
+    },
+    {
+      "at": 1789337956.3812313,
+      "internal_menu_hidden": true,
+      "terminal_unchanged": true
+    },
+    {
+      "at": 1789337956.3827107,
+      "check_passed": true,
+      "no_fwu_sent": true
+    }
+  ],
+  "passed": true
+}

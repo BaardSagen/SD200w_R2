@@ -1,0 +1,46 @@
+{
+  "build": {
+    "cache_tag": "1.4.11_64666d3f3e8c",
+    "source": "analysis/single146/SAIV_IT_Runtime.exe",
+    "source_sha256": "3ca033ad72ef28635e1eeeeff224e4c3340947302f8c07b135e6ed06043c8f69",
+    "output": "SAIV_Instrument_Terminal_v1.4.11_Sept2026.exe",
+    "sha256": "03b1758e1d368719710f2f6e7e627c6c3b45c28a944052a3c204776289e7c3ac",
+    "runtime_sha256": "cdb25b108d0dbbb7cef15cfccedb778ae027ed69337c3b3c2439fc38703c2714",
+    "dll_sha256": "31269e4e58b6a59db0516856f635b370adece65c8967bcbd84ff960a628a266d",
+    "helper_sha256": "4070fe4428d2b659c937bf5cb13c40853b4dcd3c7f638aa0084e9f9db077a033",
+    "dependencies": [
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "msvcrt.dll",
+      "SHELL32.DLL",
+      "USER32.dll"
+    ],
+    "bytes": 13368600
+  },
+  "run": "C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\firmware1411\\physical\\1789333248134072600",
+  "mode": "check-only",
+  "before_hashes": {
+    "system.ini": "7179738b1d3d945e938e59669ce60794597d85b3a31a8b7f483dd88c7e75ab05",
+    "adc_core.ini": "a7226d4855fb59285c0f04c388e32709c68bcbec0ac26e278853000e66089561",
+    "adc_channels.ini": "bc268a07b45884674fdabfa85f270f206010d9a101e4be578f4b9d5e87b79f9b",
+    "lsm303.ini": "52fe440774743b0b716d6fd034aea20d2b5af0d29b0fe1aa071b260093472fd9"
+  },
+  "events": [
+    {
+      "at": 1789333253.0959077,
+      "active_port": 11,
+      "open_flag": "01"
+    },
+    {
+      "at": 1789333254.7019074,
+      "check_status": "OSU107 SN107 | HW 3.1.2 | COM11 | E:\\\r\nInstalled firmware: 0.9.9Q\r\nNo newer firmware available. Server version: 0.9.9q",
+      "notes": "SAIV110 / OSU107 firmware 0.9.9Q\r\nHardware: OSU-M 3.1.2\r\nRelease date: 2026-09-07\r\n\r\nChanges from 0.9.9P to 0.9.9Q\r\n---------------------------\r\n- Set the logger's local date and time with X in the OSU107 and Surface menus.\r\n  Input is echoed, Backspace is supported, and invalid dates are rejected.\r\n  After setting the time, choose the LT/GMT label without shifting that time.\r\n  Stop logging before changing the clock.\r\n- Numeric input is now echoed in the external instrument's oxygen calibration\r\n  C menu and coefficient-entry M menu. Self-test T displays progress while\r\n  waiting for the instrument to finish.\r\n- In OSU107 mode, U can apply saved configuration even when the external\r\n  instrument is asleep or absent. Stop logging before applying configuration.\r\n  The resulting product mode determines which menu is shown.\r\n- Configuration is rejected if Surface and Instrument are both enabled.\r\n  Select one mode; both disabled is also allowed. A rejected change leaves\r\n  the active configuration unchanged.\r\n\r\nEarlier changes: 0.9.9P (2026-09-03)\r\n----------------------------------\r\n- Improved automatic air-pressure setting after an external Mag-Key start.\r\n- Prevented range changes and retained measurement sessions from incorrectly\r\n  starting another automatic air-pressure sequence.\r\n- Improved instrument UART framing and handling of stale measurement data.\r\n- Improved shared USB-disk access and showed LT/GMT in startup clock status.\r\n\r\nEarlier changes: 0.9.9O (2026-08-30)\r\n----------------------------------\r\n- Kept the COM interface available while the logger owns the storage disk.\r\n  Use F after stopping measurements to make the disk available to the PC.\r\n- Improved USB reconnection after disk refresh and preserved output columns\r\n  with nan placeholders when enabled sensors fail.\r\n\r\nUpdating\r\n--------\r\nUse the firmware updater's Check firmware function and review the detected\r\ndevice, hardware and offered version before selecting Update device.\r\nKeep USB and power connected until the updater has finished and verified\r\nthe running version. Use only the BIN for the stated hardware revision.\r\nBack up configuration and calibration before an update. Review the updater's\r\nconfiguration-restoration instructions before returning the unit to service.\r\nAfter programming, config/system.ini must be regenerated to show the running\r\nsoftware version: delete only that file, then reboot through Ctrl+T, SLP, RESET.\r\nRetain the other configuration files, including calibration. Verify the running\r\nfirmware and the regenerated system.ini version, serial number and settings.\r\nIf verification fails, retain the backup and inspect the device before retrying.\r\n"
+    },
+    {
+      "at": 1789333254.764471,
+      "check_passed": true,
+      "no_fwu_sent": true
+    }
+  ],
+  "passed": true
+}

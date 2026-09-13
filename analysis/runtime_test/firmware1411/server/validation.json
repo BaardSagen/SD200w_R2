@@ -1,0 +1,12 @@
+{
+  "all_http_200": true,
+  "manifest_matches_local": true,
+  "readme_url": "https://saiv.no/software/firmware/osu107_saiv110/hw_3-1-2/readme.txt",
+  "readme_text_matches_local": true,
+  "binary_matches_local": true,
+  "binary_bytes": 635580,
+  "sha256": "3e6840e8a3ea84564b635fbcf20e6b6ece48b86551226d14bf2f259bfb30b47c",
+  "version": "0.9.9q",
+  "ready_for_device_test": true,
+  "physical_update_started": false
+}

@@ -2,6 +2,24 @@
 
 Oppdatert: 10. september 2026. Arbeidsmappe: `C:\cproject\delphi\SD200w_R2`.
 
+## Firmwarekandidat 1.4.11, 13. september 2026
+
+**Kundevisning rettet, fortsatt 1.4.11:** Intern servicetrafikk fanges av firmwarekontrollen, men hoppes over i terminalvisningen under firmwarejobber. Loader og resultat beholdes i eget vindu; rå servicesvar vises ikke ved feil. Full P-til-R-test bestod med uendret terminalhistorikk gjennom hele jobben: `analysis/runtime_test/firmware1411/physical/1789337799238129300/report.json`. Deretter ble kun kundevendt filtrering av serverens README lagt til og fysisk kontrollert: `analysis/runtime_test/firmware1411/physical/1789337946490848600/report.json`. Siste EXE SHA-256: `fc3c03396041d9068e7cdfdd156da6c771d623f84768b56f561a26f4d1efb46b`. Serverpakken er bygget på nytt med denne EXE-en; last opp ZIP, readme og latest.json på nytt, sistnevnte sist. Tidligere testet EXE/pakke er bevart under `analysis/reference/firmware1411_before_quiet`. Ingen 1.4.12 er laget. Se AGENTS.md for fast policy om intern servicemeny.
+
+Serverpakke 1.4.11 klargjort 14. september: `update_server/saiv_instrument_terminal_v1.4.11_sept2026.zip`, `readme_v1.4.11.txt` og `latest.json`. Last opp latest.json sist til saiv.no/software. Filnavn/URL-er bruker små bokstaver i tråd med brukerens server. ZIP inneholder byteidentisk fysisk testet EXE, README og lisenser. CRC, innhold, EXE-versjon og SHA-256 er kontrollert; rapport `analysis/update_server1411_validation.json`. Forrige peker er bevart som latest_v1.4.10.json. Les `update_server/LAST_OPP_1.4.11.md`. Ingen serveropplasting fra agenten.
+
+**Sluttest bestått 14. september 2026:** Brukeren satte SN107 tilbake til P. Uendret sluttbygg (`e92f36b0bb26b90e36296ea1c9066fe641539c76eaf85f56352c970047857dff`) fullførte hele P-til-R-løpet med «Firmware update successful». Fra FWU-start til suksess tok det 111,6 sekunder. VER og INI viste R, FWUST var CLEAR, update-mappen var tom, øvrige config-filer og alle andre INI-verdier var bevart. Ingen ekstra oppryddingsreset eller manuell inngripen var nødvendig. Rapport: `analysis/runtime_test/firmware1411/physical/1789336734610481300/report.json`. COM11 er frigitt. Den tidligere manglende komplette retesten er dermed utført; SAIV110 er fortsatt ikke fysisk testet.
+
+Branch `feature/firmware-update`. Utviklingskandidat: `SAIV_Instrument_Terminal_v1.4.11_Sept2026.exe`. Les `LES_MEG_Firmware_1411.md` og `osu107Doc/TIL_OPPDATERINGSAGENT_0.9.9R.txt`. Tidligere leveranser og 1.4.10-kilde er bevart. SIT har fysisk oppdatert OSU107 SN107, HW 3.1.2, fra P til R på COM11 med USB tilkoblet hele tiden.
+
+Help > Firmware sjekkes bare manuelt. Disk/COM matches via fysisk USB-identitet. BIN kopieres som update/osu_m_update.bin, flushes og verifiseres før CFG/FWU. Kjørende firmware leses fra fersk lokal meny, også uten DTR-info. Enheten fjerner BIN selv; én ekstra reset tillates hvis update-mappen ikke er tom. Etter verifisert ny firmware slettes **bare config/system.ini**. Øvrig config/kalibrering beholdes og kontrolleres bytevis; innstillinger og ny versjon verifiseres etter regenerering. PC-backup beholdes.
+
+Dialogen har animert indikator, medgått tid, gjeldende trinn og permanent USB-beskjed under oppdatering. Hele BIN leses tilbake og sammenlignes før FWU; bekreftet byteantall vises. Fersk lokal meny og VER må stemme. FWUST må være CLEAR, og update-mappen må være tom før og etter system.ini-regenerering. Manuell kontroll av allerede installert serverversjon verifiserer også system.ini og opprydding uten ny flashing eller reset.
+
+Første R-test installerte R, firmware fjernet BIN og frigav FWU-låsen, og SIT regenererte bare system.ini. En SIT-feil i siste kontroll (CFG før lokalmeny etter omstart) ga ingen suksessmelding i første forsøk; denne rekkefølgen er rettet og full retest er nå bestått som beskrevet over. Original testlogg er bevart: `analysis/runtime_test/firmware1411/physical/1789335812151538500/report.json`; diskverifisering ligger i samme mappe. Se `analysis/firmware1411_validation.json` for sluttbyggets hash og testresultater.
+
+R-serverpakken er verifisert: latest.json, readme.txt og BIN svarer HTTP 200 og matcher lokal pakke. R-BIN: 635648 byte, SHA-256 `d557327dae4af7bc90ef2555c800184a6cc08296622cada0f6fc347d30af24a6`. Rapport: `analysis/runtime_test/firmware1411/server/validation_R.json`. Q-testens oppryddingsfeil er historisk og beskrevet i `osu107Doc/SIT_FIRMWARE_TEST_2026-09-13.md`. Ingen serveropplasting, firmwarekildeendring, commit eller push fra SIT-arbeidet.
+
 ## Start her neste gang
 
 1. Les dette notatet og brukerens nye oppgave.

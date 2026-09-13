@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "build_sha256": "e92f36b0bb26b90e36296ea1c9066fe641539c76eaf85f56352c970047857dff",
+  "report": "analysis\\runtime_test\\firmware1411\\physical\\1789336734610481300\\report.json",
+  "from_version": "0.9.9P",
+  "to_version": "0.9.9R",
+  "all_other_ini_values_preserved": true,
+  "success_dialog_seen": true,
+  "seconds_from_start_to_success": 111.6
+}

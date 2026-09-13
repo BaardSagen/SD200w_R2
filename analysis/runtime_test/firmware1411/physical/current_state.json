@@ -1,0 +1,25 @@
+{
+  "device": "OSU107 SN107 COM11",
+  "running": "0.9.9R",
+  "system_ini": "0.9.9R",
+  "fwust": "CLEAR",
+  "update_folder_empty": true,
+  "configuration_preserved": true,
+  "final_build": "fc3c03396041d9068e7cdfdd156da6c771d623f84768b56f561a26f4d1efb46b",
+  "verification_report": "analysis/firmware1411_validation.json",
+  "full_cycle_acceptance": {
+    "passed": true,
+    "success_dialog_seen": true,
+    "build_sha256": "b62d984aba7f0304bc2eecc4f4740e56a8b6fd3c5d05ada9b8f67bc12160f918",
+    "report": "analysis\\runtime_test\\firmware1411\\physical\\1789337799238129300\\report.json",
+    "internal_menu_hidden_throughout_update": true,
+    "all_other_ini_values_preserved": true
+  },
+  "customer_notes_check": {
+    "passed": true,
+    "build_sha256": "fc3c03396041d9068e7cdfdd156da6c771d623f84768b56f561a26f4d1efb46b",
+    "report": "analysis/runtime_test/firmware1411/physical/1789337946490848600/report.json",
+    "same_runtime_as_full_cycle": true,
+    "only_change_since_full_cycle": "Customer release-note filtering; protocol/update sequence unchanged"
+  }
+}

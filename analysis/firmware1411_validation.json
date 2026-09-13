@@ -1,0 +1,149 @@
+{
+  "build": {
+    "cache_tag": "1.4.11_340d123ca203",
+    "source": "analysis/single146/SAIV_IT_Runtime.exe",
+    "source_sha256": "3ca033ad72ef28635e1eeeeff224e4c3340947302f8c07b135e6ed06043c8f69",
+    "output": "SAIV_Instrument_Terminal_v1.4.11_Sept2026.exe",
+    "sha256": "fc3c03396041d9068e7cdfdd156da6c771d623f84768b56f561a26f4d1efb46b",
+    "runtime_sha256": "cd379866e627015607288414a95b68c300183526d850511ffb063b214c72b617",
+    "dll_sha256": "985739fa843cc5b9b9c114380ca484353884a0a7ed1d98737b46ca32626cb25e",
+    "helper_sha256": "4070fe4428d2b659c937bf5cb13c40853b4dcd3c7f638aa0084e9f9db077a033",
+    "dependencies": [
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "msvcrt.dll",
+      "SHELL32.DLL",
+      "USER32.dll"
+    ],
+    "bytes": 13395736
+  },
+  "core": {
+    "checks": 211,
+    "passed": true,
+    "physical_device_io": false
+  },
+  "windows": {
+    "checks": 31,
+    "passed": true,
+    "serial_calls_disabled": true,
+    "usb_port_count": 1,
+    "usb_disk_count": 0
+  },
+  "gui": {
+    "no_firmware_startup_window": true,
+    "help_menu": [
+      [
+        "&Help",
+        4294967295
+      ],
+      [
+        "&Quick guide...",
+        32324
+      ],
+      [
+        "&About...",
+        86
+      ],
+      [
+        "&Firmware...",
+        32337
+      ],
+      [
+        "",
+        0
+      ],
+      [
+        "&Update software...",
+        32321
+      ]
+    ],
+    "manual_prompt": "Firmware updates the SAIV110 or OSU107 device connected to this PC and SIT.\r\nWould you like to check for new firmware?",
+    "update_disabled_before_check": true,
+    "missing_connection_simulated_in_owned_process": true,
+    "missing_connection_blocks_update": true,
+    "guide_and_software_update_preserved": true,
+    "no_firmware_commands": true
+  },
+  "server": {
+    "version": "0.9.9r",
+    "bytes": 635648,
+    "sha256": "d557327dae4af7bc90ef2555c800184a6cc08296622cada0f6fc347d30af24a6",
+    "all_http_200": true,
+    "local_matches_server": true
+  },
+  "physical": {
+    "target": "OSU107 SN107 HW3.1.2 COM11",
+    "before": "0.9.9P",
+    "after": "0.9.9R",
+    "firmware_update_performed": true,
+    "configuration_regenerated": true,
+    "usb_connected_throughout": true,
+    "first_install_report": "analysis/runtime_test/firmware1411/physical/1789335812151538500/report.json",
+    "first_install_build": "25d3d3cc774d958d8a594f78f372deffcae62c608f7d92ad8d2bf06c2bb3d9e0",
+    "first_install_gui_success": false,
+    "first_install_issue": "Final configIdentity called CFG from direct mode after reset; fixed by entering localMenu before FWUST.",
+    "disk_verification": {
+      "before": "0.9.9P",
+      "after": "0.9.9R",
+      "same_config_file_set": true,
+      "other_config_byte_identical": true,
+      "all_other_ini_values_preserved": true,
+      "update_folder_empty": true,
+      "sha256": {
+        "system.ini": "5d83eb13156867567df565b52d3c002b37b1722f9998f52a2e155c4f5735523e",
+        "adc_core.ini": "a7226d4855fb59285c0f04c388e32709c68bcbec0ac26e278853000e66089561",
+        "adc_channels.ini": "bc268a07b45884674fdabfa85f270f206010d9a101e4be578f4b9d5e87b79f9b",
+        "lsm303.ini": "52fe440774743b0b716d6fd034aea20d2b5af0d29b0fe1aa071b260093472fd9"
+      }
+    },
+    "final_build_manual_check": "analysis/runtime_test/firmware1411/physical/1789336073723397700/report.json",
+    "final_build_manual_check_passed": true,
+    "final_build_full_p_to_r_repeated": false,
+    "full_cycle_acceptance": {
+      "passed": true,
+      "success_dialog_seen": true,
+      "build_sha256": "b62d984aba7f0304bc2eecc4f4740e56a8b6fd3c5d05ada9b8f67bc12160f918",
+      "report": "analysis\\runtime_test\\firmware1411\\physical\\1789337799238129300\\report.json",
+      "internal_menu_hidden_throughout_update": true,
+      "all_other_ini_values_preserved": true
+    }
+  },
+  "progress": {
+    "animated_indicator_verified_from_two_frames": true,
+    "elapsed_time_visible": true,
+    "buttons_disabled_while_busy": true,
+    "exact_verified_bytes_visible": 635648,
+    "screenshot": "analysis/runtime_test/firmware1411/physical/1789335812151538500/install_progress.png"
+  },
+  "source_hashes": {
+    "sit_import/firmware_ui.inc": "6c47e4f40be12632507af750a07bac5f327f42d7c9891c75ae98728df6d3c38d",
+    "sit_import/firmware_protocol.h": "8926ad597afb230f5b1b7b7b9ac12635cfee51df9fefbc5318f86536dcfff1b6",
+    "sit_import/firmware_windows.inc": "f4bd7e108d0aa2b59cb5538d198685f18b435d6ad13b48051ae51a7f071d3662",
+    "sit_import/settings_ui.inc": "b2f7a532ddb7a83c0a50dd69039c504b5b57e145245fdc83e12f6e0fb9b66162",
+    "analysis/patch_firmware_quiet.py": "1d7cf30bf5652396bdf8235052f90c4991de3329b2f13e8f9c2627d71390eef6"
+  },
+  "limitations": [
+    "Full P-to-R verified with the same quiet receive runtime; subsequent customer-note filtering verified via physical check only.",
+    "SAIV110 not physically tested."
+  ],
+  "firmware_source_changed": false,
+  "server_uploaded": false,
+  "commit_or_push": false,
+  "prior_full_cycle_acceptance": {
+    "passed": true,
+    "build_sha256": "e92f36b0bb26b90e36296ea1c9066fe641539c76eaf85f56352c970047857dff",
+    "report": "analysis\\runtime_test\\firmware1411\\physical\\1789336734610481300\\report.json",
+    "from_version": "0.9.9P",
+    "to_version": "0.9.9R",
+    "all_other_ini_values_preserved": true,
+    "success_dialog_seen": true,
+    "seconds_from_start_to_success": 111.6
+  },
+  "customer_notes_check": {
+    "passed": true,
+    "build_sha256": "fc3c03396041d9068e7cdfdd156da6c771d623f84768b56f561a26f4d1efb46b",
+    "report": "analysis/runtime_test/firmware1411/physical/1789337946490848600/report.json",
+    "same_runtime_as_full_cycle": true,
+    "only_change_since_full_cycle": "Customer release-note filtering; protocol/update sequence unchanged"
+  }
+}

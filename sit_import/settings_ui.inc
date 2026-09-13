@@ -4,6 +4,7 @@ static uintptr_t settingsMain=0;
 static sitsettings::Kind settingsKind=sitsettings::None,settingsPending=sitsettings::None;
 static unsigned settingsPort=0,settingsPendingPort=0;
 static bool settingsBusy=false,settingsReopen=false,settingsAwaiting=false;
+static bool firmwareQuiet=false;
 static DWORD settingsAccepted=0,settingsRxAt=0;
 static std::string settingsRx,settingsContext,settingsPendingContext,settingsSerial;
 static std::string settingsSerialFrom(const std::string&s){std::smatch m;if(std::regex_search(s,m,std::regex("SN([0-9]+)",std::regex::icase)))return m[1];return "";}
@@ -73,7 +74,7 @@ static int settingsNative(unsigned op,uintptr_t a,uintptr_t b,uintptr_t c){
  if(op==20){settingsMain=a;HWND h=HWND(nd(a+0x14c));if(h){SetWindowSubclass(h,settingsMainProc,139,0);SetTimer(h,139,250,0);}return 0;}
  if(op==30){settingsPending=sitsettings::None;settingsPendingPort=0;settingsPendingContext.clear();uintptr_t rows=nd(a+0x330);if(!rows)return 0;int count=int(nd(rows-4));for(int i=0;i<count;++i,rows+=20){uintptr_t label=nd(rows+16),worker=nd(rows);if(!label||!worker||nd(label-4)!=5||memcmp(reinterpret_cast<void*>(label),"Instr",5))continue;if(*reinterpret_cast<unsigned char*>(worker+0x60)||*reinterpret_cast<unsigned char*>(worker+0x62)!=1||*reinterpret_cast<unsigned char*>(worker+0x71)!=2)break;auto serial=nd(worker+0x64);if(!serial)break;settingsPendingPort=*reinterpret_cast<unsigned char*>(serial+0x34);uintptr_t text=nd(worker+0x5c);if(text){settingsPendingContext=reinterpret_cast<const char*>(text);auto&t=settingsPendingContext;settingsPending=sitsettings::has(t,"OSU107 Instrument logger")?sitsettings::OSU:sitsettings::has(t,"SAIV110 Surface logger")?sitsettings::Surface:(sitsettings::mainMenu(t)||sitsettings::has(t,"status/start/menu")||sitsettings::has(t,"current set up:")||sitsettings::has(t,"measuring interval")||sitsettings::has(t,"hold <i> to activate")||sitsettings::has(t,"- passive -"))?sitsettings::SD200:sitsettings::None;}break;}return 0;}
  if(op==31){if(a==1){settingsKind=settingsPending;settingsPort=settingsPendingPort;settingsContext=settingsPendingContext;settingsSerial=settingsSerialFrom(settingsPendingContext);settingsAwaiting=true;settingsAccepted=GetTickCount();}return 0;}
- if(op==32){char ch=char(a);settingsRx+=ch;if(settingsRx.size()>65536)settingsRx.erase(0,32768);settingsRxAt=GetTickCount();return 0;}
+ if(op==32){char ch=char(a);settingsRx+=ch;if(settingsRx.size()>65536)settingsRx.erase(0,32768);settingsRxAt=GetTickCount();return firmwareQuiet?1:0;}
  if(op==34){if(a==settingsComm()&&!settingsReopen&&!settingsAwaiting)settingsKind=sitsettings::None;return 0;}
  if(op==40&&b){auto tag=nd(b+12);if(tag==0x53495449||tag==0x53495454){settingsMain=a;settingsShow(tag==0x53495454);return 1;}}
  if(op==41&&b==nd(a+0x374)&&(!settingsConnected()||settingsBusy))return 1;
