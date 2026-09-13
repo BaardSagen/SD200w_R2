@@ -1,0 +1,71 @@
+[
+  {
+    "at": 1789333001.2785494,
+    "tx": "\u0014\r"
+  },
+  {
+    "at": 1789333001.6597345,
+    "rx": "Direct instrument communication: DEACTIVATED.\n\rPress 'M'<ent> for menu (commands need <ent>), 'Q'<ent> to reactivate.\n\r"
+  },
+  {
+    "at": 1789333001.660647,
+    "tx": "M\r"
+  },
+  {
+    "at": 1789333002.0675225,
+    "rx": "\n\rMenu: OSU107, SN: 107, ver-0.9.9P.\n\rHW: OSU-M rev-3.1.2.\n\rRTC RV-3028: 2026-09-13 20:56:42  |  RTC nRF: 2026-09-13 20:56:41  (delta=-1s)\r\nSystem Voltage: 10.80 volt (65%)  Yellow led.\r\nN-lines: resettable=37493 lifetime=37493\r\nS-lines: resettable=3108 lifetime=3108\r\n<Q> to execute Direct instrument communication: reactivate (Q).\n\r<\u0014> to execute Direct instrument communication: deactivate (CTRL+T).\n\r<M> to execute Show menu options (M).\n\r<?> to execute HELP.\n\r<V> to execute VER.\n\r<C> to execute CLS.\n\r<E> to execute ECHO.\n\r<NRFADC> to execute NRFADC.\n\r<INTREF.CHECK> to execute REFCHECK.\n\r<CFG> to execute Config.\n\r<INST> to execute Instruments.\n\r<USBD> to execute UsbDisk.\n\r<ADS> to execute ADS1263.\n\r<TCA> to execute TCA74.\n\r<T75> to execute TCA75.\n\r<INA> to execute INA.\n\r<POW> to execute Power.\n\r<PWRWIN> to execute Sensor power timing window.\n\r<IMU> to execute LSM.\n\r<RTC> to execute Show RTC menu (RTC).\n\r<SLP> to execute Sleep.\n\r<SURSTART> to execute Surface start.\n\r<SURSTOP> to execute Surface stop.\n\r<SUR> to execute Surface.\n\r<SER> to execute Serial.\n\r<LEDS>, <LED> to execute Leds.\n\r\r\n>"
+  },
+  {
+    "at": 1789333002.0684445,
+    "tx": "CFG\r"
+  },
+  {
+    "at": 1789333002.415613,
+    "rx": "\r\n=== Config (INI/NVS) Menu ===\r\n\r\nConfig Commands:\r\n  <MIST> multi.ini.status\r\n  <MIR> multi.ini.reload\r\n  <APPLY> multi.ini.apply\r\n  <REGEN> multi.ini.regenerate\r\n  <MC> meas.counter\r\n  <MCR> meas.reset\r\n  <DF> disk.full\r\n  <Y> disk.full.ack\r\n  <DFY> disk.full.ack.refresh\r\n  <FWUPDATE,FWU> firmware.update\r\n  <FWUST> firmware.update.status\r\n  <FWUCLR> firmware.update.clear\r\n  <CHANNELS> CHANNELS <0-5>  (resize adc_channels.ini, save to NVS + disk)\r\n  <FWUPDATE> FWUPDATE [update/osu_m_update.bin]  (copy signed .bin from Disk A/NAND to Disk B slot1 and reboot)\r\n    Flow: USBD -> AD, copy file to NAND, then run FWUPDATE from CFG.\r\n    FWUPDATE sets a persistent disk-write lock until the update file is removed or FWUCLR is used.\r\n  <FWUST> FWUST  (show FWUPDATE disk-write lock status)\r\n  <FWUCLR> FWUCLR  (manual emergency clear of FWUPDATE disk-write lock)\r\n\r\nNavigation:\r\n  Back = B, Exit = E, Quit = Q (return to main)\r\n  Help = H, Menu = M, ? (show this list)\r\n\r\n[Config]> \r\n>"
+  },
+  {
+    "at": 1789333002.415613,
+    "tx": "FWUST\r"
+  },
+  {
+    "at": 1789333002.7882655,
+    "rx": "FWU write lock: CLEAR\r\n\r\n[Config]> \r\n>"
+  },
+  {
+    "at": 1789333002.7882655,
+    "tx": "Q\r"
+  },
+  {
+    "at": 1789333003.1317585,
+    "rx": "Returning to main menu...\r\nDirect instrument communication: REACTIVATED\n\r"
+  },
+  {
+    "at": 1789333003.134776,
+    "tx": "\u0014\r"
+  },
+  {
+    "at": 1789333003.518844,
+    "rx": "Direct instrument communication: DEACTIVATED.\n\rPress 'M'<ent> for menu (commands need <ent>), 'Q'<ent> to reactivate.\n\r"
+  },
+  {
+    "at": 1789333003.518844,
+    "tx": "SLP\r"
+  },
+  {
+    "at": 1789333003.8787997,
+    "rx": "\r\n=== Sleep Menu ===\r\n\r\nSleep Commands:\r\n  <T> TEST.SLEEP.CURRENT [MAG|BOTH|INST] [PARK|NOPARK] [SDH|SDL|SDZ]  (enter SYSTEMOFF)\r\n    Default: MagSwitch-only wake; use BOTH/INST to include Instrument ON/OFF.\r\n    Example: T MAG   (wake only via MagSwitch)\r\n    Example: T BOTH  (wake via MagSwitch or Instrument ON/OFF)\r\n    Default: PARK is enabled; use NOPARK to disable.\r\n    Example: T MAG NOPARK  (debug: reproduce leakage if something is still pulling)\r\n    Default: SDZ disconnects SD208 pins P0.24/P0.25; use SDH/SDL to override.\r\n    Example: T MAG SDZ  (disconnect SD208 pins)\r\n  <TI> TEST.SLEEP.IDLE [MAG|BOTH|INST] [PARK|NOPARK] [SDH|SDL|SDZ]  (System ON idle)\r\n    NOTE: wake triggers a reset (for deterministic current measurements).\r\n  <P> PCB.USB.KEEPALIVE (USB CDC + MSC on; power down everything else; reset to exit)\r\n  RESET / RST / REBOOT  (reboot immediately)\r\n  <D> DIAG [APPLY]  (print I2C/TCA/INA state; optional APPLY sets low-power first)\r\n  <A> APPLY         (apply low-power I2C profile + readback)\r\n  <I> ADS.IDAC.OFF   (set ADS1263 IDACMUX=0xFF, IDACMAG=0x00)\r\n  <G> GPIO.DUMP [ACTIVE|FIGHT] (dump GPIO PIN_CNF; optional filter)\r\n    Example: G ACTIVE  (show only pins with ACTIVE_PULL)\r\n    Example: G FIGHT   (show only pins with OUT_FIGHT)\r\n  <V> QSPI.DPD.VERIFY (bit-bang JEDEC, force both flashes into DPD)\r\n\r\nNavigation:\r\n  Back = B, Exit = E, Quit = Q (return to main)\r\n  Help = H, Menu = M, ? (show this list)\r\n\r\nWake sources configured for SYSTEMOFF:\r\n  Mag switch (DT alias mag-switch1): P1.8\r\n  Instrument ON/OFF (DT alias instonoff): P0.25\r\n\r\n\r\n[Sleep]> \r\n>"
+  },
+  {
+    "at": 1789333003.8796618,
+    "tx": "RESET\r"
+  },
+  {
+    "at": 1789333009.138538,
+    "returned": true,
+    "seconds": 5.2,
+    "update_file_still_present": true,
+    "update_contents": [
+      "osu_m_update.bin"
+    ]
+  }
+]

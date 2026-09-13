@@ -3,12 +3,12 @@ from pathlib import Path
 import ast,hashlib,struct,subprocess,json,pefile,sys
 R=Path(__file__).resolve().parent.parent;W=R/'analysis/single1410';W.mkdir(exist_ok=True)
 source=R/'analysis/single146/SAIV_IT_Runtime.exe';dll=R/'SIT_Import150.dll';expected='3ca033ad72ef28635e1eeeeff224e4c3340947302f8c07b135e6ed06043c8f69'
-subprocess.run([sys.executable,str(R/'analysis/generate_formula_guide1410.py')],check=True)
+# The archived guide is already generated and belongs to 1.4.10.
 # Model DLL and offline guide; preserve instrument runtime and installer.
 previous=json.loads((R/'analysis/single_exe_141_manifest.json').read_text())
 original=source.read_bytes();assert hashlib.sha256(original).hexdigest()==expected
 helper=W/'SIT_Update.exe';helper.write_bytes((R/'analysis/single141/SIT_Update.exe').read_bytes());assert hashlib.sha256(helper.read_bytes()).hexdigest()==previous['helper_sha256']
-subprocess.run(['g++','-std=c++11','-O2','-shared','-static-libgcc','-static-libstdc++','-Wl,--kill-at','-o',str(dll),str(R/'sit_import/sit_import.cpp'),str(R/'sit_import/native_call.s'),str(R/'sit_import/vendor/gsw/gsw_oceanographic_toolbox.c'),str(R/'sit_import/vendor/gsw/gsw_saar.c'),'-lcomctl32','-lcomdlg32','-lgdi32','-luser32','-lshell32','-lole32','-ladvapi32','-lwininet'],check=True)
+subprocess.run(['g++','-std=c++11','-O2','-shared','-static-libgcc','-static-libstdc++','-Wl,--kill-at','-o',str(dll),str(R/'analysis/reference/sit_import_v1410/sit_import.cpp'),str(R/'analysis/reference/sit_import_v1410/native_call.s'),str(R/'analysis/reference/sit_import_v1410/vendor/gsw/gsw_oceanographic_toolbox.c'),str(R/'analysis/reference/sit_import_v1410/vendor/gsw/gsw_saar.c'),'-lcomctl32','-lcomdlg32','-lgdi32','-luser32','-lshell32','-lole32','-ladvapi32','-lwininet'],check=True)
 p=pefile.PE(data=original);b=bytearray(original);resource_ranges=[]
 for k in p.DIRECTORY_ENTRY_RESOURCE.entries:
  for n in k.directory.entries:

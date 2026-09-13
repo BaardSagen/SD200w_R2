@@ -1,0 +1,149 @@
+{
+  "build": {
+    "cache_tag": "1.4.11_0dfe2dc4934a",
+    "source": "analysis/single146/SAIV_IT_Runtime.exe",
+    "source_sha256": "3ca033ad72ef28635e1eeeeff224e4c3340947302f8c07b135e6ed06043c8f69",
+    "output": "SAIV_Instrument_Terminal_v1.4.11_Sept2026.exe",
+    "sha256": "b62d984aba7f0304bc2eecc4f4740e56a8b6fd3c5d05ada9b8f67bc12160f918",
+    "runtime_sha256": "cd379866e627015607288414a95b68c300183526d850511ffb063b214c72b617",
+    "dll_sha256": "8576b50e83a925e1baf2e9090223c993e9cc842dc377be55bf5bd11dc47c0615",
+    "helper_sha256": "4070fe4428d2b659c937bf5cb13c40853b4dcd3c7f638aa0084e9f9db077a033",
+    "dependencies": [
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "msvcrt.dll",
+      "SHELL32.DLL",
+      "USER32.dll"
+    ],
+    "bytes": 13393176
+  },
+  "run": "C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\firmware1411\\physical\\1789337799238129300",
+  "mode": "install",
+  "before_hashes": {
+    "system.ini": "7179738b1d3d945e938e59669ce60794597d85b3a31a8b7f483dd88c7e75ab05",
+    "adc_core.ini": "a7226d4855fb59285c0f04c388e32709c68bcbec0ac26e278853000e66089561",
+    "adc_channels.ini": "bc268a07b45884674fdabfa85f270f206010d9a101e4be578f4b9d5e87b79f9b",
+    "lsm303.ini": "52fe440774743b0b716d6fd034aea20d2b5af0d29b0fe1aa071b260093472fd9"
+  },
+  "events": [
+    {
+      "at": 1789337803.5940137,
+      "active_port": 11,
+      "open_flag": "01"
+    },
+    {
+      "at": 1789337803.5951743,
+      "terminal_text_before": [
+        "",
+        "OSU107 Instrument logger SN107, Ver: 0.9.9P",
+        "Date/time: 2026-09-13 22:16:42 (GMT)",
+        "Battery: 10.80 V (65%)  Yellow led.",
+        "Free disk space: 6.563 MB of 7.965 MB",
+        "",
+        "Hold <I> to wake instrument",
+        ""
+      ]
+    },
+    {
+      "at": 1789337804.5161865,
+      "progress_indicator_visible": true,
+      "elapsed_text": "Checking firmware. Please wait...\r\nElapsed: 0 min 0 sec",
+      "close_disabled_while_busy": true
+    },
+    {
+      "at": 1789337805.5203252,
+      "check_status": "OSU107 SN107 | HW 3.1.2 | COM11 | E:\\\r\nInstalled firmware: 0.9.9P\r\nNew firmware available: 0.9.9r",
+      "notes": "SAIV110 / OSU107 firmware 0.9.9R\r\nHardware: OSU-M 3.1.2\r\nRelease date: 2026-09-13\r\n\r\nChanges from 0.9.9Q to 0.9.9R\r\n---------------------------\r\n- Fixed firmware-update cleanup with the USB cable continuously connected.\r\n  When an update lock is stored, USB enumeration waits until boot confirmation\r\n  and the cleanup attempt finish. Windows receives disk access afterwards.\r\n- Removes the update source file and clears the persistent FWU lock after a\r\n  successful confirmed update. Also handles CONFIRMED_CLEANUP_PENDING left by Q.\r\n- Keeps the existing exclusive disk-access protection. Firmware does not delete\r\n  files while Windows owns the disk. If cleanup fails, the lock remains and\r\n  USB diagnostics become available; a later reboot can retry.\r\n- Preserves serial number, operating mode, settings and calibration. This\r\n  release does not change ADC sampling or the N-line/S-line calibration path.\r\n\r\nEarlier changes: 0.9.9Q (2026-09-07)\r\n----------------------------------\r\n- Local logger clock entry with X and LT/GMT label selection.\r\n- Numeric input echo for instrument oxygen calibration and coefficient menus,\r\n  and streaming progress during instrument self-test.\r\n- Configuration update with U while the external instrument is asleep/absent.\r\n- Rejects configuration with Instrument and Surface enabled simultaneously.\r\n\r\nEarlier changes: 0.9.9P (2026-09-03)\r\n----------------------------------\r\n- Improved automatic air-pressure setting after external Mag-Key starts,\r\n  range-change handling, UART framing and shared disk access.\r\n\r\nUpdating\r\n--------\r\nUse the BIN for the correct hardware revision. Back up configuration and keep\r\nUSB and power connected until the updater has finished verifying the device.\r\nAfter reboot, check the running version with VER, FWUST must report CLEAR,\r\nand update/osu_m_update.bin must be absent before completing the update.\r\nTo refresh the software identity in config/system.ini, delete only that file\r\nand reboot through Ctrl+T, SLP, RESET. Retain other configuration files and\r\nverify serial number, operating mode and calibration afterwards.\r\nIf cleanup remains pending, retain the backup and report the FWUST status.\r\n"
+    },
+    {
+      "at": 1789337805.5533416,
+      "internal_menu_hidden": true,
+      "terminal_unchanged": true
+    },
+    {
+      "at": 1789337805.7552042,
+      "confirmation": "\nOSU107 SN107: 0.9.9P -> 0.9.9r\r\n\r\nThis updates the connected device itself.\r\nDo not unplug USB or power off the device during the update.\r\nFirmware takes about 2 minutes, followed by about 15 seconds to regenerate config.\r\n\r\nSIT will back up config on this PC, then delete only config/system.ini after verifying the new firmware. The device will regenerate that file on restart. Other configuration and calibration files are retained.\r\n\r\nUpdate this device now?"
+    },
+    {
+      "at": 1789337805.9970827,
+      "progress": "OSU107 SN107 | HW 3.1.2 | COM11 | E:\\\r\nInstalled firmware: 0.9.9P\r\nNew firmware available: 0.9.9r",
+      "detail": "SAIV110 / OSU107 firmware 0.9.9R\r\nHardware: OSU-M 3.1.2\r\nRelease date: 2026-09-13\r\n\r\nChanges from 0.9.9Q to 0.9.9R\r\n---------------------------\r\n- Fixed firmware-update cleanup with the USB cable continuously connected.\r\n  When an update lock is stored, USB enumeration waits until boot confirmation\r\n  and the cleanup attempt finish. Windows receives disk access afterwards.\r\n- Removes the update source file and clears the persistent FWU lock after a\r\n  successful confirmed update. Also handles CONFIRMED_CLEANUP_PENDING left by Q.\r\n- Keeps the existing exclusive disk-access protection. Firmware does not delete\r\n  files while Windows owns the disk. If cleanup fails, the lock remains and\r\n  USB diagnostics become available; a later reboot can retry.\r\n- Preserves serial number, operating mode, settings and calibration. This\r\n  release does not change ADC sampling or the N-line/S-line calibration path.\r\n\r\nEarlier changes: 0.9.9Q (2026-09-07)\r\n----------------------------------\r\n- Local logger clock entry with X and LT/GMT label selection.\r\n- Numeric input echo for instrument oxygen calibration and coefficient menus,\r\n  and streaming progress during instrument self-test.\r\n- Configuration update with U while the external instrument is asleep/absent.\r\n- Rejects configuration with Instrument and Surface enabled simultaneously.\r\n\r\nEarlier changes: 0.9.9P (2026-09-03)\r\n----------------------------------\r\n- Improved automatic air-pressure setting after external Mag-Key starts,\r\n  range-change handling, UART framing and shared disk access.\r\n\r\nUpdating\r\n--------\r\nUse the BIN for the correct hardware revision. Back up configuration and keep\r\nUSB and power connected until the updater has finished verifying the device.\r\nAfter reboot, check the running version with VER, FWUST must report CLEAR,\r\nand update/osu_m_update.bin must be absent before completing the update.\r\nTo refresh the software identity in config/system.ini, delete only that file\r\nand reboot through Ctrl+T, SLP, RESET. Retain other configuration files and\r\nverify serial number, operating mode and calibration afterwards.\r\nIf cleanup remains pending, retain the backup and report the FWUST status.\r\n",
+      "backup": ""
+    },
+    {
+      "at": 1789337810.3321936,
+      "progress": "Copying firmware to the device and checking the complete file...",
+      "detail": "Download verified: 635648 bytes.\r\nSHA-256 matches the firmware manifest.\r\n\r\nThe complete file will now be copied to the device and read back before the update starts.",
+      "backup": "Configuration backup: C:\\Users\\baard\\AppData\\Local\\SAIV_IT\\FirmwareBackups\\SN107-24668-96109703"
+    },
+    {
+      "at": 1789337821.6397038,
+      "progress": "Starting the device firmware update. Do not unplug USB.",
+      "detail": "Firmware file verified on the device: 635648 / 635648 bytes.\r\nThe complete file was read back and matches the SHA-256-verified download byte for byte.\r\n\r\nKeep USB connected. The disk and COM port will disappear during the update. SIT will wait for this device to return and verify its firmware version.",
+      "backup": "Configuration backup: C:\\Users\\baard\\AppData\\Local\\SAIV_IT\\FirmwareBackups\\SN107-24668-96109703"
+    },
+    {
+      "at": 1789337821.907328,
+      "progress": "Waiting for the device disk and COM port to return. Allow about 2 minutes. Do not unplug USB.",
+      "detail": "Firmware file verified on the device: 635648 / 635648 bytes.\r\nThe complete file was read back and matches the SHA-256-verified download byte for byte.\r\n\r\nKeep USB connected. The disk and COM port will disappear during the update. SIT will wait for this device to return and verify its firmware version.",
+      "backup": "Configuration backup: C:\\Users\\baard\\AppData\\Local\\SAIV_IT\\FirmwareBackups\\SN107-24668-96109703"
+    },
+    {
+      "at": 1789337914.1037793,
+      "progress": "Reading the running firmware version from the device...",
+      "detail": "Firmware file verified on the device: 635648 / 635648 bytes.\r\nThe complete file was read back and matches the SHA-256-verified download byte for byte.\r\n\r\nKeep USB connected. The disk and COM port will disappear during the update. SIT will wait for this device to return and verify its firmware version.",
+      "backup": "Configuration backup: C:\\Users\\baard\\AppData\\Local\\SAIV_IT\\FirmwareBackups\\SN107-24668-96109703"
+    },
+    {
+      "at": 1789337915.1705208,
+      "progress": "Checking that the device has emptied its update folder...",
+      "detail": "Firmware file verified on the device: 635648 / 635648 bytes.\r\nThe complete file was read back and matches the SHA-256-verified download byte for byte.\r\n\r\nKeep USB connected. The disk and COM port will disappear during the update. SIT will wait for this device to return and verify its firmware version.",
+      "backup": "Configuration backup: C:\\Users\\baard\\AppData\\Local\\SAIV_IT\\FirmwareBackups\\SN107-24668-96109703"
+    },
+    {
+      "at": 1789337917.8391774,
+      "progress": "Firmware verified. Preparing to regenerate config/system.ini...",
+      "detail": "Firmware file verified on the device: 635648 / 635648 bytes.\r\nThe complete file was read back and matches the SHA-256-verified download byte for byte.\r\n\r\nKeep USB connected. The disk and COM port will disappear during the update. SIT will wait for this device to return and verify its firmware version.",
+      "backup": "Configuration backup: C:\\Users\\baard\\AppData\\Local\\SAIV_IT\\FirmwareBackups\\SN107-24668-96109703"
+    },
+    {
+      "at": 1789337923.7544997,
+      "progress": "Restarting the device. Do not unplug USB.",
+      "detail": "Firmware file verified on the device: 635648 / 635648 bytes.\r\nThe complete file was read back and matches the SHA-256-verified download byte for byte.\r\n\r\nKeep USB connected. The disk and COM port will disappear during the update. SIT will wait for this device to return and verify its firmware version.",
+      "backup": "Configuration backup: C:\\Users\\baard\\AppData\\Local\\SAIV_IT\\FirmwareBackups\\SN107-24668-96109703"
+    },
+    {
+      "at": 1789337924.3069742,
+      "progress": "Waiting for the regenerated system.ini. Allow about 15 seconds. Do not unplug USB.",
+      "detail": "Firmware file verified on the device: 635648 / 635648 bytes.\r\nThe complete file was read back and matches the SHA-256-verified download byte for byte.\r\n\r\nKeep USB connected. The disk and COM port will disappear during the update. SIT will wait for this device to return and verify its firmware version.",
+      "backup": "Configuration backup: C:\\Users\\baard\\AppData\\Local\\SAIV_IT\\FirmwareBackups\\SN107-24668-96109703"
+    },
+    {
+      "at": 1789337928.2638426,
+      "progress": "Checking the new system.ini and the device firmware version...",
+      "detail": "Firmware file verified on the device: 635648 / 635648 bytes.\r\nThe complete file was read back and matches the SHA-256-verified download byte for byte.\r\n\r\nKeep USB connected. The disk and COM port will disappear during the update. SIT will wait for this device to return and verify its firmware version.",
+      "backup": "Configuration backup: C:\\Users\\baard\\AppData\\Local\\SAIV_IT\\FirmwareBackups\\SN107-24668-96109703"
+    },
+    {
+      "at": 1789337931.9509618,
+      "progress": "Firmware update successful. The device and its new config have been verified.",
+      "detail": "Firmware file verified on the device: 635648 / 635648 bytes.\r\nThe complete file was read back and matches the SHA-256-verified download byte for byte.\r\n\r\nKeep USB connected. The disk and COM port will disappear during the update. SIT will wait for this device to return and verify its firmware version.",
+      "backup": "Configuration backup: C:\\Users\\baard\\AppData\\Local\\SAIV_IT\\FirmwareBackups\\SN107-24668-96109703"
+    },
+    {
+      "at": 1789337932.2054026,
+      "completion": "\nFirmware update successful.\r\n\r\nOSU107 SN107 now runs 0.9.9r\r\nThe new config/system.ini and the COM response both match.\r\n\r\nConfiguration backup:\r\nC:\\Users\\baard\\AppData\\Local\\SAIV_IT\\FirmwareBackups\\SN107-24668-96109703\r\n\r\nRun Detect before the next instrument operation."
+    },
+    {
+      "at": 1789337932.9398615,
+      "internal_menu_hidden_throughout_update": true
+    },
+    {
+      "at": 1789337932.9489818,
+      "physical_update_passed": true,
+      "other_config_unchanged": true,
+      "update_folder_empty": true
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,34 @@
+{
+  "no_firmware_startup_window": true,
+  "help_menu": [
+    [
+      "&Help",
+      4294967295
+    ],
+    [
+      "&Quick guide...",
+      32324
+    ],
+    [
+      "&About...",
+      86
+    ],
+    [
+      "&Firmware...",
+      32337
+    ],
+    [
+      "",
+      0
+    ],
+    [
+      "&Update software...",
+      32321
+    ]
+  ],
+  "manual_prompt": "Firmware updates the SAIV110 or OSU107 device connected to this PC and SIT.\r\nWould you like to check for new firmware?",
+  "update_disabled_before_check": true,
+  "missing_connection_blocks_update": true,
+  "guide_and_software_update_preserved": true,
+  "no_firmware_commands": true
+}

@@ -3,7 +3,7 @@
 #include <wininet.h>
 #include <cwctype>
 #ifndef SIT_UPDATE_VERSION
-#define SIT_UPDATE_VERSION "1.4.10"
+#define SIT_UPDATE_VERSION "1.4.11"
 #endif
 static const wchar_t* updateRegistry=L"Software\\MHP\\SdInstr\\SoftwareUpdate";
 static const UINT updateMenuId=0x7e41,updateComplete=WM_APP+141;
@@ -22,6 +22,7 @@ static std::string updateFetch(const std::string&address,size_t limit){
 }
 static std::wstring updateText(const std::string&raw){auto text=raw;if(text.compare(0,3,"\xef\xbb\xbf")==0)text.erase(0,3);if(text.find('\0')!=std::string::npos)throw std::runtime_error("The release notes are not plain text.");if(!text.empty()&&!MultiByteToWideChar(CP_UTF8,MB_ERR_INVALID_CHARS,text.data(),int(text.size()),0,0))throw std::runtime_error("The release notes are not valid UTF-8 text.");std::string lines;for(size_t i=0;i<text.size();++i){if(text[i]=='\n'&&(i==0||text[i-1]!='\r'))lines+='\r';lines+=text[i];}return wide(lines);}
 #include "update_install.inc"
+#include "firmware_ui.inc"
 struct UpdateResult {UpdatePackage package;situpdate::Manifest manifest;std::wstring notes;std::string error;bool available=false;};
 struct UpdateState {HWND h=0;HANDLE thread=0;UpdateResult result;bool installing=false;volatile LONG refs=1;};
 static void updateRelease(UpdateState*s){if(InterlockedDecrement(&s->refs)==0)delete s;}
@@ -46,6 +47,6 @@ static void updateShow(HWND owner){if(updateWindow&&IsWindow(updateWindow)){SetF
  control(h,L"STATIC",L"Use Help > Update software to check for updates manually\r\nor turn this startup message back on.",0,32,412,620,34,307);
  control(h,L"BUTTON",L"&Check now",BS_DEFPUSHBUTTON|WS_TABSTOP,16,426,125,28,304);control(h,L"BUTTON",L"&Install update",WS_TABSTOP,370,426,150,28,305);EnableWindow(GetDlgItem(h,305),FALSE);control(h,L"BUTTON",L"&Later",WS_TABSTOP,540,426,110,28,306);updateLayout(h);ShowWindow(h,SW_SHOW);SetFocus(GetDlgItem(h,304));
 }
-static void updateMenu(HWND h){HMENU main=GetMenu(h);if(!main)return;for(int i=0;i<GetMenuItemCount(main);++i){wchar_t name[128]={};GetMenuStringW(main,i,name,128,MF_BYPOSITION);std::wstring label;for(wchar_t c:std::wstring(name))if(c!='&')label+=std::towlower(c);if(label!=L"help")continue;auto help=GetSubMenu(main,i);if(help&&GetMenuState(help,guideMenuId,MF_BYCOMMAND)==DWORD(-1)){InsertMenuW(help,0,MF_BYPOSITION|MF_STRING,guideMenuId,L"&Quick guide...");DrawMenuBar(h);}if(help&&GetMenuState(help,updateMenuId,MF_BYCOMMAND)==DWORD(-1)){AppendMenuW(help,MF_SEPARATOR,0,0);AppendMenuW(help,MF_STRING,updateMenuId,L"&Update software...");DrawMenuBar(h);}return;}}
-static LRESULT CALLBACK updateMainProc(HWND h,UINT m,WPARAM w,LPARAM l,UINT_PTR,DWORD_PTR){if(m==WM_COMMAND&&LOWORD(w)==guideMenuId&&!l){guideShow(h);return 0;}if(m==WM_COMMAND&&LOWORD(w)==updateMenuId&&!l){KillTimer(h,updateTimerId);updateShow(h);return 0;}if(m==WM_TIMER&&w==updateTimerId){if(!IsWindowVisible(h)||!IsWindowEnabled(h))return 0;KillTimer(h,updateTimerId);if(!updateDisabled())updateShow(h);return 0;}auto result=DefSubclassProc(h,m,w,l);if(m==WM_INITMENU)updateMenu(h);return result;}
+static void updateMenu(HWND h){HMENU main=GetMenu(h);if(!main)return;for(int i=0;i<GetMenuItemCount(main);++i){wchar_t name[128]={};GetMenuStringW(main,i,name,128,MF_BYPOSITION);std::wstring label;for(wchar_t c:std::wstring(name))if(c!='&')label+=std::towlower(c);if(label!=L"help")continue;auto help=GetSubMenu(main,i);if(help&&GetMenuState(help,firmwareMenuId,MF_BYCOMMAND)==DWORD(-1)){AppendMenuW(help,MF_STRING,firmwareMenuId,L"&Firmware...");DrawMenuBar(h);}if(help&&GetMenuState(help,guideMenuId,MF_BYCOMMAND)==DWORD(-1)){InsertMenuW(help,0,MF_BYPOSITION|MF_STRING,guideMenuId,L"&Quick guide...");DrawMenuBar(h);}if(help&&GetMenuState(help,updateMenuId,MF_BYCOMMAND)==DWORD(-1)){AppendMenuW(help,MF_SEPARATOR,0,0);AppendMenuW(help,MF_STRING,updateMenuId,L"&Update software...");DrawMenuBar(h);}return;}}
+static LRESULT CALLBACK updateMainProc(HWND h,UINT m,WPARAM w,LPARAM l,UINT_PTR,DWORD_PTR){if(m==WM_COMMAND&&LOWORD(w)==firmwareMenuId&&!l){firmwareShow(h);return 0;}if(m==WM_COMMAND&&LOWORD(w)==guideMenuId&&!l){guideShow(h);return 0;}if(m==WM_COMMAND&&LOWORD(w)==updateMenuId&&!l){KillTimer(h,updateTimerId);updateShow(h);return 0;}if(m==WM_TIMER&&w==updateTimerId){if(!IsWindowVisible(h)||!IsWindowEnabled(h))return 0;KillTimer(h,updateTimerId);if(!updateDisabled())updateShow(h);return 0;}auto result=DefSubclassProc(h,m,w,l);if(m==WM_INITMENU)updateMenu(h);return result;}
 static void updateInit(HWND h){if(!h)return;updateMenu(h);if(updateInitialized)return;updateInitialized=true;SetWindowSubclass(h,updateMainProc,141,0);if(!updateDisabled())SetTimer(h,updateTimerId,1500,0);}

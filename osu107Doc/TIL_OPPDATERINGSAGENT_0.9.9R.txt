@@ -1,0 +1,62 @@
+Til agenten som lager SIT-oppdateringen
+=====================================
+
+Firmware 0.9.9R er ferdig. SN107 / HW 3.1.2 / COM11 er satt tilbake til
+original 0.9.9P, slik at dere kan teste oppdatering fra P til R.
+VER og regenerert config/system.ini bekrefter P. Serienummer 107, modus og
+kalibrering er bevart. FWUST viser CLEAR, og oppdateringsfilen er borte.
+COM11 er lukket og tilgjengelig. J-Link er 69650428 / COM6.
+
+R-pakken for denne enheten ligger her:
+C:\cprojects\zephyrPlayground\zephyr-project\zephyrPlay\osu107\tools\flashTool\hexfiles\server\hw_3-1-2\0.9.9R\
+
+Lever alle tre filer sammen i serverens mappe for HW 3.1.2:
+- latest.json
+- readme.txt
+- osu_m_update_hw3.1.2_0.9.9r.bin
+
+BIN: 635648 byte
+SHA-256: d557327dae4af7bc90ef2555c800184a6cc08296622cada0f6fc347d30af24a6
+readme_url i latest.json bruker små bokstaver: readme.txt.
+Filene er laget lokalt i firmwareprosjektet. R er ikke lastet opp herfra,
+og Delphi-prosjektet er ikke endret under R-arbeidet.
+
+R-rettelsen
+-----------
+Når en FWU-lås finnes ved oppstart, utsettes USB-enumerering til oppdateringen
+er bekreftet og oppryddingen er forsøkt. Firmware får dermed slettet kildefilen
+og frigitt låsen før Windows får disktilgang. Dette håndterer også
+CONFIRMED_CLEANUP_PENDING som er lagret av Q. USB-kabelen kan stå tilkoblet.
+Beskyttelsen mot samtidig FAT-tilgang fra Windows og firmware er beholdt.
+Ved feil beholdes låsen; USB kommer opp for diagnostikk, og omstart kan prøve
+opprydding igjen. FWUCLR skal ikke være nødvendig i det normale R-løpet.
+
+Testet på SN107 / PCB 3.1.2
+--------------------------
+1. R ble startet med den eksisterende Q-låsen og Q-filen fortsatt til stede.
+   Filen ble automatisk slettet, og FWUST gikk til CLEAR med USB tilkoblet.
+2. En full P -> R via CFG FWUPDATE bestod med USB tilkoblet hele tiden.
+   Det tok 118,2 sekunder fra kommando til ferdig kontroll. VER viste R,
+   FWUST viste CLEAR, og kildefilen var borte uten manuell sletting/FWUCLR.
+3. Regenerering av system.ini via sletting av bare den filen og
+   Ctrl+T -> SLP -> RESET bestod på R. Modus og kalibrering ble bevart.
+4. Enheten ble deretter tilbakeført til P og kontrollert på nytt.
+
+SIT skal kontrollere
+-------------------
+- Riktig enhet og hardware, og SHA-256 for nedlastet BIN.
+- Kopier BIN til enheten som update/osu_m_update.bin og kjør CFG FWUPDATE.
+- Etter ny oppstart: bekreft R med fersk VER på samme USB-serienummer.
+- Krev FWUST CLEAR og at update/osu_m_update.bin faktisk er borte.
+- Ta/behold konfigurasjonsbackup. Slett bare config/system.ini, ikke hele
+  config-mappen, og kjør Ctrl+T -> SLP -> RESET.
+- Bekreft R i både VER og regenerert system.ini, samt bevart serienummer,
+  modus og kalibrering, før oppdateringen rapporteres som fullført.
+
+PCB 3.3.0 har en separat R-pakke i server\hw_3-3-0\0.9.9R.
+Den er bygget og signaturkontrollert, men ikke fysisk testet her.
+P- og Q-binærene er uendret.
+
+Detaljer og testlogger:
+osu107/HANDOVER_2026-09-13_R_FWU_CLEANUP.md
+calibrate/SN107/firmware_r_20260913/

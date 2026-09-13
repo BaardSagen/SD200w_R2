@@ -197,3 +197,7 @@ analysis/*.bin
 !/analysis/single1410/SAIV_IT_Runtime.exe
 /analysis/models147/*.o
 /analysis/runtime_test/import141/customer folder*/
+
+# SIT 1.4.11 single executable and build module
+!/SAIV_Instrument_Terminal_v1.4.11_Sept2026.exe
+!/SIT_Import151.dll
