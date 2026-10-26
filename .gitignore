@@ -201,3 +201,23 @@ analysis/*.bin
 # SIT 1.4.11 single executable and build module
 !/SAIV_Instrument_Terminal_v1.4.11_Sept2026.exe
 !/SIT_Import151.dll
+
+# SIT 1.4.12 multi-file Convert; preserve release and rebuild inputs.
+!/SAIV_Instrument_Terminal_v1.4.12_Oct2026.exe
+!/SIT_Import152.dll
+/analysis/single1412/*
+!/analysis/single1412/SAIV_IT_Runtime.exe
+!/analysis/single1412/SIT_Update.exe
+/analysis/build_temp1412/
+/analysis/runtime_test/batch1412/*
+!/analysis/runtime_test/batch1412/1793017739114155100/
+/analysis/runtime_test/batch1412/1793017739114155100/*
+!/analysis/runtime_test/batch1412/1793017739114155100/report.json
+!/analysis/runtime_test/batch1412/1793017739114155100/batch_complete.png
+
+# Exact 1.4.11 inputs required by the preserved 1.4.12 builder.
+/analysis/single1411/*
+!/analysis/single1411/SAIV_IT_Runtime.exe
+!/analysis/single1411/SIT_Update.exe
+!/analysis/single1411/launcher.cpp
+!/analysis/single1411/launcher.manifest

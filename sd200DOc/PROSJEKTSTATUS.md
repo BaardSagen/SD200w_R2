@@ -1,6 +1,50 @@
 # Prosjektoverlevering — SAIV Instrument Terminal (tidligere MiniSoft SD200W)
 
-Oppdatert: 10. september 2026. Arbeidsmappe: `C:\cproject\delphi\SD200w_R2`.
+Oppdatert: 26. oktober 2026. Arbeidsmappe: `C:\cprojects\delphi\sd200w_r2`.
+
+## Signering og overlevering, 26. oktober 2026
+
+Les [dagens sammendrag](DAGSNOTAT_2026-10-26.md). Azure Artifact Signing-kontoen
+`saivsigning` er opprettet med Basic i North Europe, ressursgruppe
+`rg-saiv-signing`. Public Organization-validering for SAIV AS står sist som
+In Progress. Personlig ID-kontroll av representanten gjenstår; brukeren tar
+med fysisk førerkort 27. oktober. Ingen sertifikatprofil eller signering ennå.
+Brukeren ønsker flere SAIV-programmer signert i samme periode og vil senere
+avslutte signeringskontoen, men beholde Azure-abonnement og identitetsgodkjenning.
+Ingen sletting nå. Alle signaturer skal tidsstemples. Ingen kunder har tatt
+i bruk 1.4.12, så signert leveranse skal fortsatt ha versjonsnummer 1.4.12.
+Ny serverpakke lages etter signering og testes mot eksisterende oppdaterer.
+Brukeren har nå bedt om sammendrag, commit og push; notatene nedenfor om
+«ingen commit eller push» beskriver tilstanden før denne Git-leveransen.
+
+## SIT 1.4.12 – flere filer i Convert, 26. oktober 2026
+
+Nyeste lokale leveranse er **SAIV_Instrument_Terminal_v1.4.12_Oct2026.exe**.
+Les `LES_MEG_Batch_1412.md`. Convert-knappen og File-menyen lar brukeren velge
+flere TXT/CSV-filer med Ctrl/Shift. Ved flere filer velges utmappe; beregningsvalg
+gjenbrukes for samme instrumenttype og kolonneoppsett. GPS og manglende T/S/AP
+etterspørres per fil. Hver fil eksporteres separat som `_SIT.txt`; eksisterende
+filer beholdes med nummerert nytt navn. Eget vindu viser animert fremdrift,
+resultat per fil og Cancel remaining. Feil i én fil stopper ikke de andre.
+Enkeltfilvalg beholder tabell/kurve, Export all fields og Import to SD2.
+
+Alle de 15 filene i `data/dataFormCoustomer` er testet: komplette eksporter er
+byte-identiske med individuell Convert i bevart 1.4.11, og kildefilenes SHA-256
+er uendret. Eksisterende utfil, enkeltfilflyt, ugyldig fil, avbrudd før og under
+jobben samt nye spørsmål om manglende betingelser er kontrollert. Delphi-trådens
+x87-kontrollord overføres til arbeidertrådene for identisk avrunding.
+GUI-testene bruker egne kopier på privat skrivebord, minnestubber for registeret
+og sperret fysisk portaapning. Resultat: `analysis/batch1412_release_validation.json`.
+Detaljrapport: `analysis/runtime_test/batch1412/1793017739114155100/report.json`.
+
+Bygg: `analysis/build_single_exe_1412.py`. En-EXE med `SIT_Import152.dll` innebygd.
+SHA-256: `14fb2a3c451b2c620e3e18394a5f59b0b9d438655f1e693188a77f5823f2c896`.
+Forrige 1.4.11-EXE og kilde er bevart; byggskriptet for 1.4.11 bruker nå
+`analysis/reference/sit_import_v1411`. Beregnings- og firmwarekilder er uendret;
+statisk kontroll begrenser runtime-endringene til Convert-inngang, DLL-navn,
+About/versjon og PE-størrelser/kontrollsum. Quick guide er oppdatert.
+Ingen instrumentoperasjon, serverpublisering, commit eller push er utført.
+Utgaven er usignert mens SAIV oppretter Azure-signering.
 
 ## Firmwarekandidat 1.4.11, 13. september 2026
 
@@ -23,7 +67,7 @@ R-serverpakken er verifisert: latest.json, readme.txt og BIN svarer HTTP 200 og 
 ## Start her neste gang
 
 1. Les dette notatet og brukerens nye oppgave.
-2. Nyeste lokale SIT-leveranse er **SAIV_Instrument_Terminal_v1.4.10_Sept2026.exe**. Les [LES_MEG_Salinity_Guide_1410.md](../LES_MEG_Salinity_Guide_1410.md). Kunden trenger fortsatt bare EN EXE.
+2. Nyeste lokale SIT-leveranse er **SAIV_Instrument_Terminal_v1.4.12_Oct2026.exe**. Les [LES_MEG_Batch_1412.md](../LES_MEG_Batch_1412.md). Kunden trenger fortsatt bare EN EXE.
 3. Les relevante dokumenter og byggskript i `analysis` før patching. Mange skript krever en bestemt eldre kildefil og SHA-256; de kan ikke ukritisk kjøres på siste utgave.
 4. Lag en ny programkopi og behold tidligere leveranser. Verifiser relevante endringer og lever den konkrete EXE-filen.
 

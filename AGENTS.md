@@ -1,5 +1,13 @@
 # Prosjektnotater
 
+## Nyeste lokale leveranse, 26. oktober 2026
+
+`SAIV_Instrument_Terminal_v1.4.12_Oct2026.exe` har valg av flere filer i Convert.
+Les `LES_MEG_Batch_1412.md` og siste prosjektstatus. Tidligere versjonsangivelser
+nedenfor er historiske. Bygg med `analysis/build_single_exe_1412.py`; 1.4.11-kilden
+er bevart i `analysis/reference/sit_import_v1411`. Programmet er fortsatt usignert
+mens SAIV oppretter signeringstjenesten.
+
 ## Intern servicemeny skal ikke røpes til kunden
 
 Ctrl+T-menyen på OSU107/SAIV110 er en intern servicemeny. Ikke vis eller beskriv tastekombinasjonen, menyinnholdet eller tilhørende interne kommandosekvenser i kundevendt grensesnitt, terminalutskrift fra automatiske operasjoner, feilmeldinger, brukerguide, versjonsnotater, skjermbilder eller filer som følger kundepakken.

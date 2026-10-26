@@ -30,10 +30,11 @@ static const GuideTopic guideTopics[]={
   L"If you want to choose units or calculate additional fields first, use Convert instead. In its result window, choose Import to SD2 to open the converted dataset in SIT.\r\n\r\n"
   L"Use File > Close file to close the current dataset."},
  {L"Convert and export",
-  L"1. Click Convert, or choose File > Convert CSV/TXT, and select the source file.\r\n\r\n"
+  L"1. Click Convert, or choose File > Convert CSV/TXT. Select one file, or hold Ctrl/Shift to select several files.\r\n\r\n"
   L"2. Work through the available fields. Choose the required units and calculations, and whether to retain each original field. The choices depend on the file's columns.\r\n\r\n"
   L"3. Supply any requested position or supporting values. Read the units shown on each page.\r\n\r\n"
   L"4. Review the resulting table and curve. Export all fields saves the logger result, including its additional fields. Import to SD2 creates a dataset for use in SIT.\r\n\r\n"
+  L"MULTIPLE FILES\r\nChoose an output folder. Conversion choices are reused for files with the same instrument type and column layout. Different layouts need their own choices. GPS and missing temperature, salinity or air pressure are requested separately when needed. Each result is saved as a separate _SIT.txt file. Existing files are kept; a numbered filename is used if needed. The progress window lists saved files and any failures. Cancel remaining stops after the current file; completed files are kept.\r\n\r\n"
   L"SIT remembers successful conversion choices for matching instrument types and column layouts. When offered previous choices, select Yes to reuse them, No to choose again, or Cancel to stop.\r\n\r\n"
   L"For an opened SIT dataset, File > Export offers the available list, standard-depth and other export formats. These formats depend on the dataset; use Export all fields in the logger result window when you need every logger field."},
  {L"Merge files",

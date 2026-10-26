@@ -1,0 +1,171 @@
+{
+  "customer_batch": {
+    "status": "15 converted, 0 failed, 0 not processed.",
+    "wizards": 1,
+    "pages": [
+      "Step 1 of 10: S - Practical Salinity (PSS-78)",
+      "Step 2 of 10: C - Conductivity (mS/cm)",
+      "Step 3 of 10: T - Temperature (Celsius)",
+      "Step 4 of 10: P - Sea pressure (dbar)",
+      "Step 5 of 10: OT - Turbidity (FTU)",
+      "Step 6 of 10: OF - Fluorescence (\u00b5g/L)",
+      "Step 7 of 10: c",
+      "Step 8 of 10: OxR - RINKO (%)",
+      "Step 9 of 10: Tilt",
+      "Step 10 of 10: Derived seawater properties",
+      "Review supporting values and calculation conventions"
+    ],
+    "log": "Saved: C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\batch1412\\1793017739114155100\\converted\\2026_09_15_09-19-44_C_SIT_2.txt\r\nSaved: C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\batch1412\\1793017739114155100\\converted\\2026_09_15_10-38-19_C_SIT.txt\r\nSaved: C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\batch1412\\1793017739114155100\\converted\\2026_09_15_11-00-15_C_SIT.txt\r\nSaved: C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\batch1412\\1793017739114155100\\converted\\2026_09_15_11-29-47_C_SIT.txt\r\nSaved: C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\batch1412\\1793017739114155100\\converted\\2026_09_15_12-00-49_C_SIT.txt\r\nSaved: C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\batch1412\\1793017739114155100\\converted\\2026_09_15_13-11-57_C_SIT.txt\r\nSaved: C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\batch1412\\1793017739114155100\\converted\\2026_09_15_13-30-52_C_SIT.txt\r\nSaved: C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\batch1412\\1793017739114155100\\converted\\2026_09_15_13-43-25_C_SIT.txt\r\nSaved: C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\batch1412\\1793017739114155100\\converted\\2026_09_15_14-30-44_C_SIT.txt\r\nSaved: C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\batch1412\\1793017739114155100\\converted\\2026_09_15_14-43-53_C_SIT.txt\r\nSaved: C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\batch1412\\1793017739114155100\\converted\\2026_09_15_15-20-50_C_SIT.txt\r\nSaved: C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\batch1412\\1793017739114155100\\converted\\2026_09_15_15-29-40_C_SIT.txt\r\nSaved: C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\batch1412\\1793017739114155100\\converted\\2026_09_15_16-02-04_C_SIT.txt\r\nSaved: C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\batch1412\\1793017739114155100\\converted\\2026_09_15_16-13-14_C_SIT.txt\r\nSaved: C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\batch1412\\1793017739114155100\\converted\\2026_09_15_16-54-32_C_SIT.txt\r\nFinished.\r\n"
+  },
+  "mixed": {
+    "status": "2 converted, 1 failed, 0 not processed.",
+    "wizards": 1,
+    "pages": [
+      "Step 1 of 10: S - Practical Salinity (PSS-78)",
+      "Step 2 of 10: C - Conductivity (mS/cm)",
+      "Step 3 of 10: T - Temperature (Celsius)",
+      "Step 4 of 10: P - Sea pressure (dbar)",
+      "Step 5 of 10: OT - Turbidity (FTU)",
+      "Step 6 of 10: OF - Fluorescence (\u00b5g/L)",
+      "Step 7 of 10: c",
+      "Step 8 of 10: OxR - RINKO (%)",
+      "Step 9 of 10: Tilt",
+      "Step 10 of 10: Derived seawater properties",
+      "Review supporting values and calculation conventions"
+    ],
+    "log": "Saved: C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\batch1412\\1793017739114155100\\mixed_results\\a_valid_SIT.txt\r\nFAILED: b_invalid.txt - Unsupported Convert input; use FIELDS/Full or CTD/STD text with Date/Time and Interval\r\nSaved: C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\batch1412\\1793017739114155100\\mixed_results\\c_valid_SIT.txt\r\nFinished.\r\n"
+  },
+  "cancel": {
+    "status": "0 converted, 0 failed, 2 not processed.",
+    "wizards": 1,
+    "pages": [],
+    "log": "Stopped. Completed output files have been kept.\r\n"
+  },
+  "partial_cancel": {
+    "status": "1 converted, 0 failed, 14 not processed.",
+    "wizards": 1,
+    "pages": [
+      "Step 1 of 10: S - Practical Salinity (PSS-78)",
+      "Step 2 of 10: C - Conductivity (mS/cm)",
+      "Step 3 of 10: T - Temperature (Celsius)",
+      "Step 4 of 10: P - Sea pressure (dbar)",
+      "Step 5 of 10: OT - Turbidity (FTU)",
+      "Step 6 of 10: OF - Fluorescence (\u00b5g/L)",
+      "Step 7 of 10: c",
+      "Step 8 of 10: OxR - RINKO (%)",
+      "Step 9 of 10: Tilt",
+      "Step 10 of 10: Derived seawater properties",
+      "Review supporting values and calculation conventions"
+    ],
+    "log": "Saved: C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\batch1412\\1793017739114155100\\partial_cancel\\2026_09_15_09-19-44_C_SIT.txt\r\nStopped. Completed output files have been kept.\r\n"
+  },
+  "conditions": {
+    "status": "2 converted, 0 failed, 0 not processed.",
+    "wizards": 2,
+    "pages": [
+      "Step 1 of 2: T - Temperature (Celsius)",
+      "Step 2 of 2: OxR - RINKO (%)",
+      "Review supporting values and calculation conventions",
+      "Review supporting values and calculation conventions"
+    ],
+    "log": "Saved: C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\batch1412\\1793017739114155100\\conditions_output\\oxygen_1_SIT.txt\r\nSaved: C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\batch1412\\1793017739114155100\\conditions_output\\oxygen_2_SIT.txt\r\nFinished.\r\n"
+  },
+  "baseline_comparison": [
+    {
+      "file": "2026_09_15_09-19-44_C.txt",
+      "bytes": 45463,
+      "sha256": "66b758bd2c9b674554f0a27e06864fe90031892bae106599ce6ff7a0046f5924"
+    },
+    {
+      "file": "2026_09_15_10-38-19_C.txt",
+      "bytes": 53366,
+      "sha256": "ecb7bb28b6d3627930f10616d6471f9c89dc364b5202417c580c25664e37c308"
+    },
+    {
+      "file": "2026_09_15_11-00-15_C.txt",
+      "bytes": 42271,
+      "sha256": "1af7a785b599594d9804f83e6898bb37996f5ebe9fae02471fd2ec2bf723cdee"
+    },
+    {
+      "file": "2026_09_15_11-29-47_C.txt",
+      "bytes": 44888,
+      "sha256": "659d205c3834ca1ea2eb3120d36747fbb2e4d2480c3b70c7c06ad7e24ea433d2"
+    },
+    {
+      "file": "2026_09_15_12-00-49_C.txt",
+      "bytes": 55921,
+      "sha256": "5485188f164116c214d0d8d3e84193c98b313cdf4cfb55c94b88ef006a3e746b"
+    },
+    {
+      "file": "2026_09_15_13-11-57_C.txt",
+      "bytes": 39531,
+      "sha256": "d5eeb652b9aa23323d2342b067d75fcf0a4c32c6d76c52eac8d5218cf144c6e8"
+    },
+    {
+      "file": "2026_09_15_13-30-52_C.txt",
+      "bytes": 36353,
+      "sha256": "a668ebe3a18354f42375159c0937e314bc9a8135a71d762e2b869237a3cf83fd"
+    },
+    {
+      "file": "2026_09_15_13-43-25_C.txt",
+      "bytes": 32591,
+      "sha256": "9919b9ebe18fc9c76412001f8702e144e008c68d90f7882e1149767e57765e64"
+    },
+    {
+      "file": "2026_09_15_14-30-44_C.txt",
+      "bytes": 36814,
+      "sha256": "46184034ee85160febffbd489a65df46f1e85ed7e031efe7959514e16b4809b4"
+    },
+    {
+      "file": "2026_09_15_14-43-53_C.txt",
+      "bytes": 34268,
+      "sha256": "0ec3e3002c4ba79d4dd7dcea5b8bea31b0913d77ac2480c8010fd0e780d001b9"
+    },
+    {
+      "file": "2026_09_15_15-20-50_C.txt",
+      "bytes": 24127,
+      "sha256": "3950bf1a1d6dca867c71743cdb03e30a1e4d5d017c7718b4b805b0641976b713"
+    },
+    {
+      "file": "2026_09_15_15-29-40_C.txt",
+      "bytes": 24699,
+      "sha256": "cf974af67f7235487f6262aadea95e1718913f7b40d4a485d52633b4908fbc25"
+    },
+    {
+      "file": "2026_09_15_16-02-04_C.txt",
+      "bytes": 25958,
+      "sha256": "5fad07a9ee1e61c6ff60dcb525f01155eca386819db73b8addd0c5c7ca9d6fe1"
+    },
+    {
+      "file": "2026_09_15_16-13-14_C.txt",
+      "bytes": 22665,
+      "sha256": "772a1b809a18f0e7600511edcaaaadc0d17fcc13e9a66baf66ca8ec60acb2dec"
+    },
+    {
+      "file": "2026_09_15_16-54-32_C.txt",
+      "bytes": 10326,
+      "sha256": "f3765aec9091c52430ded76fb89629633b0409c41628d479402b1b285f9bc430"
+    }
+  ],
+  "source_hashes": {
+    "data\\dataFormCoustomer\\2026_09_15_09-19-44_C.txt": "f0929fdeed5876d1cf1371b8beffaca660473328d61a6a8585788eb809020630",
+    "data\\dataFormCoustomer\\2026_09_15_10-38-19_C.txt": "52bc8f10c12b2249976bb03e6f23d964cb1e2ec2238482cbb57c0a410e3143dc",
+    "data\\dataFormCoustomer\\2026_09_15_11-00-15_C.txt": "f758136eff57c15719122b36a1eff6e1049331d32d978b27351d71e87815ab7f",
+    "data\\dataFormCoustomer\\2026_09_15_11-29-47_C.txt": "bd2acf7bdc107356d04c9e4695089e1b827590203120f8e507e6d86fc547e4b6",
+    "data\\dataFormCoustomer\\2026_09_15_12-00-49_C.txt": "e0ca109c0a5e16f27131f744efe8a6267ccd23ec2972177ebbbe568afb89f71d",
+    "data\\dataFormCoustomer\\2026_09_15_13-11-57_C.txt": "4b51296c4bb6a81d55344cb6849b96875096e8aa65ed7d68a7b2defd529a469e",
+    "data\\dataFormCoustomer\\2026_09_15_13-30-52_C.txt": "6307700b4e82b3d850054bb64d0ba55ab2f282b1c61c3589465903fee130c62d",
+    "data\\dataFormCoustomer\\2026_09_15_13-43-25_C.txt": "b64770d938e254971a7e636d73300225e5a7789128ad1d842ecc3c45767d2c14",
+    "data\\dataFormCoustomer\\2026_09_15_14-30-44_C.txt": "d070f330f15ae1630e15772a09f182e7b48b634f842867d39d44eb9c5c1bc1d5",
+    "data\\dataFormCoustomer\\2026_09_15_14-43-53_C.txt": "7db411df689bad68f054dadca4a27e2c499ccb9b6e828bf61103b1de8ed331b9",
+    "data\\dataFormCoustomer\\2026_09_15_15-20-50_C.txt": "433867596dac61b8190b6e04994b99ed2142365fc356ef4dbd63824613c41b3d",
+    "data\\dataFormCoustomer\\2026_09_15_15-29-40_C.txt": "49d0ea160d0289eeca531dfa092648ee4339985315faba0a0df13fa670154555",
+    "data\\dataFormCoustomer\\2026_09_15_16-02-04_C.txt": "13e715a7e23050064f2d4ab44c1cf6fadae5938e594cfee67c98a412cda5df2b",
+    "data\\dataFormCoustomer\\2026_09_15_16-13-14_C.txt": "84b5553942ba81fdee1bb4205f2d673a025017da2d4f69482faa6808ba07eaba",
+    "data\\dataFormCoustomer\\2026_09_15_16-54-32_C.txt": "53685f9eb3c63cc95c3cb8a5561b4d8850a71381aff3263647905fdbfe0c23dc"
+  },
+  "source_files_unchanged": true,
+  "physical_serial_disabled": true,
+  "test_settings": "in-memory registry stubs; no user settings written",
+  "passed": true
+}
