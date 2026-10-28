@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "build": {
+    "cache_tag": "1.4.13_80955de1f0f0",
+    "source": "analysis/single1412_hw330/SAIV_IT_Runtime.exe",
+    "source_sha256": "2d84f44233f8515bd2b4e2a08f0aaba8b7dda125af4133e79d4e495bd6c56aa1",
+    "output": "SAIV_Instrument_Terminal_v1.4.13_Oct2026.exe",
+    "sha256": "3c1f858d574b9498bdd6f422c674da0ff83226b2c0f3ed88a8980487941698c9",
+    "runtime_sha256": "6861a1025a7849c5a2ca127bf071771759bfdca6275739079077cc8d5742990f",
+    "dll_sha256": "0e5ebef1fedfbbe14e722f485563ba557e6442e585641af9676dabf4ab91ea7d",
+    "helper_sha256": "4070fe4428d2b659c937bf5cb13c40853b4dcd3c7f638aa0084e9f9db077a033",
+    "dependencies": [
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "msvcrt.dll",
+      "SHELL32.DLL",
+      "USER32.dll"
+    ],
+    "bytes": 13423896
+  },
+  "gui_report": "analysis/runtime_test/controls1413/1793190571989749400/report.json",
+  "controls_checked": [
+    "TIME/DATE",
+    "Interval",
+    "Convert button",
+    "File conversion menu",
+    "Merge"
+  ],
+  "settings_instruments": [
+    "SD200",
+    "OSU107",
+    "SAIV110"
+  ],
+  "disabled_without_detection": true,
+  "disabled_after_port_change": true,
+  "exports_byte_identical_to_1411": true,
+  "source_files_unchanged": true,
+  "dispatch_report": "analysis/dispatch1413_validation.json",
+  "physical_serial_disabled": true,
+  "physical_device_io": false,
+  "firmware_functions_unchanged": true,
+  "firmware_channels": [
+    "3.1.2",
+    "3.3.0"
+  ]
+}

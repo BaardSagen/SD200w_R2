@@ -196,7 +196,7 @@ static LRESULT CALLBACK firmwareDialogProc(HWND h,UINT msg,WPARAM w,LPARAM l) {
                 s->device=firmwareFindDevice();s->operations.reset(new FirmwareOperations(h,s->device));
                 auto current=s->operations->liveIdentity();s->device.identity=current;s->operations->device.identity=current;
                 s->operations->leaveLocal();
-                firmwareBackground([&]{s->manifest=sitfirmware::manifest(firmwareFetch(std::string(sitfirmware::server)+"latest.json",65536));s->notes=wide(sitfirmware::publicNotes(utf8(updateText(firmwareFetch(s->manifest.readme,131072)))));if(s->notes.empty())throw std::runtime_error("Firmware release notes are empty. Check again after publication.");});
+                firmwareBackground([&]{s->manifest=sitfirmware::manifest(firmwareFetch(sitfirmware::serverForHardware(current.hardware)+"latest.json",65536),current.hardware);s->notes=wide(sitfirmware::publicNotes(utf8(updateText(firmwareFetch(s->manifest.readme,131072)))));if(s->notes.empty())throw std::runtime_error("Firmware release notes are empty. Check again after publication.");});
                 if(current.hardware!=s->manifest.hardware)throw std::runtime_error("Server firmware is for a different hardware revision");
                 s->available=sitfirmware::newer(s->manifest.release,current.release);s->checked=true;
                 // A manual check can also finish verification after an interrupted update.
@@ -236,7 +236,7 @@ static void firmwareShow(HWND owner) {
     FirmwareDialog state;HWND h=CreateWindowExW(WS_EX_CONTROLPARENT,wc.lpszClassName,L"SAIV IT - Firmware",WS_OVERLAPPEDWINDOW,CW_USEDEFAULT,CW_USEDEFAULT,750,570,owner,0,instance,&state);if(!h)return;firmwareWindow=h;
     control(h,L"STATIC",L"Firmware updates the SAIV110 or OSU107 device connected to this PC and SIT.\r\nWould you like to check for new firmware?",0,16,14,700,76,501);
     control(h,L"EDIT",L"Choose Check firmware to identify the connected device and search saiv.no.\r\n\r\nThis is a manual check. No firmware server is contacted when SIT starts or when this window opens.\r\n\r\nYou will see the installed version, the available version and release notes before deciding whether to update.\r\n\r\nConnect the logger USB cable and select its COM port in SIT first.",ES_MULTILINE|ES_READONLY|ES_AUTOVSCROLL|WS_VSCROLL|WS_BORDER|WS_TABSTOP,16,94,700,330,502);SendDlgItemMessageW(h,502,EM_SETLIMITTEXT,262144,0);
-    control(h,L"STATIC",L"Supported devices: SAIV110 / OSU107, hardware 3.1.2.",0,16,440,700,58,507);
+    control(h,L"STATIC",L"Supported devices: SAIV110 / OSU107, hardware 3.1.2 and 3.3.0.\r\nThe firmware variant is selected automatically after checking the device hardware.",0,16,440,700,58,507);
     control(h,L"STATIC",L"",SS_OWNERDRAW,16,92,700,18,508);
     control(h,L"STATIC",L"",0,16,116,700,46,509);
     ShowWindow(GetDlgItem(h,508),SW_HIDE);ShowWindow(GetDlgItem(h,509),SW_HIDE);

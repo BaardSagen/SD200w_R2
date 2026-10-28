@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "base": 4194304,
+      "action": "null",
+      "correct_route": true,
+      "registers_and_stack_preserved": true
+    },
+    {
+      "base": 4194304,
+      "action": "Convert",
+      "correct_route": true,
+      "registers_and_stack_preserved": true
+    },
+    {
+      "base": 4194304,
+      "action": "Interval",
+      "correct_route": true,
+      "registers_and_stack_preserved": true
+    },
+    {
+      "base": 4194304,
+      "action": "TIME/DATE",
+      "correct_route": true,
+      "registers_and_stack_preserved": true
+    },
+    {
+      "base": 4194304,
+      "action": "Merge",
+      "correct_route": true,
+      "registers_and_stack_preserved": true
+    },
+    {
+      "base": 4194304,
+      "action": "other tagged action",
+      "correct_route": true,
+      "registers_and_stack_preserved": true
+    },
+    {
+      "base": 20971520,
+      "action": "null",
+      "correct_route": true,
+      "registers_and_stack_preserved": true
+    },
+    {
+      "base": 20971520,
+      "action": "Convert",
+      "correct_route": true,
+      "registers_and_stack_preserved": true
+    },
+    {
+      "base": 20971520,
+      "action": "Interval",
+      "correct_route": true,
+      "registers_and_stack_preserved": true
+    },
+    {
+      "base": 20971520,
+      "action": "TIME/DATE",
+      "correct_route": true,
+      "registers_and_stack_preserved": true
+    },
+    {
+      "base": 20971520,
+      "action": "Merge",
+      "correct_route": true,
+      "registers_and_stack_preserved": true
+    },
+    {
+      "base": 20971520,
+      "action": "other tagged action",
+      "correct_route": true,
+      "registers_and_stack_preserved": true
+    }
+  ]
+}

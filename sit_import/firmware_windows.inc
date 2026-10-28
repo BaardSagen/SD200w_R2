@@ -88,7 +88,7 @@ static void firmwareWriteImage(const std::wstring&folder,const std::string&bytes
 }
 static std::string firmwareFetch(const std::string&url,size_t limit) {
     if(!sitfirmware::url(url,".json")&&!sitfirmware::url(url,".txt")&&!sitfirmware::url(url,".bin"))throw std::runtime_error("Invalid firmware URL");
-    UpdateHttp session(InternetOpenW(L"SAIV-IT-Firmware/1.4.11",INTERNET_OPEN_TYPE_PRECONFIG,0,0,0));
+    UpdateHttp session(InternetOpenW(L"SAIV-IT-Firmware/1.4.12",INTERNET_OPEN_TYPE_PRECONFIG,0,0,0));
     DWORD timeout=8000;for(DWORD option:{INTERNET_OPTION_CONNECT_TIMEOUT,INTERNET_OPTION_SEND_TIMEOUT,INTERNET_OPTION_RECEIVE_TIMEOUT})InternetSetOptionW(session,option,&timeout,sizeof(timeout));
     auto link=wide(url);UpdateHttp request(InternetOpenUrlW(session,link.c_str(),L"Cache-Control: no-cache\r\n",DWORD(-1),INTERNET_FLAG_SECURE|INTERNET_FLAG_RELOAD|INTERNET_FLAG_NO_CACHE_WRITE|INTERNET_FLAG_NO_AUTO_REDIRECT|INTERNET_FLAG_NO_UI|INTERNET_FLAG_NO_COOKIES,0));
     DWORD status=0,size=sizeof(status);if(!HttpQueryInfoW(request,HTTP_QUERY_STATUS_CODE|HTTP_QUERY_FLAG_NUMBER,&status,&size,0)||status!=200)
@@ -133,7 +133,7 @@ static FirmwareDevice firmwareFindDevice() {
         d.root=root;d.identity=id;++found;
     }
     if(found!=1)throw std::runtime_error("Could not identify exactly one logger disk with config and instrument/surface folders on the active USB connection");
-    if(d.identity.hardware!="3.1.2")throw std::runtime_error("This firmware channel is only for OSU-M hardware 3.1.2");
+    sitfirmware::serverForHardware(d.identity.hardware); // Reject unknown hardware before network access.
     return d;
 }
 // A bounded recursive snapshot; no links, junctions, wildcards or paths outside config are followed.

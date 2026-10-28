@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "version": "1.4.12",
+  "manifest_sha256": "f624a8c1e6e0db271bd3666f5246cbe07d74fa6f2927c518bf5a18ccb044fd2e",
+  "updater_expected_entry": "saiv_instrument_terminal_v1.4.12_oct2026.exe",
+  "actual_helper_sha256": "4070fe4428d2b659c937bf5cb13c40853b4dcd3c7f638aa0084e9f9db077a033",
+  "old_case_mismatch_reproduced": true,
+  "corrected_zip_extracted": true,
+  "candidate_byte_identical": true,
+  "embedded_version_accepted": true,
+  "installer_reached_close_boundary": true,
+  "original_host_unchanged": true,
+  "replacement_and_restart_not_performed": true,
+  "no_device_access": true
+}

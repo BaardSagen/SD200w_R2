@@ -1,12 +1,49 @@
 # Prosjektnotater
 
-## Nyeste lokale leveranse, 26. oktober 2026
+## Fast regresjonskontroll av knapper og menyer før levering
 
-`SAIV_Instrument_Terminal_v1.4.12_Oct2026.exe` har valg av flere filer i Convert.
-Les `LES_MEG_Batch_1412.md` og siste prosjektstatus. Tidligere versjonsangivelser
-nedenfor er historiske. Bygg med `analysis/build_single_exe_1412.py`; 1.4.11-kilden
-er bevart i `analysis/reference/sit_import_v1411`. Programmet er fortsatt usignert
-mens SAIV oppretter signeringstjenesten.
+Etter endringer i knapper, menyer, Tag-verdier eller felles klikkrutiner skal
+TIME/DATE, Interval, Convert og Merge alltid testes sammen i den ferdige
+leveransens runtime og DLL før EXE og serverpakke godkjennes. Brukeren krevde
+dette uttrykkelig 28. oktober 2026 etter at batch-Convert tok over innstillingsknappene.
+Tidligere beståtte tester av en eldre versjon erstatter ikke denne kontrollen.
+
+Test begge innstillingsknapper for SD200, OSU107 og SAIV110, også uten godkjent
+Detect og etter portbytte. Kontroller at riktig dialog åpnes, at ingen åpner
+Convert, og at avbrudd gir kontrollen tilbake. Kontroller Convert-knapp og
+File-meny, enkeltfil og flere filer, samt Merge. Testene skal som standard
+bruke egne prosesser, privat skrivebord, isolert register og sperret fysisk
+serieport; ingen klokke-/intervallskriving til instrument uten avtalt fysisk test.
+Registrer resultatene mot hashene til runtime/DLL i den faktiske leveransen.
+
+## Fast pakkeregel for senere oppdateringer
+
+Oppdateringshjelperen sammenligner ZIP-oppføringer med eksakt skrivemåte.
+EXE-navnet inne i ZIP-en må være identisk med siste filnavn i manifestets
+ZIP-URL, med `.exe` i stedet for `.zip`, også store og små bokstaver.
+Eksempel: `saiv_instrument_terminal_v1.4.12_oct2026.zip` må inneholde
+`saiv_instrument_terminal_v1.4.12_oct2026.exe` direkte i ZIP-roten.
+Ikke bruk den lokale EXE-ens store bokstaver som ZIP-oppføring når URL-en
+bruker små bokstaver. Feilen ga «The ZIP does not contain the expected program».
+
+Ved hver serverpakke: utled forventet EXE-navn fra den faktiske manifest-URL-en,
+kontroller eksakt ZIP-oppføring, pakk ut med CRC-kontroll og sammenlign EXE-byte
+og versjon med leveransen. Test med eksisterende oppdateringshjelper; statisk
+kontroll av at ZIP-en inneholder den lokale EXE-ens navn er ikke tilstrekkelig.
+Bygg ZIP og SHA-256 på nytt etter pakkeendringer. Last opp ZIP først og den
+tilhørende latest.json sist. Dette krever ikke nytt programversjonsnummer.
+Se `analysis/check_update1412_package.py` for isolert installasjonsforprøve.
+
+## Nyeste lokale leveranse, 28. oktober 2026
+
+Siste versjon er **1.4.13**, etter brukerens nye uttrykkelige valg for rettelsen
+av TIME/DATE og Interval som åpnet Convert i 1.4.12. Den beholder flerfilkonvertering
+og automatisk firmwarevalg for 3.1.2 / 3.3.0.
+Bruk `SAIV_Instrument_Terminal_v1.4.13_Oct2026.exe` og serverpakken med samme
+versjon. Bygg: `analysis/build_single_exe_1413.py`; intern modul SIT_Import155.dll.
+Les siste prosjektstatus og `LES_MEG_Controls_1413.md`. Eldre pålegg om å holde
+versjon 1.4.12 er erstattet av brukerens senere instruks om denne rettelsen.
+Programmet er fortsatt usignert.
 
 ## Intern servicemeny skal ikke røpes til kunden
 

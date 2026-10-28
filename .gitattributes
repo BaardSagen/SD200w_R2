@@ -11,3 +11,6 @@ analysis/reference/native_ascii_sample_old/* binary
 
 *.dll binary
 analysis/reference/import137_inputs/* binary
+
+# Preserve the exact historical source bytes used by hash-bound SIT builds.
+analysis/reference/sit_import_v1412/** binary

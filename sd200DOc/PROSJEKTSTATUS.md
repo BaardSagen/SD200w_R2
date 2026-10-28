@@ -1,6 +1,145 @@
 # Prosjektoverlevering — SAIV Instrument Terminal (tidligere MiniSoft SD200W)
 
-Oppdatert: 26. oktober 2026. Arbeidsmappe: `C:\cprojects\delphi\sd200w_r2`.
+Oppdatert: 28. oktober 2026. Arbeidsmappe: `C:\cprojects\delphi\sd200w_r2`.
+
+## Nyeste leveranse: 1.4.13 – TIME/DATE og Interval rettet
+
+Brukeren bekreftet 28. oktober 2026 at 1.4.13 fungerer, og ba om commit og push.
+
+Brukeren rapporterte at TIME/DATE og Interval åpnet Convert, og ba deretter
+uttrykkelig om **1.4.13**. Dette erstatter forrige instruks om å beholde 1.4.12.
+Nyeste EXE: `SAIV_Instrument_Terminal_v1.4.13_Oct2026.exe`.
+Les `LES_MEG_Controls_1413.md`.
+
+Årsak: batch-dispatcheren i 1.4.12 sendte alle felles klikk unntatt Merge til
+Convert. De to innstillingsknappene bruker samme Delphi-handler med egne Tag-verdier.
+Ny dispatcher beholder Convert for vanlig sender og sender merkede knapper
+til den eksisterende kjeden for innstillinger/Merge. Klokke-, intervall-,
+serie-, firmware- og beregningsprotokoller er uendret.
+
+Eksisterende innstillingstester var ikke kjørt mot batch-endringen; det var
+et hull i leveransekontrollen. Brukeren krevde at dette alltid gjøres fremover.
+Fast regel i AGENTS.md krever nå samlet test av TIME/DATE, Interval, Convert
+og Merge etter endringer i knapper, menyer eller felles handler, mot de faktiske
+leveransemodulene. Gamle resultater alene er ikke godkjenningsgrunnlag.
+
+Bestått: begge innstillingsdialoger for SD200, OSU107 og SAIV110, 11 intervallvalg,
+LT/GMT-kontroll, avbrudd, sperring uten Detect og etter portbytte, Convert-knapp
+og File-meny, enkeltfil/flerfil med identiske eksporter, Merge og firmware-/
+software update-vindu. 12 maskinkodescenarier ved normal/flyttet base bevarer
+registre og stakk. Testene kjører på privat skrivebord med simulert Detect,
+registerstubber og fysisk serieportåpning sperret. Ingen faktisk klokke-,
+intervall- eller firmwareendring på instrument. Samlet kontroll:
+`analysis/validate_controls1413.py`, `analysis/firmware1413_release_validation.json`.
+
+Bygg: `analysis/build_single_exe_1413.py`, runtime `analysis/single1413_settings`,
+innebygd `SIT_Import155.dll`. EXE SHA-256:
+`3c1f858d574b9498bdd6f422c674da0ff83226b2c0f3ed88a8980487941698c9`.
+Serverpakke: `update_server/saiv_instrument_terminal_v1.4.13_oct2026.zip`,
+`readme_v1.4.13.txt`, `latest.json`. Last opp latest.json sist. EXE-oppføringen
+bruker små bokstaver som ZIP-adressen. ZIP SHA-256:
+`ed7db6d8863dcff0053bd9faa5c1ced8b13f73ec4a60c2310e85ea0955ea4821`.
+Pakkerapport: `analysis/update_server1413_validation.json`.
+Fortsatt usignert. Ingen serveropplasting, commit eller push.
+
+## Siste leveranse er 1.4.12 – endelig versjonsvalg, 28. oktober 2026
+
+**Pakkefeil rettet samme dag:** Brukeren fikk «The ZIP does not contain the
+expected program». Oppdatereren utleder et EXE-navn med små bokstaver fra
+ZIP-URL-en, men tidligere ZIP hadde store bokstaver i EXE-oppføringen.
+Pakkeskriptet bruker nå nøyaktig navnet fra URL-en, inkludert skrivemåte.
+EXE-byte og versjon 1.4.12 er uendret. Ny ZIP SHA-256:
+`f624a8c1e6e0db271bd3666f5246cbe07d74fa6f2927c518bf5a18ccb044fd2e`.
+Last opp ZIP og latest.json på nytt, latest.json sist. Ingen serveropplasting
+fra agenten. Eksisterende hjelpebinær reproduserte den gamle feilen og
+godkjente korrigert ZIP, CRC, kandidatbyte og innebygd versjon frem til
+installasjonsgrensen. Isolert inert testvert ble beholdt åpen; ingen faktisk
+SIT-installasjon, omstart eller AppData-utpakking ble utført. Rapport i
+`analysis/update_server1412_validation.json`. Brukeren ba uttrykkelig om at
+regelen noteres til senere oppdateringer; den står nå øverst i AGENTS.md og
+kontrolleres av `analysis/prepare_update_server_1412.py`.
+
+Brukeren bestemte uttrykkelig at siste versjon skal være **1.4.12**, siden
+ingen hadde lastet den opp. 1.4.13-utkastet er ikke leveransen.
+Bruk `SAIV_Instrument_Terminal_v1.4.12_Oct2026.exe` og de tre 1.4.12-filene i
+`update_server`. Leveransen har både flerfilkonvertering og automatisk
+maskinvarekontroll/firmwarevalg for 3.1.2 / 3.3.0. Kundens README er forkortet.
+
+Bygg: `analysis/build_single_exe_1412.py`, arbeidsfiler i
+`analysis/single1412_hw330`, innebygd `SIT_Import154.dll`.
+EXE SHA-256: `3dbbed2e844a54057fd260c889514864ac050f24993780ed3d417f1a17bfcec1`.
+Versjon 1.4.12.0 er kontrollert i launcher, runtime og software update-vindu.
+Firmwarevindu med begge revisjoner, avvisning uten tilkobling og en ny
+flerfilprøve med identiske eksporter bestod. Den komplette foregående
+funksjonsakseptansen gjelder samme maskinvare-/konverteringsfunksjonalitet;
+sluttendringen gjelder versjon, DLL-navn og user-agent. Ingen fysisk flashing.
+Rapporter: `analysis/firmware1412_final_static_validation.json` og
+`analysis/firmware1412_final_release_validation.json`.
+
+Serverpakke: `update_server/saiv_instrument_terminal_v1.4.12_oct2026.zip`,
+`readme_v1.4.12.txt` og `latest.json`. Last opp alle tre, latest.json sist.
+Pakken og alle kontrollsummer er laget på nytt. Rapport:
+`analysis/update_server1412_validation.json`. Fortsatt usignert; ingen
+serveropplasting, signering, commit eller push er utført.
+Notatene nedenfor beskriver tidligere arbeidssteg.
+
+## SIT 1.4.13 – riktig firmwarekanal for 3.1.2 / 3.3.0, 28. oktober 2026
+
+Nyeste lokale leveranse er **SAIV_Instrument_Terminal_v1.4.13_Oct2026.exe**.
+Brukeren ba om støtte for maskinvare 3.3.0 med kontroll av riktig variant.
+Help > Firmware velger hw_3-1-2 eller hw_3-3-0 automatisk ut fra bekreftet
+enhetsidentitet. USB-konfigurasjon og fersk enhetsavlesning må stemme;
+manifestets maskinvare, BIN-filnavn og README-adresse bindes til samme kanal.
+Ukjente revisjoner og kryssede varianter avvises. Ingen manuell overstyring.
+Eksisterende backup, filverifikasjon og etterkontroll er beholdt.
+Kundevendt filtrering dekker også interne instruksjoner i dagens servernotat.
+Les `LES_MEG_Firmware_HW_1413.md`.
+
+291 protokollkontroller og 30 Windows-kontroller bestod. Begge produkter på
+begge revisjoner, feil variant og endret identitet er dekket. Produksjonens
+WinINet-kode hentet 0.9.9S fra begge serverkanaler med riktige SHA-256 og
+filtrerte kundetekster. GUI viste begge revisjoner og avviste oppdatering
+uten tilkobling. Alle 15 kundefileksporter er byteidentiske med bevart 1.4.11;
+flerfilflyt, enkeltfilflyt, feil, avbrudd og nye betingelser bestod.
+GUI brukte egne kopier på privat skrivebord, minnestubber for register og
+deaktivert serieportåpning. Ingen fysisk firmwareoppdatering er utført.
+Samlerapport: `analysis/firmware1413_release_validation.json`.
+
+Bygg: `analysis/build_single_exe_1413.py`, innebygd `SIT_Import153.dll`.
+EXE SHA-256: `0c6285311c3413bf0b0f5d7d6d9d9434c72d6402d6812fa4e2bb073d231c59e9`.
+Native runtime er bare endret ved DLL-referanser, About/versjon og kontrollsum.
+Beregnings- og batchkilder er uendret. Forrige kilde er arkivert i
+`analysis/reference/sit_import_v1412`, og historisk 1.4.12-bygg bruker arkivet.
+Tidligere leveranser er beholdt. Programmet er fortsatt usignert.
+
+Serverpakke: `update_server/saiv_instrument_terminal_v1.4.13_oct2026.zip`,
+`readme_v1.4.13.txt`, `latest.json`. Se `update_server/LAST_OPP_1.4.13.md`;
+last opp latest.json sist. Forrige peker: `latest_v1.4.12.json`.
+CRC, eksakt innhold, versjon og hasher kontrollert i
+`analysis/update_server1413_validation.json`. ZIP SHA-256:
+`95bf5f8828022e53f66711e5e97cde2a1ad3b6236b119f8db2cd52d2ad16f4e9`.
+Oppdateringsinstallasjon av selve SIT er ikke kjørt på nytt. Ingen
+serveropplasting, signering, instrumentkommando, commit eller push.
+
+## Serverpakke 1.4.12 klargjort, 28. oktober 2026
+
+Brukeren ba om serverversjon av 1.4.12 med flerfilkonvertering. Lokal pakke:
+`update_server/saiv_instrument_terminal_v1.4.12_oct2026.zip`,
+`readme_v1.4.12.txt` og `latest.json`. Last opp ZIP og versjonsnotat først,
+latest.json sist. Se `update_server/LAST_OPP_1.4.12.md`.
+
+Pakken inneholder byteidentisk testet 1.4.12-EXE, engelsk kundetekst og
+miniz/GSW-lisenser. EXE-en er fortsatt **usignert**; brukeren ba nå om pakken
+før signering er ferdig. Ingen signering eller serveropplasting er utført.
+Ved senere signering må ZIP og manifest bygges på nytt med nye kontrollsummer.
+Forrige peker er bevart som `latest_v1.4.11.json`; eldre pakker er beholdt.
+
+Bygg: `analysis/prepare_update_server_1412.py`. Kontroll:
+`analysis/update_server1412_validation.json`. ZIP-CRC, eksakt innhold,
+EXE-/ZIP-hash, versjon 1.4.12.0 og kundetekst er kontrollert.
+ZIP SHA-256: `050af334d9d09ee40cf688aac549420180d819186cfd36057b35d3cf9ec468ab`.
+Eksisterende flerfiltester gjelder samme EXE; oppdateringsinstallasjon er ikke
+kjørt på nytt for denne pakken. Ingen instrumentoperasjon, commit eller push.
 
 ## Signering og overlevering, 26. oktober 2026
 

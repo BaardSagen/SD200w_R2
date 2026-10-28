@@ -1,0 +1,31 @@
+{
+  "firmware_gui": {
+    "both_hardware_revisions_shown": true,
+    "automatic_selection_explained": true,
+    "update_disabled_without_verified_device": true,
+    "close_restores_main": true,
+    "software_version": "1.4.12"
+  },
+  "customer_batch": {
+    "status": "2 converted, 0 failed, 0 not processed.",
+    "wizards": 1,
+    "pages": [
+      "Step 1 of 10: S - Practical Salinity (PSS-78)",
+      "Step 2 of 10: C - Conductivity (mS/cm)",
+      "Step 3 of 10: T - Temperature (Celsius)",
+      "Step 4 of 10: P - Sea pressure (dbar)",
+      "Step 5 of 10: OT - Turbidity (FTU)",
+      "Step 6 of 10: OF - Fluorescence (\u00b5g/L)",
+      "Step 7 of 10: c",
+      "Step 8 of 10: OxR - RINKO (%)",
+      "Step 9 of 10: Tilt",
+      "Step 10 of 10: Derived seawater properties",
+      "Review supporting values and calculation conventions"
+    ],
+    "log": "Saved: C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\batch1412_final\\1793188335894912000\\converted\\2026_09_15_09-19-44_C_SIT.txt\r\nSaved: C:\\cprojects\\delphi\\sd200w_r2\\analysis\\runtime_test\\batch1412_final\\1793188335894912000\\converted\\2026_09_15_10-38-19_C_SIT.txt\r\nFinished.\r\n"
+  },
+  "tested_module_sha256": "14a0ea8341958324947a58b6654198c07f922a37acc8da6a4300fd81682350b1",
+  "tested_runtime": "analysis/single1412_hw330/SAIV_IT_Runtime.exe",
+  "source_files_unchanged": true,
+  "passed": true
+}

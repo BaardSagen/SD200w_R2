@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "build": {
+    "cache_tag": "1.4.12_a6177eb60588",
+    "source": "analysis/single1413/SAIV_IT_Runtime.exe",
+    "source_sha256": "6cc05ddb0471d75be94c07bac2cd7e681aa33a83ef46dc7b50df8b9a28707bc7",
+    "output": "SAIV_Instrument_Terminal_v1.4.12_Oct2026.exe",
+    "sha256": "3dbbed2e844a54057fd260c889514864ac050f24993780ed3d417f1a17bfcec1",
+    "runtime_sha256": "2d84f44233f8515bd2b4e2a08f0aaba8b7dda125af4133e79d4e495bd6c56aa1",
+    "dll_sha256": "14a0ea8341958324947a58b6654198c07f922a37acc8da6a4300fd81682350b1",
+    "helper_sha256": "4070fe4428d2b659c937bf5cb13c40853b4dcd3c7f638aa0084e9f9db077a033",
+    "dependencies": [
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "msvcrt.dll",
+      "SHELL32.DLL",
+      "USER32.dll"
+    ],
+    "bytes": 13423384
+  },
+  "version": "1.4.12",
+  "gui_report": "analysis/runtime_test/batch1412_final/1793188335894912000/report.json",
+  "exports_byte_identical_to_1411": true,
+  "source_files_unchanged": true,
+  "live_server_both_channels_passed": true,
+  "cross_hardware_rejected": true,
+  "firmware_gui": {
+    "both_hardware_revisions_shown": true,
+    "automatic_selection_explained": true,
+    "update_disabled_without_verified_device": true,
+    "close_restores_main": true,
+    "software_version": "1.4.12"
+  },
+  "full_functional_acceptance": "analysis/firmware1413_release_validation.json",
+  "full_acceptance_note": "Hardware and conversion functionality unchanged; final version/DLL metadata and batch smoke test verified separately.",
+  "physical_firmware_update_performed": false
+}

@@ -1,0 +1,25 @@
+{
+  "manifest": {
+    "version": "1.4.13",
+    "url": "https://saiv.no/software/saiv_instrument_terminal_v1.4.13_oct2026.zip",
+    "readme_url": "https://saiv.no/software/readme_v1.4.13.txt",
+    "sha256": "ed7db6d8863dcff0053bd9faa5c1ced8b13f73ec4a60c2310e85ea0955ea4821"
+  },
+  "exe_sha256": "3c1f858d574b9498bdd6f422c674da0ff83226b2c0f3ed88a8980487941698c9",
+  "zip_bytes": 4940669,
+  "updater_expected_program": "saiv_instrument_terminal_v1.4.13_oct2026.exe",
+  "updater_exact_name_checked": true,
+  "crc_and_contents_checked": true,
+  "embedded_version_checked": true,
+  "customer_text_checked": true,
+  "included_licences": [
+    "miniz",
+    "GSW-C"
+  ],
+  "unsigned": true,
+  "release_validation": "analysis/firmware1413_release_validation.json",
+  "server_uploaded": false,
+  "installer_executed": false,
+  "installer_preflight_passed": true,
+  "installer_preflight_report": "analysis/runtime_test/update1413_package/1793190729258334700/report.json"
+}

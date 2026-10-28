@@ -1,0 +1,13 @@
+{
+  "entry_rva": 1726780,
+  "dispatcher_rva": 3208192,
+  "batch_rva": 3207680,
+  "legacy_rva": 3137618,
+  "code_hex": "85d2740b837a0c007405e943ecfeffe9ecfdffff",
+  "convert_tag": 0,
+  "settings_tags": [
+    1397314633,
+    1397314644
+  ],
+  "merge_tag": 1397573458
+}

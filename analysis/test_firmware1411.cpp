@@ -1,4 +1,4 @@
-#include "../sit_import/firmware_protocol.h"
+#include "reference/sit_import_v1411/firmware_protocol.h"
 #include <iostream>
 #include <cassert>
 using namespace sitfirmware;

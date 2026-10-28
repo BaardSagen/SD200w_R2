@@ -1,4 +1,18 @@
-# Oppdateringsserver - klargjort paa branch update
+# Oppdateringsserver
+
+## Nyeste lokale pakke: 1.4.13, 28. oktober 2026
+
+Se [opplastingsinstruksjonene](update_server/LAST_OPP_1.4.13.md).
+Last opp `update_server/saiv_instrument_terminal_v1.4.13_oct2026.zip` og
+`update_server/readme_v1.4.13.txt` til `https://saiv.no/software/`, deretter
+`update_server/latest.json` **sist**. Pakken retter TIME/DATE og Interval,
+og beholder flerfilkonvertering og firmwarevalg for 3.1.2 / 3.3.0.
+Denne utgaven er fortsatt usignert.
+
+Pakkeinnhold, CRC, versjon og kontrollsummer er kontrollert. Bygg:
+`analysis/prepare_update_server_1413.py`. Rapport:
+`analysis/update_server1413_validation.json`. Ingen serveropplasting er utført.
+Tidligere pakker er beholdt. Notatene nedenfor beskriver historikken.
 
 Programmet til og med 1.4.0 er sikret i commit 6d668c5. Foerste manifestutkast er sikret i 30ed32e paa feature/import-all-fields. Videre oppdateringsarbeid foregaar paa update.
 

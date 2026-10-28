@@ -29,7 +29,10 @@ Quick guide i programmet er oppdatert.
 
 ## Intern bygg- og testinformasjon
 
-Bygg: `analysis/build_single_exe_1412.py`. Intern modul: `SIT_Import152.dll`.
+Siste 1.4.12 inkluderer også automatisk firmwarevalg for maskinvare 3.1.2 / 3.3.0.
+Bygg: `analysis/build_single_exe_1412.py`. Intern modul: `SIT_Import154.dll`.
+Sluttrapport: `analysis/firmware1412_final_release_validation.json`.
+Bygg- og testbeskrivelsen nedenfor gjelder det opprinnelige flerfilsteget.
 Startgrunnlaget er den verifiserte 1.4.11-runtime med SHA-256
 `cd379866e627015607288414a95b68c300183526d850511ffb063b214c72b617`.
 1.4.11-kilden er bevart under `analysis/reference/sit_import_v1411`, og det

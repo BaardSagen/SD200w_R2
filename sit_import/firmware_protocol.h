@@ -7,7 +7,14 @@
 #include <functional>
 
 namespace sitfirmware {
-static const char* server = "https://saiv.no/software/firmware/osu107_saiv110/hw_3-1-2/";
+inline bool supportedHardware(const std::string&hardware) {
+    return hardware=="3.1.2"||hardware=="3.3.0";
+}
+inline std::string serverForHardware(const std::string&hardware) {
+    if(hardware=="3.1.2")return "https://saiv.no/software/firmware/osu107_saiv110/hw_3-1-2/";
+    if(hardware=="3.3.0")return "https://saiv.no/software/firmware/osu107_saiv110/hw_3-3-0/";
+    throw std::runtime_error("Unsupported logger hardware revision. Supported revisions: 3.1.2 and 3.3.0.");
+}
 inline std::string lower(std::string s) { for (auto& c:s) c=char(std::tolower((unsigned char)c)); return s; }
 inline std::string trim(const std::string& s) {
     auto a=s.find_first_not_of(" \t\r\n"), b=s.find_last_not_of(" \t\r\n");
@@ -25,22 +32,28 @@ inline std::array<unsigned,4> version(const std::string& s) {
 }
 inline bool newer(const std::string&a,const std::string&b) { return version(a)>version(b); }
 inline bool equal(const std::string&a,const std::string&b) { return version(a)==version(b); }
+inline bool url(const std::string&s,const std::string&ext,const std::string&hardware) {
+    const auto server=serverForHardware(hardware);
+    return s.compare(0,server.size(),server)==0 && situpdate::url(s,ext)
+        && s.substr(server.size()).find('/')==std::string::npos;
+}
 inline bool url(const std::string&s,const std::string&ext) {
-    return s.compare(0,std::string(server).size(),server)==0 && situpdate::url(s,ext)
-        && s.substr(std::string(server).size()).find('/')==std::string::npos;
+    return url(s,ext,"3.1.2")||url(s,ext,"3.3.0");
 }
 struct Manifest { std::string release,hardware,filename,download,readme,sha256; };
-inline Manifest manifest(const std::string& raw) {
+inline Manifest manifest(const std::string& raw,const std::string&hardware) {
+    const auto server=serverForHardware(hardware);
     if(raw.empty()||raw.size()>65536) throw std::runtime_error("Invalid firmware latest.json size");
     auto m=situpdate::Json(raw).object();
     Manifest r{m["version"],m["hardware"],m["filename"],"",m["readme_url"],lower(m["sha256"])};
+    if(r.hardware!=hardware)throw std::runtime_error("Server firmware is for a different hardware revision");
     version(r.release);
     std::smatch name;
-    if(!std::regex_match(r.filename,name,std::regex("osu_m_update_hw(3\\.1\\.2)_([0-9]+\\.[0-9]+\\.[0-9]+[A-Za-z]?)\\.bin"))
+    if(!std::regex_match(r.filename,name,std::regex("osu_m_update_hw(3\\.1\\.2|3\\.3\\.0)_([0-9]+\\.[0-9]+\\.[0-9]+[A-Za-z]?)\\.bin"))
         ||r.hardware!=name[1]||!equal(name[2],r.release))
         throw std::runtime_error("Firmware filename, version and hardware do not agree");
     r.download=std::string(server)+r.filename;
-    if(!url(r.download,".bin")||!url(r.readme,".txt")) throw std::runtime_error("Invalid firmware server link");
+    if(!url(r.download,".bin",hardware)||!url(r.readme,".txt",hardware)) throw std::runtime_error("Invalid firmware server link");
     if(r.sha256.size()!=64||r.sha256.find_first_not_of("0123456789abcdef")!=std::string::npos)
         throw std::runtime_error("The firmware server must supply a SHA-256 checksum");
     return r;
@@ -92,7 +105,7 @@ inline bool writeLockClear(const std::string&raw) {
 // Server notes can contain service instructions. Only customer release notes are shown.
 inline std::string publicNotes(const std::string&raw) {
     std::istringstream in(raw);std::string line,block,out;
-    const std::regex internal("ctrl[ +_-]*t|control[ +_-]*t|\\b(cfg|fwust|fwuclr|fwupdate|fwu|slp|ver)\\b|confirmed_cleanup_pending|\\[config\\]|\\[sleep\\]",std::regex::icase);
+    const std::regex internal("ctrl[ +_-]*t|control[ +_-]*t|service menu|servicemeny|\\b(cfg|fwust|fwuclr|fwupdate|fwu|slp|ver|usbd)\\b|\\bf[ /]+y\\b|confirmed_cleanup_pending|\\[config\\]|\\[sleep\\]",std::regex::icase);
     auto flush=[&]{if(!block.empty()&&!std::regex_search(block,internal))out+=block+"\r\n";block.clear();};
     while(std::getline(in,line)) {
         if(!line.empty()&&line.back()=='\r')line.pop_back();
@@ -169,7 +182,7 @@ struct Operations {
     virtual Identity configIdentity()=0;
 };
 inline void install(Operations&io,const Identity&old,const Manifest&m,Phase&phase) {
-    if(old.hardware!=m.hardware||!newer(m.release,old.release)) throw std::runtime_error("No compatible newer firmware is available");
+    if(!supportedHardware(old.hardware)||old.hardware!=m.hardware||!newer(m.release,old.release)) throw std::runtime_error("No compatible newer firmware is available");
     requireIdentity(old,io.liveIdentity(),old.release);
     auto step=[&](Phase p){phase=p;io.progress(p);};
     step(Phase::Download);io.download(m);

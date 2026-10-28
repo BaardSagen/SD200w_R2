@@ -32,7 +32,7 @@ assert not expected
 prior=json.loads((R/'analysis/single_exe_1411_manifest.json').read_text())
 assert hashlib.sha256((R/prior['output']).read_bytes()).hexdigest()==prior['sha256']
 for name in ['conversions.inc','logger.h','model_conversions.inc','science.h','legacy_convert.h','firmware_ui.inc','firmware_windows.inc','firmware_protocol.h']:
- assert (R/'sit_import'/name).read_bytes()==(R/'analysis/reference/sit_import_v1411'/name).read_bytes(),name
+ assert (R/'analysis/reference/sit_import_v1412'/name).read_bytes()==(R/'analysis/reference/sit_import_v1411'/name).read_bytes(),name
 result=dict(passed=True,build=m,existing_runtime_changes_limited_to=['Convert dispatch','DLL name','About/version','PE size/checksum fields'],formula_and_firmware_sources_unchanged=True,embedded_components_exact=True,previous_release_unchanged=True,signature='unsigned; signing service pending')
 (R/'analysis/batch1412_static_validation.json').write_text(json.dumps(result,indent=2)+'\n')
 print('PASS exact embedded components, runtime patch boundaries, unchanged calculations/firmware, preserved 1.4.11')
